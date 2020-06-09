@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UOk-MF-Zv4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="vMU-b5-vSc">
+            <objects>
+                <viewController id="veR-JB-HRV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nOM-eY-lni">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="adx-h9-fPQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9I2-lq-jU9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21j-Z6-Qzd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.85507246376824" y="144.64285714285714"/>
+        </scene>
+        <!--Jornada-->
+        <scene sceneID="xAg-DC-ct2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UOk-MF-Zv4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Jornada" id="fPB-Xw-HN1"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dPr-Om-Ycn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="veR-JB-HRV" kind="relationship" relationship="rootViewController" id="pAU-HE-i7M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zo3-Qt-fVW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79.710144927536234" y="144.64285714285714"/>
+        </scene>
+    </scenes>
+</document>
