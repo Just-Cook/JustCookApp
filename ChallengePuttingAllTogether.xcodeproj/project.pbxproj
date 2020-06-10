@@ -17,6 +17,8 @@
 		198A6844248EC3C8006B5FCB /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6843248EC3C8006B5FCB /* TabBar.storyboard */; };
 		198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6845248EC403006B5FCB /* Jornada.storyboard */; };
 		198A6848248EC45A006B5FCB /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6847248EC459006B5FCB /* Perfil.storyboard */; };
+		4B5730BA2491100600CA0F5A /* XibCardGrandeJornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */; };
+		4B5730BC2491134200CA0F5A /* XibCardGrandeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		198A6843248EC3C8006B5FCB /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		198A6845248EC403006B5FCB /* Jornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jornada.storyboard; sourceTree = "<group>"; };
 		198A6847248EC459006B5FCB /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
+		4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = XibCardGrandeJornada.storyboard; sourceTree = "<group>"; };
+		4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibCardGrandeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 				198A6843248EC3C8006B5FCB /* TabBar.storyboard */,
 				198A6845248EC403006B5FCB /* Jornada.storyboard */,
 				198A6847248EC459006B5FCB /* Perfil.storyboard */,
+				4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				198A6814248EC010006B5FCB /* ViewController.swift */,
+				4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -263,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */,
+				4B5730BA2491100600CA0F5A /* XibCardGrandeJornada.storyboard in Resources */,
 				198A6844248EC3C8006B5FCB /* TabBar.storyboard in Resources */,
 				198A681D248EC017006B5FCB /* LaunchScreen.storyboard in Resources */,
 				198A681A248EC017006B5FCB /* Assets.xcassets in Resources */,
@@ -294,6 +301,7 @@
 				198A6815248EC010006B5FCB /* ViewController.swift in Sources */,
 				198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
+				4B5730BC2491134200CA0F5A /* XibCardGrandeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
