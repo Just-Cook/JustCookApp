@@ -16,5 +16,6 @@ class PreparacaoCollectionViewCell: UICollectionViewCell {
       
     static let xibName = "Preparacao" // Setando o nome da xib
     static let identifier = "PreparacaoCell" // Setando o identificador da cell
-       
+    
+    
 }

@@ -26,6 +26,7 @@
 		D757BDEB2491174A00E85FCC /* Modulo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDEA2491174A00E85FCC /* Modulo.swift */; };
 		D757BDED24911F0100E85FCC /* Preparacao.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDEC24911F0100E85FCC /* Preparacao.xib */; };
 		D757BDEF2491704A00E85FCC /* PreparacaoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */; };
+		D757BDF124917A1A00E85FCC /* PrepCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF024917A1A00E85FCC /* PrepCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		D757BDEA2491174A00E85FCC /* Modulo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Modulo.swift; path = ChallengePuttingAllTogether/Controller/Modulo.swift; sourceTree = SOURCE_ROOT; };
 		D757BDEC24911F0100E85FCC /* Preparacao.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preparacao.xib; sourceTree = "<group>"; };
 		D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparacaoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D757BDF024917A1A00E85FCC /* PrepCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			children = (
 				19B5DA6824912037006CF0FE /* PerfilModel.swift */,
 				D757BDEA2491174A00E85FCC /* Modulo.swift */,
+				D757BDF024917A1A00E85FCC /* PrepCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				D757BDEB2491174A00E85FCC /* Modulo.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
 				19B5DA6924912037006CF0FE /* PerfilModel.swift in Sources */,
+				D757BDF124917A1A00E85FCC /* PrepCard.swift in Sources */,
 				19B5DA6C249120BA006CF0FE /* PerfilTableViewController.swift in Sources */,
 				D757BDEF2491704A00E85FCC /* PreparacaoCollectionViewCell.swift in Sources */,
 				4B5730BC2491134200CA0F5A /* XibCardGrandeViewController.swift in Sources */,
