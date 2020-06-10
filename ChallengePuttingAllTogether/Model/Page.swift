@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+public class Page{
+    
+    let id:Int
+    //let links, chronometer, image,video: String?
+    let text: String
+
+    init(text: String ) {
+        self.id = 1
+        self.text = text
+    }
+    
+}

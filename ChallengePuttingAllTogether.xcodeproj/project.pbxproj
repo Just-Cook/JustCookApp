@@ -17,6 +17,9 @@
 		198A6844248EC3C8006B5FCB /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6843248EC3C8006B5FCB /* TabBar.storyboard */; };
 		198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6845248EC403006B5FCB /* Jornada.storyboard */; };
 		198A6848248EC45A006B5FCB /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6847248EC459006B5FCB /* Perfil.storyboard */; };
+		27C227E92491104700657E10 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C227E82491104700657E10 /* Recipe.swift */; };
+		27C227EB2491132000657E10 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C227EA2491132000657E10 /* Page.swift */; };
+		27C227ED2491168E00657E10 /* RecipeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C227EC2491168E00657E10 /* RecipeScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		198A6843248EC3C8006B5FCB /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		198A6845248EC403006B5FCB /* Jornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jornada.storyboard; sourceTree = "<group>"; };
 		198A6847248EC459006B5FCB /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
+		27C227E82491104700657E10 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		27C227EA2491132000657E10 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		27C227EC2491168E00657E10 /* RecipeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipeScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,7 @@
 				198A6843248EC3C8006B5FCB /* TabBar.storyboard */,
 				198A6845248EC403006B5FCB /* Jornada.storyboard */,
 				198A6847248EC459006B5FCB /* Perfil.storyboard */,
+				27C227EC2491168E00657E10 /* RecipeScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,6 +153,8 @@
 		198A6841248EC054006B5FCB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				27C227E82491104700657E10 /* Recipe.swift */,
+				27C227EA2491132000657E10 /* Page.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,6 +275,7 @@
 				198A6844248EC3C8006B5FCB /* TabBar.storyboard in Resources */,
 				198A681D248EC017006B5FCB /* LaunchScreen.storyboard in Resources */,
 				198A681A248EC017006B5FCB /* Assets.xcassets in Resources */,
+				27C227ED2491168E00657E10 /* RecipeScreen.storyboard in Resources */,
 				198A6848248EC45A006B5FCB /* Perfil.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +304,8 @@
 				198A6815248EC010006B5FCB /* ViewController.swift in Sources */,
 				198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
+				27C227E92491104700657E10 /* Recipe.swift in Sources */,
+				27C227EB2491132000657E10 /* Page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
