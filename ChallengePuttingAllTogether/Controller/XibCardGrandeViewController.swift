@@ -16,7 +16,6 @@ class XibCardGrandeViewController: UIViewController {
     @IBOutlet weak var tituloLabel: UILabel!
     @IBOutlet weak var subtituloLabel: UILabel!
     @IBOutlet weak var gradientView: UIView!
-    @IBOutlet weak var levelLabel: UILabel!
     
     
     override func viewDidLoad() {

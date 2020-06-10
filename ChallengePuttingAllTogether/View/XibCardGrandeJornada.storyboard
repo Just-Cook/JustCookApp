@@ -18,13 +18,13 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XP5-9m-wjO" userLabel="CardGrande">
                                 <rect key="frame" x="16" y="16" width="344" height="200"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman-chef" translatesAutoresizingMaskIntoConstraints="NO" id="o6C-Ot-q7e">
-                                        <rect key="frame" x="0.0" y="0.0" width="344" height="200"/>
-                                    </imageView>
                                     <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEs-AQ-MxT" userLabel="GradientView">
                                         <rect key="frame" x="0.0" y="0.0" width="344" height="200"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman-chef" translatesAutoresizingMaskIntoConstraints="NO" id="o6C-Ot-q7e">
+                                        <rect key="frame" x="0.0" y="0.0" width="344" height="200"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O começo de uma aventura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJh-Am-3a8">
                                         <rect key="frame" x="16" y="132.5" width="312" height="24"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
@@ -37,17 +37,18 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intermediário" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wb-dA-3Sj">
-                                        <rect key="frame" x="16" y="16" width="271" height="13.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BotãoNãoComcluído" translatesAutoresizingMaskIntoConstraints="NO" id="WeR-5B-TR4">
                                         <rect key="frame" x="303" y="16" width="25" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="0YW-uk-IG5"/>
                                             <constraint firstAttribute="width" constant="25" id="XUa-GR-3AH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Basico" id="cT6-Jx-1Vj">
+                                        <rect key="frame" x="16" y="16" width="56" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="OOT-cK-mqS"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -60,16 +61,15 @@
                                     <constraint firstItem="oJh-Am-3a8" firstAttribute="leading" secondItem="XP5-9m-wjO" secondAttribute="leading" constant="16" id="Ffz-7O-Avz"/>
                                     <constraint firstAttribute="trailing" secondItem="WeR-5B-TR4" secondAttribute="trailing" constant="16" id="HRp-bW-t3N"/>
                                     <constraint firstAttribute="trailing" secondItem="MLD-IS-hp1" secondAttribute="trailing" constant="16" id="Iq3-9D-tlQ"/>
-                                    <constraint firstItem="WeR-5B-TR4" firstAttribute="leading" secondItem="8Wb-dA-3Sj" secondAttribute="trailing" constant="16" id="Irj-U9-vcH"/>
                                     <constraint firstItem="MEs-AQ-MxT" firstAttribute="top" secondItem="XP5-9m-wjO" secondAttribute="top" id="N0D-u1-wL7"/>
                                     <constraint firstAttribute="bottom" secondItem="MEs-AQ-MxT" secondAttribute="bottom" id="PGi-04-jFX"/>
                                     <constraint firstAttribute="trailing" secondItem="o6C-Ot-q7e" secondAttribute="trailing" id="UeZ-fO-5x1"/>
                                     <constraint firstItem="WeR-5B-TR4" firstAttribute="top" secondItem="XP5-9m-wjO" secondAttribute="top" constant="16" id="VUx-dm-6PW"/>
-                                    <constraint firstItem="8Wb-dA-3Sj" firstAttribute="top" secondItem="XP5-9m-wjO" secondAttribute="top" constant="16" id="a6n-ko-7qo"/>
                                     <constraint firstAttribute="bottom" secondItem="MLD-IS-hp1" secondAttribute="bottom" constant="16" id="aAU-Qh-927"/>
+                                    <constraint firstItem="cT6-Jx-1Vj" firstAttribute="leading" secondItem="XP5-9m-wjO" secondAttribute="leading" constant="16" id="apz-cX-GIX"/>
                                     <constraint firstItem="MLD-IS-hp1" firstAttribute="top" secondItem="oJh-Am-3a8" secondAttribute="bottom" constant="8" id="ecc-tV-4vS"/>
                                     <constraint firstAttribute="trailing" secondItem="MEs-AQ-MxT" secondAttribute="trailing" id="hyC-pn-m4A"/>
-                                    <constraint firstItem="8Wb-dA-3Sj" firstAttribute="leading" secondItem="XP5-9m-wjO" secondAttribute="leading" constant="16" id="mUw-rL-uf1"/>
+                                    <constraint firstItem="cT6-Jx-1Vj" firstAttribute="top" secondItem="XP5-9m-wjO" secondAttribute="top" constant="16" id="kFi-kh-H4r"/>
                                     <constraint firstItem="MLD-IS-hp1" firstAttribute="leading" secondItem="XP5-9m-wjO" secondAttribute="leading" constant="16" id="mlN-3a-meJ"/>
                                     <constraint firstItem="o6C-Ot-q7e" firstAttribute="top" secondItem="XP5-9m-wjO" secondAttribute="top" id="yNJ-yP-AsQ"/>
                                 </constraints>
@@ -92,7 +92,6 @@
                         <outlet property="CardGrande" destination="XP5-9m-wjO" id="Sp1-cL-7S7"/>
                         <outlet property="gradientView" destination="MEs-AQ-MxT" id="ppy-0h-0EV"/>
                         <outlet property="imageCard" destination="o6C-Ot-q7e" id="JVG-ng-oMv"/>
-                        <outlet property="levelLabel" destination="8Wb-dA-3Sj" id="vAs-JN-KY1"/>
                         <outlet property="subtituloLabel" destination="MLD-IS-hp1" id="RTw-yg-nMn"/>
                         <outlet property="tituloLabel" destination="oJh-Am-3a8" id="IPd-Jw-fg0"/>
                     </connections>
@@ -103,6 +102,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Basico" width="70.5" height="28"/>
         <image name="BotãoNãoComcluído" width="25" height="25"/>
         <image name="woman-chef" width="1400" height="980"/>
     </resources>
