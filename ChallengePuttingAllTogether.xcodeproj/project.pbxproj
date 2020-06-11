@@ -17,17 +17,16 @@
 		198A6844248EC3C8006B5FCB /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6843248EC3C8006B5FCB /* TabBar.storyboard */; };
 		198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6845248EC403006B5FCB /* Jornada.storyboard */; };
 		198A6848248EC45A006B5FCB /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6847248EC459006B5FCB /* Perfil.storyboard */; };
-
 		19B5DA6924912037006CF0FE /* PerfilModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6824912037006CF0FE /* PerfilModel.swift */; };
 		19B5DA6C249120BA006CF0FE /* PerfilTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6B249120BA006CF0FE /* PerfilTableViewController.swift */; };
-
+		4B5730BA2491100600CA0F5A /* XibCardGrandeJornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */; };
+		4B5730BC2491134200CA0F5A /* XibCardGrandeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */; };
 		D757BDE72491101300E85FCC /* Modulo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D757BDE62491101300E85FCC /* Modulo.storyboard */; };
 		D757BDE92491113900E85FCC /* ModuloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDE82491113900E85FCC /* ModuloViewController.swift */; };
 		D757BDEB2491174A00E85FCC /* Modulo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDEA2491174A00E85FCC /* Modulo.swift */; };
 		D757BDED24911F0100E85FCC /* Preparacao.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDEC24911F0100E85FCC /* Preparacao.xib */; };
-		4B5730BA2491100600CA0F5A /* XibCardGrandeJornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */; };
-		4B5730BC2491134200CA0F5A /* XibCardGrandeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */; };
-
+		D757BDEF2491704A00E85FCC /* PreparacaoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */; };
+		D757BDF124917A1A00E85FCC /* PrepCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF024917A1A00E85FCC /* PrepCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,17 +63,16 @@
 		198A6843248EC3C8006B5FCB /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		198A6845248EC403006B5FCB /* Jornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jornada.storyboard; sourceTree = "<group>"; };
 		198A6847248EC459006B5FCB /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
-
 		19B5DA6824912037006CF0FE /* PerfilModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilModel.swift; sourceTree = "<group>"; };
 		19B5DA6B249120BA006CF0FE /* PerfilTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilTableViewController.swift; sourceTree = "<group>"; };
-
+		4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = XibCardGrandeJornada.storyboard; sourceTree = "<group>"; };
+		4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibCardGrandeViewController.swift; sourceTree = "<group>"; };
 		D757BDE62491101300E85FCC /* Modulo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Modulo.storyboard; sourceTree = "<group>"; };
 		D757BDE82491113900E85FCC /* ModuloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuloViewController.swift; sourceTree = "<group>"; };
 		D757BDEA2491174A00E85FCC /* Modulo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Modulo.swift; path = ChallengePuttingAllTogether/Controller/Modulo.swift; sourceTree = SOURCE_ROOT; };
 		D757BDEC24911F0100E85FCC /* Preparacao.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preparacao.xib; sourceTree = "<group>"; };
-		4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = XibCardGrandeJornada.storyboard; sourceTree = "<group>"; };
-		4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibCardGrandeViewController.swift; sourceTree = "<group>"; };
-
+		D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparacaoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D757BDF024917A1A00E85FCC /* PrepCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +171,7 @@
 			children = (
 				19B5DA6824912037006CF0FE /* PerfilModel.swift */,
 				D757BDEA2491174A00E85FCC /* Modulo.swift */,
+				D757BDF024917A1A00E85FCC /* PrepCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,12 +180,10 @@
 			isa = PBXGroup;
 			children = (
 				198A6814248EC010006B5FCB /* ViewController.swift */,
-
 				19B5DA6B249120BA006CF0FE /* PerfilTableViewController.swift */,
-        
 				D757BDE82491113900E85FCC /* ModuloViewController.swift */,
 				4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */,
-
+				D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -332,12 +329,11 @@
 				198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */,
 				D757BDEB2491174A00E85FCC /* Modulo.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
-
 				19B5DA6924912037006CF0FE /* PerfilModel.swift in Sources */,
+				D757BDF124917A1A00E85FCC /* PrepCard.swift in Sources */,
 				19B5DA6C249120BA006CF0FE /* PerfilTableViewController.swift in Sources */,
-
+				D757BDEF2491704A00E85FCC /* PreparacaoCollectionViewCell.swift in Sources */,
 				4B5730BC2491134200CA0F5A /* XibCardGrandeViewController.swift in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
