@@ -9,7 +9,7 @@
 import Foundation
 
 class Card {
-    var imageBackg: String
+    var imageBackg: String 
     var check: String
     var name: String
     var subtitle: String
@@ -17,16 +17,18 @@ class Card {
     var serving: String
     
     
-    init(imageBackg: String, check: String, name: String) {
-        var imageBackg = imageBackg
-        var check = check
-        var name = name
+   
+    
+    init(_ imageBackg: String, _ check: String, _ name: String, _ time: String, _ serving: String, _ subtitle:String)
+    {
+        self.imageBackg = imageBackg
+        self.check = check
+        self.name = name
+        self.time = time
+        self.serving = serving
+        self.subtitle = subtitle
     }
-    init(imageBackg: String, check: String, name: String, time: String, serving: String) {
-        var imageBackg = imageBackg
-        var check = check
-        var name = name
-        var time = time
-        var serving = serving
-}
+    
+ 
+    
 }
