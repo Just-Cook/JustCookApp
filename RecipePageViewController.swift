@@ -42,16 +42,28 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
     }
     
     func configurePagination(){
-        let topView = UIView()
-        topView.backgroundColor = .darkGray
         
-        self.view.addSubview(topView)
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 20
         
-        topView.translatesAutoresizingMaskIntoConstraints = false
-        topView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
-        topView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
-        topView.heightAnchor.constraint(equalToConstant: 78).isActive = true
-        topView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+        
+        let cvPages = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cvPages.backgroundView = UIView()
+        cvPages.backgroundView?.backgroundColor = .white
+        cvPages.translatesAutoresizingMaskIntoConstraints = false
+        cvPages.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        
+        cvPages.delegate = self
+        cvPages.dataSource = self
+        
+        self.view.addSubview(cvPages)
+        
+        cvPages.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
+        cvPages.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
+        cvPages.heightAnchor.constraint(equalToConstant: 46).isActive = true
+        cvPages.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
+        
     }
     
     
