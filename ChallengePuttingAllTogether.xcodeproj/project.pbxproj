@@ -18,6 +18,8 @@
 		198A6844248EC3C8006B5FCB /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6843248EC3C8006B5FCB /* TabBar.storyboard */; };
 		198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6845248EC403006B5FCB /* Jornada.storyboard */; };
 		198A6848248EC45A006B5FCB /* Conquistas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6847248EC459006B5FCB /* Conquistas.storyboard */; };
+		199EF95E2493BC7F00E6D720 /* CardMenorJornadaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF95D2493BC7F00E6D720 /* CardMenorJornadaView.xib */; };
+		199EF9602493C8AA00E6D720 /* CardMenorJornadaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199EF95F2493C8AA00E6D720 /* CardMenorJornadaView.swift */; };
 		19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6824912037006CF0FE /* ConquistasModel.swift */; };
 		19B5DA70249160EA006CF0FE /* ConquistasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */; };
 		4B5730BA2491100600CA0F5A /* XibCardGrandeJornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */; };
@@ -65,6 +67,8 @@
 		198A6843248EC3C8006B5FCB /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		198A6845248EC403006B5FCB /* Jornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jornada.storyboard; sourceTree = "<group>"; };
 		198A6847248EC459006B5FCB /* Conquistas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Conquistas.storyboard; sourceTree = "<group>"; };
+		199EF95D2493BC7F00E6D720 /* CardMenorJornadaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMenorJornadaView.xib; sourceTree = "<group>"; };
+		199EF95F2493C8AA00E6D720 /* CardMenorJornadaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenorJornadaView.swift; sourceTree = "<group>"; };
 		19B5DA6824912037006CF0FE /* ConquistasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasModel.swift; sourceTree = "<group>"; };
 		19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasCollectionViewCell.swift; sourceTree = "<group>"; };
 		4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = XibCardGrandeJornada.storyboard; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 				D757BDE62491101300E85FCC /* Modulo.storyboard */,
 				D757BDEC24911F0100E85FCC /* Preparacao.xib */,
 				4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */,
+				199EF95D2493BC7F00E6D720 /* CardMenorJornadaView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 				D757BDE82491113900E85FCC /* ModuloViewController.swift */,
 				4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */,
 				D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */,
+				199EF95F2493C8AA00E6D720 /* CardMenorJornadaView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -298,6 +304,7 @@
 				D757BDED24911F0100E85FCC /* Preparacao.xib in Resources */,
 				198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */,
 				4B5730BA2491100600CA0F5A /* XibCardGrandeJornada.storyboard in Resources */,
+				199EF95E2493BC7F00E6D720 /* CardMenorJornadaView.xib in Resources */,
 				198A6844248EC3C8006B5FCB /* TabBar.storyboard in Resources */,
 				D757BDE72491101300E85FCC /* Modulo.storyboard in Resources */,
 				198A681D248EC017006B5FCB /* LaunchScreen.storyboard in Resources */,
@@ -329,6 +336,7 @@
 			files = (
 				D757BDE92491113900E85FCC /* ModuloViewController.swift in Sources */,
 				198A6815248EC010006B5FCB /* ViewController.swift in Sources */,
+				199EF9602493C8AA00E6D720 /* CardMenorJornadaView.swift in Sources */,
 				198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */,
 				19B5DA70249160EA006CF0FE /* ConquistasCollectionViewCell.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
