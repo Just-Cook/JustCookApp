@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PerfilCollectionViewCell: UICollectionViewCell {
+class ConquistasCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     
     @IBOutlet weak var titulo: UILabel!

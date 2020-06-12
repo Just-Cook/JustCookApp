@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PefilViewController: UIViewController {
+class ConquistasViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
    
@@ -39,14 +39,14 @@ class PefilViewController: UIViewController {
     
 }
     
-extension PefilViewController:  UICollectionViewDelegate, UICollectionViewDataSource{
+extension ConquistasViewController:  UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return conquistasMock.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PerfilCollectionViewCell.identifier, for: indexPath) as! PerfilCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ConquistasCollectionViewCell.identifier, for: indexPath) as! ConquistasCollectionViewCell
        
         cell.image.layer.backgroundColor = CGColor(srgbRed: 196/255, green: 196/255, blue: 196/255, alpha: 1)
      
