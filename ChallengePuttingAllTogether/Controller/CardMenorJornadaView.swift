@@ -56,10 +56,27 @@ class CardMenorJornadaView: UIView {
     
     
     func configureXibCardMenorJornada(){
-        self.secondView.layer.cornerRadius = 8
-        self.imageBackground.layer.cornerRadius = 8
-        self.imageCheckBox.layer.cornerRadius = imageCheckBox.frame.width / 2
-        self.imageNivel.layer.cornerRadius = 5
+        
+        secondView.clipsToBounds = true
+        secondView.layer.cornerRadius = 8
+        
+        imageBackground.clipsToBounds = true
+        imageBackground.layer.cornerRadius = 8
+        
+        imageCheckBox.clipsToBounds = true
+        imageCheckBox.layer.cornerRadius = imageCheckBox.frame.width / 2
+        
+        imageNivel.clipsToBounds = true
+        imageNivel.layer.cornerRadius = 5
+        
+        
+        
+        let secondColor = CGColor.init(srgbRed: 0, green: 0, blue: 0, alpha: 0.8)
+              
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = secondView.bounds
+        gradientLayer.colors = [UIColor.clear.cgColor, secondColor]
+        secondView.layer.insertSublayer(gradientLayer, at: 0)
     }
 
 }
