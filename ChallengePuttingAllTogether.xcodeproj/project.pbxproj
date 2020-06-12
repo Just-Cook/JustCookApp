@@ -27,6 +27,8 @@
 		D757BDED24911F0100E85FCC /* Preparacao.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDEC24911F0100E85FCC /* Preparacao.xib */; };
 		D757BDEF2491704A00E85FCC /* PreparacaoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */; };
 		D757BDF124917A1A00E85FCC /* PrepCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF024917A1A00E85FCC /* PrepCard.swift */; };
+		D757BDF3249265D800E85FCC /* receitaModulo.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDF2249265D800E85FCC /* receitaModulo.xib */; };
+		D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		D757BDEC24911F0100E85FCC /* Preparacao.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preparacao.xib; sourceTree = "<group>"; };
 		D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparacaoCollectionViewCell.swift; sourceTree = "<group>"; };
 		D757BDF024917A1A00E85FCC /* PrepCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepCard.swift; sourceTree = "<group>"; };
+		D757BDF2249265D800E85FCC /* receitaModulo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = receitaModulo.xib; sourceTree = "<group>"; };
+		D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaModuloTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,7 @@
 				D757BDE62491101300E85FCC /* Modulo.storyboard */,
 				D757BDEC24911F0100E85FCC /* Preparacao.xib */,
 				4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */,
+				D757BDF2249265D800E85FCC /* receitaModulo.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 				D757BDE82491113900E85FCC /* ModuloViewController.swift */,
 				4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */,
 				D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */,
+				D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -292,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D757BDF3249265D800E85FCC /* receitaModulo.xib in Resources */,
 				D757BDED24911F0100E85FCC /* Preparacao.xib in Resources */,
 				198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */,
 				4B5730BA2491100600CA0F5A /* XibCardGrandeJornada.storyboard in Resources */,
@@ -324,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */,
 				D757BDE92491113900E85FCC /* ModuloViewController.swift in Sources */,
 				198A6815248EC010006B5FCB /* ViewController.swift in Sources */,
 				198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */,
