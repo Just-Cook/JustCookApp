@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Perfil-->
+        <!--Conquistas-->
         <scene sceneID="4wC-yv-mtp">
             <objects>
                 <viewController id="6PQ-OQ-new" customClass="ConquistasViewController" customModule="ChallengePuttingAllTogether" customModuleProvider="target" sceneMemberID="viewController">
@@ -159,7 +159,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DEM-sk-K39"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Perfil" id="vUZ-M5-UYf"/>
+                    <navigationItem key="navigationItem" title="Conquistas" id="vUZ-M5-UYf"/>
                     <connections>
                         <outlet property="barraProgresso" destination="evl-KS-JiS" id="Uqx-HV-ZZ5"/>
                         <outlet property="collectionView" destination="zUq-ma-j2y" id="DTJ-OH-ERV"/>
