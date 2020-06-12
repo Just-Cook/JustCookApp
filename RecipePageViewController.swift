@@ -61,31 +61,9 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         
         cvPages.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         cvPages.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
-        cvPages.heightAnchor.constraint(equalToConstant: 46).isActive = true
+        cvPages.heightAnchor.constraint(equalToConstant: 60).isActive = true
         cvPages.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
         
-    }
-    
-    
-    func createViewControllers(){
-        
-        for page in pages {
-            
-            let viewController = UIViewController()
-            viewController.view.backgroundColor = .white
-            let textView = UITextView()
-            textView.isEditable = false
-            textView.text = page.text
-            viewController.view.addSubview(textView)
-            
-            textView.translatesAutoresizingMaskIntoConstraints = false
-            textView.leadingAnchor.constraint(equalTo: viewController.view.leadingAnchor, constant: 0).isActive = true
-            textView.trailingAnchor.constraint(equalTo: viewController.view.trailingAnchor, constant: 0).isActive = true
-            textView.heightAnchor.constraint(equalToConstant: 200).isActive = true
-            textView.topAnchor.constraint(equalTo: viewController.view.topAnchor, constant: 94).isActive = true
-            
-            pageViewControllers.append(viewController)
-        }
     }
     
     

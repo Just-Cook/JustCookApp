@@ -23,6 +23,8 @@
 		27C227F124911DAE00657E10 /* RecipePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C227F024911DAE00657E10 /* RecipePageViewController.swift */; };
 		27C227F524926E2400657E10 /* RecipePageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C227F424926E2400657E10 /* RecipePageExtension.swift */; };
 		27EA9F1C2493B7B1001CF006 /* Chronometer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27EA9F1B2493B7B1001CF006 /* Chronometer.xib */; };
+		27EA9F1E2493BC9A001CF006 /* ChronometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA9F1D2493BC9A001CF006 /* ChronometerView.swift */; };
+		27EA9F202493BF06001CF006 /* RecipePagesCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA9F1F2493BF06001CF006 /* RecipePagesCreation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		27C227F024911DAE00657E10 /* RecipePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePageViewController.swift; sourceTree = SOURCE_ROOT; };
 		27C227F424926E2400657E10 /* RecipePageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePageExtension.swift; sourceTree = "<group>"; };
 		27EA9F1B2493B7B1001CF006 /* Chronometer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Chronometer.xib; sourceTree = "<group>"; };
+		27EA9F1D2493BC9A001CF006 /* ChronometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronometerView.swift; sourceTree = "<group>"; };
+		27EA9F1F2493BF06001CF006 /* RecipePagesCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePagesCreation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +175,8 @@
 			children = (
 				27C227F024911DAE00657E10 /* RecipePageViewController.swift */,
 				27C227F424926E2400657E10 /* RecipePageExtension.swift */,
+				27EA9F1F2493BF06001CF006 /* RecipePagesCreation.swift */,
+				27EA9F1D2493BC9A001CF006 /* ChronometerView.swift */,
 				198A6814248EC010006B5FCB /* ViewController.swift */,
 			);
 			path = Controller;
@@ -312,6 +318,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				198A6815248EC010006B5FCB /* ViewController.swift in Sources */,
+				27EA9F1E2493BC9A001CF006 /* ChronometerView.swift in Sources */,
+				27EA9F202493BF06001CF006 /* RecipePagesCreation.swift in Sources */,
 				27C227F124911DAE00657E10 /* RecipePageViewController.swift in Sources */,
 				198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
