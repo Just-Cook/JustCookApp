@@ -11,7 +11,7 @@
         <!--Perfil-->
         <scene sceneID="4wC-yv-mtp">
             <objects>
-                <viewController id="6PQ-OQ-new" customClass="PefilViewController" customModule="ChallengePuttingAllTogether" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6PQ-OQ-new" customClass="ConquistasViewController" customModule="ChallengePuttingAllTogether" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tO6-l5-gxW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,7 +86,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PerfilCollectionViewCell" id="e7O-Cc-kil" customClass="PerfilCollectionViewCell" customModule="ChallengePuttingAllTogether" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PerfilCollectionViewCell" id="e7O-Cc-kil" customClass="ConquistasCollectionViewCell" customModule="ChallengePuttingAllTogether" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="140"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ion-kx-oaO">

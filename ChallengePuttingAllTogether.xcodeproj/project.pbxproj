@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		195D797624925ECE00B585DC /* PefilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D797524925ECE00B585DC /* PefilViewController.swift */; };
+		195D797624925ECE00B585DC /* ConquistasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D797524925ECE00B585DC /* ConquistasViewController.swift */; };
 		198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A6810248EC010006B5FCB /* AppDelegate.swift */; };
 		198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A6812248EC010006B5FCB /* SceneDelegate.swift */; };
 		198A6815248EC010006B5FCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A6814248EC010006B5FCB /* ViewController.swift */; };
@@ -19,7 +19,7 @@
 		198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6845248EC403006B5FCB /* Jornada.storyboard */; };
 		198A6848248EC45A006B5FCB /* Conquistas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6847248EC459006B5FCB /* Conquistas.storyboard */; };
 		19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6824912037006CF0FE /* ConquistasModel.swift */; };
-		19B5DA70249160EA006CF0FE /* PerfilCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6F249160EA006CF0FE /* PerfilCollectionViewCell.swift */; };
+		19B5DA70249160EA006CF0FE /* ConquistasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */; };
 		4B5730BA2491100600CA0F5A /* XibCardGrandeJornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */; };
 		4B5730BC2491134200CA0F5A /* XibCardGrandeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */; };
 		D757BDE72491101300E85FCC /* Modulo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D757BDE62491101300E85FCC /* Modulo.storyboard */; };
@@ -48,7 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		195D797524925ECE00B585DC /* PefilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PefilViewController.swift; sourceTree = "<group>"; };
+		195D797524925ECE00B585DC /* ConquistasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasViewController.swift; sourceTree = "<group>"; };
 		198A680D248EC010006B5FCB /* ChallengePuttingAllTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengePuttingAllTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		198A6810248EC010006B5FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		198A6812248EC010006B5FCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		198A6845248EC403006B5FCB /* Jornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jornada.storyboard; sourceTree = "<group>"; };
 		198A6847248EC459006B5FCB /* Conquistas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Conquistas.storyboard; sourceTree = "<group>"; };
 		19B5DA6824912037006CF0FE /* ConquistasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasModel.swift; sourceTree = "<group>"; };
-		19B5DA6F249160EA006CF0FE /* PerfilCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilCollectionViewCell.swift; sourceTree = "<group>"; };
+		19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasCollectionViewCell.swift; sourceTree = "<group>"; };
 		4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = XibCardGrandeJornada.storyboard; sourceTree = "<group>"; };
 		4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibCardGrandeViewController.swift; sourceTree = "<group>"; };
 		D757BDE62491101300E85FCC /* Modulo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Modulo.storyboard; sourceTree = "<group>"; };
@@ -182,8 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				198A6814248EC010006B5FCB /* ViewController.swift */,
-				19B5DA6F249160EA006CF0FE /* PerfilCollectionViewCell.swift */,
-				195D797524925ECE00B585DC /* PefilViewController.swift */,
+				19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */,
+				195D797524925ECE00B585DC /* ConquistasViewController.swift */,
 				D757BDE82491113900E85FCC /* ModuloViewController.swift */,
 				4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */,
 				D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */,
@@ -330,10 +330,10 @@
 				D757BDE92491113900E85FCC /* ModuloViewController.swift in Sources */,
 				198A6815248EC010006B5FCB /* ViewController.swift in Sources */,
 				198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */,
-				19B5DA70249160EA006CF0FE /* PerfilCollectionViewCell.swift in Sources */,
+				19B5DA70249160EA006CF0FE /* ConquistasCollectionViewCell.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
 				19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */,
-				195D797624925ECE00B585DC /* PefilViewController.swift in Sources */,
+				195D797624925ECE00B585DC /* ConquistasViewController.swift in Sources */,
 				D757BDEB2491174A00E85FCC /* Modulo.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
 				19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */,
