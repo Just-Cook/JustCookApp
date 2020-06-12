@@ -87,21 +87,21 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PerfilCollectionViewCell" id="e7O-Cc-kil" customClass="PerfilCollectionViewCell" customModule="ChallengePuttingAllTogether" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="65" height="115"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="140"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ion-kx-oaO">
-                                            <rect key="frame" x="0.0" y="0.0" width="65" height="115"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0yr-W2-msa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                                    <rect key="frame" x="5" y="0.0" width="70" height="70"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="65" id="AMs-Lh-3zV"/>
-                                                        <constraint firstAttribute="width" constant="65" id="rUF-wX-ki3"/>
+                                                        <constraint firstAttribute="height" constant="70" id="AMs-Lh-3zV"/>
+                                                        <constraint firstAttribute="width" constant="70" id="rUF-wX-ki3"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="top" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tg-1v-gqr">
-                                                    <rect key="frame" x="17" y="70" width="31" height="14.333333333333329"/>
+                                                    <rect key="frame" x="24.666666666666671" y="75" width="31" height="14.333333333333329"/>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -110,12 +110,12 @@
                                             <constraints>
                                                 <constraint firstItem="5tg-1v-gqr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0yr-W2-msa" secondAttribute="leading" id="8Ga-I7-B0l"/>
                                                 <constraint firstItem="0yr-W2-msa" firstAttribute="top" secondItem="ion-kx-oaO" secondAttribute="top" id="9T6-Uj-d2S"/>
-                                                <constraint firstAttribute="bottom" secondItem="0yr-W2-msa" secondAttribute="bottom" constant="50" id="Ep1-tT-lCQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="0yr-W2-msa" secondAttribute="bottom" constant="70" id="Ep1-tT-lCQ"/>
                                                 <constraint firstItem="5tg-1v-gqr" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="0yr-W2-msa" secondAttribute="trailing" id="L7g-kl-HGf"/>
                                                 <constraint firstItem="5tg-1v-gqr" firstAttribute="top" secondItem="0yr-W2-msa" secondAttribute="bottom" constant="5" id="OFe-Hz-5Gh"/>
-                                                <constraint firstAttribute="leading" secondItem="0yr-W2-msa" secondAttribute="leading" id="P0z-9C-pXS"/>
-                                                <constraint firstAttribute="trailing" secondItem="0yr-W2-msa" secondAttribute="trailing" id="qdc-7Y-kno"/>
-                                                <constraint firstItem="5tg-1v-gqr" firstAttribute="centerX" secondItem="ion-kx-oaO" secondAttribute="centerX" id="ry7-Vg-l7v"/>
+                                                <constraint firstAttribute="leading" secondItem="0yr-W2-msa" secondAttribute="leading" constant="-5" id="P0z-9C-pXS"/>
+                                                <constraint firstAttribute="trailing" secondItem="0yr-W2-msa" secondAttribute="trailing" constant="5" id="qdc-7Y-kno"/>
+                                                <constraint firstItem="5tg-1v-gqr" firstAttribute="centerX" secondItem="0yr-W2-msa" secondAttribute="centerX" id="ry7-Vg-l7v"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
@@ -159,9 +159,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DEM-sk-K39"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Perfil" id="vUZ-M5-UYf">
-                        <barButtonItem key="rightBarButtonItem" image="square.and.pencil" catalog="system" style="plain" id="AfV-Lq-aSN"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Perfil" id="vUZ-M5-UYf"/>
                     <connections>
                         <outlet property="barraProgresso" destination="evl-KS-JiS" id="Uqx-HV-ZZ5"/>
                         <outlet property="collectionView" destination="zUq-ma-j2y" id="DTJ-OH-ERV"/>
@@ -175,11 +173,11 @@
             </objects>
             <point key="canvasLocation" x="3855.0724637681164" y="23.64130434782609"/>
         </scene>
-        <!--Perfil-->
+        <!--Conquistas-->
         <scene sceneID="yxE-53-PMi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JTW-Ga-J2V" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Perfil" id="ntx-JM-bM5"/>
+                    <tabBarItem key="tabBarItem" title="Conquistas" id="ntx-JM-bM5"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="b6n-PG-HeG">
@@ -197,7 +195,4 @@
         </scene>
     </scenes>
     <color key="tintColor" red="1" green="0.62352941179999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
-    <resources>
-        <image name="square.and.pencil" catalog="system" width="128" height="118"/>
-    </resources>
 </document>

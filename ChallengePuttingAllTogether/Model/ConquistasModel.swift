@@ -25,6 +25,13 @@ extension ConquistasModel{
         conquistas.append(ConquistasModel(image: "", titulo: "outra conquista"))
         conquistas.append(ConquistasModel(image: "", titulo: "Outra"))
         conquistas.append(ConquistasModel(image: "", titulo: "Minha ultima conquista"))
+        conquistas.append(ConquistasModel(image: "", titulo: "Minha primeira conquista"))
+        conquistas.append(ConquistasModel(image: "", titulo: "conquista 2"))
+        conquistas.append(ConquistasModel(image: "", titulo: "mais uma"))
+        conquistas.append(ConquistasModel(image: "", titulo: "outra conquista"))
+        conquistas.append(ConquistasModel(image: "", titulo: "Outra"))
+        conquistas.append(ConquistasModel(image: "", titulo: "Minha ultima conquista"))
+
         
         
         return conquistas
