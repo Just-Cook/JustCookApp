@@ -12,12 +12,52 @@ class ChronometerView: UIView {
 
     @IBOutlet weak var ChronoImage: UIImageView!
     @IBOutlet weak var ChronoLabel: UILabel!
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    var seconds: Int?
+    var timer:Timer?
+    
+    public func ready(seconds: Int){
+        self.seconds = seconds
+        
+        editTimeLabel()
     }
-    */
+    
+    public func startTimer(){
+        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(decreaseTimer), userInfo: nil, repeats: true)
+        
+        print("AQUI OH")
+    }
+    
+    @objc
+    func decreaseTimer(){
+        self.seconds! = seconds! - 1
+        
+        editTimeLabel()
+        
+    }
+    
+    func editTimeLabel(){
+        var restSeconds = seconds!
+               
+        let hours:Int = Int(restSeconds / 3600)
+        restSeconds = restSeconds - hours * 3600
+        var hoursString = String(hours)
+        if hours<10{
+            hoursString = "0"+hoursString
+        }
+        
+        let minutes:Int = Int(restSeconds/60)
+        var minutesString = String(minutes)
+        if minutes<10{
+            minutesString = "0"+minutesString
+        }
+        
+        restSeconds = restSeconds - minutes * 60
+        var secondsString = String(restSeconds)
+        if restSeconds < 10 {
+            secondsString = "0"+secondsString
+        }
+        
+        ChronoLabel.text = "\(hoursString):\(minutesString):\(secondsString)"
+    }
 
 }

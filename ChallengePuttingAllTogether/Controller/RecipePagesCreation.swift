@@ -11,6 +11,8 @@ import UIKit
 
 extension RecipePageViewController {
     
+    
+    
     func createViewControllers(){
         
         var lastView: UIView = self.view
@@ -27,7 +29,7 @@ extension RecipePageViewController {
             textView.topAnchor.constraint(equalTo:  lastView.bottomAnchor, constant: 12).isActive = true
             lastView = textView
             
-            let chronometerView = addChronometerToPage(pageViewController: viewController, time: 10)!
+            let chronometerView = addChronometerToPage(pageViewController: viewController, seconds: 3700)!
             chronometerView.topAnchor.constraint(equalTo: lastView.bottomAnchor, constant: 12).isActive = true
             lastView = chronometerView
             
@@ -53,11 +55,18 @@ extension RecipePageViewController {
     }
     
     
-    func addChronometerToPage(pageViewController: UIViewController, time: Float) -> UIView? {
+    func addChronometerToPage(pageViewController: UIViewController, seconds: Int) -> UIView? {
         
         if let chronometerView = Bundle.main.loadNibNamed("Chronometer", owner: self, options: nil)?.first as? ChronometerView {
-            pageViewController.view.addSubview(chronometerView)
             
+            self.chronometerView = chronometerView
+            self.chronometerView!.ready(seconds: seconds)
+            
+            let tap = UITapGestureRecognizer(target: self, action: #selector(imageTap))
+            chronometerView.isUserInteractionEnabled = true
+            chronometerView.addGestureRecognizer(tap)
+            
+            pageViewController.view.addSubview(chronometerView)
             chronometerView.translatesAutoresizingMaskIntoConstraints = false
             chronometerView.leadingAnchor.constraint(equalTo: pageViewController.view.leadingAnchor, constant: 0).isActive = true
             chronometerView.trailingAnchor.constraint(equalTo: pageViewController.view.trailingAnchor, constant: 0).isActive = true
@@ -67,6 +76,11 @@ extension RecipePageViewController {
         }
     
         return nil
+    }
+    
+    @objc
+    func imageTap(){
+        print("TESTE")
     }
     
     

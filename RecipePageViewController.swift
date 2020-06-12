@@ -12,6 +12,7 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
     
     
     var pageViewControllers:[UIViewController] = []
+    var chronometerView: ChronometerView?
     
     let pages:[Page] = [
         Page(text: "Pagina 1 da receita"),
