@@ -10,7 +10,7 @@ import UIKit
 
 class CardMaiorCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var imagem: UIImageView!
+    @IBOutlet weak var backGroundImage: UIImageView!
     @IBOutlet weak var wrapperView: UIView!
     @IBOutlet weak var gradienteView: UIView!
     @IBOutlet weak var checkBoxImage: UIImageView!
@@ -30,8 +30,8 @@ class CardMaiorCollectionViewCell: UICollectionViewCell {
         wrapperView.layer.masksToBounds = true
         wrapperView.layer.cornerRadius = 8
         
-        imagem.clipsToBounds = true
-        imagem.layer.cornerRadius = 8
+        backGroundImage.clipsToBounds = true
+        backGroundImage.layer.cornerRadius = 8
               
         checkBoxImage.clipsToBounds = true
         checkBoxImage.layer.cornerRadius = checkBoxImage.frame.width / 2

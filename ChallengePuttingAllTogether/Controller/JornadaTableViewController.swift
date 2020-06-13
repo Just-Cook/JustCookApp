@@ -35,7 +35,7 @@ class JornadaTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return 4
     }
 
     
@@ -52,6 +52,10 @@ class JornadaTableViewController: UITableViewController {
         case 2:
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CardMaiorTableViewCell.identifier, for: indexPath) as? CardMaiorTableViewCell else{ fatalError("Wrong identifier") }
         return cell
+            
+        case 3:
+               guard let cell = tableView.dequeueReusableCell(withIdentifier: CardMenorTableViewCell.identifier, for: indexPath) as? CardMenorTableViewCell else{ fatalError("Wrong identifier") }
+               return cell
             
         default:
             return UITableViewCell()
@@ -75,7 +79,10 @@ class JornadaTableViewController: UITableViewController {
        if(indexPath.row == 2){
             return 270
        }
-        return 300
+        if(indexPath.row == 3){
+            return 650
+        }
+        return 0
     }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

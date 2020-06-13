@@ -25,10 +25,9 @@
 		198A6844248EC3C8006B5FCB /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6843248EC3C8006B5FCB /* TabBar.storyboard */; };
 		198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6845248EC403006B5FCB /* Jornada.storyboard */; };
 		198A6848248EC45A006B5FCB /* Conquistas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6847248EC459006B5FCB /* Conquistas.storyboard */; };
-		199EF95E2493BC7F00E6D720 /* CardMenorJornadaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF95D2493BC7F00E6D720 /* CardMenorJornadaView.xib */; };
+		199EF95E2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF95D2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib */; };
 		199EF9602493C8AA00E6D720 /* CardMenorJornadaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199EF95F2493C8AA00E6D720 /* CardMenorJornadaView.swift */; };
 		199EF9642494065C00E6D720 /* CardMaiorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */; };
-		199EF9662494095900E6D720 /* CardMaiorJornadaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199EF9652494095900E6D720 /* CardMaiorJornadaView.swift */; };
 		199EF96A24941C3F00E6D720 /* NiveisTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */; };
 		19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6824912037006CF0FE /* ConquistasModel.swift */; };
 		19B5DA70249160EA006CF0FE /* ConquistasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */; };
@@ -84,10 +83,9 @@
 		198A6843248EC3C8006B5FCB /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		198A6845248EC403006B5FCB /* Jornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jornada.storyboard; sourceTree = "<group>"; };
 		198A6847248EC459006B5FCB /* Conquistas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Conquistas.storyboard; sourceTree = "<group>"; };
-		199EF95D2493BC7F00E6D720 /* CardMenorJornadaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMenorJornadaView.xib; sourceTree = "<group>"; };
+		199EF95D2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMenorCollectionViewCell.xib; sourceTree = "<group>"; };
 		199EF95F2493C8AA00E6D720 /* CardMenorJornadaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenorJornadaView.swift; sourceTree = "<group>"; };
 		199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMaiorCollectionViewCell.xib; sourceTree = "<group>"; };
-		199EF9652494095900E6D720 /* CardMaiorJornadaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMaiorJornadaView.swift; sourceTree = "<group>"; };
 		199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NiveisTableViewCell.xib; sourceTree = "<group>"; };
 		19B5DA6824912037006CF0FE /* ConquistasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasModel.swift; sourceTree = "<group>"; };
 		19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -187,7 +185,7 @@
 				198A6847248EC459006B5FCB /* Conquistas.storyboard */,
 				D757BDE62491101300E85FCC /* Modulo.storyboard */,
 				D757BDEC24911F0100E85FCC /* Preparacao.xib */,
-				199EF95D2493BC7F00E6D720 /* CardMenorJornadaView.xib */,
+				199EF95D2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib */,
 				D757BDF2249265D800E85FCC /* receitaModulo.xib */,
 				199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */,
 				199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */,
@@ -215,7 +213,6 @@
 				D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */,
 				199EF95F2493C8AA00E6D720 /* CardMenorJornadaView.swift */,
 				D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */,
-				199EF9652494095900E6D720 /* CardMaiorJornadaView.swift */,
 				194F77D524944C4D003980CE /* JornadaTableViewController.swift */,
 				194F77D724944DC3003980CE /* AlertaTableViewCell.swift */,
 				190804E124950D6400A46E63 /* NiveisTableViewCell.swift */,
@@ -334,7 +331,7 @@
 				D757BDF3249265D800E85FCC /* receitaModulo.xib in Resources */,
 				D757BDED24911F0100E85FCC /* Preparacao.xib in Resources */,
 				198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */,
-				199EF95E2493BC7F00E6D720 /* CardMenorJornadaView.xib in Resources */,
+				199EF95E2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib in Resources */,
 				199EF96A24941C3F00E6D720 /* NiveisTableViewCell.xib in Resources */,
 				194F77DA24944E7A003980CE /* AlertaTableViewCell.xib in Resources */,
 				198A6844248EC3C8006B5FCB /* TabBar.storyboard in Resources */,
@@ -369,7 +366,6 @@
 			files = (
 				190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */,
 				D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */,
-				199EF9662494095900E6D720 /* CardMaiorJornadaView.swift in Sources */,
 				D757BDE92491113900E85FCC /* ModuloViewController.swift in Sources */,
 				194F77D824944DC3003980CE /* AlertaTableViewCell.swift in Sources */,
 				199EF9602493C8AA00E6D720 /* CardMenorJornadaView.swift in Sources */,

@@ -64,13 +64,62 @@
                                     <outlet property="collectionView" destination="qQX-BE-CsO" id="HeZ-fs-qnA"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="nEo-1j-7fL">
-                                <rect key="frame" x="0.0" y="163" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardMenorTableViewCell" rowHeight="172" id="nEo-1j-7fL" customClass="CardMenorTableViewCell" customModule="ChallengePuttingAllTogether" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="163" width="414" height="172"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nEo-1j-7fL" id="LSg-dJ-e1u">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="172"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9x2-xE-nEW">
+                                            <rect key="frame" x="0.0" y="67" width="414" height="105"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lqb-5G-0HD">
+                                                <size key="itemSize" width="128" height="128"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eHq-bN-t2N">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7aD-ST-TDe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </collectionViewCellContentView>
+                                                </collectionViewCell>
+                                            </cells>
+                                        </collectionView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aprenda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0H-Gn-Gji">
+                                            <rect key="frame" x="20" y="20" width="89" height="27"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLd-Ae-sAp">
+                                            <rect key="frame" x="328" y="20" width="66" height="30"/>
+                                            <state key="normal" title="Ver todos">
+                                                <color key="titleColor" red="1" green="0.62352941179999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="9x2-xE-nEW" firstAttribute="leading" secondItem="LSg-dJ-e1u" secondAttribute="leading" id="45Y-oJ-LcN"/>
+                                        <constraint firstAttribute="trailing" secondItem="9x2-xE-nEW" secondAttribute="trailing" id="9h8-wQ-sY4"/>
+                                        <constraint firstItem="G0H-Gn-Gji" firstAttribute="top" secondItem="LSg-dJ-e1u" secondAttribute="top" constant="20" id="DDd-5L-nkm"/>
+                                        <constraint firstAttribute="trailing" secondItem="lLd-Ae-sAp" secondAttribute="trailing" constant="20" id="MT4-xs-6tv"/>
+                                        <constraint firstAttribute="bottom" secondItem="9x2-xE-nEW" secondAttribute="bottom" id="MoZ-o4-7DJ"/>
+                                        <constraint firstItem="9x2-xE-nEW" firstAttribute="top" secondItem="G0H-Gn-Gji" secondAttribute="bottom" constant="20" id="OKf-bx-xMc"/>
+                                        <constraint firstItem="G0H-Gn-Gji" firstAttribute="leading" secondItem="LSg-dJ-e1u" secondAttribute="leading" constant="20" id="TKf-sn-HlI"/>
+                                        <constraint firstItem="lLd-Ae-sAp" firstAttribute="top" secondItem="G0H-Gn-Gji" secondAttribute="top" id="jf1-UE-wlz"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="collectionView" destination="9x2-xE-nEW" id="ovd-kj-lHv"/>
+                                    <outlet property="titulo" destination="G0H-Gn-Gji" id="hte-ZA-ieW"/>
+                                    <outlet property="verTodosButton" destination="lLd-Ae-sAp" id="fbF-x0-KtV"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

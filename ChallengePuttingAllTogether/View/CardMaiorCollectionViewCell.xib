@@ -93,9 +93,9 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="backGroundImage" destination="jot-rg-hGp" id="I2C-a9-aCB"/>
                 <outlet property="checkBoxImage" destination="eK6-Ac-i9J" id="6vp-Dd-00d"/>
                 <outlet property="gradienteView" destination="9vT-0g-n3f" id="Iq3-Xz-ULH"/>
-                <outlet property="imagem" destination="jot-rg-hGp" id="gU0-DC-jBm"/>
                 <outlet property="nivelImage" destination="MZQ-u1-ZDB" id="Q81-F1-1ms"/>
                 <outlet property="subtitulo" destination="yBd-pE-ppY" id="iZk-dw-G7b"/>
                 <outlet property="titulo" destination="4Y1-67-Nmx" id="oxo-Rj-VyM"/>

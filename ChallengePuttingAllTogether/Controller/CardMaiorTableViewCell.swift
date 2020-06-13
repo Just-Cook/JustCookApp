@@ -35,7 +35,7 @@ class CardMaiorTableViewCell: UITableViewCell {
 }
 
 
-extension CardMaiorTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource{
+extension CardMaiorTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 2
     }
