@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190804E224950D6400A46E63 /* NiveisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E124950D6400A46E63 /* NiveisTableViewCell.swift */; };
+		190804E4249510C900A46E63 /* CardMenorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E3249510C900A46E63 /* CardMenorTableViewCell.swift */; };
+		190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E52495302200A46E63 /* CardMenorCollectionViewCell.swift */; };
+		190804E82495317900A46E63 /* CardMaiorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E72495317900A46E63 /* CardMaiorCollectionViewCell.swift */; };
+		190804EA249531AF00A46E63 /* CardMaiorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E9249531AF00A46E63 /* CardMaiorTableViewCell.swift */; };
+		194F77D624944C4D003980CE /* JornadaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F77D524944C4D003980CE /* JornadaTableViewController.swift */; };
+		194F77D824944DC3003980CE /* AlertaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F77D724944DC3003980CE /* AlertaTableViewCell.swift */; };
+		194F77DA24944E7A003980CE /* AlertaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 194F77D924944E7A003980CE /* AlertaTableViewCell.xib */; };
 		195D797624925ECE00B585DC /* ConquistasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D797524925ECE00B585DC /* ConquistasViewController.swift */; };
 		198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A6810248EC010006B5FCB /* AppDelegate.swift */; };
 		198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A6812248EC010006B5FCB /* SceneDelegate.swift */; };
@@ -19,16 +27,11 @@
 		198A6848248EC45A006B5FCB /* Conquistas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6847248EC459006B5FCB /* Conquistas.storyboard */; };
 		199EF95E2493BC7F00E6D720 /* CardMenorJornadaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF95D2493BC7F00E6D720 /* CardMenorJornadaView.xib */; };
 		199EF9602493C8AA00E6D720 /* CardMenorJornadaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199EF95F2493C8AA00E6D720 /* CardMenorJornadaView.swift */; };
-		199EF9642494065C00E6D720 /* CardMaiorJornadaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF9632494065C00E6D720 /* CardMaiorJornadaView.xib */; };
+		199EF9642494065C00E6D720 /* CardMaiorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */; };
 		199EF9662494095900E6D720 /* CardMaiorJornadaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199EF9652494095900E6D720 /* CardMaiorJornadaView.swift */; };
-		199EF96A24941C3F00E6D720 /* Niveis.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF96924941C3F00E6D720 /* Niveis.xib */; };
-		199EF96C24941F0900E6D720 /* NiveisXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199EF96B24941F0900E6D720 /* NiveisXib.swift */; };
-		199EF9702494247D00E6D720 /* Alerta.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF96F2494247D00E6D720 /* Alerta.xib */; };
-		199EF97224942AC000E6D720 /* AlertaXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199EF97124942AC000E6D720 /* AlertaXib.swift */; };
+		199EF96A24941C3F00E6D720 /* NiveisTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */; };
 		19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6824912037006CF0FE /* ConquistasModel.swift */; };
 		19B5DA70249160EA006CF0FE /* ConquistasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */; };
-		4B5730BA2491100600CA0F5A /* XibCardGrandeJornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */; };
-		4B5730BC2491134200CA0F5A /* XibCardGrandeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */; };
 		D757BDE72491101300E85FCC /* Modulo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D757BDE62491101300E85FCC /* Modulo.storyboard */; };
 		D757BDE92491113900E85FCC /* ModuloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDE82491113900E85FCC /* ModuloViewController.swift */; };
 		D757BDEB2491174A00E85FCC /* Modulo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDEA2491174A00E85FCC /* Modulo.swift */; };
@@ -57,6 +60,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		190804E124950D6400A46E63 /* NiveisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiveisTableViewCell.swift; sourceTree = "<group>"; };
+		190804E3249510C900A46E63 /* CardMenorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenorTableViewCell.swift; sourceTree = "<group>"; };
+		190804E52495302200A46E63 /* CardMenorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenorCollectionViewCell.swift; sourceTree = "<group>"; };
+		190804E72495317900A46E63 /* CardMaiorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMaiorCollectionViewCell.swift; sourceTree = "<group>"; };
+		190804E9249531AF00A46E63 /* CardMaiorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMaiorTableViewCell.swift; sourceTree = "<group>"; };
+		194F77D524944C4D003980CE /* JornadaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JornadaTableViewController.swift; sourceTree = "<group>"; };
+		194F77D724944DC3003980CE /* AlertaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertaTableViewCell.swift; sourceTree = "<group>"; };
+		194F77D924944E7A003980CE /* AlertaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertaTableViewCell.xib; sourceTree = "<group>"; };
 		195D797524925ECE00B585DC /* ConquistasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasViewController.swift; sourceTree = "<group>"; };
 		198A680D248EC010006B5FCB /* ChallengePuttingAllTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengePuttingAllTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		198A6810248EC010006B5FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,16 +86,11 @@
 		198A6847248EC459006B5FCB /* Conquistas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Conquistas.storyboard; sourceTree = "<group>"; };
 		199EF95D2493BC7F00E6D720 /* CardMenorJornadaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMenorJornadaView.xib; sourceTree = "<group>"; };
 		199EF95F2493C8AA00E6D720 /* CardMenorJornadaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenorJornadaView.swift; sourceTree = "<group>"; };
-		199EF9632494065C00E6D720 /* CardMaiorJornadaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMaiorJornadaView.xib; sourceTree = "<group>"; };
+		199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMaiorCollectionViewCell.xib; sourceTree = "<group>"; };
 		199EF9652494095900E6D720 /* CardMaiorJornadaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMaiorJornadaView.swift; sourceTree = "<group>"; };
-		199EF96924941C3F00E6D720 /* Niveis.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Niveis.xib; sourceTree = "<group>"; };
-		199EF96B24941F0900E6D720 /* NiveisXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiveisXib.swift; sourceTree = "<group>"; };
-		199EF96F2494247D00E6D720 /* Alerta.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Alerta.xib; sourceTree = "<group>"; };
-		199EF97124942AC000E6D720 /* AlertaXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertaXib.swift; sourceTree = "<group>"; };
+		199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NiveisTableViewCell.xib; sourceTree = "<group>"; };
 		19B5DA6824912037006CF0FE /* ConquistasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasModel.swift; sourceTree = "<group>"; };
 		19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasCollectionViewCell.swift; sourceTree = "<group>"; };
-		4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = XibCardGrandeJornada.storyboard; sourceTree = "<group>"; };
-		4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibCardGrandeViewController.swift; sourceTree = "<group>"; };
 		D757BDE62491101300E85FCC /* Modulo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Modulo.storyboard; sourceTree = "<group>"; };
 		D757BDE82491113900E85FCC /* ModuloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuloViewController.swift; sourceTree = "<group>"; };
 		D757BDEA2491174A00E85FCC /* Modulo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Modulo.swift; path = ChallengePuttingAllTogether/Controller/Modulo.swift; sourceTree = SOURCE_ROOT; };
@@ -181,12 +187,11 @@
 				198A6847248EC459006B5FCB /* Conquistas.storyboard */,
 				D757BDE62491101300E85FCC /* Modulo.storyboard */,
 				D757BDEC24911F0100E85FCC /* Preparacao.xib */,
-				4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */,
 				199EF95D2493BC7F00E6D720 /* CardMenorJornadaView.xib */,
 				D757BDF2249265D800E85FCC /* receitaModulo.xib */,
-				199EF9632494065C00E6D720 /* CardMaiorJornadaView.xib */,
-				199EF96924941C3F00E6D720 /* Niveis.xib */,
-				199EF96F2494247D00E6D720 /* Alerta.xib */,
+				199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */,
+				199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */,
+				194F77D924944E7A003980CE /* AlertaTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,13 +212,17 @@
 				19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */,
 				195D797524925ECE00B585DC /* ConquistasViewController.swift */,
 				D757BDE82491113900E85FCC /* ModuloViewController.swift */,
-				4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */,
 				D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */,
 				199EF95F2493C8AA00E6D720 /* CardMenorJornadaView.swift */,
 				D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */,
 				199EF9652494095900E6D720 /* CardMaiorJornadaView.swift */,
-				199EF96B24941F0900E6D720 /* NiveisXib.swift */,
-				199EF97124942AC000E6D720 /* AlertaXib.swift */,
+				194F77D524944C4D003980CE /* JornadaTableViewController.swift */,
+				194F77D724944DC3003980CE /* AlertaTableViewCell.swift */,
+				190804E124950D6400A46E63 /* NiveisTableViewCell.swift */,
+				190804E3249510C900A46E63 /* CardMenorTableViewCell.swift */,
+				190804E52495302200A46E63 /* CardMenorCollectionViewCell.swift */,
+				190804E72495317900A46E63 /* CardMaiorCollectionViewCell.swift */,
+				190804E9249531AF00A46E63 /* CardMaiorTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -325,13 +334,12 @@
 				D757BDF3249265D800E85FCC /* receitaModulo.xib in Resources */,
 				D757BDED24911F0100E85FCC /* Preparacao.xib in Resources */,
 				198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */,
-				4B5730BA2491100600CA0F5A /* XibCardGrandeJornada.storyboard in Resources */,
 				199EF95E2493BC7F00E6D720 /* CardMenorJornadaView.xib in Resources */,
-				199EF96A24941C3F00E6D720 /* Niveis.xib in Resources */,
+				199EF96A24941C3F00E6D720 /* NiveisTableViewCell.xib in Resources */,
+				194F77DA24944E7A003980CE /* AlertaTableViewCell.xib in Resources */,
 				198A6844248EC3C8006B5FCB /* TabBar.storyboard in Resources */,
-				199EF9702494247D00E6D720 /* Alerta.xib in Resources */,
 				D757BDE72491101300E85FCC /* Modulo.storyboard in Resources */,
-				199EF9642494065C00E6D720 /* CardMaiorJornadaView.xib in Resources */,
+				199EF9642494065C00E6D720 /* CardMaiorCollectionViewCell.xib in Resources */,
 				198A681D248EC017006B5FCB /* LaunchScreen.storyboard in Resources */,
 				198A681A248EC017006B5FCB /* Assets.xcassets in Resources */,
 				198A6848248EC45A006B5FCB /* Conquistas.storyboard in Resources */,
@@ -359,23 +367,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */,
 				D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */,
 				199EF9662494095900E6D720 /* CardMaiorJornadaView.swift in Sources */,
 				D757BDE92491113900E85FCC /* ModuloViewController.swift in Sources */,
+				194F77D824944DC3003980CE /* AlertaTableViewCell.swift in Sources */,
 				199EF9602493C8AA00E6D720 /* CardMenorJornadaView.swift in Sources */,
 				198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */,
 				19B5DA70249160EA006CF0FE /* ConquistasCollectionViewCell.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
-				199EF97224942AC000E6D720 /* AlertaXib.swift in Sources */,
 				19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */,
 				195D797624925ECE00B585DC /* ConquistasViewController.swift in Sources */,
 				D757BDEB2491174A00E85FCC /* Modulo.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
-				199EF96C24941F0900E6D720 /* NiveisXib.swift in Sources */,
 				19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */,
+				190804E4249510C900A46E63 /* CardMenorTableViewCell.swift in Sources */,
 				D757BDF124917A1A00E85FCC /* PrepCard.swift in Sources */,
+				190804E82495317900A46E63 /* CardMaiorCollectionViewCell.swift in Sources */,
 				D757BDEF2491704A00E85FCC /* PreparacaoCollectionViewCell.swift in Sources */,
-				4B5730BC2491134200CA0F5A /* XibCardGrandeViewController.swift in Sources */,
+				190804EA249531AF00A46E63 /* CardMaiorTableViewCell.swift in Sources */,
+				194F77D624944C4D003980CE /* JornadaTableViewController.swift in Sources */,
+				190804E224950D6400A46E63 /* NiveisTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

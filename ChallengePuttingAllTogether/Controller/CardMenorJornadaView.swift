@@ -12,13 +12,13 @@ class CardMenorJornadaView: UIView {
 
     
   
-    @IBOutlet weak var imageBackground: UIImageView!
-    @IBOutlet weak var secondView: UIView!
+    var imageBackground: UIImageView!
+    var secondView: UIView!
     
-    @IBOutlet weak var titulo: UILabel!
-    @IBOutlet weak var imageCheckBox: UIImageView!
-    @IBOutlet weak var imageNivel: UIImageView!
-    @IBOutlet weak var subtitulo: UILabel!
+    var titulo: UILabel!
+    var imageCheckBox: UIImageView!
+    var imageNivel: UIImageView!
+    var subtitulo: UILabel!
     
     
     
@@ -68,6 +68,7 @@ class CardMenorJornadaView: UIView {
         
         imageNivel.clipsToBounds = true
         imageNivel.layer.cornerRadius = 5
+        imageNivel.contentMode = UIView.ContentMode.scaleAspectFit
         
         
         

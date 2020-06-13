@@ -11,16 +11,12 @@ import UIKit
 class CardMaiorJornadaView: UIView {
     
     
-    @IBOutlet weak var imageBackground: UIImageView!
-    
-    @IBOutlet weak var secondView: UIView!
-    
-    @IBOutlet weak var checkBox: UIImageView!
-    
-    @IBOutlet weak var imageNivel: UIImageView!
-    @IBOutlet weak var titulo: UILabel!
-    
-    @IBOutlet weak var subtitulo: UILabel!
+    var imageBackground: UIImageView!
+    var secondView: UIView!
+    var checkBox: UIImageView!
+    var imageNivel: UIImageView!
+    var titulo: UILabel!
+    var subtitulo: UILabel!
     
     
     
@@ -67,6 +63,7 @@ class CardMaiorJornadaView: UIView {
         
         imageNivel.clipsToBounds = true
         imageNivel.layer.cornerRadius = 5
+        imageNivel.contentMode = UIView.ContentMode.left
         
         let secondColor = CGColor.init(srgbRed: 0, green: 0, blue: 0, alpha: 0.8)
         
