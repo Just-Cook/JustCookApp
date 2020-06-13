@@ -23,14 +23,14 @@ class NiveisTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.wrapperView.layer.masksToBounds = true
-        self.wrapperView.layer.cornerRadius = 8
-        self.wrapperView.layer.backgroundColor = CGColor.init(srgbRed: 36/255, green: 153/255, blue: 242/255, alpha: 1)
+        wrapperView.layer.masksToBounds = true
+        wrapperView.layer.cornerRadius = 10
+        wrapperView.layer.backgroundColor = CGColor.init(srgbRed: 36/255, green: 153/255, blue: 242/255, alpha: 1)
         
         
-//        imagem.contentMode = UIView.ContentMode.scaleAspectFill
-//        imagem.layer.masksToBounds = true
-//        imagem.layer.cornerRadius = 8
+        imagem.contentMode = UIView.ContentMode.scaleAspectFill
+        imagem.layer.masksToBounds = true
+        imagem.layer.cornerRadius = 8
     }
     
     

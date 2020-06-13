@@ -35,10 +35,10 @@ class CardMenorCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
         wrapperView.layer.masksToBounds = true
-        wrapperView.layer.cornerRadius = 8
+        wrapperView.layer.cornerRadius = 10
               
         backGroundImage.layer.masksToBounds = true
-        backGroundImage.layer.cornerRadius = 8
+        backGroundImage.layer.cornerRadius = 10
               
         checkBoxImage.layer.masksToBounds = true
         checkBoxImage.layer.cornerRadius = checkBoxImage.frame.width / 2
@@ -48,7 +48,7 @@ class CardMenorCollectionViewCell: UICollectionViewCell {
         nivelImage.contentMode = UIView.ContentMode.scaleAspectFit
               
         gradienteView.layer.masksToBounds = true
-        gradienteView.layer.cornerRadius = 8
+        gradienteView.layer.cornerRadius = 10
               
         let secondColor = CGColor.init(srgbRed: 0, green: 0, blue: 0, alpha: 0.5)
                     

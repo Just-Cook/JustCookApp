@@ -17,7 +17,7 @@ class CardMaiorTableViewCell: UITableViewCell {
             super.awakeFromNib()
             collectionView.delegate = self
             collectionView.dataSource = self
-            // Initialization code
+           
             
             collectionView.showsHorizontalScrollIndicator = false
                

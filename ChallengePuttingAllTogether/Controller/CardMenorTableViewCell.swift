@@ -21,7 +21,7 @@ class CardMenorTableViewCell: UITableViewCell {
         super.awakeFromNib()
        collectionView.delegate = self
        collectionView.dataSource = self
-        // Initialization code
+       
            
        collectionView.register(CardMenorCollectionViewCell.xibForCollection(), forCellWithReuseIdentifier: CardMenorCollectionViewCell.identifier)
     }

@@ -26,7 +26,6 @@
 		198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6845248EC403006B5FCB /* Jornada.storyboard */; };
 		198A6848248EC45A006B5FCB /* Conquistas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6847248EC459006B5FCB /* Conquistas.storyboard */; };
 		199EF95E2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF95D2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib */; };
-		199EF9602493C8AA00E6D720 /* CardMenorJornadaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199EF95F2493C8AA00E6D720 /* CardMenorJornadaView.swift */; };
 		199EF9642494065C00E6D720 /* CardMaiorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */; };
 		199EF96A24941C3F00E6D720 /* NiveisTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */; };
 		19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6824912037006CF0FE /* ConquistasModel.swift */; };
@@ -84,7 +83,6 @@
 		198A6845248EC403006B5FCB /* Jornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jornada.storyboard; sourceTree = "<group>"; };
 		198A6847248EC459006B5FCB /* Conquistas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Conquistas.storyboard; sourceTree = "<group>"; };
 		199EF95D2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMenorCollectionViewCell.xib; sourceTree = "<group>"; };
-		199EF95F2493C8AA00E6D720 /* CardMenorJornadaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenorJornadaView.swift; sourceTree = "<group>"; };
 		199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMaiorCollectionViewCell.xib; sourceTree = "<group>"; };
 		199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NiveisTableViewCell.xib; sourceTree = "<group>"; };
 		19B5DA6824912037006CF0FE /* ConquistasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasModel.swift; sourceTree = "<group>"; };
@@ -211,7 +209,6 @@
 				195D797524925ECE00B585DC /* ConquistasViewController.swift */,
 				D757BDE82491113900E85FCC /* ModuloViewController.swift */,
 				D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */,
-				199EF95F2493C8AA00E6D720 /* CardMenorJornadaView.swift */,
 				D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */,
 				194F77D524944C4D003980CE /* JornadaTableViewController.swift */,
 				194F77D724944DC3003980CE /* AlertaTableViewCell.swift */,
@@ -368,7 +365,6 @@
 				D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */,
 				D757BDE92491113900E85FCC /* ModuloViewController.swift in Sources */,
 				194F77D824944DC3003980CE /* AlertaTableViewCell.swift in Sources */,
-				199EF9602493C8AA00E6D720 /* CardMenorJornadaView.swift in Sources */,
 				198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */,
 				19B5DA70249160EA006CF0FE /* ConquistasCollectionViewCell.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,

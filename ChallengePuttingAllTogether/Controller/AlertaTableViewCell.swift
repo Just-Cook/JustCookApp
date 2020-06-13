@@ -22,7 +22,7 @@ class AlertaTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.wrapperView.layer.masksToBounds = true
-        self.wrapperView.layer.cornerRadius = 8
+        self.wrapperView.layer.cornerRadius = 10
         self.wrapperView.layer.backgroundColor = CGColor.init(srgbRed: 248/255, green: 162/255, blue: 52/255, alpha: 1)
      
     }
