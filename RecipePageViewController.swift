@@ -15,14 +15,16 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
     var chronometerView: ChronometerView?
     
     let pages:[Page] = [
-        Page(text: "Pagina 1 da receita"),
-        Page(text: "Pagina 2 da receita"),
-        Page(text: "Pagina 3 da receita"),
-        Page(text: "Pagina 4 da receita"),
-        Page(text: "Pagina 5 da receita"),
-        Page(text: "Pagina 6 da receita"),
-        Page(text: "Pagina 7 da receita"),
-        Page(text: "Pagina 8 da receita")
+        Page(text: "Texto da Pagina 1", chronometer: 1200, links: nil, smallImage: "Tem", bigImage: nil, video: nil),
+        Page(text: "Texto da Pagina 2", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
+        Page(text: "Texto da Pagina 3", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
+        Page(text: "Texto da Pagina 4", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
+        Page(text: "Texto da Pagina 5", chronometer: 1200, links: nil, smallImage: "Tem", bigImage: nil, video: nil),
+        Page(text: "Texto da Pagina 6", chronometer: 6400, links: nil, smallImage: "Tem", bigImage: nil, video: nil),
+        Page(text: "Texto da Pagina 7", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
+        Page(text: "Texto da Pagina 8", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
+        Page(text: "Texto da Pagina 9", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil)
+        
     ]
     
 

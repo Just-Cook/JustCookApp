@@ -32,7 +32,6 @@ class ChronometerView: UIView {
     
     @objc
     func toogleTimer(){
-        //startTimer()
         if(self.isStarted){
             self.timer!.invalidate()
             self.isStarted = false

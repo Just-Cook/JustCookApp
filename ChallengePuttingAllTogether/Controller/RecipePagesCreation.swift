@@ -22,24 +22,44 @@ extension RecipePageViewController {
             let viewController = UIViewController()
             viewController.view.backgroundColor = .white
             
-            lastView = addImageToPage(pageViewController: viewController)
-            lastView.topAnchor.constraint(equalTo: viewController.view.topAnchor, constant: 112).isActive = true
             
-            let textView = addTextToPage(pageViewController: viewController, text: page.text)
+            if let bigImage = page.bigImage{
+                lastView = addBigImageToPage(pageViewController: viewController, image: bigImage)
+                lastView.topAnchor.constraint(equalTo: viewController.view.topAnchor, constant: 112).isActive = true
+            }
+            
+            if let smallImage = page.smallImage{
+                lastView = addSmallImageToPage(pageViewController: viewController, image: smallImage)
+                lastView.topAnchor.constraint(equalTo: viewController.view.topAnchor, constant: 112).isActive = true
+            }
+            
+            let text = page.text
+            let textView = addTextToPage(pageViewController: viewController, text: text)
             textView.topAnchor.constraint(equalTo:  lastView.bottomAnchor, constant: 12).isActive = true
             lastView = textView
             
-            let chronometerView = addChronometerToPage(pageViewController: viewController, seconds: 3700)!
-            chronometerView.topAnchor.constraint(equalTo: lastView.bottomAnchor, constant: 12).isActive = true
-            lastView = chronometerView
+//            if let links = page.links{
+//
+//
+//            }
             
+            if let chronometer = page.chronometer {
+                let chronometerView = addChronometerToPage(pageViewController: viewController, seconds: chronometer)!
+                chronometerView.topAnchor.constraint(equalTo: lastView.bottomAnchor, constant: 12).isActive = true
+                lastView = chronometerView
+            }
+            
+//            if let video = page.video {
+//
+//
+//            }
             
              pageViewControllers.append(viewController)
         }
     }
     
     
-    func addImageToPage(pageViewController: UIViewController) -> UIView {
+    func addSmallImageToPage(pageViewController: UIViewController, image:String) -> UIView {
         
         let imageView = UIImageView()
         imageView.backgroundColor =  .red
@@ -50,6 +70,21 @@ extension RecipePageViewController {
         imageView.leadingAnchor.constraint(equalTo: pageViewController.view.leadingAnchor, constant: 16).isActive = true
         imageView.trailingAnchor.constraint(equalTo: pageViewController.view.trailingAnchor, constant: -16).isActive = true
         imageView.heightAnchor.constraint(equalToConstant: 132).isActive = true
+        
+        return imageView
+    }
+    
+    func addBigImageToPage(pageViewController: UIViewController, image:String) -> UIView {
+        
+        let imageView = UIImageView()
+        imageView.backgroundColor =  .red
+        imageView.layer.cornerRadius = 16
+        pageViewController.view.addSubview(imageView)
+        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.leadingAnchor.constraint(equalTo: pageViewController.view.leadingAnchor, constant: 16).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: pageViewController.view.trailingAnchor, constant: -16).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 220).isActive = true
         
         return imageView
     }
