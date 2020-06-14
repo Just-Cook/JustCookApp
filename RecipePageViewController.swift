@@ -50,6 +50,15 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 20
         
+        let titleView = UIView()
+        titleView.backgroundColor = .white
+        self.view.addSubview(titleView)
+        titleView.translatesAutoresizingMaskIntoConstraints = false
+        titleView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
+        titleView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
+        titleView.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        titleView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+        
         
         let cvPages = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cvPages.backgroundView = UIView()
@@ -65,7 +74,7 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         cvPages.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         cvPages.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
         cvPages.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        cvPages.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
+        cvPages.topAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 0).isActive = true
         
     }
     
@@ -97,5 +106,6 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         return pageViewControllers[afterIndex]
         
     }
+    
     
 }
