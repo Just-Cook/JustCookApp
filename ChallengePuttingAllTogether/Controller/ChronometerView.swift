@@ -12,20 +12,44 @@ class ChronometerView: UIView {
 
     @IBOutlet weak var ChronoImage: UIImageView!
     @IBOutlet weak var ChronoLabel: UILabel!
+    
+    var isStarted = false
+    
     var seconds: Int?
     var timer:Timer?
     
     public func ready(seconds: Int){
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(toogleTimer))
+        ChronoImage.isUserInteractionEnabled = true
+        ChronoImage.addGestureRecognizer(tap)
+        ChronoImage.backgroundColor = .orange
+        
         self.seconds = seconds
         
         editTimeLabel()
     }
     
+    @objc
+    func toogleTimer(){
+        //startTimer()
+        if(self.isStarted){
+            self.timer!.invalidate()
+            self.isStarted = false
+            ChronoImage.backgroundColor = .orange
+        }else{
+            self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(decreaseTimer), userInfo: nil, repeats: true)
+            self.isStarted = true
+            ChronoImage.backgroundColor = .red
+        }
+            
+    }
+    
     public func startTimer(){
         self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(decreaseTimer), userInfo: nil, repeats: true)
-        
-        print("AQUI OH")
     }
+    
+    
     
     @objc
     func decreaseTimer(){

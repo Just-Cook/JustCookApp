@@ -23,7 +23,7 @@ extension RecipePageViewController {
             viewController.view.backgroundColor = .white
             
             lastView = addImageToPage(pageViewController: viewController)
-            lastView.topAnchor.constraint(equalTo: viewController.view.topAnchor, constant: 94).isActive = true
+            lastView.topAnchor.constraint(equalTo: viewController.view.topAnchor, constant: 112).isActive = true
             
             let textView = addTextToPage(pageViewController: viewController, text: page.text)
             textView.topAnchor.constraint(equalTo:  lastView.bottomAnchor, constant: 12).isActive = true
@@ -43,7 +43,7 @@ extension RecipePageViewController {
         
         let imageView = UIImageView()
         imageView.backgroundColor =  .red
-        //imageView.frame.size = CGSize(width: 400, height: 148)
+        imageView.layer.cornerRadius = 16
         pageViewController.view.addSubview(imageView)
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -62,10 +62,6 @@ extension RecipePageViewController {
             self.chronometerView = chronometerView
             self.chronometerView!.ready(seconds: seconds)
             
-            let tap = UITapGestureRecognizer(target: self, action: #selector(imageTap))
-            chronometerView.isUserInteractionEnabled = true
-            chronometerView.addGestureRecognizer(tap)
-            
             pageViewController.view.addSubview(chronometerView)
             chronometerView.translatesAutoresizingMaskIntoConstraints = false
             chronometerView.leadingAnchor.constraint(equalTo: pageViewController.view.leadingAnchor, constant: 0).isActive = true
@@ -76,11 +72,6 @@ extension RecipePageViewController {
         }
     
         return nil
-    }
-    
-    @objc
-    func imageTap(){
-        print("TESTE")
     }
     
     
