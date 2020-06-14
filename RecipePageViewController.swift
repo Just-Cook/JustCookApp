@@ -13,13 +13,17 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
     
     var pageViewControllers:[UIViewController] = []
     var chronometerView: ChronometerView?
+    var paginationCV: UICollectionView?
+    var currentPage = 0
+    
+    //selectedPageViewController : UIPageViewController?
     
     let pages:[Page] = [
         Page(text: "Texto da Pagina 1", chronometer: 1200, links: nil, smallImage: "Tem", bigImage: nil, video: nil),
         Page(text: "Texto da Pagina 2", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
         Page(text: "Texto da Pagina 3", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
         Page(text: "Texto da Pagina 4", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
-        Page(text: "Texto da Pagina 5", chronometer: 1200, links: nil, smallImage: "Tem", bigImage: nil, video: nil),
+        Page(text: "Texto da Pagina 5", chronometer: 10, links: nil, smallImage: "Tem", bigImage: nil, video: nil),
         Page(text: "Texto da Pagina 6", chronometer: 6400, links: nil, smallImage: "Tem", bigImage: nil, video: nil),
         Page(text: "Texto da Pagina 7", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
         Page(text: "Texto da Pagina 8", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
@@ -64,7 +68,7 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         cvPages.backgroundView = UIView()
         cvPages.backgroundView?.backgroundColor = .white
         cvPages.translatesAutoresizingMaskIntoConstraints = false
-        cvPages.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        cvPages.register(PageNumberCell.self, forCellWithReuseIdentifier: "cell")
         
         cvPages.delegate = self
         cvPages.dataSource = self
@@ -76,6 +80,7 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         cvPages.heightAnchor.constraint(equalToConstant: 60).isActive = true
         cvPages.topAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 0).isActive = true
         
+        self.paginationCV = cvPages
     }
     
     
@@ -105,6 +110,29 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         
         return pageViewControllers[afterIndex]
         
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+        if(completed){
+            if let currentIndex = pageViewControllers.firstIndex(of: (pageViewController.viewControllers?.first)!) {
+                
+                self.currentPage = currentIndex
+                
+                if let newSelectedCell = paginationCV?.cellForItem(at: IndexPath(row: currentIndex, section: 0)) as? PageNumberCell {
+                    newSelectedCell.selectCell()
+                    
+                    
+                    if let lastIndex = pageViewControllers.firstIndex(of: previousViewControllers[0])  {
+                        if let deselectedCell = paginationCV?.cellForItem(at: IndexPath(row: lastIndex, section: 0)) as? PageNumberCell{
+                            deselectedCell.deselectCell()
+                        }
+                    }
+                }
+            }
+        }
+        
+
     }
     
     

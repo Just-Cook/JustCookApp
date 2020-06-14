@@ -21,31 +21,16 @@ extension RecipePageViewController: UICollectionViewDelegateFlowLayout, UICollec
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PageNumberCell
         
         cell.frame.size = CGSize(width: 60, height: 32)
-        
-        let numberText = UILabel()
-        numberText.text = String(indexPath.item+1)
-        numberText.textAlignment = .center
-        numberText.baselineAdjustment = .alignCenters
-        
-        numberText.translatesAutoresizingMaskIntoConstraints = false
-        
-        cell.addSubview(numberText)
-        
-        numberText.leadingAnchor.constraint(equalTo: cell.leadingAnchor, constant: 0).isActive = true
-        numberText.trailingAnchor.constraint(equalTo:cell.trailingAnchor, constant: 0).isActive = true
-        numberText.topAnchor.constraint(equalTo: cell.topAnchor, constant: 0).isActive = true
-        numberText.bottomAnchor.constraint(equalTo: cell.bottomAnchor, constant: 0).isActive = true
-        
+        cell.changeNum(to: indexPath.item+1)
         cell.backgroundView = UIView()
         
-        if (indexPath.item == 0) {
-            numberText.textColor = .white
-            cell.backgroundView?.backgroundColor = UIColor(red: 248/255, green: 162/255, blue: 52/255, alpha: 1)
+        if (indexPath.item == self.currentPage) {
+            cell.selectCell()
         }else{
-            cell.backgroundView?.backgroundColor = UIColor(red: 243/255, green: 243/255, blue: 243/255, alpha: 1)
+            cell.deselectCell()
         }
         
         return cell
@@ -53,3 +38,46 @@ extension RecipePageViewController: UICollectionViewDelegateFlowLayout, UICollec
     
 }
 
+class PageNumberCell: UICollectionViewCell {
+    
+    var numberText : UILabel = UILabel()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        setupViews()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setupViews(){
+        numberText.textAlignment = .center
+        numberText.baselineAdjustment = .alignCenters
+        
+        numberText.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.addSubview(numberText)
+        
+        numberText.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0).isActive = true
+        numberText.trailingAnchor.constraint(equalTo:self.trailingAnchor, constant: 0).isActive = true
+        numberText.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
+        numberText.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
+    }
+    
+    func changeNum(to num:Int){
+        numberText.text = String(num)
+    }
+    
+    func selectCell(){
+        self.backgroundView?.backgroundColor = UIColor(red: 248/255, green: 162/255, blue: 52/255, alpha: 1)
+        self.numberText.textColor = .white
+    }
+    
+    func deselectCell() {
+        self.backgroundView?.backgroundColor = UIColor(red: 243/255, green: 243/255, blue: 243/255, alpha: 1)
+        self.numberText.textColor = .black
+    }
+    
+}
