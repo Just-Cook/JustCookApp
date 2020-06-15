@@ -10,6 +10,7 @@ import UIKit
 
 class JornadaTableViewController: UITableViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
