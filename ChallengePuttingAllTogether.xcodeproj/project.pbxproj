@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190804E224950D6400A46E63 /* NiveisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E124950D6400A46E63 /* NiveisTableViewCell.swift */; };
+		190804E4249510C900A46E63 /* CardMenorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E3249510C900A46E63 /* CardMenorTableViewCell.swift */; };
+		190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E52495302200A46E63 /* CardMenorCollectionViewCell.swift */; };
+		190804E82495317900A46E63 /* CardMaiorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E72495317900A46E63 /* CardMaiorCollectionViewCell.swift */; };
+		190804EA249531AF00A46E63 /* CardMaiorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E9249531AF00A46E63 /* CardMaiorTableViewCell.swift */; };
+		194F77D624944C4D003980CE /* JornadaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F77D524944C4D003980CE /* JornadaTableViewController.swift */; };
+		194F77D824944DC3003980CE /* AlertaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F77D724944DC3003980CE /* AlertaTableViewCell.swift */; };
+		194F77DA24944E7A003980CE /* AlertaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 194F77D924944E7A003980CE /* AlertaTableViewCell.xib */; };
+		195D797624925ECE00B585DC /* ConquistasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D797524925ECE00B585DC /* ConquistasViewController.swift */; };
 		198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A6810248EC010006B5FCB /* AppDelegate.swift */; };
 		198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A6812248EC010006B5FCB /* SceneDelegate.swift */; };
-		198A6815248EC010006B5FCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A6814248EC010006B5FCB /* ViewController.swift */; };
 		198A681A248EC017006B5FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198A6819248EC017006B5FCB /* Assets.xcassets */; };
 		198A681D248EC017006B5FCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A681B248EC017006B5FCB /* LaunchScreen.storyboard */; };
 		198A6828248EC017006B5FCB /* ChallengePuttingAllTogetherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A6827248EC017006B5FCB /* ChallengePuttingAllTogetherTests.swift */; };
@@ -25,6 +33,20 @@
 		27EA9F1C2493B7B1001CF006 /* Chronometer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27EA9F1B2493B7B1001CF006 /* Chronometer.xib */; };
 		27EA9F1E2493BC9A001CF006 /* ChronometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA9F1D2493BC9A001CF006 /* ChronometerView.swift */; };
 		27EA9F202493BF06001CF006 /* RecipePagesCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA9F1F2493BF06001CF006 /* RecipePagesCreation.swift */; };
+		198A6848248EC45A006B5FCB /* Conquistas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6847248EC459006B5FCB /* Conquistas.storyboard */; };
+		199EF95E2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF95D2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib */; };
+		199EF9642494065C00E6D720 /* CardMaiorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */; };
+		199EF96A24941C3F00E6D720 /* NiveisTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */; };
+		19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6824912037006CF0FE /* ConquistasModel.swift */; };
+		19B5DA70249160EA006CF0FE /* ConquistasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */; };
+		D757BDE72491101300E85FCC /* Modulo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D757BDE62491101300E85FCC /* Modulo.storyboard */; };
+		D757BDE92491113900E85FCC /* ModuloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDE82491113900E85FCC /* ModuloViewController.swift */; };
+		D757BDEB2491174A00E85FCC /* Modulo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDEA2491174A00E85FCC /* Modulo.swift */; };
+		D757BDED24911F0100E85FCC /* Preparacao.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDEC24911F0100E85FCC /* Preparacao.xib */; };
+		D757BDEF2491704A00E85FCC /* PreparacaoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */; };
+		D757BDF124917A1A00E85FCC /* PrepCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF024917A1A00E85FCC /* PrepCard.swift */; };
+		D757BDF3249265D800E85FCC /* receitaModulo.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDF2249265D800E85FCC /* receitaModulo.xib */; };
+		D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +67,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		190804E124950D6400A46E63 /* NiveisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiveisTableViewCell.swift; sourceTree = "<group>"; };
+		190804E3249510C900A46E63 /* CardMenorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenorTableViewCell.swift; sourceTree = "<group>"; };
+		190804E52495302200A46E63 /* CardMenorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenorCollectionViewCell.swift; sourceTree = "<group>"; };
+		190804E72495317900A46E63 /* CardMaiorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMaiorCollectionViewCell.swift; sourceTree = "<group>"; };
+		190804E9249531AF00A46E63 /* CardMaiorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMaiorTableViewCell.swift; sourceTree = "<group>"; };
+		194F77D524944C4D003980CE /* JornadaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JornadaTableViewController.swift; sourceTree = "<group>"; };
+		194F77D724944DC3003980CE /* AlertaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertaTableViewCell.swift; sourceTree = "<group>"; };
+		194F77D924944E7A003980CE /* AlertaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertaTableViewCell.xib; sourceTree = "<group>"; };
+		195D797524925ECE00B585DC /* ConquistasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasViewController.swift; sourceTree = "<group>"; };
 		198A680D248EC010006B5FCB /* ChallengePuttingAllTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengePuttingAllTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		198A6810248EC010006B5FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		198A6812248EC010006B5FCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		198A6814248EC010006B5FCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		198A6819248EC017006B5FCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		198A681C248EC017006B5FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		198A681E248EC017006B5FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +99,20 @@
 		27EA9F1B2493B7B1001CF006 /* Chronometer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Chronometer.xib; sourceTree = "<group>"; };
 		27EA9F1D2493BC9A001CF006 /* ChronometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronometerView.swift; sourceTree = "<group>"; };
 		27EA9F1F2493BF06001CF006 /* RecipePagesCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePagesCreation.swift; sourceTree = "<group>"; };
+		198A6847248EC459006B5FCB /* Conquistas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Conquistas.storyboard; sourceTree = "<group>"; };
+		199EF95D2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMenorCollectionViewCell.xib; sourceTree = "<group>"; };
+		199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMaiorCollectionViewCell.xib; sourceTree = "<group>"; };
+		199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NiveisTableViewCell.xib; sourceTree = "<group>"; };
+		19B5DA6824912037006CF0FE /* ConquistasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasModel.swift; sourceTree = "<group>"; };
+		19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasCollectionViewCell.swift; sourceTree = "<group>"; };
+		D757BDE62491101300E85FCC /* Modulo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Modulo.storyboard; sourceTree = "<group>"; };
+		D757BDE82491113900E85FCC /* ModuloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuloViewController.swift; sourceTree = "<group>"; };
+		D757BDEA2491174A00E85FCC /* Modulo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Modulo.swift; path = ChallengePuttingAllTogether/Controller/Modulo.swift; sourceTree = SOURCE_ROOT; };
+		D757BDEC24911F0100E85FCC /* Preparacao.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preparacao.xib; sourceTree = "<group>"; };
+		D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparacaoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D757BDF024917A1A00E85FCC /* PrepCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepCard.swift; sourceTree = "<group>"; };
+		D757BDF2249265D800E85FCC /* receitaModulo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = receitaModulo.xib; sourceTree = "<group>"; };
+		D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaModuloTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +201,14 @@
 				198A6845248EC403006B5FCB /* Jornada.storyboard */,
 				198A6847248EC459006B5FCB /* Perfil.storyboard */,
 				27C227EC2491168E00657E10 /* RecipeScreen.storyboard */,
+				198A6847248EC459006B5FCB /* Conquistas.storyboard */,
+				D757BDE62491101300E85FCC /* Modulo.storyboard */,
+				D757BDEC24911F0100E85FCC /* Preparacao.xib */,
+				199EF95D2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib */,
+				D757BDF2249265D800E85FCC /* receitaModulo.xib */,
+				199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */,
+				199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */,
+				194F77D924944E7A003980CE /* AlertaTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,6 +218,9 @@
 			children = (
 				27C227E82491104700657E10 /* Recipe.swift */,
 				27C227EA2491132000657E10 /* Page.swift */,
+				19B5DA6824912037006CF0FE /* ConquistasModel.swift */,
+				D757BDEA2491174A00E85FCC /* Modulo.swift */,
+				D757BDF024917A1A00E85FCC /* PrepCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +233,18 @@
 				27EA9F1F2493BF06001CF006 /* RecipePagesCreation.swift */,
 				27EA9F1D2493BC9A001CF006 /* ChronometerView.swift */,
 				198A6814248EC010006B5FCB /* ViewController.swift */,
+				19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */,
+				195D797524925ECE00B585DC /* ConquistasViewController.swift */,
+				D757BDE82491113900E85FCC /* ModuloViewController.swift */,
+				D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */,
+				D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */,
+				194F77D524944C4D003980CE /* JornadaTableViewController.swift */,
+				194F77D724944DC3003980CE /* AlertaTableViewCell.swift */,
+				190804E124950D6400A46E63 /* NiveisTableViewCell.swift */,
+				190804E3249510C900A46E63 /* CardMenorTableViewCell.swift */,
+				190804E52495302200A46E63 /* CardMenorCollectionViewCell.swift */,
+				190804E72495317900A46E63 /* CardMaiorCollectionViewCell.swift */,
+				190804E9249531AF00A46E63 /* CardMaiorTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -286,13 +353,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D757BDF3249265D800E85FCC /* receitaModulo.xib in Resources */,
+				D757BDED24911F0100E85FCC /* Preparacao.xib in Resources */,
 				198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */,
+				199EF95E2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib in Resources */,
+				199EF96A24941C3F00E6D720 /* NiveisTableViewCell.xib in Resources */,
+				194F77DA24944E7A003980CE /* AlertaTableViewCell.xib in Resources */,
 				198A6844248EC3C8006B5FCB /* TabBar.storyboard in Resources */,
+				D757BDE72491101300E85FCC /* Modulo.storyboard in Resources */,
+				199EF9642494065C00E6D720 /* CardMaiorCollectionViewCell.xib in Resources */,
 				198A681D248EC017006B5FCB /* LaunchScreen.storyboard in Resources */,
 				27EA9F1C2493B7B1001CF006 /* Chronometer.xib in Resources */,
 				198A681A248EC017006B5FCB /* Assets.xcassets in Resources */,
 				27C227ED2491168E00657E10 /* RecipeScreen.storyboard in Resources */,
 				198A6848248EC45A006B5FCB /* Perfil.storyboard in Resources */,
+				198A6848248EC45A006B5FCB /* Conquistas.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,11 +396,28 @@
 				27EA9F1E2493BC9A001CF006 /* ChronometerView.swift in Sources */,
 				27EA9F202493BF06001CF006 /* RecipePagesCreation.swift in Sources */,
 				27C227F124911DAE00657E10 /* RecipePageViewController.swift in Sources */,
+				190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */,
+				D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */,
+				D757BDE92491113900E85FCC /* ModuloViewController.swift in Sources */,
+				194F77D824944DC3003980CE /* AlertaTableViewCell.swift in Sources */,
 				198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */,
+				19B5DA70249160EA006CF0FE /* ConquistasCollectionViewCell.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
 				27C227E92491104700657E10 /* Recipe.swift in Sources */,
 				27C227F524926E2400657E10 /* RecipePageExtension.swift in Sources */,
 				27C227EB2491132000657E10 /* Page.swift in Sources */,
+				19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */,
+				195D797624925ECE00B585DC /* ConquistasViewController.swift in Sources */,
+				D757BDEB2491174A00E85FCC /* Modulo.swift in Sources */,
+				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
+				19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */,
+				190804E4249510C900A46E63 /* CardMenorTableViewCell.swift in Sources */,
+				D757BDF124917A1A00E85FCC /* PrepCard.swift in Sources */,
+				190804E82495317900A46E63 /* CardMaiorCollectionViewCell.swift in Sources */,
+				D757BDEF2491704A00E85FCC /* PreparacaoCollectionViewCell.swift in Sources */,
+				190804EA249531AF00A46E63 /* CardMaiorTableViewCell.swift in Sources */,
+				194F77D624944C4D003980CE /* JornadaTableViewController.swift in Sources */,
+				190804E224950D6400A46E63 /* NiveisTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
