@@ -12,6 +12,13 @@ class ImageDescriptionCell: UITableViewCell {
     
     @IBOutlet weak var RecipeImageView: UIImageView!
     @IBOutlet weak var DescriptionRecipe: UITextView!
+    
+    func adjustHeightOfDescription() -> CGFloat {
+        //DescriptionRecipe.translatesAutoresizingMaskIntoConstraints = true
+        DescriptionRecipe.sizeToFit()
+        DescriptionRecipe.isScrollEnabled = false
+        return DescriptionRecipe.frame.height
+    }
 }
 
 class PorcaoCell: UITableViewCell{
