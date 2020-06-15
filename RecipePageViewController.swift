@@ -57,11 +57,24 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         let titleView = UIView()
         titleView.backgroundColor = .white
         self.view.addSubview(titleView)
+         
         titleView.translatesAutoresizingMaskIntoConstraints = false
         titleView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         titleView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
-        titleView.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        titleView.heightAnchor.constraint(equalToConstant: 44).isActive = true
         titleView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+        
+        let titleLabel = UILabel()
+        titleLabel.text = "Titulo"
+        titleLabel.textAlignment = .center
+        //titleLabel.font.se
+        titleView.addSubview(titleLabel)
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.leadingAnchor.constraint(equalTo: titleView.leadingAnchor, constant: 16).isActive = true
+        titleLabel.trailingAnchor.constraint(equalTo: titleView.trailingAnchor, constant: -16).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: titleView.topAnchor, constant: 20).isActive = true
+        titleLabel.heightAnchor.constraint(equalToConstant: 28).isActive = true
+        
         
         
         let cvPages = UICollectionView(frame: .zero, collectionViewLayout: layout)
