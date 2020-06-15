@@ -10,10 +10,6 @@ import UIKit
 
 extension RecipePageViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: 50, height: 50)
-//    }
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return pages.count
@@ -22,7 +18,6 @@ extension RecipePageViewController: UICollectionViewDelegateFlowLayout, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PageNumberCell
-        
         cell.frame.size = CGSize(width: 60, height: 32)
         cell.changeNum(to: indexPath.item+1)
         cell.backgroundView = UIView()
@@ -34,6 +29,23 @@ extension RecipePageViewController: UICollectionViewDelegateFlowLayout, UICollec
         }
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if self.currentPage != indexPath.item {
+            
+            if self.currentPage > indexPath.item {
+                self.setViewControllers([pageViewControllers[indexPath.item]], direction: .reverse, animated: true, completion: nil)
+                updateSelection(deselectIndex: self.currentPage)
+            }else{
+                self.setViewControllers([pageViewControllers[indexPath.item]], direction: .forward, animated: true, completion: nil)
+                updateSelection(deselectIndex: self.currentPage)
+            }
+            self.currentPage = indexPath.item
+        }
+        
+        
     }
     
 }

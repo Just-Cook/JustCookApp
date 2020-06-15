@@ -87,7 +87,7 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
         guard let currentIndex = pageViewControllers.firstIndex(of: viewController) else { return nil }
-        
+
         let beforeIndex = currentIndex - 1
         
         guard beforeIndex >= 0 else {
@@ -115,25 +115,27 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         
         if(completed){
-            if let currentIndex = pageViewControllers.firstIndex(of: (pageViewController.viewControllers?.first)!) {
-                
-                self.currentPage = currentIndex
-                
-                if let newSelectedCell = paginationCV?.cellForItem(at: IndexPath(row: currentIndex, section: 0)) as? PageNumberCell {
-                    newSelectedCell.selectCell()
-                    
-                    
-                    if let lastIndex = pageViewControllers.firstIndex(of: previousViewControllers[0])  {
-                        if let deselectedCell = paginationCV?.cellForItem(at: IndexPath(row: lastIndex, section: 0)) as? PageNumberCell{
-                            deselectedCell.deselectCell()
-                        }
-                    }
+            
+            if let currentIndex = pageViewControllers.firstIndex(of: (self.viewControllers?.first)!) {
+                if(currentIndex<pageViewControllers.count-1){
+                     paginationCV?.scrollToItem(at: IndexPath(item: currentIndex+1, section: 0), at: .right, animated: true)
                 }
             }
-        }
+            
+            if let lastIndex = pageViewControllers.firstIndex(of: previousViewControllers[0])  {
+                        updateSelection(deselectIndex: lastIndex)
+                    }
+            }
         
-
     }
+    
+    func updateSelection(deselectIndex: Int){
+        if let currentIndex = pageViewControllers.firstIndex(of: (self.viewControllers?.first)!) {
+            self.currentPage = currentIndex
+            paginationCV?.reloadData()
+        }
+    }
+    
     
     
 }
