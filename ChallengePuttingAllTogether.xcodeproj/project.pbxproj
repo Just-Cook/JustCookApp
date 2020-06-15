@@ -24,6 +24,15 @@
 		198A6833248EC017006B5FCB /* ChallengePuttingAllTogetherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A6832248EC017006B5FCB /* ChallengePuttingAllTogetherUITests.swift */; };
 		198A6844248EC3C8006B5FCB /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6843248EC3C8006B5FCB /* TabBar.storyboard */; };
 		198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6845248EC403006B5FCB /* Jornada.storyboard */; };
+		198A6848248EC45A006B5FCB /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6847248EC459006B5FCB /* Perfil.storyboard */; };
+		27C227E92491104700657E10 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C227E82491104700657E10 /* Recipe.swift */; };
+		27C227EB2491132000657E10 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C227EA2491132000657E10 /* Page.swift */; };
+		27C227ED2491168E00657E10 /* RecipeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C227EC2491168E00657E10 /* RecipeScreen.storyboard */; };
+		27C227F124911DAE00657E10 /* RecipePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C227F024911DAE00657E10 /* RecipePageViewController.swift */; };
+		27C227F524926E2400657E10 /* RecipePageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C227F424926E2400657E10 /* RecipePageExtension.swift */; };
+		27EA9F1C2493B7B1001CF006 /* Chronometer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27EA9F1B2493B7B1001CF006 /* Chronometer.xib */; };
+		27EA9F1E2493BC9A001CF006 /* ChronometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA9F1D2493BC9A001CF006 /* ChronometerView.swift */; };
+		27EA9F202493BF06001CF006 /* RecipePagesCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA9F1F2493BF06001CF006 /* RecipePagesCreation.swift */; };
 		198A6848248EC45A006B5FCB /* Conquistas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198A6847248EC459006B5FCB /* Conquistas.storyboard */; };
 		199EF95E2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF95D2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib */; };
 		199EF9642494065C00E6D720 /* CardMaiorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */; };
@@ -81,6 +90,15 @@
 		198A6834248EC017006B5FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		198A6843248EC3C8006B5FCB /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		198A6845248EC403006B5FCB /* Jornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jornada.storyboard; sourceTree = "<group>"; };
+		198A6847248EC459006B5FCB /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
+		27C227E82491104700657E10 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		27C227EA2491132000657E10 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		27C227EC2491168E00657E10 /* RecipeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipeScreen.storyboard; sourceTree = "<group>"; };
+		27C227F024911DAE00657E10 /* RecipePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePageViewController.swift; sourceTree = SOURCE_ROOT; };
+		27C227F424926E2400657E10 /* RecipePageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePageExtension.swift; sourceTree = "<group>"; };
+		27EA9F1B2493B7B1001CF006 /* Chronometer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Chronometer.xib; sourceTree = "<group>"; };
+		27EA9F1D2493BC9A001CF006 /* ChronometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronometerView.swift; sourceTree = "<group>"; };
+		27EA9F1F2493BF06001CF006 /* RecipePagesCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePagesCreation.swift; sourceTree = "<group>"; };
 		198A6847248EC459006B5FCB /* Conquistas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Conquistas.storyboard; sourceTree = "<group>"; };
 		199EF95D2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMenorCollectionViewCell.xib; sourceTree = "<group>"; };
 		199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMaiorCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -178,8 +196,11 @@
 			children = (
 				198A6819248EC017006B5FCB /* Assets.xcassets */,
 				198A681B248EC017006B5FCB /* LaunchScreen.storyboard */,
+				27EA9F1B2493B7B1001CF006 /* Chronometer.xib */,
 				198A6843248EC3C8006B5FCB /* TabBar.storyboard */,
 				198A6845248EC403006B5FCB /* Jornada.storyboard */,
+				198A6847248EC459006B5FCB /* Perfil.storyboard */,
+				27C227EC2491168E00657E10 /* RecipeScreen.storyboard */,
 				198A6847248EC459006B5FCB /* Conquistas.storyboard */,
 				D757BDE62491101300E85FCC /* Modulo.storyboard */,
 				D757BDEC24911F0100E85FCC /* Preparacao.xib */,
@@ -195,6 +216,8 @@
 		198A6841248EC054006B5FCB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				27C227E82491104700657E10 /* Recipe.swift */,
+				27C227EA2491132000657E10 /* Page.swift */,
 				19B5DA6824912037006CF0FE /* ConquistasModel.swift */,
 				D757BDEA2491174A00E85FCC /* Modulo.swift */,
 				D757BDF024917A1A00E85FCC /* PrepCard.swift */,
@@ -205,6 +228,11 @@
 		198A6842248EC068006B5FCB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				27C227F024911DAE00657E10 /* RecipePageViewController.swift */,
+				27C227F424926E2400657E10 /* RecipePageExtension.swift */,
+				27EA9F1F2493BF06001CF006 /* RecipePagesCreation.swift */,
+				27EA9F1D2493BC9A001CF006 /* ChronometerView.swift */,
+				198A6814248EC010006B5FCB /* ViewController.swift */,
 				19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */,
 				195D797524925ECE00B585DC /* ConquistasViewController.swift */,
 				D757BDE82491113900E85FCC /* ModuloViewController.swift */,
@@ -335,7 +363,10 @@
 				D757BDE72491101300E85FCC /* Modulo.storyboard in Resources */,
 				199EF9642494065C00E6D720 /* CardMaiorCollectionViewCell.xib in Resources */,
 				198A681D248EC017006B5FCB /* LaunchScreen.storyboard in Resources */,
+				27EA9F1C2493B7B1001CF006 /* Chronometer.xib in Resources */,
 				198A681A248EC017006B5FCB /* Assets.xcassets in Resources */,
+				27C227ED2491168E00657E10 /* RecipeScreen.storyboard in Resources */,
+				198A6848248EC45A006B5FCB /* Perfil.storyboard in Resources */,
 				198A6848248EC45A006B5FCB /* Conquistas.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +392,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				198A6815248EC010006B5FCB /* ViewController.swift in Sources */,
+				27EA9F1E2493BC9A001CF006 /* ChronometerView.swift in Sources */,
+				27EA9F202493BF06001CF006 /* RecipePagesCreation.swift in Sources */,
+				27C227F124911DAE00657E10 /* RecipePageViewController.swift in Sources */,
 				190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */,
 				D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */,
 				D757BDE92491113900E85FCC /* ModuloViewController.swift in Sources */,
@@ -368,6 +403,9 @@
 				198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */,
 				19B5DA70249160EA006CF0FE /* ConquistasCollectionViewCell.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
+				27C227E92491104700657E10 /* Recipe.swift in Sources */,
+				27C227F524926E2400657E10 /* RecipePageExtension.swift in Sources */,
+				27C227EB2491132000657E10 /* Page.swift in Sources */,
 				19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */,
 				195D797624925ECE00B585DC /* ConquistasViewController.swift in Sources */,
 				D757BDEB2491174A00E85FCC /* Modulo.swift in Sources */,
