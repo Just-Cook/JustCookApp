@@ -23,7 +23,7 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         Page(text: "Texto da Pagina 2", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
         Page(text: "Texto da Pagina 3", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
         Page(text: "Texto da Pagina 4", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
-        Page(text: "Texto da Pagina 5", chronometer: 10, links: nil, smallImage: "Tem", bigImage: nil, video: nil),
+        Page(text: "Texto da Pagina 5", chronometer: 5, links: nil, smallImage: "Tem", bigImage: nil, video: nil),
         Page(text: "Texto da Pagina 6", chronometer: 6400, links: nil, smallImage: "Tem", bigImage: nil, video: nil),
         Page(text: "Texto da Pagina 7", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
         Page(text: "Texto da Pagina 8", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),

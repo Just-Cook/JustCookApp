@@ -54,9 +54,12 @@ class ChronometerView: UIView {
     func decreaseTimer(){
         self.seconds! = seconds! - 1
         
-        editTimeLabel()
-        
-    }
+        if(seconds!>=0){
+            editTimeLabel()
+        }else{
+            timer!.invalidate()
+        }
+     }
     
     func editTimeLabel(){
         var restSeconds = seconds!
