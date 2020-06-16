@@ -30,6 +30,11 @@
 		199EF96A24941C3F00E6D720 /* NiveisTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */; };
 		19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6824912037006CF0FE /* ConquistasModel.swift */; };
 		19B5DA70249160EA006CF0FE /* ConquistasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */; };
+		272C7FCF2497A524009313B2 /* IngredientsRecipeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272C7FCE2497A524009313B2 /* IngredientsRecipeScreen.storyboard */; };
+		272C7FD12497A92C009313B2 /* IngredientsRecipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C7FD02497A92C009313B2 /* IngredientsRecipeController.swift */; };
+		272C7FD32497ADEC009313B2 /* ImageDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C7FD22497ADEC009313B2 /* ImageDescriptionCell.swift */; };
+		27B981852497B3CB003073B4 /* IngredientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B981842497B3CB003073B4 /* IngredientsTableViewController.swift */; };
+		27BB99F02497BCC300907B43 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB99EF2497BCC300907B43 /* Ingredient.swift */; };
 		19CB3D3524979EE300F8FB77 /* VerTodos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19CB3D3424979EE300F8FB77 /* VerTodos.storyboard */; };
 		19CB3D3724979F3B00F8FB77 /* VerTodosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CB3D3624979F3B00F8FB77 /* VerTodosCollectionViewController.swift */; };
 		27C227E92491104700657E10 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C227E82491104700657E10 /* Recipe.swift */; };
@@ -99,6 +104,11 @@
 		199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NiveisTableViewCell.xib; sourceTree = "<group>"; };
 		19B5DA6824912037006CF0FE /* ConquistasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasModel.swift; sourceTree = "<group>"; };
 		19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasCollectionViewCell.swift; sourceTree = "<group>"; };
+		272C7FCE2497A524009313B2 /* IngredientsRecipeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IngredientsRecipeScreen.storyboard; sourceTree = "<group>"; };
+		272C7FD02497A92C009313B2 /* IngredientsRecipeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsRecipeController.swift; sourceTree = "<group>"; };
+		272C7FD22497ADEC009313B2 /* ImageDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDescriptionCell.swift; sourceTree = "<group>"; };
+		27B981842497B3CB003073B4 /* IngredientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewController.swift; sourceTree = "<group>"; };
+		27BB99EF2497BCC300907B43 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		19CB3D3424979EE300F8FB77 /* VerTodos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerTodos.storyboard; sourceTree = "<group>"; };
 		19CB3D3624979F3B00F8FB77 /* VerTodosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerTodosCollectionViewController.swift; sourceTree = "<group>"; };
 		27C227E82491104700657E10 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
@@ -216,6 +226,7 @@
 				199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */,
 				199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */,
 				194F77D924944E7A003980CE /* AlertaTableViewCell.xib */,
+				272C7FCE2497A524009313B2 /* IngredientsRecipeScreen.storyboard */,
 				19CB3D3424979EE300F8FB77 /* VerTodos.storyboard */,
 			);
 			path = View;
@@ -229,6 +240,7 @@
 				19B5DA6824912037006CF0FE /* ConquistasModel.swift */,
 				D757BDEA2491174A00E85FCC /* Modulo.swift */,
 				D757BDF024917A1A00E85FCC /* PrepCard.swift */,
+				27BB99EF2497BCC300907B43 /* Ingredient.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,6 +266,9 @@
 				190804E52495302200A46E63 /* CardMenorCollectionViewCell.swift */,
 				190804E72495317900A46E63 /* CardMaiorCollectionViewCell.swift */,
 				190804E9249531AF00A46E63 /* CardMaiorTableViewCell.swift */,
+				272C7FD02497A92C009313B2 /* IngredientsRecipeController.swift */,
+				272C7FD22497ADEC009313B2 /* ImageDescriptionCell.swift */,
+				27B981842497B3CB003073B4 /* IngredientsTableViewController.swift */,
 				19CB3D3624979F3B00F8FB77 /* VerTodosCollectionViewController.swift */,
 			
 			);
@@ -366,6 +381,7 @@
 			files = (
 				19CB3D3524979EE300F8FB77 /* VerTodos.storyboard in Resources */,
 				D757BDF3249265D800E85FCC /* receitaModulo.xib in Resources */,
+				272C7FCF2497A524009313B2 /* IngredientsRecipeScreen.storyboard in Resources */,
 				D757BDED24911F0100E85FCC /* Preparacao.xib in Resources */,
 				198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */,
 				199EF95E2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib in Resources */,
@@ -410,6 +426,7 @@
 
 				27EA9F1E2493BC9A001CF006 /* ChronometerView.swift in Sources */,
 				27EA9F202493BF06001CF006 /* RecipePagesCreation.swift in Sources */,
+				272C7FD32497ADEC009313B2 /* ImageDescriptionCell.swift in Sources */,
 				27C227F124911DAE00657E10 /* RecipePageViewController.swift in Sources */,
 				190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */,
 				D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */,
@@ -422,12 +439,15 @@
 				27C227F524926E2400657E10 /* RecipePageExtension.swift in Sources */,
 				27C227EB2491132000657E10 /* Page.swift in Sources */,
 				19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */,
+				272C7FD12497A92C009313B2 /* IngredientsRecipeController.swift in Sources */,
 				195D797624925ECE00B585DC /* ConquistasViewController.swift in Sources */,
 				D757BDEB2491174A00E85FCC /* Modulo.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
+				27BB99F02497BCC300907B43 /* Ingredient.swift in Sources */,
 				19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */,
 				190804E4249510C900A46E63 /* CardMenorTableViewCell.swift in Sources */,
 				D757BDF124917A1A00E85FCC /* PrepCard.swift in Sources */,
+				27B981852497B3CB003073B4 /* IngredientsTableViewController.swift in Sources */,
 				190804E82495317900A46E63 /* CardMaiorCollectionViewCell.swift in Sources */,
 				D757BDEF2491704A00E85FCC /* PreparacaoCollectionViewCell.swift in Sources */,
 				190804EA249531AF00A46E63 /* CardMaiorTableViewCell.swift in Sources */,
