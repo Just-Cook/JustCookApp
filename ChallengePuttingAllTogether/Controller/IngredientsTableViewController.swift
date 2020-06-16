@@ -28,6 +28,11 @@ class IngredientsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.porcoes = recipe.porcoes
+        
+        let rightButton = UIBarButtonItem(title: "Iniciar", style: .plain, target: self, action: nil)
+        rightButton.tintColor = .orange
+        
+        self.navigationItem.rightBarButtonItem = rightButton
     }
     
 
