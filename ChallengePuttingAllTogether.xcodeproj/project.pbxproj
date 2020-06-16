@@ -211,7 +211,6 @@
 				D757BDEC24911F0100E85FCC /* Preparacao.xib */,
 				199EF95D2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib */,
 				D757BDF2249265D800E85FCC /* receitaModulo.xib */,
-  			
 				D757BDF82497AD1200E85FCC /* SectionPreparacao.xib */,
 
 				199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */,
@@ -379,7 +378,6 @@
 				D757BDF92497AD1200E85FCC /* SectionPreparacao.xib in Resources */,
 
 				27EA9F1C2493B7B1001CF006 /* Chronometer.xib in Resources */,
-   			
 				198A681A248EC017006B5FCB /* Assets.xcassets in Resources */,
 				27C227ED2491168E00657E10 /* RecipeScreen.storyboard in Resources */,
 				198A6848248EC45A006B5FCB /* Conquistas.storyboard in Resources */,
@@ -414,7 +412,6 @@
 				27EA9F202493BF06001CF006 /* RecipePagesCreation.swift in Sources */,
 				27C227F124911DAE00657E10 /* RecipePageViewController.swift in Sources */,
 				190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */,
- 		
 				D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */,
 				D757BDE92491113900E85FCC /* ModuloViewController.swift in Sources */,
 				194F77D824944DC3003980CE /* AlertaTableViewCell.swift in Sources */,
