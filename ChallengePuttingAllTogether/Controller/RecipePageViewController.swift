@@ -81,6 +81,7 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         
         
         let cvPages = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cvPages.showsHorizontalScrollIndicator = false
         cvPages.backgroundView = UIView()
         cvPages.backgroundView?.backgroundColor = .white
         cvPages.translatesAutoresizingMaskIntoConstraints = false
