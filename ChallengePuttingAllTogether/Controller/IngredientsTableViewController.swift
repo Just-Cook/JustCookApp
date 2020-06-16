@@ -59,6 +59,7 @@ class IngredientsTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ImageDescriptionCell", for: indexPath) as! ImageDescriptionCell
             cell.separatorInset = UIEdgeInsets(top: 0, left: 10000, bottom: 0, right: 0)
             cell.RecipeImageView.layer.cornerRadius = 8
+            cell.DescriptionRecipe.text = recipe.description
             
             if(self.topCellHeight == nil){
                 self.topCellHeight = Float(cell.adjustHeightOfDescription())
@@ -70,6 +71,7 @@ class IngredientsTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PorcoesCell", for: indexPath) as! PorcaoCell
             createPorcaoChangeButtons(in: cell)
             cell.PorcaoLabel.text = "Porcoes"
+            cell.TimeLabel.text = recipe.time
             return cell
         }
     
@@ -77,6 +79,7 @@ class IngredientsTableViewController: UITableViewController {
         
         let ingredient = recipe.ingredients[indexPath.item]
         cell.IngredientNameLabel.text = ingredient.name
+        
         let porcaoAmount = Double(self.porcoes!)/Double(recipe.porcoes) * ingredient.amount
         
         cell.IngredientAmountLabel.text = "\(porcaoAmount) \(ingredient.unity)"

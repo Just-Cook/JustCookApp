@@ -24,6 +24,7 @@ class ImageDescriptionCell: UITableViewCell {
 class PorcaoCell: UITableViewCell{
 
     @IBOutlet weak var PorcaoLabel: UILabel!
+    @IBOutlet weak var TimeLabel: UILabel!
     
 }
 
