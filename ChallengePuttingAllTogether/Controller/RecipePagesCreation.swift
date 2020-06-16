@@ -25,12 +25,12 @@ extension RecipePageViewController {
             
             if let bigImage = page.bigImage{
                 lastView = addBigImageToPage(pageViewController: viewController, image: bigImage)
-                lastView.topAnchor.constraint(equalTo: viewController.view.topAnchor, constant: 112).isActive = true
+                lastView.topAnchor.constraint(equalTo: viewController.view.layoutMarginsGuide.topAnchor, constant: 96).isActive = true
             }
             
             if let smallImage = page.smallImage{
                 lastView = addSmallImageToPage(pageViewController: viewController, image: smallImage)
-                lastView.topAnchor.constraint(equalTo: viewController.view.topAnchor, constant: 112).isActive = true
+                lastView.topAnchor.constraint(equalTo: viewController.view.layoutMarginsGuide.topAnchor, constant: 96).isActive = true
             }
             
             let text = page.text
