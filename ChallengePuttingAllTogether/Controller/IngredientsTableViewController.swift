@@ -23,11 +23,11 @@ class IngredientsTableViewController: UITableViewController {
     ], porcoes: 20)
     
     var porcoes: Int?
+    var topCellHeight: Float?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.porcoes = recipe.porcoes
-        //self.tableView.separatorStyle = .none
     }
     
 
@@ -46,18 +46,19 @@ class IngredientsTableViewController: UITableViewController {
         return 1
     }
     
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        //var cell = UITableViewCell()
         
         if(indexPath.section == 0){
             let cell = tableView.dequeueReusableCell(withIdentifier: "ImageDescriptionCell", for: indexPath) as! ImageDescriptionCell
             cell.separatorInset = UIEdgeInsets(top: 0, left: 10000, bottom: 0, right: 0)
             cell.RecipeImageView.layer.cornerRadius = 8
-            //cell.adjustHeightOfDescription()
-            //cell.updateConstraints()
-            //cell.heightAnchor.constraint(equalToConstant: 500).isActive = true
-            //cell.frame.height = CGFloat(500)
+            
+            if(self.topCellHeight == nil){
+                self.topCellHeight = Float(cell.adjustHeightOfDescription())
+            }
+            
             return cell
         
         } else if (indexPath.section == 1){
@@ -81,11 +82,10 @@ class IngredientsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if(indexPath.section == 0){
-            //print("2")
-//            if let cell = tableView.cellForRow(at: IndexPath(item: 0, section: 0)) as? ImageDescriptionCell{
-//                print(cell.DescriptionRecipe.frame.height + 140)
-//            }
             
+            if let cellHeight = self.topCellHeight {
+                return CGFloat(cellHeight)
+            }
             return 280
             
         } else if (indexPath.section == 1){
@@ -95,10 +95,24 @@ class IngredientsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
         if(section == 2){
             return "Ingredientes"
         }
         return nil
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let returnView = UITableViewHeaderFooterView()
+        returnView.backgroundView = UIView()
+        return returnView
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 2 {
+            return 44
+        }
+        return 0
     }
     
     
@@ -111,7 +125,6 @@ class IngredientsTableViewController: UITableViewController {
         
         let whiteView = UIView()
         whiteView.backgroundColor = .white
-        //whiteView.frame = CGRect(origin: .zero, size: CGSize(width: 40, height: 36))
 
         let porcaoText = UILabel()
         porcaoText.text = String(self.porcoes!)

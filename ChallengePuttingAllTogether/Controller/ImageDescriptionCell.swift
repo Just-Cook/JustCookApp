@@ -14,10 +14,10 @@ class ImageDescriptionCell: UITableViewCell {
     @IBOutlet weak var DescriptionRecipe: UITextView!
     
     func adjustHeightOfDescription() -> CGFloat {
-        //DescriptionRecipe.translatesAutoresizingMaskIntoConstraints = true
+        DescriptionRecipe.translatesAutoresizingMaskIntoConstraints = false
         DescriptionRecipe.sizeToFit()
         DescriptionRecipe.isScrollEnabled = false
-        return DescriptionRecipe.frame.height
+        return DescriptionRecipe.frame.height + RecipeImageView.frame.size.height + 32
     }
 }
 
