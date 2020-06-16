@@ -1,170 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fzf-De-A6m">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UOk-MF-Zv4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Jornada-->
-        <scene sceneID="ahU-l5-n93">
+        <!--View Controller-->
+        <scene sceneID="vMU-b5-vSc">
             <objects>
-                <tableViewController id="TL8-re-2pb" customClass="JornadaTableViewController" customModule="ChallengePuttingAllTogether" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6h9-VD-MgQ">
+                <viewController id="veR-JB-HRV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nOM-eY-lni">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardMaiorTableViewCell" rowHeight="135" id="Lni-Xr-8dt" customClass="CardMaiorTableViewCell" customModule="ChallengePuttingAllTogether" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="135"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lni-Xr-8dt" id="tYO-s9-K9Z">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qQX-BE-CsO">
-                                            <rect key="frame" x="0.0" y="60" width="414" height="75"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f48-73-HHJ">
-                                                <size key="itemSize" width="128" height="128"/>
-                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                            </collectionViewFlowLayout>
-                                            <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5EI-kg-SCf">
-                                                    <rect key="frame" x="0.0" y="-26.5" width="128" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VYQ-za-1Xr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                    </collectionViewCellContentView>
-                                                </collectionViewCell>
-                                            </cells>
-                                        </collectionView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sua Jornada" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qlu-Rd-cc9">
-                                            <rect key="frame" x="20" y="20" width="129.5" height="20"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="qQX-BE-CsO" firstAttribute="top" secondItem="tYO-s9-K9Z" secondAttribute="top" constant="60" id="FYG-bp-0Yw"/>
-                                        <constraint firstItem="Qlu-Rd-cc9" firstAttribute="top" secondItem="tYO-s9-K9Z" secondAttribute="top" constant="20" id="NCT-Ws-bac"/>
-                                        <constraint firstItem="Qlu-Rd-cc9" firstAttribute="leading" secondItem="tYO-s9-K9Z" secondAttribute="leading" constant="20" id="a2v-EW-8K1"/>
-                                        <constraint firstAttribute="bottom" secondItem="qQX-BE-CsO" secondAttribute="bottom" id="fE6-Vm-Zao"/>
-                                        <constraint firstItem="qQX-BE-CsO" firstAttribute="top" secondItem="Qlu-Rd-cc9" secondAttribute="bottom" constant="20" id="qta-Nm-gcs"/>
-                                        <constraint firstAttribute="trailing" secondItem="qQX-BE-CsO" secondAttribute="trailing" id="sWj-LP-zPB"/>
-                                        <constraint firstItem="qQX-BE-CsO" firstAttribute="leading" secondItem="tYO-s9-K9Z" secondAttribute="leading" id="ucD-1Y-qjV"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="collectionView" destination="qQX-BE-CsO" id="HeZ-fs-qnA"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardMenorTableViewCell" rowHeight="172" id="nEo-1j-7fL" customClass="CardMenorTableViewCell" customModule="ChallengePuttingAllTogether" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="163" width="414" height="172"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nEo-1j-7fL" id="LSg-dJ-e1u">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="172"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9x2-xE-nEW">
-                                            <rect key="frame" x="0.0" y="67" width="414" height="105"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lqb-5G-0HD">
-                                                <size key="itemSize" width="128" height="128"/>
-                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                            </collectionViewFlowLayout>
-                                            <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eHq-bN-t2N">
-                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7aD-ST-TDe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                    </collectionViewCellContentView>
-                                                </collectionViewCell>
-                                            </cells>
-                                        </collectionView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aprenda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0H-Gn-Gji">
-                                            <rect key="frame" x="20" y="20" width="89" height="27"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLd-Ae-sAp">
-                                            <rect key="frame" x="328" y="20" width="66" height="30"/>
-                                            <state key="normal" title="Ver todos">
-                                                <color key="titleColor" red="1" green="0.62352941179999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
-                                            </state>
-                                            <connections>
-                                                <segue destination="6VQ-d3-Y5l" kind="show" id="87d-l6-Vje"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="9x2-xE-nEW" firstAttribute="leading" secondItem="LSg-dJ-e1u" secondAttribute="leading" id="45Y-oJ-LcN"/>
-                                        <constraint firstAttribute="trailing" secondItem="9x2-xE-nEW" secondAttribute="trailing" id="9h8-wQ-sY4"/>
-                                        <constraint firstItem="G0H-Gn-Gji" firstAttribute="top" secondItem="LSg-dJ-e1u" secondAttribute="top" constant="20" id="DDd-5L-nkm"/>
-                                        <constraint firstAttribute="trailing" secondItem="lLd-Ae-sAp" secondAttribute="trailing" constant="20" id="MT4-xs-6tv"/>
-                                        <constraint firstAttribute="bottom" secondItem="9x2-xE-nEW" secondAttribute="bottom" id="MoZ-o4-7DJ"/>
-                                        <constraint firstItem="9x2-xE-nEW" firstAttribute="top" secondItem="G0H-Gn-Gji" secondAttribute="bottom" constant="20" id="OKf-bx-xMc"/>
-                                        <constraint firstItem="G0H-Gn-Gji" firstAttribute="leading" secondItem="LSg-dJ-e1u" secondAttribute="leading" constant="20" id="TKf-sn-HlI"/>
-                                        <constraint firstItem="lLd-Ae-sAp" firstAttribute="top" secondItem="G0H-Gn-Gji" secondAttribute="top" id="jf1-UE-wlz"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="collectionView" destination="9x2-xE-nEW" id="ovd-kj-lHv"/>
-                                    <outlet property="titulo" destination="G0H-Gn-Gji" id="hte-ZA-ieW"/>
-                                    <outlet property="verTodosButton" destination="lLd-Ae-sAp" id="fbF-x0-KtV"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="TL8-re-2pb" id="iqf-I3-fqX"/>
-                            <outlet property="delegate" destination="TL8-re-2pb" id="eHp-Je-ahx"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Jornada" id="VSO-Xa-wmK"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IjO-Z5-5pe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="adx-h9-fPQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9I2-lq-jU9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21j-Z6-Qzd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1779.7101449275365" y="180.80357142857142"/>
-        </scene>
-        <!--VerTodos-->
-        <scene sceneID="32b-eB-4xe">
-            <objects>
-                <viewControllerPlaceholder storyboardName="VerTodos" id="6VQ-d3-Y5l" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="cjC-Ju-NHN"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GPd-xR-2Cj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2495" y="117"/>
+            <point key="canvasLocation" x="989.85507246376824" y="144.64285714285714"/>
         </scene>
         <!--Jornada-->
-        <scene sceneID="e6T-aR-UyQ">
+        <scene sceneID="xAg-DC-ct2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fzf-De-A6m" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Jornada" id="xhx-Jf-l9n"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UOk-MF-Zv4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Jornada" id="fPB-Xw-HN1"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="VPd-3h-9SA">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dPr-Om-Ycn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="TL8-re-2pb" kind="relationship" relationship="rootViewController" id="o3m-KB-aV6"/>
+                        <segue destination="veR-JB-HRV" kind="relationship" relationship="rootViewController" id="pAU-HE-i7M"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5nf-wY-2Pr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zo3-Qt-fVW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="869.56521739130437" y="180.80357142857142"/>
+            <point key="canvasLocation" x="79.710144927536234" y="144.64285714285714"/>
         </scene>
     </scenes>
 </document>
