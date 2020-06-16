@@ -15,6 +15,7 @@ class CardMenorTableViewCell: UITableViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var verTodosButton: UIButton!
     
+
     static let identifier = "CardMenorTableViewCell"
     
     override func awakeFromNib() {

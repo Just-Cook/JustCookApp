@@ -102,6 +102,9 @@
                                             <state key="normal" title="Ver todos">
                                                 <color key="titleColor" red="1" green="0.62352941179999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
+                                            <connections>
+                                                <segue destination="6VQ-d3-Y5l" kind="show" id="87d-l6-Vje"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -132,6 +135,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IjO-Z5-5pe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1779.7101449275365" y="180.80357142857142"/>
+        </scene>
+        <!--VerTodos-->
+        <scene sceneID="32b-eB-4xe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="VerTodos" id="6VQ-d3-Y5l" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cjC-Ju-NHN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPd-xR-2Cj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2495" y="117"/>
         </scene>
         <!--Jornada-->
         <scene sceneID="e6T-aR-UyQ">

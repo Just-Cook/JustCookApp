@@ -42,7 +42,7 @@
                     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" id="Yqi-jG-ewl">
-                    <rect key="frame" x="260" y="56" width="47" height="16"/>
+                    <rect key="frame" x="260" y="55" width="47" height="16"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o07-OB-d3v">
@@ -86,16 +86,6 @@
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <connections>
-                <outlet property="backgReceita" destination="504-tZ-Qbk" id="R4t-pW-MQF"/>
-                <outlet property="checkBox" destination="fOP-zA-p4J" id="gjt-Rf-cAE"/>
-                <outlet property="dificuldadeImageView" destination="Yqi-jG-ewl" id="E8p-IY-1lw"/>
-                <outlet property="porcoesIcon" destination="RYV-yi-fnx" id="XLq-Ov-yGX"/>
-                <outlet property="porcoesLabel" destination="22s-DO-iOU" id="kUD-nU-bHk"/>
-                <outlet property="receitaLabel" destination="RiI-zC-wSd" id="63j-fm-LpG"/>
-                <outlet property="tempoLabel" destination="o07-OB-d3v" id="TIa-Mm-ozc"/>
-                <outlet property="timerIcon" destination="rEC-g8-Iko" id="kPc-pq-BMn"/>
-            </connections>
             <point key="canvasLocation" x="228.98550724637684" y="-270.6521739130435"/>
         </view>
     </objects>
