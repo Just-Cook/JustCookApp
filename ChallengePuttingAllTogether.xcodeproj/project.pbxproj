@@ -30,6 +30,8 @@
 		D757BDF124917A1A00E85FCC /* PrepCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF024917A1A00E85FCC /* PrepCard.swift */; };
 		D757BDF3249265D800E85FCC /* receitaModulo.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDF2249265D800E85FCC /* receitaModulo.xib */; };
 		D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */; };
+		D757BDF72497A16300E85FCC /* SectionPreparacaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF62497A16300E85FCC /* SectionPreparacaoTableViewCell.swift */; };
+		D757BDF92497AD1200E85FCC /* SectionPreparacao.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDF82497AD1200E85FCC /* SectionPreparacao.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		D757BDF024917A1A00E85FCC /* PrepCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepCard.swift; sourceTree = "<group>"; };
 		D757BDF2249265D800E85FCC /* receitaModulo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = receitaModulo.xib; sourceTree = "<group>"; };
 		D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaModuloTableViewCell.swift; sourceTree = "<group>"; };
+		D757BDF62497A16300E85FCC /* SectionPreparacaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionPreparacaoTableViewCell.swift; sourceTree = "<group>"; };
+		D757BDF82497AD1200E85FCC /* SectionPreparacao.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionPreparacao.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 				D757BDEC24911F0100E85FCC /* Preparacao.xib */,
 				4B5730B92491100600CA0F5A /* XibCardGrandeJornada.storyboard */,
 				D757BDF2249265D800E85FCC /* receitaModulo.xib */,
+				D757BDF82497AD1200E85FCC /* SectionPreparacao.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				4B5730BB2491134200CA0F5A /* XibCardGrandeViewController.swift */,
 				D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */,
 				D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */,
+				D757BDF62497A16300E85FCC /* SectionPreparacaoTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -308,6 +314,7 @@
 				198A6844248EC3C8006B5FCB /* TabBar.storyboard in Resources */,
 				D757BDE72491101300E85FCC /* Modulo.storyboard in Resources */,
 				198A681D248EC017006B5FCB /* LaunchScreen.storyboard in Resources */,
+				D757BDF92497AD1200E85FCC /* SectionPreparacao.xib in Resources */,
 				198A681A248EC017006B5FCB /* Assets.xcassets in Resources */,
 				198A6848248EC45A006B5FCB /* Conquistas.storyboard in Resources */,
 			);
@@ -334,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D757BDF72497A16300E85FCC /* SectionPreparacaoTableViewCell.swift in Sources */,
 				D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */,
 				D757BDE92491113900E85FCC /* ModuloViewController.swift in Sources */,
 				198A6815248EC010006B5FCB /* ViewController.swift in Sources */,
