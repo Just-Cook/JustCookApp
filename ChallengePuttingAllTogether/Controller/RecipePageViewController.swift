@@ -83,12 +83,14 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         
         closeButton.setTitle("Fechar", for: .normal)
         closeButton.setTitleColor(.orange, for: .normal)
+        closeButton.setTitleColor(.blue, for: .highlighted)
         closeButton.titleLabel?.font = .systemFont(ofSize: 15)
+        closeButton.addTarget(self, action: #selector(closePage), for: .touchUpInside)
         titleView.addSubview(closeButton)
         closeButton.translatesAutoresizingMaskIntoConstraints = false
         //titleLabel.leadingAnchor.constraint(equalTo: titleView.leadingAnchor, constant: 16).isActive = true
         closeButton.trailingAnchor.constraint(equalTo: titleView.trailingAnchor, constant: -16).isActive = true
-        closeButton.topAnchor.constraint(equalTo: titleView.topAnchor, constant: 9).isActive = true
+        closeButton.topAnchor.constraint(equalTo: titleView.topAnchor, constant: 10).isActive = true
         closeButton.heightAnchor.constraint(equalToConstant: 28).isActive = true
         closeButton.widthAnchor.constraint(equalToConstant: 64).isActive = true
         
@@ -113,6 +115,10 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         self.paginationCV = cvPages
     }
     
+    @objc
+    func closePage(){
+        self.dismiss(animated: true, completion: nil)
+    }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         

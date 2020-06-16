@@ -23,7 +23,7 @@ class ChronometerView: UIView {
         let tap = UITapGestureRecognizer(target: self, action: #selector(toogleTimer))
         ChronoImage.isUserInteractionEnabled = true
         ChronoImage.addGestureRecognizer(tap)
-        ChronoImage.backgroundColor = .orange
+        ChronoImage.image = #imageLiteral(resourceName: "play")
         
         self.seconds = seconds
         
@@ -35,11 +35,11 @@ class ChronometerView: UIView {
         if(self.isStarted){
             self.timer!.invalidate()
             self.isStarted = false
-            ChronoImage.backgroundColor = .orange
+            ChronoImage.image = #imageLiteral(resourceName: "play")
         }else{
             self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(decreaseTimer), userInfo: nil, repeats: true)
             self.isStarted = true
-            ChronoImage.backgroundColor = .red
+            ChronoImage.image = #imageLiteral(resourceName: "pause")
         }
             
     }

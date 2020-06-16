@@ -62,8 +62,10 @@ extension RecipePageViewController {
     func addSmallImageToPage(pageViewController: UIViewController, image:String) -> UIView {
         
         let imageView = UIImageView()
-        imageView.backgroundColor =  .red
-        imageView.layer.cornerRadius = 16
+        //imageView.backgroundColor =  .red
+        imageView.image = #imageLiteral(resourceName: "woman-chef")
+        imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = 8
         pageViewController.view.addSubview(imageView)
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -77,8 +79,11 @@ extension RecipePageViewController {
     func addBigImageToPage(pageViewController: UIViewController, image:String) -> UIView {
         
         let imageView = UIImageView()
-        imageView.backgroundColor =  .red
-        imageView.layer.cornerRadius = 16
+        //imageView.backgroundColor =  .red
+        imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = 8
+        imageView.image = #imageLiteral(resourceName: "woman-chef")
+        
         pageViewController.view.addSubview(imageView)
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
