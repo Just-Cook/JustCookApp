@@ -255,6 +255,7 @@
 				190804E72495317900A46E63 /* CardMaiorCollectionViewCell.swift */,
 				190804E9249531AF00A46E63 /* CardMaiorTableViewCell.swift */,
 				19CB3D3624979F3B00F8FB77 /* VerTodosCollectionViewController.swift */,
+			
 			);
 			path = Controller;
 			sourceTree = "<group>";
