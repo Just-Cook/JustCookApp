@@ -46,6 +46,9 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         
         
         configurePagination()
+        
+        //self.navigationController?.navigationBar.isHidden = true
+        //self.navigationController?.navigationBar.barStyle = .default
     }
     
     func configurePagination(){
@@ -59,7 +62,7 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         self.view.addSubview(titleView)
          
         titleView.translatesAutoresizingMaskIntoConstraints = false
-        titleView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
+        titleView.leadingAnchor.constraint(equalTo:  view.leadingAnchor, constant: 0).isActive = true
         titleView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
         titleView.heightAnchor.constraint(equalToConstant: 44).isActive = true
         titleView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
