@@ -25,12 +25,12 @@ extension RecipePageViewController {
             
             if let bigImage = page.bigImage{
                 lastView = addBigImageToPage(pageViewController: viewController, image: bigImage)
-                lastView.topAnchor.constraint(equalTo: viewController.view.topAnchor, constant: 112).isActive = true
+                lastView.topAnchor.constraint(equalTo: viewController.view.layoutMarginsGuide.topAnchor, constant: 96).isActive = true
             }
             
             if let smallImage = page.smallImage{
                 lastView = addSmallImageToPage(pageViewController: viewController, image: smallImage)
-                lastView.topAnchor.constraint(equalTo: viewController.view.topAnchor, constant: 112).isActive = true
+                lastView.topAnchor.constraint(equalTo: viewController.view.layoutMarginsGuide.topAnchor, constant: 96).isActive = true
             }
             
             let text = page.text
@@ -62,8 +62,10 @@ extension RecipePageViewController {
     func addSmallImageToPage(pageViewController: UIViewController, image:String) -> UIView {
         
         let imageView = UIImageView()
-        imageView.backgroundColor =  .red
-        imageView.layer.cornerRadius = 16
+        //imageView.backgroundColor =  .red
+        imageView.image = #imageLiteral(resourceName: "woman-chef")
+        imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = 8
         pageViewController.view.addSubview(imageView)
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -77,8 +79,11 @@ extension RecipePageViewController {
     func addBigImageToPage(pageViewController: UIViewController, image:String) -> UIView {
         
         let imageView = UIImageView()
-        imageView.backgroundColor =  .red
-        imageView.layer.cornerRadius = 16
+        //imageView.backgroundColor =  .red
+        imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = 8
+        imageView.image = #imageLiteral(resourceName: "woman-chef")
+        
         pageViewController.view.addSubview(imageView)
         
         imageView.translatesAutoresizingMaskIntoConstraints = false

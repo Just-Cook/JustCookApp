@@ -29,7 +29,7 @@ class IngredientsTableViewController: UITableViewController {
         super.viewDidLoad()
         self.porcoes = recipe.porcoes
         
-        let rightButton = UIBarButtonItem(title: "Iniciar", style: .plain, target: self, action: nil)
+        let rightButton = UIBarButtonItem(title: "Iniciar", style: .plain, target: self, action: #selector(goToRecipe))
         rightButton.tintColor = .orange
         
         self.navigationItem.rightBarButtonItem = rightButton
@@ -198,6 +198,17 @@ class IngredientsTableViewController: UITableViewController {
             self.porcoes = self.porcoes! - 1
             self.tableView!.reloadData()
         }
+    }
+    
+    @objc
+    func goToRecipe(){
+        
+        let recipePageViewStoryboard = UIStoryboard(name: "RecipeScreen", bundle: nil)
+        guard let recipePageViewController = recipePageViewStoryboard.instantiateViewController(identifier: "RecipeScreenStoryboard") as? RecipePageViewController else{
+            return
+        }
+        
+        self.present(recipePageViewController, animated: true, completion: nil)
     }
 
 }
