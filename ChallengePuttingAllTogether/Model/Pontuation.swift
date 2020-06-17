@@ -15,6 +15,8 @@ class Pontuation {
     
     func getTotalNextLevel() -> Int{
         
+        let totalPontuation = defauls.integer(forKey: "totalPontuation")
+        
         switch totalPontuation {
         case 0..<100:
             return 100
