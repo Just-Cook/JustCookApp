@@ -10,15 +10,18 @@ import Foundation
 
 public class Recipe{
     
-    let id: Int
+    let id, porcoes: Int
     let title, images, description, time  : String
+    let ingredients: [Ingredient]
     
-    init(title: String, images: String, description: String, time: String) {
+    init(title: String, images: String, description: String, time: String, ingredients:[Ingredient], porcoes: Int) {
         self.id = 1
         self.description = description
         self.images = images
         self.time = time
         self.title = title
+        self.ingredients = ingredients
+        self.porcoes = porcoes
     }
     
     
