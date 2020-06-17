@@ -19,13 +19,13 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Algumas técnicas que vão te ajudar nesse módulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oas-rM-k5I">
-                    <rect key="frame" x="0.0" y="6" width="347" height="20"/>
+                    <rect key="frame" x="16" y="6" width="331" height="20"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" id="VPE-Oc-BPm">
-                    <rect key="frame" x="0.0" y="30" width="369" height="89"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" id="VPE-Oc-BPm">
+                    <rect key="frame" x="16" y="30" width="346" height="89"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UF3-es-alt">
@@ -38,7 +38,7 @@
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="Oas-rM-k5I" firstAttribute="leading" secondItem="WgU-Re-fdb" secondAttribute="leading" id="9YB-md-4Lx"/>
+                <constraint firstItem="Oas-rM-k5I" firstAttribute="leading" secondItem="WgU-Re-fdb" secondAttribute="leading" constant="16" id="9YB-md-4Lx"/>
                 <constraint firstItem="WgU-Re-fdb" firstAttribute="trailing" secondItem="Oas-rM-k5I" secondAttribute="trailing" constant="22" id="Vm6-7X-roC"/>
                 <constraint firstItem="Oas-rM-k5I" firstAttribute="top" secondItem="WgU-Re-fdb" secondAttribute="top" constant="5.6666666666666661" id="bpv-6Z-FpP"/>
             </constraints>

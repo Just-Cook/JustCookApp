@@ -24,8 +24,8 @@ class ReceitaModuloTableViewCell: UITableViewCell {
     @IBOutlet weak var porcoesIcon: UIImageView!
     @IBOutlet weak var timerIcon: UIImageView!
     
-    static let xibName = "Preparacao" // Setando o nome da xib
-    static let identifier = "PreparacaoCell" // Setando o identificador da cell
+    static let xibName = "receitaModulo" // Setando o nome da xib
+    static let identifier = "receitaCell" // Setando o identificador da cell
        
 //    override func awakeFromNib() {
 //        super.awakeFromNib()
