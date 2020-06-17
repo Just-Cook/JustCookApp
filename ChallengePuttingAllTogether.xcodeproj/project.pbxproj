@@ -58,6 +58,7 @@
 		D757BDFB2498548600E85FCC /* SectionDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDFA2498548600E85FCC /* SectionDescriptionTableViewCell.swift */; };
 		D757BDFD249906B200E85FCC /* SectionReceita.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDFC249906B200E85FCC /* SectionReceita.xib */; };
 		D757BDFF2499089900E85FCC /* SectionReceitaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDFE2499089900E85FCC /* SectionReceitaTableViewCell.swift */; };
+		D757BE03249A532B00E85FCC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BE02249A532B00E85FCC /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		D757BDFA2498548600E85FCC /* SectionDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		D757BDFC249906B200E85FCC /* SectionReceita.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionReceita.xib; sourceTree = "<group>"; };
 		D757BDFE2499089900E85FCC /* SectionReceitaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionReceitaTableViewCell.swift; sourceTree = "<group>"; };
+		D757BE02249A532B00E85FCC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 				D757BDEA2491174A00E85FCC /* Modulo.swift */,
 				D757BDF024917A1A00E85FCC /* PrepCard.swift */,
 				27BB99EF2497BCC300907B43 /* Ingredient.swift */,
+				D757BE02249A532B00E85FCC /* Colors.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				D757BDF72497A16300E85FCC /* SectionPreparacaoTableViewCell.swift in Sources */,
 				27EA9F1E2493BC9A001CF006 /* ChronometerView.swift in Sources */,
 				27EA9F202493BF06001CF006 /* RecipePagesCreation.swift in Sources */,
+				D757BE03249A532B00E85FCC /* Colors.swift in Sources */,
 				272C7FD32497ADEC009313B2 /* ImageDescriptionCell.swift in Sources */,
 				190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */,
 				D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */,
