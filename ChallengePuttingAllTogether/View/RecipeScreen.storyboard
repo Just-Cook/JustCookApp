@@ -3,15 +3,34 @@
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Recipe Page View Controller-->
         <scene sceneID="dYn-CL-wl7">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="1XF-VJ-wce" customClass="RecipePageViewController" customModule="ChallengePuttingAllTogether" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="RecipeScreenStoryboard" autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="1XF-VJ-wce" customClass="RecipePageViewController" customModule="ChallengePuttingAllTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="arz-BR-l8x"/>
+                </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rDl-bW-RbN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-235" y="-174"/>
+            <point key="canvasLocation" x="52" y="-232"/>
+        </scene>
+        <!--Recipe View Controller-->
+        <scene sceneID="QFm-OJ-itf">
+            <objects>
+                <viewController id="Fi7-59-KtU" customClass="RecipeViewController" customModule="ChallengePuttingAllTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IQT-4P-pc0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Cpa-9I-NxN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aKD-1F-sn4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2358" y="-845"/>
         </scene>
     </scenes>
 </document>
