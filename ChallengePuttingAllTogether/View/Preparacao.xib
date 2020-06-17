@@ -22,7 +22,7 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="BotãoNãoConcluído" translatesAutoresizingMaskIntoConstraints="NO" id="LLt-Tc-YtE">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="Concluído" translatesAutoresizingMaskIntoConstraints="NO" id="LLt-Tc-YtE">
                     <rect key="frame" x="68" y="5" width="15" height="15"/>
                 </imageView>
             </subviews>
@@ -48,11 +48,11 @@
                 <outlet property="checkPreparacao" destination="LLt-Tc-YtE" id="LaZ-PH-6Dt"/>
                 <outlet property="labelPreparacao" destination="doK-Qj-8xn" id="uey-C8-KIS"/>
             </connections>
-            <point key="canvasLocation" x="-120" y="-193"/>
+            <point key="canvasLocation" x="-120.28985507246378" y="-193.61413043478262"/>
         </view>
     </objects>
     <resources>
-        <image name="BotãoNãoConcluído" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="Concluído" width="25" height="25"/>
         <image name="forma" width="88" height="75"/>
     </resources>
 </document>
