@@ -24,7 +24,11 @@ class ModuloViewController: UIViewController {
    private func configTable(){
         ModuloTableView.delegate = self
         ModuloTableView.dataSource = self
+//       registro collection de preparação
         ModuloTableView.register(UINib.init(nibName: "SectionPreparacao", bundle: nil), forCellReuseIdentifier: "SectionCell")
+
+        ModuloTableView.register(UINib.init(nibName: "SectionReceita", bundle: nil), forCellReuseIdentifier: "SectionReceitaCell")
+        self.ModuloTableView.register(SectionDescriptionTableViewCell.self, forCellReuseIdentifier: "descripCell")
     }
 
 
@@ -57,12 +61,16 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0:
-            return UITableViewCell()
+
+//            let descripCell = self.ModuloTableView.dequeueReusableCell(withIdentifier: "descripCell", for: indexPath) as! SectionDescriptionTableViewCell
+//            return descripCell
+       return UITableViewCell()
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SectionCell", for: indexPath) as! SectionPreparacaoTableViewCell
             return cell
         case 2:
-             return UITableViewCell()
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SectionReceitaCell", for: indexPath) as! SectionReceitaTableViewCell
+            return cell
 
         default:
              return UITableViewCell()
