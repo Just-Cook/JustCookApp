@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol JornadaDelegate : class{
+    func willTransition(to module: Modulo)
+}
+
 class JornadaTableViewController: UITableViewController {
 
     
@@ -49,6 +53,7 @@ class JornadaTableViewController: UITableViewController {
             
         case 3:
                guard let cell = tableView.dequeueReusableCell(withIdentifier: CardMenorTableViewCell.identifier, for: indexPath) as? CardMenorTableViewCell else{ fatalError("Wrong identifier") }
+               cell.delegate = self
                return cell
             
         default:
@@ -75,4 +80,16 @@ class JornadaTableViewController: UITableViewController {
     }
    
 
+}
+
+extension JornadaTableViewController : JornadaDelegate {
+    func willTransition(to module: Modulo) {
+        print(module.titulo)
+        
+//        let telaModulo = UIStoryboard(name: "Modulo", bundle: nil).instantiateViewController(withIdentifier: "ModuloViewController") as? ModuloViewController
+//
+//        self.navigationController?.pushViewController(telaModulo!, animated: true)
+    }
+    
+    
 }
