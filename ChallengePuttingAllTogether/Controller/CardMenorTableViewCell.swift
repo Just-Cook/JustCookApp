@@ -50,8 +50,6 @@ extension CardMenorTableViewCell: UICollectionViewDelegate, UICollectionViewData
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        print(self.collectionView.frame.width)
-        
         let cellWidth =  self.collectionView.frame.width / 2 - 5
         let cellHeigth = self.collectionView.frame.height / 2 - 10
         
