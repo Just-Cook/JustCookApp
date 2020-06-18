@@ -53,7 +53,6 @@ class CardMenorCollectionViewCell: UICollectionViewCell {
         let secondColor = CGColor.init(srgbRed: 0, green: 0, blue: 0, alpha: 0.5)
                     
         let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = gradienteView.bounds
         gradientLayer.colors = [UIColor.clear.cgColor, secondColor]
         gradienteView.layer.insertSublayer(gradientLayer, at: 0)
         
