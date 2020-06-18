@@ -56,7 +56,6 @@
 		D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */; };
 		D757BDF72497A16300E85FCC /* SectionPreparacaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF62497A16300E85FCC /* SectionPreparacaoTableViewCell.swift */; };
 		D757BDF92497AD1200E85FCC /* SectionPreparacao.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDF82497AD1200E85FCC /* SectionPreparacao.xib */; };
-		D757BDFB2498548600E85FCC /* SectionDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDFA2498548600E85FCC /* SectionDescriptionTableViewCell.swift */; };
 		D757BDFD249906B200E85FCC /* SectionReceita.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDFC249906B200E85FCC /* SectionReceita.xib */; };
 		D757BDFF2499089900E85FCC /* SectionReceitaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDFE2499089900E85FCC /* SectionReceitaTableViewCell.swift */; };
 		D757BE03249A532B00E85FCC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BE02249A532B00E85FCC /* Colors.swift */; };
@@ -135,7 +134,6 @@
 		D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaModuloTableViewCell.swift; sourceTree = "<group>"; };
 		D757BDF62497A16300E85FCC /* SectionPreparacaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionPreparacaoTableViewCell.swift; sourceTree = "<group>"; };
 		D757BDF82497AD1200E85FCC /* SectionPreparacao.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionPreparacao.xib; sourceTree = "<group>"; };
-		D757BDFA2498548600E85FCC /* SectionDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		D757BDFC249906B200E85FCC /* SectionReceita.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionReceita.xib; sourceTree = "<group>"; };
 		D757BDFE2499089900E85FCC /* SectionReceitaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionReceitaTableViewCell.swift; sourceTree = "<group>"; };
 		D757BE02249A532B00E85FCC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -281,7 +279,6 @@
 				272C7FD22497ADEC009313B2 /* ImageDescriptionCell.swift */,
 				27B981842497B3CB003073B4 /* IngredientsTableViewController.swift */,
 				19CB3D3624979F3B00F8FB77 /* VerTodosCollectionViewController.swift */,
-				D757BDFA2498548600E85FCC /* SectionDescriptionTableViewCell.swift */,
 				D757BDFE2499089900E85FCC /* SectionReceitaTableViewCell.swift */,
 			);
 			path = Controller;
@@ -443,7 +440,6 @@
 				D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */,
 				D757BDE92491113900E85FCC /* ModuloViewController.swift in Sources */,
 				194F77D824944DC3003980CE /* AlertaTableViewCell.swift in Sources */,
-				D757BDFB2498548600E85FCC /* SectionDescriptionTableViewCell.swift in Sources */,
 				198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */,
 				19B5DA70249160EA006CF0FE /* ConquistasCollectionViewCell.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,

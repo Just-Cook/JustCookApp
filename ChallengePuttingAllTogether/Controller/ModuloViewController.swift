@@ -12,7 +12,7 @@ class ModuloViewController: UIViewController {
 
     @IBOutlet weak var ModuloTableView: UITableView!
     let nameSections = ["", "Preparação", "Receita"]
-    let tamanho = [107, 109, 108]
+    let tamanho = [100, 109, 108]
     let sect = [SectionPreparacaoTableViewCell(), SectionPreparacaoTableViewCell(), SectionPreparacaoTableViewCell()]
 
     override func viewDidLoad() {
@@ -28,27 +28,34 @@ class ModuloViewController: UIViewController {
         ModuloTableView.register(UINib.init(nibName: "SectionPreparacao", bundle: nil), forCellReuseIdentifier: "SectionCell")
 
         ModuloTableView.register(UINib.init(nibName: "SectionReceita", bundle: nil), forCellReuseIdentifier: "SectionReceitaCell")
-        self.ModuloTableView.register(SectionDescriptionTableViewCell.self, forCellReuseIdentifier: "descripCell")
+//        self.ModuloTableView.register(SectionDescriptionTableViewCell.self, forCellReuseIdentifier: "descripCell")
     }
 
 
 }
 extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
+  
     
     func numberOfSections(in tableView: UITableView) -> Int {
        return 3
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
+        return 30
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let height = tamanho[indexPath.row]
+        //        tableView.estimatedRowHeight = 200
+        //        tableView.rowHeight = UITableView.automaticDimension
+        //        return tableView.estimatedRowHeight
+        //    }
+        
+        let height = tamanho[indexPath.row + 1]
         return CGFloat(height)
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           return 1
-       }
-       
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
         let title = UILabel()
@@ -61,10 +68,12 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0:
-
-//            let descripCell = self.ModuloTableView.dequeueReusableCell(withIdentifier: "descripCell", for: indexPath) as! SectionDescriptionTableViewCell
-//            return descripCell
-       return UITableViewCell()
+//          cria uma label padrão sem precisar criar no storyboard
+            let cell = UITableViewCell.init(style: .default, reuseIdentifier: nil)
+//          seta que a label expanda até o maximo
+            cell.textLabel?.numberOfLines = .max
+            cell.textLabel?.text = "Nesse módulos você aprenderá a fazer alguns bolos classicos da culinária."
+            return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SectionCell", for: indexPath) as! SectionPreparacaoTableViewCell
             return cell
