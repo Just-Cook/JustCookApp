@@ -53,7 +53,7 @@ class ConquistasViewController: UIViewController {
     
 }
     
-extension ConquistasViewController:  UICollectionViewDelegate, UICollectionViewDataSource{
+extension ConquistasViewController:  UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return conquistasMock.count
     }
@@ -65,7 +65,12 @@ extension ConquistasViewController:  UICollectionViewDelegate, UICollectionViewD
         cell.image.layer.backgroundColor = CGColor(srgbRed: 196/255, green: 196/255, blue: 196/255, alpha: 1)
      
         cell.configureCell(imageName: conquistasMock[indexPath.row].image, titulo: conquistasMock[indexPath.row].titulo)
+ 
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 80, height: 140)
     }
     
         
