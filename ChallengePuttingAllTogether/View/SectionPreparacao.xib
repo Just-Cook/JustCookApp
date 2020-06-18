@@ -13,13 +13,15 @@
             <rect key="frame" x="0.0" y="0.0" width="369" height="119"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ouv-LX-6Jw">
-                    <rect key="frame" x="0.0" y="0.0" width="369" height="119"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ouv-LX-6Jw">
+                    <rect key="frame" x="16" y="0.0" width="346" height="119"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="119" id="fro-5X-eZ0"/>
+                    </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Algumas técnicas que vão te ajudar nesse módulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oas-rM-k5I">
-                    <rect key="frame" x="16" y="6" width="331" height="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Algumas técnicas que vão te ajudar nesse módulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oas-rM-k5I">
+                    <rect key="frame" x="16" y="5.6666666666666661" width="331" height="20.333333333333336"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -38,9 +40,14 @@
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="VPE-Oc-BPm" firstAttribute="leading" secondItem="ouv-LX-6Jw" secondAttribute="leading" id="331-j1-ywL"/>
+                <constraint firstItem="VPE-Oc-BPm" firstAttribute="bottom" secondItem="ouv-LX-6Jw" secondAttribute="bottom" id="7ma-pk-xcv"/>
                 <constraint firstItem="Oas-rM-k5I" firstAttribute="leading" secondItem="WgU-Re-fdb" secondAttribute="leading" constant="16" id="9YB-md-4Lx"/>
                 <constraint firstItem="WgU-Re-fdb" firstAttribute="trailing" secondItem="Oas-rM-k5I" secondAttribute="trailing" constant="22" id="Vm6-7X-roC"/>
+                <constraint firstItem="VPE-Oc-BPm" firstAttribute="trailing" secondItem="ouv-LX-6Jw" secondAttribute="trailing" id="XCO-5L-4dE"/>
+                <constraint firstItem="ouv-LX-6Jw" firstAttribute="top" secondItem="WgU-Re-fdb" secondAttribute="top" id="XYZ-nb-HZW"/>
                 <constraint firstItem="Oas-rM-k5I" firstAttribute="top" secondItem="WgU-Re-fdb" secondAttribute="top" constant="5.6666666666666661" id="bpv-6Z-FpP"/>
+                <constraint firstItem="VPE-Oc-BPm" firstAttribute="top" secondItem="Oas-rM-k5I" secondAttribute="bottom" constant="4" id="uQm-7m-mbl"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
