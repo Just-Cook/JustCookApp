@@ -66,7 +66,7 @@ class JornadaTableViewController: UITableViewController {
             return 117
         }
        if(indexPath.row == 2){
-            return 270
+            return 280
        }
         if(indexPath.row == 3){
             return 650

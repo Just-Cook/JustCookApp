@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -25,14 +25,14 @@
                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vT-0g-n3f">
                             <rect key="frame" x="0.0" y="0.0" width="344" height="200"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BotãoNãoConcluído" translatesAutoresizingMaskIntoConstraints="NO" id="eK6-Ac-i9J">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NaoConcluido" translatesAutoresizingMaskIntoConstraints="NO" id="eK6-Ac-i9J">
                                     <rect key="frame" x="309" y="10" width="25" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="25" id="PZ5-qd-Sah"/>
                                         <constraint firstAttribute="height" constant="25" id="qCj-gp-LsS"/>
                                     </constraints>
                                 </imageView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facil" translatesAutoresizingMaskIntoConstraints="NO" id="MZQ-u1-ZDB">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facil" translatesAutoresizingMaskIntoConstraints="NO" id="MZQ-u1-ZDB">
                                     <rect key="frame" x="16" y="16" width="90" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="90" id="1AC-QH-Q3E"/>
@@ -105,8 +105,8 @@
         </view>
     </objects>
     <resources>
-        <image name="BotãoNãoConcluído" width="128" height="128"/>
-        <image name="Facil" width="56" height="28"/>
+        <image name="NaoConcluido" width="25" height="25"/>
+        <image name="facil" width="42" height="21"/>
         <image name="woman-chef" width="1400" height="980"/>
     </resources>
 </document>

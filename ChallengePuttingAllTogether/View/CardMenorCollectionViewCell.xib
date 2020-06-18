@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -30,18 +30,18 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPN-1n-eow">
                     <rect key="frame" x="10" y="10" width="160" height="258"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facil" translatesAutoresizingMaskIntoConstraints="NO" id="8g0-Mx-If6">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facil" translatesAutoresizingMaskIntoConstraints="NO" id="8g0-Mx-If6">
                             <rect key="frame" x="35" y="162" width="90" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="kKC-iu-5rO"/>
                                 <constraint firstAttribute="width" constant="90" id="lIo-ET-GRf"/>
                             </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z2w-kr-dcr" userLabel="checkbox">
-                            <rect key="frame" x="138" y="10" width="12" height="12"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NaoConcluido" translatesAutoresizingMaskIntoConstraints="NO" id="Z2w-kr-dcr" userLabel="checkbox">
+                            <rect key="frame" x="125" y="10" width="25" height="25"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="12" id="Xha-R5-NoA"/>
-                                <constraint firstAttribute="width" constant="12" id="ruS-Pn-i8a"/>
+                                <constraint firstAttribute="height" constant="25" id="Xha-R5-NoA"/>
+                                <constraint firstAttribute="width" constant="25" id="ruS-Pn-i8a"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmB-KP-VYZ">
@@ -103,7 +103,8 @@
         </view>
     </objects>
     <resources>
-        <image name="Facil" width="56" height="28"/>
+        <image name="NaoConcluido" width="25" height="25"/>
+        <image name="facil" width="42" height="21"/>
         <image name="forma" width="88" height="75"/>
     </resources>
 </document>
