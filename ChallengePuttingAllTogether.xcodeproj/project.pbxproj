@@ -33,6 +33,7 @@
 		19CB3D3524979EE300F8FB77 /* VerTodos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19CB3D3424979EE300F8FB77 /* VerTodos.storyboard */; };
 		19CB3D3724979F3B00F8FB77 /* VerTodosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CB3D3624979F3B00F8FB77 /* VerTodosCollectionViewController.swift */; };
 		2722DE2C24997DD500E8E173 /* RecipePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2722DE2B24997DD400E8E173 /* RecipePageViewController.swift */; };
+		2722DE2E249A86CA00E8E173 /* Pontuation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2722DE2D249A86CA00E8E173 /* Pontuation.swift */; };
 		272C7FCF2497A524009313B2 /* IngredientsRecipeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272C7FCE2497A524009313B2 /* IngredientsRecipeScreen.storyboard */; };
 		272C7FD12497A92C009313B2 /* IngredientsRecipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C7FD02497A92C009313B2 /* IngredientsRecipeController.swift */; };
 		272C7FD32497ADEC009313B2 /* ImageDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C7FD22497ADEC009313B2 /* ImageDescriptionCell.swift */; };
@@ -111,6 +112,7 @@
 		19CB3D3424979EE300F8FB77 /* VerTodos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerTodos.storyboard; sourceTree = "<group>"; };
 		19CB3D3624979F3B00F8FB77 /* VerTodosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerTodosCollectionViewController.swift; sourceTree = "<group>"; };
 		2722DE2B24997DD400E8E173 /* RecipePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipePageViewController.swift; sourceTree = "<group>"; };
+		2722DE2D249A86CA00E8E173 /* Pontuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pontuation.swift; sourceTree = "<group>"; };
 		272C7FCE2497A524009313B2 /* IngredientsRecipeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IngredientsRecipeScreen.storyboard; sourceTree = "<group>"; };
 		272C7FD02497A92C009313B2 /* IngredientsRecipeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsRecipeController.swift; sourceTree = "<group>"; };
 		272C7FD22497ADEC009313B2 /* ImageDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDescriptionCell.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				D757BDEA2491174A00E85FCC /* Modulo.swift */,
 				D757BDF024917A1A00E85FCC /* PrepCard.swift */,
 				27BB99EF2497BCC300907B43 /* Ingredient.swift */,
+				2722DE2D249A86CA00E8E173 /* Pontuation.swift */,
 				D757BE02249A532B00E85FCC /* Colors.swift */,
 			);
 			path = Model;
@@ -460,6 +463,7 @@
 				D757BDF124917A1A00E85FCC /* PrepCard.swift in Sources */,
 				27B981852497B3CB003073B4 /* IngredientsTableViewController.swift in Sources */,
 				190804E82495317900A46E63 /* CardMaiorCollectionViewCell.swift in Sources */,
+				2722DE2E249A86CA00E8E173 /* Pontuation.swift in Sources */,
 				D757BDEF2491704A00E85FCC /* PreparacaoCollectionViewCell.swift in Sources */,
 				190804EA249531AF00A46E63 /* CardMaiorTableViewCell.swift in Sources */,
 				194F77D624944C4D003980CE /* JornadaTableViewController.swift in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JTW-Ga-J2V">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JTW-Ga-J2V">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -52,7 +52,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qab-KM-2sB">
-                                        <rect key="frame" x="312" y="101" width="13" height="12"/>
+                                        <rect key="frame" x="308" y="101" width="13" height="12"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <color key="textColor" red="0.45098039220000002" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -61,7 +61,7 @@
                                 <color key="tintColor" red="0.16862745100000001" green="0.62352941179999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="evl-KS-JiS" firstAttribute="leading" secondItem="hOY-N0-9No" secondAttribute="trailing" constant="16" id="2jL-zq-TEV"/>
-                                    <constraint firstItem="Qab-KM-2sB" firstAttribute="leading" secondItem="evl-KS-JiS" secondAttribute="leading" constant="200" id="6be-sE-eWN"/>
+                                    <constraint firstItem="Qab-KM-2sB" firstAttribute="leading" secondItem="evl-KS-JiS" secondAttribute="leading" constant="196" id="6be-sE-eWN"/>
                                     <constraint firstItem="hOY-N0-9No" firstAttribute="leading" secondItem="M5t-kV-MHz" secondAttribute="leading" constant="16" id="9Mo-DC-Hwx"/>
                                     <constraint firstItem="hOY-N0-9No" firstAttribute="top" secondItem="M5t-kV-MHz" secondAttribute="top" constant="35" id="EWN-qV-yiW"/>
                                     <constraint firstItem="evl-KS-JiS" firstAttribute="bottom" secondItem="hOY-N0-9No" secondAttribute="bottom" id="Jec-d0-83W"/>
@@ -164,6 +164,7 @@
                         <outlet property="barraProgresso" destination="evl-KS-JiS" id="Uqx-HV-ZZ5"/>
                         <outlet property="collectionView" destination="zUq-ma-j2y" id="DTJ-OH-ERV"/>
                         <outlet property="image" destination="hOY-N0-9No" id="9Ws-Zw-Sbb"/>
+                        <outlet property="nextLevelPontLabel" destination="XzS-JC-c0w" id="Dbm-cm-Una"/>
                         <outlet property="nivelLabel" destination="QJ4-Tf-txC" id="Cs1-OI-kMr"/>
                         <outlet property="nivelLabelNumber" destination="Qab-KM-2sB" id="gkn-cF-IQm"/>
                         <outlet property="nomeLabel" destination="dim-tk-MGe" id="leC-uj-42g"/>

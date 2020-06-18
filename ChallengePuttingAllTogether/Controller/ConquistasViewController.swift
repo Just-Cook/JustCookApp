@@ -17,11 +17,17 @@ class ConquistasViewController: UIViewController {
     @IBOutlet weak var nivelLabel: UILabel!
     @IBOutlet weak var nivelLabelNumber: UILabel!
     @IBOutlet weak var barraProgresso: UIProgressView!
+    @IBOutlet weak var nextLevelPontLabel: UILabel!
+    
     
     let conquistasMock = ConquistasModel.MockConquistas()
+    
+    let defauls = UserDefaults.standard
+    var pontuation = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         image.layer.masksToBounds = true
         image.contentMode = UIView.ContentMode.scaleAspectFill
         image.layer.cornerRadius = image.frame.width / 2
@@ -34,8 +40,16 @@ class ConquistasViewController: UIViewController {
         collectionView.layer.masksToBounds = true
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        let pontuation = Pontuation()
+        nivelLabelNumber.text = String(pontuation.levelPontuation())
+        nivelLabel.text = pontuation.nivelString()
+        nextLevelPontLabel.text = "/" + String(pontuation.getTotalNextLevel())
+        nomeLabel.text = pontuation.levelNivelUserString()
+        barraProgresso.progress = Float(pontuation.levelPontuation()) / Float(pontuation.getTotalNextLevel())
        
     }
+    
     
 }
     
