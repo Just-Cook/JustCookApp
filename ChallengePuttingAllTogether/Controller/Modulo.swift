@@ -6,3 +6,7 @@
 //  Copyright © 2020 Lidiane Gomes Barbosa. All rights reserved.
 //
 
+struct Modulo {
+    let titulo : String
+    let descricao : String
+}

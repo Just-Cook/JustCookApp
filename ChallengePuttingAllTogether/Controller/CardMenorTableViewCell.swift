@@ -15,7 +15,8 @@ class CardMenorTableViewCell: UITableViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var verTodosButton: UIButton!
     
-
+    weak var delegate : JornadaDelegate? = nil
+    
     static let identifier = "CardMenorTableViewCell"
     
     override func awakeFromNib() {
@@ -51,6 +52,11 @@ extension CardMenorTableViewCell: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
           return CGSize(width: 160, height: 278)
       }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let moduloSelec = Modulo(titulo: "Titulo \(indexPath.row)", descricao: "Teste")
+        delegate?.willTransition(to: moduloSelec)
+    }
 
 }
 
