@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Lottie
 
 class Pontuation {
     
@@ -146,15 +147,20 @@ class Pontuation {
         congratDescriptionLabel.leadingAnchor.constraint(equalTo: centeredView.leadingAnchor, constant: 16).isActive = true
         
         
-        let animationView = UIView()
-        animationView.backgroundColor = .red
+        let animationView = AnimationView()
+        animationView.animation = Animation.named("Bolo Path")
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .playOnce
+        animationView.play()
+        
+        //animationView.backgroundColor = .red
         
         centeredView.addSubview(animationView)
         
         animationView.translatesAutoresizingMaskIntoConstraints = false
         animationView.leadingAnchor.constraint(equalTo: centeredView.leadingAnchor, constant: 16).isActive = true
         animationView.trailingAnchor.constraint(equalTo: centeredView.trailingAnchor, constant: -16).isActive = true
-        animationView.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        animationView.heightAnchor.constraint(equalToConstant: 200).isActive = true
         animationView.topAnchor.constraint(equalTo: congratDescriptionLabel.bottomAnchor, constant: 16).isActive = true
         
         
