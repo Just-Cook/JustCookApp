@@ -159,11 +159,19 @@ extension RecipePageViewController {
         pageViewController.view.addSubview(finalizeButton)
         
         finalizeButton.translatesAutoresizingMaskIntoConstraints = false
-        finalizeButton.centerXAnchor.constraint(equalToSystemSpacingAfter: pageViewController.view.centerXAnchor, multiplier: 0).isActive = true
+        finalizeButton.centerXAnchor.constraint(equalTo: pageViewController.view.safeAreaLayoutGuide.centerXAnchor).isActive = true
         finalizeButton.heightAnchor.constraint(equalToConstant: 45).isActive = true
         finalizeButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
         
+        finalizeButton.addTarget(self, action: #selector(goToCongats), for: .touchUpInside)
+        
         return finalizeButton
+    }
+    
+    @objc
+    func goToCongats(){
+        let pont = Pontuation()
+        pont.showCongratScreen(recipeView: self, points: 100)
     }
     
 }
