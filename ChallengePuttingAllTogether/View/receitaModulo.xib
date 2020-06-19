@@ -86,15 +86,6 @@
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <connections>
-                <outlet property="backgReceita" destination="504-tZ-Qbk" id="AB2-Yo-w1U"/>
-                <outlet property="checkBox" destination="fOP-zA-p4J" id="37A-9t-Cmg"/>
-                <outlet property="porcoesIcon" destination="RYV-yi-fnx" id="ZEh-Nx-Kgy"/>
-                <outlet property="porcoesLabel" destination="22s-DO-iOU" id="IFD-kg-CbP"/>
-                <outlet property="receitaLabel" destination="RiI-zC-wSd" id="3Jg-FZ-p3G"/>
-                <outlet property="tempoLabel" destination="o07-OB-d3v" id="Zql-wY-dxh"/>
-                <outlet property="timerIcon" destination="rEC-g8-Iko" id="bmf-B8-3Nr"/>
-            </connections>
             <point key="canvasLocation" x="228.98550724637684" y="-270.6521739130435"/>
         </view>
     </objects>
