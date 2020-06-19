@@ -9,6 +9,9 @@
 import UIKit
 
 class CardMaiorTableViewCell: UITableViewCell {
+    
+    let qItens: Int = 2
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
        static let identifier = "CardMaiorTableViewCell"
@@ -20,6 +23,7 @@ class CardMaiorTableViewCell: UITableViewCell {
            
             
             collectionView.showsHorizontalScrollIndicator = false
+            collectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
                
            collectionView.register(CardMaiorCollectionViewCell.xibForCollection(), forCellWithReuseIdentifier: CardMaiorCollectionViewCell.identifier)
         }
@@ -37,7 +41,7 @@ class CardMaiorTableViewCell: UITableViewCell {
 
 extension CardMaiorTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return qItens
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -49,7 +53,14 @@ extension CardMaiorTableViewCell: UICollectionViewDelegate, UICollectionViewData
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-          return CGSize(width: 364, height: 200)
+            
+        var cellWidth = self.collectionView.frame.width
+        
+        if qItens>1{
+            cellWidth = cellWidth - 40
+        }
+            
+          return CGSize(width: cellWidth, height: 220)
       }
 
 }

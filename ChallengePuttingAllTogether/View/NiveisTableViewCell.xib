@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -45,9 +45,7 @@
                         <constraint firstItem="BMN-SX-OXH" firstAttribute="centerY" secondItem="otf-Gx-nKx" secondAttribute="centerY" id="Baz-VH-HiD"/>
                         <constraint firstItem="BMN-SX-OXH" firstAttribute="leading" secondItem="otf-Gx-nKx" secondAttribute="leading" constant="10" id="FpK-M8-ELR"/>
                         <constraint firstItem="Mrw-b5-6Uo" firstAttribute="leading" secondItem="BMN-SX-OXH" secondAttribute="trailing" constant="10" id="R44-8h-bnP"/>
-                        <constraint firstAttribute="height" constant="117" id="dey-iS-7LW"/>
                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="W8Y-Pn-ZSF" secondAttribute="trailing" constant="10" id="feM-Iu-aW5"/>
-                        <constraint firstAttribute="width" constant="344" id="kmW-np-8vm"/>
                         <constraint firstItem="W8Y-Pn-ZSF" firstAttribute="top" secondItem="Mrw-b5-6Uo" secondAttribute="bottom" constant="10" id="lfh-Mt-Xga"/>
                     </constraints>
                 </view>
