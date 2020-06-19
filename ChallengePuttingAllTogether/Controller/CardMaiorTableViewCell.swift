@@ -23,6 +23,7 @@ class CardMaiorTableViewCell: UITableViewCell {
            
             
             collectionView.showsHorizontalScrollIndicator = false
+            collectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
                
            collectionView.register(CardMaiorCollectionViewCell.xibForCollection(), forCellWithReuseIdentifier: CardMaiorCollectionViewCell.identifier)
         }
