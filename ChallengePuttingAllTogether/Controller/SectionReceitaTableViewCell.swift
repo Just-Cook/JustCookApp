@@ -22,7 +22,7 @@ class SectionReceitaTableViewCell: UITableViewCell {
     private func configTable(){
         tableReceita.delegate = self
         tableReceita.dataSource = self
-        tableReceita.register((UINib.init(nibName: "receitaModulo", bundle: nil)), forCellReuseIdentifier: "receitaCell")
+        tableReceita.register((UINib.init(nibName: "receitaModuloCell", bundle: nil)), forCellReuseIdentifier: "receitaCell")
         
     }
 }

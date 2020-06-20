@@ -13,19 +13,16 @@ class ModuloViewController: UIViewController {
     @IBOutlet weak var ModuloTableView: UITableView!
     let nameSections = ["", "Preparação", "Receita"]
     let tamanho = [100, 109, 108]
-    let sect = [SectionPreparacaoTableViewCell(), SectionPreparacaoTableViewCell(), SectionPreparacaoTableViewCell()]
-
     override func viewDidLoad() {
         super.viewDidLoad()
         configTable()
-        
         
     }
    private func configTable(){
         ModuloTableView.delegate = self
         ModuloTableView.dataSource = self
 //       registro collection de preparação
-        ModuloTableView.register(UINib.init(nibName: "SectionPreparacao", bundle: nil), forCellReuseIdentifier: "SectionCell")
+        ModuloTableView.register(UINib.init(nibName: "SectionPreparacaoCell", bundle: nil), forCellReuseIdentifier: "SectionCell")
 
         ModuloTableView.register(UINib.init(nibName: "SectionReceita", bundle: nil), forCellReuseIdentifier: "SectionReceitaCell")
 //        self.ModuloTableView.register(SectionDescriptionTableViewCell.self, forCellReuseIdentifier: "descripCell")
@@ -39,18 +36,18 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
        return 3
     }
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30
-    }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        //        tableView.estimatedRowHeight = 200
-        //        tableView.rowHeight = UITableView.automaticDimension
-        //        return tableView.estimatedRowHeight
-        //    }
-        
-        let height = tamanho[indexPath.row + 1]
-        return CGFloat(height)
-    }
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 30
+//    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        //        tableView.estimatedRowHeight = 200
+//        //        tableView.rowHeight = UITableView.automaticDimension
+//        //        return tableView.estimatedRowHeight
+//        //    }
+//        
+//        let height = tamanho[indexPath.row + 1]
+//        return CGFloat(height)
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -61,6 +58,7 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
         let title = UILabel()
         title.frame = CGRect(x: 16, y: 3, width: 375, height: 50)
         view.addSubview(title)
+        title.font = sfRounded(size: 22, weight: .bold)
         title.text = nameSections[section]
         return view
     }
@@ -72,7 +70,8 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
             let cell = UITableViewCell.init(style: .default, reuseIdentifier: nil)
 //          seta que a label expanda até o maximo
             cell.textLabel?.numberOfLines = .max
-            cell.textLabel?.text = "Nesse módulos você aprenderá a fazer alguns bolos classicos da culinária."
+            cell.textLabel?.font = .systemFont(ofSize: 17, weight: .medium)
+            cell.textLabel?.text = "Nesse módulos você aprenderá a fazer alguns bolos classicos da culinária. Nesse módulos você aprenderá a fazer alguns bolos classicos da culinária. Nesse módulos você aprenderá a fazer alguns bolos classicos da culinária. Nesse módulos você aprenderá a fazer alguns bolos classicos da culinária."
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SectionCell", for: indexPath) as! SectionPreparacaoTableViewCell

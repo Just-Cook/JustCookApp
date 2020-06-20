@@ -59,10 +59,12 @@
 		D757BDF3249265D800E85FCC /* receitaModulo.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDF2249265D800E85FCC /* receitaModulo.xib */; };
 		D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */; };
 		D757BDF72497A16300E85FCC /* SectionPreparacaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF62497A16300E85FCC /* SectionPreparacaoTableViewCell.swift */; };
-		D757BDF92497AD1200E85FCC /* SectionPreparacao.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDF82497AD1200E85FCC /* SectionPreparacao.xib */; };
 		D757BDFD249906B200E85FCC /* SectionReceita.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDFC249906B200E85FCC /* SectionReceita.xib */; };
 		D757BDFF2499089900E85FCC /* SectionReceitaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDFE2499089900E85FCC /* SectionReceitaTableViewCell.swift */; };
 		D757BE03249A532B00E85FCC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BE02249A532B00E85FCC /* Colors.swift */; };
+		D757BE07249BEE3800E85FCC /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BE06249BEE3800E85FCC /* Font.swift */; };
+		D757BE09249BF78900E85FCC /* SectionPreparacaoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BE08249BF78800E85FCC /* SectionPreparacaoCell.xib */; };
+		D757BE0B249C037100E85FCC /* receitaModuloCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BE0A249C037100E85FCC /* receitaModuloCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,12 +147,14 @@
 		D757BDF2249265D800E85FCC /* receitaModulo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = receitaModulo.xib; sourceTree = "<group>"; };
 		D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaModuloTableViewCell.swift; sourceTree = "<group>"; };
 		D757BDF62497A16300E85FCC /* SectionPreparacaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionPreparacaoTableViewCell.swift; sourceTree = "<group>"; };
-		D757BDF82497AD1200E85FCC /* SectionPreparacao.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionPreparacao.xib; sourceTree = "<group>"; };
 		D757BDFC249906B200E85FCC /* SectionReceita.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionReceita.xib; sourceTree = "<group>"; };
 		D757BDFE2499089900E85FCC /* SectionReceitaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionReceitaTableViewCell.swift; sourceTree = "<group>"; };
 		D757BE02249A532B00E85FCC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		DDAC4B5BBBC2271D27B350FC /* Pods_ChallengePuttingAllTogether_ChallengePuttingAllTogetherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengePuttingAllTogether_ChallengePuttingAllTogetherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF027CC735448E9B730AD64 /* Pods-ChallengePuttingAllTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengePuttingAllTogether.release.xcconfig"; path = "Target Support Files/Pods-ChallengePuttingAllTogether/Pods-ChallengePuttingAllTogether.release.xcconfig"; sourceTree = "<group>"; };
+		D757BE06249BEE3800E85FCC /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		D757BE08249BF78800E85FCC /* SectionPreparacaoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionPreparacaoCell.xib; sourceTree = "<group>"; };
+		D757BE0A249C037100E85FCC /* receitaModuloCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = receitaModuloCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,13 +253,14 @@
 				D757BDEC24911F0100E85FCC /* Preparacao.xib */,
 				199EF95D2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib */,
 				D757BDF2249265D800E85FCC /* receitaModulo.xib */,
-				D757BDF82497AD1200E85FCC /* SectionPreparacao.xib */,
 				199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */,
 				199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */,
 				194F77D924944E7A003980CE /* AlertaTableViewCell.xib */,
 				272C7FCE2497A524009313B2 /* IngredientsRecipeScreen.storyboard */,
 				19CB3D3424979EE300F8FB77 /* VerTodos.storyboard */,
 				D757BDFC249906B200E85FCC /* SectionReceita.xib */,
+				D757BE08249BF78800E85FCC /* SectionPreparacaoCell.xib */,
+				D757BE0A249C037100E85FCC /* receitaModuloCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 				27BB99EF2497BCC300907B43 /* Ingredient.swift */,
 				2722DE2D249A86CA00E8E173 /* Pontuation.swift */,
 				D757BE02249A532B00E85FCC /* Colors.swift */,
+				D757BE06249BEE3800E85FCC /* Font.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -443,13 +449,14 @@
 				198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */,
 				199EF95E2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib in Resources */,
 				199EF96A24941C3F00E6D720 /* NiveisTableViewCell.xib in Resources */,
+				D757BE0B249C037100E85FCC /* receitaModuloCell.xib in Resources */,
 				194F77DA24944E7A003980CE /* AlertaTableViewCell.xib in Resources */,
 				198A6844248EC3C8006B5FCB /* TabBar.storyboard in Resources */,
 				D757BDE72491101300E85FCC /* Modulo.storyboard in Resources */,
 				199EF9642494065C00E6D720 /* CardMaiorCollectionViewCell.xib in Resources */,
 				27DC0C0F249D1D8F0007223F /* Bolo Path.json in Resources */,
 				198A681D248EC017006B5FCB /* LaunchScreen.storyboard in Resources */,
-				D757BDF92497AD1200E85FCC /* SectionPreparacao.xib in Resources */,
+				D757BE09249BF78900E85FCC /* SectionPreparacaoCell.xib in Resources */,
 				27EA9F1C2493B7B1001CF006 /* Chronometer.xib in Resources */,
 				D757BDFD249906B200E85FCC /* SectionReceita.xib in Resources */,
 				198A681A248EC017006B5FCB /* Assets.xcassets in Resources */,
@@ -585,6 +592,7 @@
 			files = (
 				D757BDF72497A16300E85FCC /* SectionPreparacaoTableViewCell.swift in Sources */,
 				27EA9F1E2493BC9A001CF006 /* ChronometerView.swift in Sources */,
+				D757BE07249BEE3800E85FCC /* Font.swift in Sources */,
 				27EA9F202493BF06001CF006 /* RecipePagesCreation.swift in Sources */,
 				D757BE03249A532B00E85FCC /* Colors.swift in Sources */,
 				272C7FD32497ADEC009313B2 /* ImageDescriptionCell.swift in Sources */,
