@@ -29,13 +29,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="t6j-x6-PIW"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Lbq-cj-rTO"/>
                     <connections>
                         <outlet property="ModuloTableView" destination="9ym-wf-9pD" id="WiM-MB-ft3"/>
+                        <segue destination="FjS-8N-Lkd" kind="show" identifier="segueTecnica" id="CcH-Nc-s2q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ow8-d5-Luf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1520.289855072464" y="-674.18478260869574"/>
+            <point key="canvasLocation" x="-613.04347826086962" y="-674.18478260869574"/>
+        </scene>
+        <!--tecnica-->
+        <scene sceneID="0BN-vm-5yI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="tecnica" id="FjS-8N-Lkd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nC9-w5-8Bf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mRA-4h-DzC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-102.17391304347827" y="-784.23913043478262"/>
         </scene>
     </scenes>
 </document>

@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ModuloViewController: UIViewController {
+class ModuloViewController: UIViewController{
+    
 
     @IBOutlet weak var ModuloTableView: UITableView!
     let nameSections = ["", "Preparação", "Receita"]
@@ -76,6 +77,7 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
         case 0:
 //          cria uma label padrão sem precisar criar no storyboard
             let cell = UITableViewCell.init(style: .default, reuseIdentifier: nil)
+            
 //          seta que a label expanda até o maximo
             cell.textLabel?.numberOfLines = .max
             cell.textLabel?.font = .systemFont(ofSize: 17, weight: .medium)
@@ -83,6 +85,8 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SectionCell", for: indexPath) as! SectionPreparacaoTableViewCell
+           cell.delegate = self
+            
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SectionReceitaCell", for: indexPath) as! SectionReceitaTableViewCell
@@ -92,5 +96,22 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
              return UITableViewCell()
         }
        
+    }
+    
+    
+}
+
+
+extension ModuloViewController : SectionPreparacaoTableViewCellDelegate {
+    func didSelectItem(id: Int) {
+        self.performSegue(withIdentifier: "segueTecnica", sender: id)
+       
+
+    }
+
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destiny = segue.destination as? TecnicaTableViewController
+        destiny?.tecnica_id = (sender as! Int)
     }
 }

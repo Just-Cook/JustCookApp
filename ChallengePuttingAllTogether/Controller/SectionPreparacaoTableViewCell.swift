@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol SectionPreparacaoTableViewCellDelegate:class {
+    func didSelectItem(id:Int)
+}
+
 class SectionPreparacaoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var subtitlePrep: UILabel!
@@ -15,6 +19,12 @@ class SectionPreparacaoTableViewCell: UITableViewCell {
     static let xibName = "SectionPreparacaoCell" // Setando o nome da xib
     static let identifier = "SectionCell" // Setando o identificador da cell
    
+    let tecnicas = Tecnica.mockTecnica()
+    
+    weak var delegate: SectionPreparacaoTableViewCellDelegate?
+   
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         configCollection()
@@ -28,18 +38,33 @@ class SectionPreparacaoTableViewCell: UITableViewCell {
             collectionPreparacao.dataSource = self
             collectionPreparacao.register(UINib.init(nibName: "Preparacao", bundle: nil), forCellWithReuseIdentifier: "PreparacaoCell")
     }
+    
+  
   
 }
 extension SectionPreparacaoTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return tecnicas.count
         
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionPreparacao.dequeueReusableCell(withReuseIdentifier: PreparacaoCollectionViewCell.identifier, for: indexPath) as! PreparacaoCollectionViewCell
+        
+        
+        cell.configure(image: tecnicas[indexPath.row].imageName, titulo: tecnicas[indexPath.row].titulo)
         return cell
     }
     
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let currentItem = tecnicas[indexPath.row]
+        
+        delegate?.didSelectItem(id: currentItem.id)
+        
+        print("id:  \(currentItem.id)")
+        
+        
+    }
     
 }

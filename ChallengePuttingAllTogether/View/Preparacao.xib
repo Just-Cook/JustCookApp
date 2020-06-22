@@ -10,34 +10,47 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PreparacaoCollectionViewCell" customModule="ChallengePuttingAllTogether" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="88" height="75"/>
+            <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forma" translatesAutoresizingMaskIntoConstraints="NO" id="ybZ-qZ-fLV">
-                    <rect key="frame" x="0.0" y="0.0" width="88" height="75"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forma" translatesAutoresizingMaskIntoConstraints="NO" id="ybZ-qZ-fLV">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doK-Qj-8xn">
-                    <rect key="frame" x="19" y="55" width="49" height="14"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJD-zS-YOk">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.44873715753424659" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doK-Qj-8xn">
+                    <rect key="frame" x="8" y="35" width="84" height="14"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="Concluído" translatesAutoresizingMaskIntoConstraints="NO" id="LLt-Tc-YtE">
-                    <rect key="frame" x="68" y="5" width="15" height="15"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="NaoConcluido" translatesAutoresizingMaskIntoConstraints="NO" id="LLt-Tc-YtE">
+                    <rect key="frame" x="82" y="8" width="10" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="Czq-LQ-Fe6"/>
+                        <constraint firstAttribute="width" constant="10" id="oJ9-ra-35G"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="doK-Qj-8xn" secondAttribute="bottom" constant="6" id="3bo-K0-swI"/>
                 <constraint firstItem="ybZ-qZ-fLV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4iF-lW-lNZ"/>
-                <constraint firstItem="doK-Qj-8xn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="19" id="5eB-vx-TxO"/>
-                <constraint firstItem="LLt-Tc-YtE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="68" id="5wX-MK-sIn"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LLt-Tc-YtE" secondAttribute="bottom" constant="55" id="GON-xZ-7Sa"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="doK-Qj-8xn" secondAttribute="trailing" constant="20" id="IT2-x0-hDb"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LLt-Tc-YtE" secondAttribute="trailing" constant="5" id="Pbr-iT-E8G"/>
-                <constraint firstItem="LLt-Tc-YtE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="SN1-SN-U30"/>
+                <constraint firstItem="doK-Qj-8xn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="5eB-vx-TxO"/>
+                <constraint firstItem="AJD-zS-YOk" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Dxq-qc-Mgv"/>
+                <constraint firstItem="ybZ-qZ-fLV" firstAttribute="trailing" secondItem="doK-Qj-8xn" secondAttribute="trailing" constant="8" id="IT2-x0-hDb"/>
+                <constraint firstItem="doK-Qj-8xn" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="ybZ-qZ-fLV" secondAttribute="bottom" constant="-5" id="PVS-Ws-ydX"/>
+                <constraint firstItem="AJD-zS-YOk" firstAttribute="trailing" secondItem="LLt-Tc-YtE" secondAttribute="trailing" constant="8" id="Pbr-iT-E8G"/>
+                <constraint firstItem="LLt-Tc-YtE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="SN1-SN-U30"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ybZ-qZ-fLV" secondAttribute="trailing" id="jGe-0u-dVj"/>
+                <constraint firstItem="ybZ-qZ-fLV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="kar-JB-hvC"/>
                 <constraint firstItem="ybZ-qZ-fLV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mnH-0e-GL9"/>
-                <constraint firstItem="doK-Qj-8xn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="55" id="yfk-Uo-P8X"/>
+                <constraint firstItem="ybZ-qZ-fLV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pBy-mg-tBU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="AJD-zS-YOk" secondAttribute="bottom" id="xIg-Zd-sdy"/>
+                <constraint firstItem="doK-Qj-8xn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="35" id="yfk-Uo-P8X"/>
+                <constraint firstItem="AJD-zS-YOk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zDI-Wl-3I1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AJD-zS-YOk" secondAttribute="trailing" id="zMT-g2-EQN"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
@@ -46,13 +59,14 @@
             <connections>
                 <outlet property="backgPreparacao" destination="ybZ-qZ-fLV" id="uFk-dw-TSY"/>
                 <outlet property="checkPreparacao" destination="LLt-Tc-YtE" id="LaZ-PH-6Dt"/>
+                <outlet property="gradienteView" destination="AJD-zS-YOk" id="4OQ-32-sH1"/>
                 <outlet property="labelPreparacao" destination="doK-Qj-8xn" id="uey-C8-KIS"/>
             </connections>
-            <point key="canvasLocation" x="-120.28985507246378" y="-193.61413043478262"/>
+            <point key="canvasLocation" x="-120.28985507246378" y="-194.02173913043481"/>
         </view>
     </objects>
     <resources>
-        <image name="Concluído" width="25" height="25"/>
+        <image name="NaoConcluido" width="25" height="25"/>
         <image name="forma" width="88" height="75"/>
     </resources>
 </document>

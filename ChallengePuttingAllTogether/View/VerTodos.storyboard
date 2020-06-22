@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Yu-CT-7gr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Yu-CT-7gr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -8,20 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="bdH-ec-23s">
-            <objects>
-                <navigationController modalPresentationStyle="fullScreen" id="0eo-uk-D2s" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xQ6-hW-Aqe">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mSw-bI-htT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="96" y="-111"/>
-        </scene>
-        <!--Todos os Modulos-->
+        <!--Ver Todos Collection View Controller-->
         <scene sceneID="ipe-It-Hyi">
             <objects>
                 <viewController id="4Yu-CT-7gr" customClass="VerTodosCollectionViewController" customModule="ChallengePuttingAllTogether" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,7 +46,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nHe-KJ-2Ue"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Todos os Modulos" largeTitleDisplayMode="never" id="Fr1-IX-Cxh"/>
                     <connections>
                         <outlet property="collectionView" destination="V2I-Ug-Esr" id="SqX-D0-T9S"/>
                     </connections>
