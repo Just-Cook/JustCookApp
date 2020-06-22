@@ -11,6 +11,9 @@ import UIKit
 class TecnicaTableViewCell: UITableViewCell {
  
     static let identifier = "TecnicaTableViewCell"
+    
+   
+    
     override func awakeFromNib() {
         super.awakeFromNib()
        

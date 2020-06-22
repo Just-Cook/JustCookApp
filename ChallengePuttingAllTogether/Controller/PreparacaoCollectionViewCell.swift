@@ -10,6 +10,7 @@ import UIKit
 
 class PreparacaoCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var gradienteView: UIView!
     @IBOutlet weak var backgPreparacao: UIImageView!
     @IBOutlet weak var labelPreparacao: UILabel!
     @IBOutlet weak var checkPreparacao: UIImageView!
@@ -20,6 +21,17 @@ class PreparacaoCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        backgPreparacao.layer.masksToBounds = true
+        backgPreparacao.layer.cornerRadius = 8
+        gradienteView.layer.masksToBounds = true
+        gradienteView.layer.cornerRadius = 8
     }
+    
+    func configure(image:String, titulo:String){
+        backgPreparacao.image = UIImage(named: image)
+        labelPreparacao.text = titulo
+    }
+    
+    
     
 }

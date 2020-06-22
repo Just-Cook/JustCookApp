@@ -17,6 +17,7 @@
 		194F77D824944DC3003980CE /* AlertaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F77D724944DC3003980CE /* AlertaTableViewCell.swift */; };
 		194F77DA24944E7A003980CE /* AlertaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 194F77D924944E7A003980CE /* AlertaTableViewCell.xib */; };
 		195D797624925ECE00B585DC /* ConquistasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D797524925ECE00B585DC /* ConquistasViewController.swift */; };
+		196D851C24A0E58F00C2AA99 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196D851B24A0E58F00C2AA99 /* Item.swift */; };
 		198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A6810248EC010006B5FCB /* AppDelegate.swift */; };
 		198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A6812248EC010006B5FCB /* SceneDelegate.swift */; };
 		198A681A248EC017006B5FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198A6819248EC017006B5FCB /* Assets.xcassets */; };
@@ -97,6 +98,7 @@
 		194F77D724944DC3003980CE /* AlertaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertaTableViewCell.swift; sourceTree = "<group>"; };
 		194F77D924944E7A003980CE /* AlertaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertaTableViewCell.xib; sourceTree = "<group>"; };
 		195D797524925ECE00B585DC /* ConquistasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasViewController.swift; sourceTree = "<group>"; };
+		196D851B24A0E58F00C2AA99 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		198A680D248EC010006B5FCB /* ChallengePuttingAllTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengePuttingAllTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		198A6810248EC010006B5FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		198A6812248EC010006B5FCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,11 +158,11 @@
 		D757BDFC249906B200E85FCC /* SectionReceita.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionReceita.xib; sourceTree = "<group>"; };
 		D757BDFE2499089900E85FCC /* SectionReceitaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionReceitaTableViewCell.swift; sourceTree = "<group>"; };
 		D757BE02249A532B00E85FCC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		DDAC4B5BBBC2271D27B350FC /* Pods_ChallengePuttingAllTogether_ChallengePuttingAllTogetherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengePuttingAllTogether_ChallengePuttingAllTogetherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFF027CC735448E9B730AD64 /* Pods-ChallengePuttingAllTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengePuttingAllTogether.release.xcconfig"; path = "Target Support Files/Pods-ChallengePuttingAllTogether/Pods-ChallengePuttingAllTogether.release.xcconfig"; sourceTree = "<group>"; };
 		D757BE06249BEE3800E85FCC /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		D757BE08249BF78800E85FCC /* SectionPreparacaoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionPreparacaoCell.xib; sourceTree = "<group>"; };
 		D757BE0A249C037100E85FCC /* receitaModuloCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = receitaModuloCell.xib; sourceTree = "<group>"; };
+		DDAC4B5BBBC2271D27B350FC /* Pods_ChallengePuttingAllTogether_ChallengePuttingAllTogetherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengePuttingAllTogether_ChallengePuttingAllTogetherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF027CC735448E9B730AD64 /* Pods-ChallengePuttingAllTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengePuttingAllTogether.release.xcconfig"; path = "Target Support Files/Pods-ChallengePuttingAllTogether/Pods-ChallengePuttingAllTogether.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,12 +266,9 @@
 				272C7FCE2497A524009313B2 /* IngredientsRecipeScreen.storyboard */,
 				19CB3D3424979EE300F8FB77 /* VerTodos.storyboard */,
 				D757BDFC249906B200E85FCC /* SectionReceita.xib */,
-
 				19A600A4249CE88700713A36 /* tecnica.storyboard */,
-
 				D757BE08249BF78800E85FCC /* SectionPreparacaoCell.xib */,
 				D757BE0A249C037100E85FCC /* receitaModuloCell.xib */,
-
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -285,11 +284,9 @@
 				27BB99EF2497BCC300907B43 /* Ingredient.swift */,
 				2722DE2D249A86CA00E8E173 /* Pontuation.swift */,
 				D757BE02249A532B00E85FCC /* Colors.swift */,
-
 				19A600A8249CE90500713A36 /* Tecnica.swift */,
-
 				D757BE06249BEE3800E85FCC /* Font.swift */,
-
+				196D851B24A0E58F00C2AA99 /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -470,12 +467,8 @@
 				199EF9642494065C00E6D720 /* CardMaiorCollectionViewCell.xib in Resources */,
 				27DC0C0F249D1D8F0007223F /* Bolo Path.json in Resources */,
 				198A681D248EC017006B5FCB /* LaunchScreen.storyboard in Resources */,
-
 				19A600A5249CE88700713A36 /* tecnica.storyboard in Resources */,
-				D757BDF92497AD1200E85FCC /* SectionPreparacao.xib in Resources */,
-
 				D757BE09249BF78900E85FCC /* SectionPreparacaoCell.xib in Resources */,
-
 				27EA9F1C2493B7B1001CF006 /* Chronometer.xib in Resources */,
 				D757BDFD249906B200E85FCC /* SectionReceita.xib in Resources */,
 				198A681A248EC017006B5FCB /* Assets.xcassets in Resources */,
@@ -616,6 +609,7 @@
 				D757BE03249A532B00E85FCC /* Colors.swift in Sources */,
 				272C7FD32497ADEC009313B2 /* ImageDescriptionCell.swift in Sources */,
 				190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */,
+				196D851C24A0E58F00C2AA99 /* Item.swift in Sources */,
 				D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */,
 				D757BDE92491113900E85FCC /* ModuloViewController.swift in Sources */,
 				194F77D824944DC3003980CE /* AlertaTableViewCell.swift in Sources */,
