@@ -86,10 +86,11 @@ extension JornadaTableViewController : JornadaDelegate {
     func willTransition(to module: Modulo) {
         print(module.titulo)
         
-//        let telaModulo = UIStoryboard(name: "Modulo", bundle: nil).instantiateViewController(withIdentifier: "ModuloViewController") as? ModuloViewController
-//
-//        self.navigationController?.pushViewController(telaModulo!, animated: true)
+        let telaModulo = UIStoryboard(name: "Modulo", bundle: nil).instantiateViewController(withIdentifier: "moduloView") as? ModuloViewController
+        telaModulo?.title = module.titulo
+        telaModulo?.moduleId = module.id
+        self.navigationController?.pushViewController(telaModulo!, animated: true)
+        
+    
     }
-    
-    
 }

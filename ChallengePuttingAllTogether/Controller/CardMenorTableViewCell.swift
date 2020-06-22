@@ -58,7 +58,7 @@ extension CardMenorTableViewCell: UICollectionViewDelegate, UICollectionViewData
       }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let moduloSelec = Modulo(titulo: "Titulo \(indexPath.row)", descricao: "Teste")
+        let moduloSelec = Modulo(id: indexPath.row,titulo: "Titulo \(indexPath.row)", descricao: "Teste")
         delegate?.willTransition(to: moduloSelec)
     }
 
