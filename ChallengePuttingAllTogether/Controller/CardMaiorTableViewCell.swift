@@ -14,7 +14,8 @@ class CardMaiorTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-       static let identifier = "CardMaiorTableViewCell"
+    static let identifier = "CardMaiorTableViewCell"
+    weak var delegate : JornadaDelegate? = nil
         
         override func awakeFromNib() {
             super.awakeFromNib()
@@ -62,6 +63,11 @@ extension CardMaiorTableViewCell: UICollectionViewDelegate, UICollectionViewData
             
           return CGSize(width: cellWidth, height: 220)
       }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let moduloSelec = Modulo(id: indexPath.row,titulo: "Titulo \(indexPath.row)", descricao: "Teste")
+        delegate?.willTransition(to: moduloSelec)
+    }
 
 }
 

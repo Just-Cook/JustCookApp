@@ -49,6 +49,7 @@ class JornadaTableViewController: UITableViewController {
             
         case 2:
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CardMaiorTableViewCell.identifier, for: indexPath) as? CardMaiorTableViewCell else{ fatalError("Wrong identifier") }
+        cell.delegate = self
         return cell
             
         case 3:
