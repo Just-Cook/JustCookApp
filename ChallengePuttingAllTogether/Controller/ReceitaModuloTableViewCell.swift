@@ -19,7 +19,8 @@ class ReceitaModuloTableViewCell: UITableViewCell {
     @IBOutlet weak var checkBox: UIImageView!
     @IBOutlet weak var porcoesLabel: UILabel!
     
-    @IBOutlet weak var dificuldadeImageView: UIImageView!
+    @IBOutlet weak var viewBackg: UIView!
+    
     
     @IBOutlet weak var porcoesIcon: UIImageView!
     @IBOutlet weak var timerIcon: UIImageView!
@@ -27,10 +28,10 @@ class ReceitaModuloTableViewCell: UITableViewCell {
     static let xibName = "receitaModulo" // Setando o nome da xib
     static let identifier = "receitaCell" // Setando o identificador da cell
        
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        // Initialization code
-//    }
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    
+    }
 //
 //    override func setSelected(_ selected: Bool, animated: Bool) {
 //        super.setSelected(selected, animated: animated)

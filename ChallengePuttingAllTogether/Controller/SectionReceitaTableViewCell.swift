@@ -10,6 +10,7 @@ import UIKit
 
 class SectionReceitaTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var tableHeight: NSLayoutConstraint!
     @IBOutlet weak var tableReceita: UITableView!
     static let xibName = "SectionReceita" // Setando o nome da xib
     static let identifier = "SectionReceitaCell" // Setando o identificador da cell
@@ -23,16 +24,18 @@ class SectionReceitaTableViewCell: UITableViewCell {
         tableReceita.delegate = self
         tableReceita.dataSource = self
         tableReceita.register((UINib.init(nibName: "receitaModuloCell", bundle: nil)), forCellReuseIdentifier: "receitaCell")
+        tableHeight.constant = 4 * 130
         
     }
 }
 extension SectionReceitaTableViewCell: UITableViewDelegate, UITableViewDataSource {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        6
+       return 4
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ReceitaModuloTableViewCell.identifier, for: indexPath) as! ReceitaModuloTableViewCell
+            
         return cell
     }
     

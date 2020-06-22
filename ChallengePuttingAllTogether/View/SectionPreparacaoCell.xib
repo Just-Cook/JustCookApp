@@ -8,24 +8,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="79" id="BdQ-1p-UoF" customClass="SectionPreparacaoTableViewCell" customModule="ChallengePuttingAllTogether" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="149"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="BdQ-1p-UoF" customClass="SectionPreparacaoTableViewCell" customModule="ChallengePuttingAllTogether" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="140"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BdQ-1p-UoF" id="9Ga-BJ-eWd">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="149"/>
+                <rect key="frame" x="0.0" y="0.0" width="398" height="140"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Algumas técnicas que vão te ajudar nesse módulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zr9-vz-8EH">
-                        <rect key="frame" x="12" y="17" width="382" height="14"/>
+                        <rect key="frame" x="16" y="3" width="382" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PUQ-IX-fq2">
-                        <rect key="frame" x="12" y="49" width="382" height="88"/>
+                        <rect key="frame" x="16" y="37.5" width="377" height="99.5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="382" id="ZaS-uH-XMq"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="344" id="ZaS-uH-XMq"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="88" id="yUJ-NG-FEF"/>
                         </constraints>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oHS-nr-GaJ">
@@ -37,24 +37,19 @@
                     </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="PUQ-IX-fq2" firstAttribute="trailing" secondItem="zr9-vz-8EH" secondAttribute="trailing" id="5wd-5D-fiD"/>
-                    <constraint firstItem="PUQ-IX-fq2" firstAttribute="leading" secondItem="zr9-vz-8EH" secondAttribute="leading" id="HBA-VB-zov"/>
-                    <constraint firstItem="zr9-vz-8EH" firstAttribute="leading" secondItem="9Ga-BJ-eWd" secondAttribute="leading" constant="12" id="Kuh-mj-cPe"/>
-                    <constraint firstItem="PUQ-IX-fq2" firstAttribute="trailing" secondItem="9Ga-BJ-eWd" secondAttribute="trailingMargin" id="Oc9-3A-ejC"/>
-                    <constraint firstItem="zr9-vz-8EH" firstAttribute="top" secondItem="9Ga-BJ-eWd" secondAttribute="top" constant="17" id="kZa-to-dek"/>
-                    <constraint firstAttribute="bottom" secondItem="PUQ-IX-fq2" secondAttribute="bottom" constant="12" id="no8-Wa-iFP"/>
-                    <constraint firstItem="PUQ-IX-fq2" firstAttribute="top" secondItem="zr9-vz-8EH" secondAttribute="bottom" constant="18" id="nvm-Rf-Qdj"/>
-                    <constraint firstItem="PUQ-IX-fq2" firstAttribute="leading" secondItem="9Ga-BJ-eWd" secondAttribute="leading" constant="12" id="rka-3D-gEX"/>
+                    <constraint firstItem="PUQ-IX-fq2" firstAttribute="trailing" secondItem="zr9-vz-8EH" secondAttribute="trailing" constant="-5" id="5wd-5D-fiD"/>
+                    <constraint firstItem="zr9-vz-8EH" firstAttribute="leading" secondItem="9Ga-BJ-eWd" secondAttribute="leading" constant="16" id="Kuh-mj-cPe"/>
+                    <constraint firstItem="zr9-vz-8EH" firstAttribute="top" secondItem="9Ga-BJ-eWd" secondAttribute="top" constant="3" id="kZa-to-dek"/>
+                    <constraint firstAttribute="bottom" secondItem="PUQ-IX-fq2" secondAttribute="bottom" constant="3" id="no8-Wa-iFP"/>
+                    <constraint firstItem="PUQ-IX-fq2" firstAttribute="top" secondItem="zr9-vz-8EH" secondAttribute="bottom" constant="14" id="nvm-Rf-Qdj"/>
+                    <constraint firstItem="PUQ-IX-fq2" firstAttribute="leading" secondItem="9Ga-BJ-eWd" secondAttribute="leading" constant="16" id="rka-3D-gEX"/>
                 </constraints>
             </tableViewCellContentView>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="zr9-vz-8EH" secondAttribute="trailing" constant="20" id="c4x-YS-HkS"/>
-            </constraints>
             <connections>
                 <outlet property="collectionPreparacao" destination="PUQ-IX-fq2" id="3du-iS-fW2"/>
                 <outlet property="subtitlePrep" destination="zr9-vz-8EH" id="vX5-fz-RtR"/>
             </connections>
-            <point key="canvasLocation" x="834.78260869565224" y="132.92410714285714"/>
+            <point key="canvasLocation" x="823.1884057971015" y="129.91071428571428"/>
         </tableViewCell>
     </objects>
 </document>

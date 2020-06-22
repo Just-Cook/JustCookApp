@@ -25,6 +25,9 @@ class ModuloViewController: UIViewController {
         ModuloTableView.register(UINib.init(nibName: "SectionPreparacaoCell", bundle: nil), forCellReuseIdentifier: "SectionCell")
 
         ModuloTableView.register(UINib.init(nibName: "SectionReceita", bundle: nil), forCellReuseIdentifier: "SectionReceitaCell")
+        ModuloTableView.register((UINib.init(nibName: "receitaModuloCell", bundle: nil)), forCellReuseIdentifier: "receitaCell")
+        
+        
 //        self.ModuloTableView.register(SectionDescriptionTableViewCell.self, forCellReuseIdentifier: "descripCell")
     }
 
@@ -36,9 +39,9 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
        return 3
     }
-//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 30
-//    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
+    }
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 //        //        tableView.estimatedRowHeight = 200
 //        //        tableView.rowHeight = UITableView.automaticDimension
@@ -56,10 +59,11 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
         let title = UILabel()
-        title.frame = CGRect(x: 16, y: 3, width: 375, height: 50)
+        title.frame = CGRect(x: 16, y: 3, width: 375, height: 30)
         view.addSubview(title)
         title.font = sfRounded(size: 22, weight: .bold)
         title.text = nameSections[section]
+        
         return view
     }
    
@@ -71,7 +75,7 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
 //          seta que a label expanda até o maximo
             cell.textLabel?.numberOfLines = .max
             cell.textLabel?.font = .systemFont(ofSize: 17, weight: .medium)
-            cell.textLabel?.text = "Nesse módulos você aprenderá a fazer alguns bolos classicos da culinária. Nesse módulos você aprenderá a fazer alguns bolos classicos da culinária. Nesse módulos você aprenderá a fazer alguns bolos classicos da culinária. Nesse módulos você aprenderá a fazer alguns bolos classicos da culinária."
+            cell.textLabel?.text = "Nesse módulos você aprenderá a fazer alguns bolos classicos da culinária."
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SectionCell", for: indexPath) as! SectionPreparacaoTableViewCell
