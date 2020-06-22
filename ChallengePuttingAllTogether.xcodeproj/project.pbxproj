@@ -29,6 +29,10 @@
 		199EF95E2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF95D2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib */; };
 		199EF9642494065C00E6D720 /* CardMaiorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */; };
 		199EF96A24941C3F00E6D720 /* NiveisTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */; };
+		19A600A5249CE88700713A36 /* tecnica.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A600A4249CE88700713A36 /* tecnica.storyboard */; };
+		19A600A7249CE8C500713A36 /* TecnicaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A600A6249CE8C500713A36 /* TecnicaTableViewController.swift */; };
+		19A600A9249CE90500713A36 /* Tecnica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A600A8249CE90500713A36 /* Tecnica.swift */; };
+		19A600AB249CEE3C00713A36 /* TecnicaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A600AA249CEE3C00713A36 /* TecnicaTableViewCell.swift */; };
 		19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6824912037006CF0FE /* ConquistasModel.swift */; };
 		19B5DA70249160EA006CF0FE /* ConquistasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */; };
 		19CB3D3524979EE300F8FB77 /* VerTodos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19CB3D3424979EE300F8FB77 /* VerTodos.storyboard */; };
@@ -112,6 +116,10 @@
 		199EF95D2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMenorCollectionViewCell.xib; sourceTree = "<group>"; };
 		199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMaiorCollectionViewCell.xib; sourceTree = "<group>"; };
 		199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NiveisTableViewCell.xib; sourceTree = "<group>"; };
+		19A600A4249CE88700713A36 /* tecnica.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tecnica.storyboard; sourceTree = "<group>"; };
+		19A600A6249CE8C500713A36 /* TecnicaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecnicaTableViewController.swift; sourceTree = "<group>"; };
+		19A600A8249CE90500713A36 /* Tecnica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tecnica.swift; sourceTree = "<group>"; };
+		19A600AA249CEE3C00713A36 /* TecnicaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecnicaTableViewCell.swift; sourceTree = "<group>"; };
 		19B5DA6824912037006CF0FE /* ConquistasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasModel.swift; sourceTree = "<group>"; };
 		19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasCollectionViewCell.swift; sourceTree = "<group>"; };
 		19CB3D3424979EE300F8FB77 /* VerTodos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerTodos.storyboard; sourceTree = "<group>"; };
@@ -259,8 +267,12 @@
 				272C7FCE2497A524009313B2 /* IngredientsRecipeScreen.storyboard */,
 				19CB3D3424979EE300F8FB77 /* VerTodos.storyboard */,
 				D757BDFC249906B200E85FCC /* SectionReceita.xib */,
+
+				19A600A4249CE88700713A36 /* tecnica.storyboard */,
+
 				D757BE08249BF78800E85FCC /* SectionPreparacaoCell.xib */,
 				D757BE0A249C037100E85FCC /* receitaModuloCell.xib */,
+
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -276,7 +288,11 @@
 				27BB99EF2497BCC300907B43 /* Ingredient.swift */,
 				2722DE2D249A86CA00E8E173 /* Pontuation.swift */,
 				D757BE02249A532B00E85FCC /* Colors.swift */,
+
+				19A600A8249CE90500713A36 /* Tecnica.swift */,
+
 				D757BE06249BEE3800E85FCC /* Font.swift */,
+
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,6 +322,8 @@
 				27B981842497B3CB003073B4 /* IngredientsTableViewController.swift */,
 				19CB3D3624979F3B00F8FB77 /* VerTodosCollectionViewController.swift */,
 				D757BDFE2499089900E85FCC /* SectionReceitaTableViewCell.swift */,
+				19A600A6249CE8C500713A36 /* TecnicaTableViewController.swift */,
+				19A600AA249CEE3C00713A36 /* TecnicaTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -456,7 +474,12 @@
 				199EF9642494065C00E6D720 /* CardMaiorCollectionViewCell.xib in Resources */,
 				27DC0C0F249D1D8F0007223F /* Bolo Path.json in Resources */,
 				198A681D248EC017006B5FCB /* LaunchScreen.storyboard in Resources */,
+
+				19A600A5249CE88700713A36 /* tecnica.storyboard in Resources */,
+				D757BDF92497AD1200E85FCC /* SectionPreparacao.xib in Resources */,
+
 				D757BE09249BF78900E85FCC /* SectionPreparacaoCell.xib in Resources */,
+
 				27EA9F1C2493B7B1001CF006 /* Chronometer.xib in Resources */,
 				D757BDFD249906B200E85FCC /* SectionReceita.xib in Resources */,
 				198A681A248EC017006B5FCB /* Assets.xcassets in Resources */,
@@ -618,12 +641,15 @@
 				2722DE2C24997DD500E8E173 /* RecipePageViewController.swift in Sources */,
 				D757BDF124917A1A00E85FCC /* PrepCard.swift in Sources */,
 				27B981852497B3CB003073B4 /* IngredientsTableViewController.swift in Sources */,
+				19A600A9249CE90500713A36 /* Tecnica.swift in Sources */,
 				190804E82495317900A46E63 /* CardMaiorCollectionViewCell.swift in Sources */,
 				2722DE2E249A86CA00E8E173 /* Pontuation.swift in Sources */,
+				19A600AB249CEE3C00713A36 /* TecnicaTableViewCell.swift in Sources */,
 				D757BDEF2491704A00E85FCC /* PreparacaoCollectionViewCell.swift in Sources */,
 				190804EA249531AF00A46E63 /* CardMaiorTableViewCell.swift in Sources */,
 				194F77D624944C4D003980CE /* JornadaTableViewController.swift in Sources */,
 				19CB3D3724979F3B00F8FB77 /* VerTodosCollectionViewController.swift in Sources */,
+				19A600A7249CE8C500713A36 /* TecnicaTableViewController.swift in Sources */,
 				190804E224950D6400A46E63 /* NiveisTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
