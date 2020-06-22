@@ -17,7 +17,11 @@ class ConquistasCollectionViewCell: UICollectionViewCell {
     
     
     func configureCell(imageName:String, titulo:String){
-        self.image.image = UIImage(named: imageName)
+        
+        if(imageName != ""){
+            self.image.image = UIImage(named: imageName)
+        }
+        
         self.titulo.text = titulo
         
         self.image.layer.cornerRadius = 5

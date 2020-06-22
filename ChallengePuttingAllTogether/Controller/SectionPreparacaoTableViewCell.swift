@@ -12,12 +12,15 @@ class SectionPreparacaoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var subtitlePrep: UILabel!
     @IBOutlet weak var collectionPreparacao: UICollectionView!
-    static let xibName = "SectionPreparacao" // Setando o nome da xib
+    static let xibName = "SectionPreparacaoCell" // Setando o nome da xib
     static let identifier = "SectionCell" // Setando o identificador da cell
    
     override func awakeFromNib() {
         super.awakeFromNib()
         configCollection()
+        subtitlePrep.font = .systemFont(ofSize: 15, weight: .regular)
+//        subtitlePrep.lineBreakMode = .byWordWrapping
+//        subtitlePrep.numberOfLines = .max
 
     }
     private func configCollection(){

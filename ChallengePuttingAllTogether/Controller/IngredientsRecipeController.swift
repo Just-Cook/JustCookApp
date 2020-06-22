@@ -12,7 +12,8 @@ class IngredientsRecipeController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        Pontuation.nav = self.navigationController
+
         self.navigationBar.prefersLargeTitles = true
         
     }

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		175BB307849F1950707DC373 /* Pods_ChallengePuttingAllTogetherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD34DB3D4376D058FB4885E9 /* Pods_ChallengePuttingAllTogetherTests.framework */; };
 		190804E224950D6400A46E63 /* NiveisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E124950D6400A46E63 /* NiveisTableViewCell.swift */; };
 		190804E4249510C900A46E63 /* CardMenorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E3249510C900A46E63 /* CardMenorTableViewCell.swift */; };
 		190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E52495302200A46E63 /* CardMenorCollectionViewCell.swift */; };
@@ -47,9 +48,12 @@
 		27C227EB2491132000657E10 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C227EA2491132000657E10 /* Page.swift */; };
 		27C227ED2491168E00657E10 /* RecipeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C227EC2491168E00657E10 /* RecipeScreen.storyboard */; };
 		27C227F524926E2400657E10 /* RecipePageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C227F424926E2400657E10 /* RecipePageExtension.swift */; };
+		27DC0C0F249D1D8F0007223F /* Bolo Path.json in Resources */ = {isa = PBXBuildFile; fileRef = 27DC0C0E249D1D8F0007223F /* Bolo Path.json */; };
 		27EA9F1C2493B7B1001CF006 /* Chronometer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27EA9F1B2493B7B1001CF006 /* Chronometer.xib */; };
 		27EA9F1E2493BC9A001CF006 /* ChronometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA9F1D2493BC9A001CF006 /* ChronometerView.swift */; };
 		27EA9F202493BF06001CF006 /* RecipePagesCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA9F1F2493BF06001CF006 /* RecipePagesCreation.swift */; };
+		60AAC8B141A6C4AED0A46116 /* Pods_ChallengePuttingAllTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F658801114B6DB80AA15F7 /* Pods_ChallengePuttingAllTogether.framework */; };
+		7C127E190A3B652C479EE9A2 /* Pods_ChallengePuttingAllTogether_ChallengePuttingAllTogetherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAC4B5BBBC2271D27B350FC /* Pods_ChallengePuttingAllTogether_ChallengePuttingAllTogetherUITests.framework */; };
 		D757BDE72491101300E85FCC /* Modulo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D757BDE62491101300E85FCC /* Modulo.storyboard */; };
 		D757BDE92491113900E85FCC /* ModuloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDE82491113900E85FCC /* ModuloViewController.swift */; };
 		D757BDEB2491174A00E85FCC /* Modulo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDEA2491174A00E85FCC /* Modulo.swift */; };
@@ -59,10 +63,12 @@
 		D757BDF3249265D800E85FCC /* receitaModulo.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDF2249265D800E85FCC /* receitaModulo.xib */; };
 		D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */; };
 		D757BDF72497A16300E85FCC /* SectionPreparacaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF62497A16300E85FCC /* SectionPreparacaoTableViewCell.swift */; };
-		D757BDF92497AD1200E85FCC /* SectionPreparacao.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDF82497AD1200E85FCC /* SectionPreparacao.xib */; };
 		D757BDFD249906B200E85FCC /* SectionReceita.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDFC249906B200E85FCC /* SectionReceita.xib */; };
 		D757BDFF2499089900E85FCC /* SectionReceitaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDFE2499089900E85FCC /* SectionReceitaTableViewCell.swift */; };
 		D757BE03249A532B00E85FCC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BE02249A532B00E85FCC /* Colors.swift */; };
+		D757BE07249BEE3800E85FCC /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BE06249BEE3800E85FCC /* Font.swift */; };
+		D757BE09249BF78900E85FCC /* SectionPreparacaoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BE08249BF78800E85FCC /* SectionPreparacaoCell.xib */; };
+		D757BE0B249C037100E85FCC /* receitaModuloCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BE0A249C037100E85FCC /* receitaModuloCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,9 +135,17 @@
 		27C227EA2491132000657E10 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		27C227EC2491168E00657E10 /* RecipeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipeScreen.storyboard; sourceTree = "<group>"; };
 		27C227F424926E2400657E10 /* RecipePageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePageExtension.swift; sourceTree = "<group>"; };
+		27DC0C0E249D1D8F0007223F /* Bolo Path.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Bolo Path.json"; sourceTree = "<group>"; };
 		27EA9F1B2493B7B1001CF006 /* Chronometer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Chronometer.xib; sourceTree = "<group>"; };
 		27EA9F1D2493BC9A001CF006 /* ChronometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronometerView.swift; sourceTree = "<group>"; };
 		27EA9F1F2493BF06001CF006 /* RecipePagesCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePagesCreation.swift; sourceTree = "<group>"; };
+		740CBBD00C27CD407530F6C9 /* Pods-ChallengePuttingAllTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengePuttingAllTogether.debug.xcconfig"; path = "Target Support Files/Pods-ChallengePuttingAllTogether/Pods-ChallengePuttingAllTogether.debug.xcconfig"; sourceTree = "<group>"; };
+		92DC473F9DED1CF7102800A9 /* Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests/Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A1F658801114B6DB80AA15F7 /* Pods_ChallengePuttingAllTogether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengePuttingAllTogether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA213CCEE7810C787E8350B5 /* Pods-ChallengePuttingAllTogetherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengePuttingAllTogetherTests.release.xcconfig"; path = "Target Support Files/Pods-ChallengePuttingAllTogetherTests/Pods-ChallengePuttingAllTogetherTests.release.xcconfig"; sourceTree = "<group>"; };
+		BD34DB3D4376D058FB4885E9 /* Pods_ChallengePuttingAllTogetherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengePuttingAllTogetherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64C4A9AADC932D1B585FF56 /* Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests.release.xcconfig"; path = "Target Support Files/Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests/Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE3DE69648F45ACF81CA0D99 /* Pods-ChallengePuttingAllTogetherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengePuttingAllTogetherTests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengePuttingAllTogetherTests/Pods-ChallengePuttingAllTogetherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D757BDE62491101300E85FCC /* Modulo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Modulo.storyboard; sourceTree = "<group>"; };
 		D757BDE82491113900E85FCC /* ModuloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuloViewController.swift; sourceTree = "<group>"; };
 		D757BDEA2491174A00E85FCC /* Modulo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Modulo.swift; path = ChallengePuttingAllTogether/Controller/Modulo.swift; sourceTree = SOURCE_ROOT; };
@@ -141,10 +155,14 @@
 		D757BDF2249265D800E85FCC /* receitaModulo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = receitaModulo.xib; sourceTree = "<group>"; };
 		D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaModuloTableViewCell.swift; sourceTree = "<group>"; };
 		D757BDF62497A16300E85FCC /* SectionPreparacaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionPreparacaoTableViewCell.swift; sourceTree = "<group>"; };
-		D757BDF82497AD1200E85FCC /* SectionPreparacao.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionPreparacao.xib; sourceTree = "<group>"; };
 		D757BDFC249906B200E85FCC /* SectionReceita.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionReceita.xib; sourceTree = "<group>"; };
 		D757BDFE2499089900E85FCC /* SectionReceitaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionReceitaTableViewCell.swift; sourceTree = "<group>"; };
 		D757BE02249A532B00E85FCC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		DDAC4B5BBBC2271D27B350FC /* Pods_ChallengePuttingAllTogether_ChallengePuttingAllTogetherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengePuttingAllTogether_ChallengePuttingAllTogetherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF027CC735448E9B730AD64 /* Pods-ChallengePuttingAllTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengePuttingAllTogether.release.xcconfig"; path = "Target Support Files/Pods-ChallengePuttingAllTogether/Pods-ChallengePuttingAllTogether.release.xcconfig"; sourceTree = "<group>"; };
+		D757BE06249BEE3800E85FCC /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		D757BE08249BF78800E85FCC /* SectionPreparacaoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionPreparacaoCell.xib; sourceTree = "<group>"; };
+		D757BE0A249C037100E85FCC /* receitaModuloCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = receitaModuloCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60AAC8B141A6C4AED0A46116 /* Pods_ChallengePuttingAllTogether.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175BB307849F1950707DC373 /* Pods_ChallengePuttingAllTogetherTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C127E190A3B652C479EE9A2 /* Pods_ChallengePuttingAllTogether_ChallengePuttingAllTogetherUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +200,8 @@
 				198A6826248EC017006B5FCB /* ChallengePuttingAllTogetherTests */,
 				198A6831248EC017006B5FCB /* ChallengePuttingAllTogetherUITests */,
 				198A680E248EC010006B5FCB /* Products */,
+				919B0FDB4ACBBE35CDE8A66B /* Pods */,
+				3A5FB3DEC9795195F08BEE22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +218,7 @@
 		198A680F248EC010006B5FCB /* ChallengePuttingAllTogether */ = {
 			isa = PBXGroup;
 			children = (
+				27DC0C0E249D1D8F0007223F /* Bolo Path.json */,
 				198A6810248EC010006B5FCB /* AppDelegate.swift */,
 				198A6812248EC010006B5FCB /* SceneDelegate.swift */,
 				198A6841248EC054006B5FCB /* Model */,
@@ -237,14 +261,18 @@
 				D757BDEC24911F0100E85FCC /* Preparacao.xib */,
 				199EF95D2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib */,
 				D757BDF2249265D800E85FCC /* receitaModulo.xib */,
-				D757BDF82497AD1200E85FCC /* SectionPreparacao.xib */,
 				199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */,
 				199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */,
 				194F77D924944E7A003980CE /* AlertaTableViewCell.xib */,
 				272C7FCE2497A524009313B2 /* IngredientsRecipeScreen.storyboard */,
 				19CB3D3424979EE300F8FB77 /* VerTodos.storyboard */,
 				D757BDFC249906B200E85FCC /* SectionReceita.xib */,
+
 				19A600A4249CE88700713A36 /* tecnica.storyboard */,
+
+				D757BE08249BF78800E85FCC /* SectionPreparacaoCell.xib */,
+				D757BE0A249C037100E85FCC /* receitaModuloCell.xib */,
+
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,7 +288,11 @@
 				27BB99EF2497BCC300907B43 /* Ingredient.swift */,
 				2722DE2D249A86CA00E8E173 /* Pontuation.swift */,
 				D757BE02249A532B00E85FCC /* Colors.swift */,
+
 				19A600A8249CE90500713A36 /* Tecnica.swift */,
+
+				D757BE06249BEE3800E85FCC /* Font.swift */,
+
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -296,6 +328,29 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		3A5FB3DEC9795195F08BEE22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1F658801114B6DB80AA15F7 /* Pods_ChallengePuttingAllTogether.framework */,
+				DDAC4B5BBBC2271D27B350FC /* Pods_ChallengePuttingAllTogether_ChallengePuttingAllTogetherUITests.framework */,
+				BD34DB3D4376D058FB4885E9 /* Pods_ChallengePuttingAllTogetherTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		919B0FDB4ACBBE35CDE8A66B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				740CBBD00C27CD407530F6C9 /* Pods-ChallengePuttingAllTogether.debug.xcconfig */,
+				EFF027CC735448E9B730AD64 /* Pods-ChallengePuttingAllTogether.release.xcconfig */,
+				92DC473F9DED1CF7102800A9 /* Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests.debug.xcconfig */,
+				C64C4A9AADC932D1B585FF56 /* Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests.release.xcconfig */,
+				CE3DE69648F45ACF81CA0D99 /* Pods-ChallengePuttingAllTogetherTests.debug.xcconfig */,
+				AA213CCEE7810C787E8350B5 /* Pods-ChallengePuttingAllTogetherTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,9 +358,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 198A6837248EC017006B5FCB /* Build configuration list for PBXNativeTarget "ChallengePuttingAllTogether" */;
 			buildPhases = (
+				839F9FAE711C35992BFD6757 /* [CP] Check Pods Manifest.lock */,
 				198A6809248EC010006B5FCB /* Sources */,
 				198A680A248EC010006B5FCB /* Frameworks */,
 				198A680B248EC010006B5FCB /* Resources */,
+				D508E257538D4584007EE545 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,6 +377,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 198A683A248EC017006B5FCB /* Build configuration list for PBXNativeTarget "ChallengePuttingAllTogetherTests" */;
 			buildPhases = (
+				582B3DEB79F1138CAB2FAB34 /* [CP] Check Pods Manifest.lock */,
 				198A681F248EC017006B5FCB /* Sources */,
 				198A6820248EC017006B5FCB /* Frameworks */,
 				198A6821248EC017006B5FCB /* Resources */,
@@ -338,9 +396,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 198A683D248EC017006B5FCB /* Build configuration list for PBXNativeTarget "ChallengePuttingAllTogetherUITests" */;
 			buildPhases = (
+				E25E343FCB8E8339C3DE1EA8 /* [CP] Check Pods Manifest.lock */,
 				198A682A248EC017006B5FCB /* Sources */,
 				198A682B248EC017006B5FCB /* Frameworks */,
 				198A682C248EC017006B5FCB /* Resources */,
+				790B3ECF8E516470563E4586 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -407,13 +467,19 @@
 				198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */,
 				199EF95E2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib in Resources */,
 				199EF96A24941C3F00E6D720 /* NiveisTableViewCell.xib in Resources */,
+				D757BE0B249C037100E85FCC /* receitaModuloCell.xib in Resources */,
 				194F77DA24944E7A003980CE /* AlertaTableViewCell.xib in Resources */,
 				198A6844248EC3C8006B5FCB /* TabBar.storyboard in Resources */,
 				D757BDE72491101300E85FCC /* Modulo.storyboard in Resources */,
 				199EF9642494065C00E6D720 /* CardMaiorCollectionViewCell.xib in Resources */,
+				27DC0C0F249D1D8F0007223F /* Bolo Path.json in Resources */,
 				198A681D248EC017006B5FCB /* LaunchScreen.storyboard in Resources */,
+
 				19A600A5249CE88700713A36 /* tecnica.storyboard in Resources */,
 				D757BDF92497AD1200E85FCC /* SectionPreparacao.xib in Resources */,
+
+				D757BE09249BF78900E85FCC /* SectionPreparacaoCell.xib in Resources */,
+
 				27EA9F1C2493B7B1001CF006 /* Chronometer.xib in Resources */,
 				D757BDFD249906B200E85FCC /* SectionReceita.xib in Resources */,
 				198A681A248EC017006B5FCB /* Assets.xcassets in Resources */,
@@ -439,6 +505,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		582B3DEB79F1138CAB2FAB34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengePuttingAllTogetherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		790B3ECF8E516470563E4586 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests/Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests/Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests/Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		839F9FAE711C35992BFD6757 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengePuttingAllTogether-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D508E257538D4584007EE545 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengePuttingAllTogether/Pods-ChallengePuttingAllTogether-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengePuttingAllTogether/Pods-ChallengePuttingAllTogether-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallengePuttingAllTogether/Pods-ChallengePuttingAllTogether-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E25E343FCB8E8339C3DE1EA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		198A6809248EC010006B5FCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -446,6 +615,7 @@
 			files = (
 				D757BDF72497A16300E85FCC /* SectionPreparacaoTableViewCell.swift in Sources */,
 				27EA9F1E2493BC9A001CF006 /* ChronometerView.swift in Sources */,
+				D757BE07249BEE3800E85FCC /* Font.swift in Sources */,
 				27EA9F202493BF06001CF006 /* RecipePagesCreation.swift in Sources */,
 				D757BE03249A532B00E85FCC /* Colors.swift in Sources */,
 				272C7FD32497ADEC009313B2 /* ImageDescriptionCell.swift in Sources */,
@@ -643,6 +813,7 @@
 		};
 		198A6838248EC017006B5FCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 740CBBD00C27CD407530F6C9 /* Pods-ChallengePuttingAllTogether.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -661,6 +832,7 @@
 		};
 		198A6839248EC017006B5FCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFF027CC735448E9B730AD64 /* Pods-ChallengePuttingAllTogether.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -679,6 +851,7 @@
 		};
 		198A683B248EC017006B5FCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE3DE69648F45ACF81CA0D99 /* Pods-ChallengePuttingAllTogetherTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -700,6 +873,7 @@
 		};
 		198A683C248EC017006B5FCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA213CCEE7810C787E8350B5 /* Pods-ChallengePuttingAllTogetherTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -721,6 +895,7 @@
 		};
 		198A683E248EC017006B5FCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92DC473F9DED1CF7102800A9 /* Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -740,6 +915,7 @@
 		};
 		198A683F248EC017006B5FCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C64C4A9AADC932D1B585FF56 /* Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

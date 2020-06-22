@@ -17,6 +17,8 @@ extension RecipePageViewController {
         
         var lastView: UIView = self.view
         
+        var pageCount = 1
+        
         for page in pages {
             
             let viewController = UIViewController()
@@ -54,7 +56,15 @@ extension RecipePageViewController {
 //
 //            }
             
+            if (pageCount == pages.count){
+                
+                let finalizeButton = addFinalizeButton(pageViewController: viewController)
+                finalizeButton.topAnchor.constraint(equalTo: lastView.bottomAnchor, constant: 12).isActive = true
+            }
+            
              pageViewControllers.append(viewController)
+            
+            pageCount = pageCount + 1
         }
     }
     
@@ -136,6 +146,32 @@ extension RecipePageViewController {
     func addFastLinksToPage(){
         
         
+    }
+    
+    func addFinalizeButton(pageViewController: UIViewController) -> UIButton {
+        
+        let finalizeButton = UIButton()
+        
+        finalizeButton.setTitle("Finalizar Receita", for: .normal)
+        finalizeButton.backgroundColor = .orange
+        finalizeButton.layer.cornerRadius = 8
+        
+        pageViewController.view.addSubview(finalizeButton)
+        
+        finalizeButton.translatesAutoresizingMaskIntoConstraints = false
+        finalizeButton.centerXAnchor.constraint(equalTo: pageViewController.view.safeAreaLayoutGuide.centerXAnchor).isActive = true
+        finalizeButton.heightAnchor.constraint(equalToConstant: 45).isActive = true
+        finalizeButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        
+        finalizeButton.addTarget(self, action: #selector(goToCongats), for: .touchUpInside)
+        
+        return finalizeButton
+    }
+    
+    @objc
+    func goToCongats(){
+        let pont = Pontuation()
+        pont.showCongratScreen(recipeView: self, points: 100)
     }
     
 }
