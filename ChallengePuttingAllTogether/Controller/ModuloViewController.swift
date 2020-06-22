@@ -13,6 +13,7 @@ class ModuloViewController: UIViewController {
     @IBOutlet weak var ModuloTableView: UITableView!
     let nameSections = ["", "Preparação", "Receita"]
     let tamanho = [100, 109, 108]
+    var moduleId = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         configTable()
@@ -40,6 +41,9 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
        return 3
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 0
+        }
         return 30
     }
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
