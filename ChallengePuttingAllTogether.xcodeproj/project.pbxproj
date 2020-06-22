@@ -60,7 +60,6 @@
 		D757BDED24911F0100E85FCC /* Preparacao.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDEC24911F0100E85FCC /* Preparacao.xib */; };
 		D757BDEF2491704A00E85FCC /* PreparacaoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */; };
 		D757BDF124917A1A00E85FCC /* PrepCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF024917A1A00E85FCC /* PrepCard.swift */; };
-		D757BDF3249265D800E85FCC /* receitaModulo.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDF2249265D800E85FCC /* receitaModulo.xib */; };
 		D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */; };
 		D757BDF72497A16300E85FCC /* SectionPreparacaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757BDF62497A16300E85FCC /* SectionPreparacaoTableViewCell.swift */; };
 		D757BDFD249906B200E85FCC /* SectionReceita.xib in Resources */ = {isa = PBXBuildFile; fileRef = D757BDFC249906B200E85FCC /* SectionReceita.xib */; };
@@ -152,7 +151,6 @@
 		D757BDEC24911F0100E85FCC /* Preparacao.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preparacao.xib; sourceTree = "<group>"; };
 		D757BDEE2491704A00E85FCC /* PreparacaoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparacaoCollectionViewCell.swift; sourceTree = "<group>"; };
 		D757BDF024917A1A00E85FCC /* PrepCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepCard.swift; sourceTree = "<group>"; };
-		D757BDF2249265D800E85FCC /* receitaModulo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = receitaModulo.xib; sourceTree = "<group>"; };
 		D757BDF42493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaModuloTableViewCell.swift; sourceTree = "<group>"; };
 		D757BDF62497A16300E85FCC /* SectionPreparacaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionPreparacaoTableViewCell.swift; sourceTree = "<group>"; };
 		D757BDFC249906B200E85FCC /* SectionReceita.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionReceita.xib; sourceTree = "<group>"; };
@@ -260,7 +258,6 @@
 				D757BDE62491101300E85FCC /* Modulo.storyboard */,
 				D757BDEC24911F0100E85FCC /* Preparacao.xib */,
 				199EF95D2493BC7F00E6D720 /* CardMenorCollectionViewCell.xib */,
-				D757BDF2249265D800E85FCC /* receitaModulo.xib */,
 				199EF9632494065C00E6D720 /* CardMaiorCollectionViewCell.xib */,
 				199EF96924941C3F00E6D720 /* NiveisTableViewCell.xib */,
 				194F77D924944E7A003980CE /* AlertaTableViewCell.xib */,
@@ -461,7 +458,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				19CB3D3524979EE300F8FB77 /* VerTodos.storyboard in Resources */,
-				D757BDF3249265D800E85FCC /* receitaModulo.xib in Resources */,
 				272C7FCF2497A524009313B2 /* IngredientsRecipeScreen.storyboard in Resources */,
 				D757BDED24911F0100E85FCC /* Preparacao.xib in Resources */,
 				198A6846248EC403006B5FCB /* Jornada.storyboard in Resources */,
