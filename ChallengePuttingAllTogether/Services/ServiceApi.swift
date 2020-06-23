@@ -8,10 +8,14 @@
 
 import Foundation
 
-enum TecnicaAPI: Router{
-    case listar
-  
+enum ServiceApi: Router{
     
+    
+    case listarTecnicas
+    case listarItems
+ //   case listarItemsByTecnicaId
+  
+  
     var hostname: String{
         get{
             return "https://justcook-api.herokuapp.com"
@@ -21,11 +25,13 @@ enum TecnicaAPI: Router{
     var url: URL?{
         get{
             switch self {
-            case .listar: return URL(string: "\(hostname)/tecnicas")
+            case .listarTecnicas: return URL(string: "\(hostname)/tecnicas")
+            case .listarItems: return URL(string: "\(hostname)/tecnicas")
             
             }
         }
     }
+  
     
   
 }

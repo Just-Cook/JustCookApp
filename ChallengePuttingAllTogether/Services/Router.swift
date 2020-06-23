@@ -11,4 +11,5 @@ import Foundation
 protocol Router {
     var hostname: String {get}
     var url: URL? {get}
+  
 }

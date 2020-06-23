@@ -1,5 +1,5 @@
 //
-//  TecnicaRepository.swift
+//  ItemRepository.swift
 //  ChallengePuttingAllTogether
 //
 //  Created by Lidiane Gomes Barbosa on 23/06/20.
@@ -8,10 +8,10 @@
 
 import Foundation
 
-class TecnicaRepository{
+class ItemRepository{
     
-    func listar(completion: @escaping ([Tecnica]) -> Void){
-        HTTP.get.request(url: .tecnicas){
+func listar(tecnicaId: Int, completion: @escaping ([Item]) -> Void){
+    HTTP.get.request(url: .items(withID: tecnicaId)){
             data, response, error in
             
             if let error = error {
@@ -27,9 +27,10 @@ class TecnicaRepository{
                       
                       switch response.statusCode {
                       case 200:
-                          let tecnicas: [Tecnica] = (try? JSONDecoder().decode(Array<Tecnica>.self, from: data)) ?? []
-                          completion(tecnicas)
-                            return
+                          let items: [Item] = (try? JSONDecoder().decode(Array<Item>.self, from: data)) ?? []
+                          
+                          completion(items)
+                          return
                       default:
                           completion([])
                           return
@@ -39,7 +40,3 @@ class TecnicaRepository{
                   
         }
 }
-    
-    
-    
-

@@ -28,10 +28,9 @@ enum HTTP{
                 completion(data, response as? HTTPURLResponse, error?.localizedDescription)
             }.resume()
             
-       
-            
-        }
+     
 
+    }
     }
     
 }

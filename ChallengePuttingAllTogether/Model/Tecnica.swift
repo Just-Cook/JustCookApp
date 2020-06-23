@@ -18,26 +18,3 @@ struct Tecnica: Decodable{
     }
 }
 
-struct TecnicaResponse: Decodable{
-    var tecnicas : [Tecnica]
-}
-
-extension Tecnica{
-    static func mockTecnica()-> [Tecnica]{
-        var tecnicas=[Tecnica]()
-        
-        tecnicas.append(Tecnica(id: 1, titulo: "Como utilzar o forno?",  imageName: "maminha1"))
-        
-        tecnicas.append(Tecnica(id: 2, titulo: "Dicas e curiosidades", imageName: "maminha1"))
-        
-        tecnicas.append(Tecnica(id: 3, titulo: "O que é maminha?", imageName: "forno"))
-        
-        tecnicas.append(Tecnica(id: 4, titulo: "Panelas",  imageName: "forno"))
-        
-        
-        return tecnicas
-    }
-  
-    
-    
-}

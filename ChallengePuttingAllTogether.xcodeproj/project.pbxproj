@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		175BB307849F1950707DC373 /* Pods_ChallengePuttingAllTogetherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD34DB3D4376D058FB4885E9 /* Pods_ChallengePuttingAllTogetherTests.framework */; };
-		19035F6D24A22D21000043FA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19035F6C24A22D20000043FA /* Router.swift */; };
-		19035F6F24A22D37000043FA /* TecnicaApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19035F6E24A22D37000043FA /* TecnicaApi.swift */; };
 		19035F7124A22D56000043FA /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19035F7024A22D56000043FA /* HTTP.swift */; };
 		19035F7424A22D8C000043FA /* TecnicaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19035F7324A22D8C000043FA /* TecnicaRepository.swift */; };
+		19035F7824A26D4B000043FA /* ItemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19035F7724A26D4B000043FA /* ItemRepository.swift */; };
+		19035F7A24A276C7000043FA /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19035F7924A276C7000043FA /* URLExtension.swift */; };
 		190804E224950D6400A46E63 /* NiveisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E124950D6400A46E63 /* NiveisTableViewCell.swift */; };
 		190804E4249510C900A46E63 /* CardMenorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E3249510C900A46E63 /* CardMenorTableViewCell.swift */; };
 		190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E52495302200A46E63 /* CardMenorCollectionViewCell.swift */; };
@@ -93,10 +93,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		19035F6C24A22D20000043FA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		19035F6E24A22D37000043FA /* TecnicaApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecnicaApi.swift; sourceTree = "<group>"; };
 		19035F7024A22D56000043FA /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
 		19035F7324A22D8C000043FA /* TecnicaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecnicaRepository.swift; sourceTree = "<group>"; };
+		19035F7724A26D4B000043FA /* ItemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRepository.swift; sourceTree = "<group>"; };
+		19035F7924A276C7000043FA /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		190804E124950D6400A46E63 /* NiveisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiveisTableViewCell.swift; sourceTree = "<group>"; };
 		190804E3249510C900A46E63 /* CardMenorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenorTableViewCell.swift; sourceTree = "<group>"; };
 		190804E52495302200A46E63 /* CardMenorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenorCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -204,8 +204,7 @@
 		19035F6B24A22D09000043FA /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				19035F6C24A22D20000043FA /* Router.swift */,
-				19035F6E24A22D37000043FA /* TecnicaApi.swift */,
+				19035F7924A276C7000043FA /* URLExtension.swift */,
 				19035F7024A22D56000043FA /* HTTP.swift */,
 				19035F7224A22D6D000043FA /* Repository */,
 			);
@@ -216,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				19035F7324A22D8C000043FA /* TecnicaRepository.swift */,
+				19035F7724A26D4B000043FA /* ItemRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -634,7 +634,7 @@
 				27EA9F1E2493BC9A001CF006 /* ChronometerView.swift in Sources */,
 				D757BE07249BEE3800E85FCC /* Font.swift in Sources */,
 				27EA9F202493BF06001CF006 /* RecipePagesCreation.swift in Sources */,
-				19035F6F24A22D37000043FA /* TecnicaApi.swift in Sources */,
+				19035F7A24A276C7000043FA /* URLExtension.swift in Sources */,
 				D757BE03249A532B00E85FCC /* Colors.swift in Sources */,
 				272C7FD32497ADEC009313B2 /* ImageDescriptionCell.swift in Sources */,
 				190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */,
@@ -665,9 +665,9 @@
 				19A600A9249CE90500713A36 /* Tecnica.swift in Sources */,
 				190804E82495317900A46E63 /* CardMaiorCollectionViewCell.swift in Sources */,
 				2722DE2E249A86CA00E8E173 /* Pontuation.swift in Sources */,
-				19035F6D24A22D21000043FA /* Router.swift in Sources */,
 				19A600AB249CEE3C00713A36 /* TecnicaTableViewCell.swift in Sources */,
 				D757BDEF2491704A00E85FCC /* PreparacaoCollectionViewCell.swift in Sources */,
+				19035F7824A26D4B000043FA /* ItemRepository.swift in Sources */,
 				190804EA249531AF00A46E63 /* CardMaiorTableViewCell.swift in Sources */,
 				194F77D624944C4D003980CE /* JornadaTableViewController.swift in Sources */,
 				19CB3D3724979F3B00F8FB77 /* VerTodosCollectionViewController.swift in Sources */,
