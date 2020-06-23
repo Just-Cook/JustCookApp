@@ -41,6 +41,8 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         
         createViewControllers()
         
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+        
         if let firstPageViewController = pageViewControllers.first{
             setViewControllers([firstPageViewController], direction: .forward, animated: false, completion: nil)
         }
@@ -57,42 +59,42 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 20
         
-        let titleView = UIView()
-//        titleView.backgroundColor = .orange
-        self.view.addSubview(titleView)
-         
-        titleView.translatesAutoresizingMaskIntoConstraints = false
-        titleView.leadingAnchor.constraint(equalTo:  view.leadingAnchor, constant: 0).isActive = true
-        titleView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
-        titleView.heightAnchor.constraint(equalToConstant: 36).isActive = true
-        titleView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 0).isActive = true
-        
-        let titleLabel = UILabel()
-        titleLabel.text = "Titulo"
-        titleLabel.textAlignment = .center
-        //titleLabel.font.se
-        titleView.addSubview(titleLabel)
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.leadingAnchor.constraint(equalTo: titleView.leadingAnchor, constant: 16).isActive = true
-        titleLabel.trailingAnchor.constraint(equalTo: titleView.trailingAnchor, constant: -16).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: titleView.topAnchor, constant: 10).isActive = true
-        titleLabel.heightAnchor.constraint(equalToConstant: 28).isActive = true
-        
-        let closeButton = UIButton()
-        
-        closeButton.setTitle("Fechar", for: .normal)
-        closeButton.setTitleColor(.orangeColor, for: .normal)
-        closeButton.setTitleColor(.selectedOrangeColor, for: .highlighted)
-        closeButton.titleLabel?.font = .systemFont(ofSize: 15)
-        closeButton.addTarget(self, action: #selector(closePage), for: .touchUpInside)
-        titleView.addSubview(closeButton)
-        closeButton.translatesAutoresizingMaskIntoConstraints = false
-        //titleLabel.leadingAnchor.constraint(equalTo: titleView.leadingAnchor, constant: 16).isActive = true
-        closeButton.trailingAnchor.constraint(equalTo: titleView.trailingAnchor, constant: -16).isActive = true
-        closeButton.topAnchor.constraint(equalTo: titleView.topAnchor, constant: 10).isActive = true
-        closeButton.heightAnchor.constraint(equalToConstant: 28).isActive = true
-        closeButton.widthAnchor.constraint(equalToConstant: 64).isActive = true
-        
+//        let titleView = UIView()
+////        titleView.backgroundColor = .orange
+//        self.view.addSubview(titleView)
+//
+//        titleView.translatesAutoresizingMaskIntoConstraints = false
+//        titleView.leadingAnchor.constraint(equalTo:  view.leadingAnchor, constant: 0).isActive = true
+//        titleView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
+//        titleView.heightAnchor.constraint(equalToConstant: 36).isActive = true
+//        titleView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 0).isActive = true
+//
+//        let titleLabel = UILabel()
+//        titleLabel.text = "Titulo"
+//        titleLabel.textAlignment = .center
+//        //titleLabel.font.se
+//        titleView.addSubview(titleLabel)
+//        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+//        titleLabel.leadingAnchor.constraint(equalTo: titleView.leadingAnchor, constant: 16).isActive = true
+//        titleLabel.trailingAnchor.constraint(equalTo: titleView.trailingAnchor, constant: -16).isActive = true
+//        titleLabel.topAnchor.constraint(equalTo: titleView.topAnchor, constant: 10).isActive = true
+//        titleLabel.heightAnchor.constraint(equalToConstant: 28).isActive = true
+//
+//        let closeButton = UIButton()
+//
+//        closeButton.setTitle("Fechar", for: .normal)
+//        closeButton.setTitleColor(.orangeColor, for: .normal)
+//        closeButton.setTitleColor(.selectedOrangeColor, for: .highlighted)
+//        closeButton.titleLabel?.font = .systemFont(ofSize: 15)
+//        closeButton.addTarget(self, action: #selector(closePage), for: .touchUpInside)
+//        titleView.addSubview(closeButton)
+//        closeButton.translatesAutoresizingMaskIntoConstraints = false
+//        //titleLabel.leadingAnchor.constraint(equalTo: titleView.leadingAnchor, constant: 16).isActive = true
+//        closeButton.trailingAnchor.constraint(equalTo: titleView.trailingAnchor, constant: -16).isActive = true
+//        closeButton.topAnchor.constraint(equalTo: titleView.topAnchor, constant: 10).isActive = true
+//        closeButton.heightAnchor.constraint(equalToConstant: 28).isActive = true
+//        closeButton.widthAnchor.constraint(equalToConstant: 64).isActive = true
+//
         let cvPages = UICollectionView(frame: .zero, collectionViewLayout: layout)
         self.paginationCV = cvPages
         cvPages.showsHorizontalScrollIndicator = false
@@ -109,7 +111,7 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         cvPages.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         cvPages.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
         cvPages.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        cvPages.topAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 0).isActive = true
+        cvPages.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
         
         self.paginationCV = cvPages
     }
