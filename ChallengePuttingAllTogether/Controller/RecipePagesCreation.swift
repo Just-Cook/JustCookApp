@@ -152,8 +152,11 @@ extension RecipePageViewController {
         
         let finalizeButton = UIButton()
         
+        //let normalBackImage = UIImage()
+        
         finalizeButton.setTitle("Finalizar Receita", for: .normal)
-        finalizeButton.backgroundColor = .orange
+        finalizeButton.backgroundColor = .orangeColor
+        
         finalizeButton.layer.cornerRadius = 8
         
         pageViewController.view.addSubview(finalizeButton)

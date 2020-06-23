@@ -82,8 +82,8 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         let closeButton = UIButton()
         
         closeButton.setTitle("Fechar", for: .normal)
-        closeButton.setTitleColor(.orange, for: .normal)
-        closeButton.setTitleColor(.blue, for: .highlighted)
+        closeButton.setTitleColor(.orangeColor, for: .normal)
+        closeButton.setTitleColor(.selectedOrangeColor, for: .highlighted)
         closeButton.titleLabel?.font = .systemFont(ofSize: 15)
         closeButton.addTarget(self, action: #selector(closePage), for: .touchUpInside)
         titleView.addSubview(closeButton)

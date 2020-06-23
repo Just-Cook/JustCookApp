@@ -128,7 +128,7 @@ class IngredientsTableViewController: UITableViewController {
         
         let orangeView = UIView()
         orangeView.frame = CGRect()
-        orangeView.backgroundColor = .orange
+        orangeView.backgroundColor = .orangeColor
         orangeView.layer.cornerRadius = 8
         
         let whiteView = UIView()

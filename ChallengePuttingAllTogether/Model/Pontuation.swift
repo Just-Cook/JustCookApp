@@ -179,8 +179,9 @@ class Pontuation {
         
         let continueButton = UIButton()
         continueButton.setTitle("Continuar", for: .normal)
-        continueButton.backgroundColor = .orange
+        continueButton.backgroundColor = .orangeColor
         continueButton.layer.cornerRadius = 8
+        continueButton.addTarget(self, action: #selector(continueButtonAction), for: .touchUpInside)
         
         centeredView.addSubview(continueButton)
         continueButton.translatesAutoresizingMaskIntoConstraints = false
@@ -191,5 +192,12 @@ class Pontuation {
         
     }
     
+    @objc
+    func continueButtonAction(){
+        
+        print("Ok")
+        //Pontuation.nav?.dismiss(animated: true, completion: nil)
+        
+    }
     
 }
