@@ -8,12 +8,19 @@
 
 import Foundation
 
-struct Tecnica{
+struct Tecnica: Decodable{
     let id: Int
     let titulo:String
     let imageName: String
+    
+    private enum CodingKeys: String, CodingKey{
+        case id, titulo, imageName = "image_name"
+    }
 }
 
+struct TecnicaResponse: Decodable{
+    var tecnicas : [Tecnica]
+}
 
 extension Tecnica{
     static func mockTecnica()-> [Tecnica]{
