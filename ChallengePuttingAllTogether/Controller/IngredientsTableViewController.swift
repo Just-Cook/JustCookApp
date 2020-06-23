@@ -208,6 +208,7 @@ class IngredientsTableViewController: UITableViewController {
             return
         }
         
+        recipePageViewController.hidesBottomBarWhenPushed  = true
         self.navigationController?.pushViewController(recipePageViewController, animated: true)
     }
 
