@@ -14,7 +14,8 @@ class SectionReceitaTableViewCell: UITableViewCell {
     @IBOutlet weak var tableReceita: UITableView!
     static let xibName = "SectionReceita" // Setando o nome da xib
     static let identifier = "SectionReceitaCell" // Setando o identificador da cell
-     
+     weak var delegate : ModuloDelegate? = nil
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         configTable()
@@ -38,5 +39,11 @@ extension SectionReceitaTableViewCell: UITableViewDelegate, UITableViewDataSourc
             
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let receitaSelec = Recipe(title: "Bolo fofo", images: "", description: "Hmm chega a manteiga derrete", time: "20", ingredients:[], porcoes: 6)
+        delegate?.willTransition(to: receitaSelec)
+    }
+   
     
 }
