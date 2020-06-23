@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol ModuloDelegate : class {
+    func willTransition(to ingredient : Recipe )
+}
+
 class ModuloViewController: UIViewController{
     
 
@@ -90,6 +94,7 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SectionReceitaCell", for: indexPath) as! SectionReceitaTableViewCell
+            cell.delegate = self
             return cell
 
         default:
@@ -100,7 +105,19 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
     
     
 }
-
+extension ModuloViewController : ModuloDelegate {
+    func willTransition(to ingredient: Recipe) {
+        print(ingredient.id)
+        
+        let telaIngredient = UIStoryboard(name: "IngredientsRecipeScreen", bundle: nil).instantiateViewController(withIdentifier: "ingredientRecipe") as? IngredientsTableViewController
+        
+        telaIngredient?.title = ingredient.title
+        
+        self.navigationController?.pushViewController(telaIngredient!, animated: true)
+    }
+    
+    
+}
 
 extension ModuloViewController : SectionPreparacaoTableViewCellDelegate {
     func didSelectItem(id: Int) {
