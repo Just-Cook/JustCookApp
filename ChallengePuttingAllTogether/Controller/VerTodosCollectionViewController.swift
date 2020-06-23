@@ -55,6 +55,16 @@ class VerTodosCollectionViewController: UIViewController, UICollectionViewDelega
 
          return CGSize(width: cellWidth, height: cellHeigth)
      }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let moduloSelec = Modulo(id: indexPath.row,titulo: "Titulo \(indexPath.row)", descricao: "Teste")
+        
+        let telaModulo = UIStoryboard(name: "Modulo", bundle: nil).instantiateViewController(withIdentifier: "moduloView") as? ModuloViewController
+        telaModulo?.title = moduloSelec.titulo
+        telaModulo?.moduleId = moduloSelec.id
+        
+        self.navigationController?.pushViewController(telaModulo!, animated: true)
+    }
 
 
 }
