@@ -45,7 +45,6 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
             setViewControllers([firstPageViewController], direction: .forward, animated: false, completion: nil)
         }
         
-        
         configurePagination()
         
         //self.navigationController?.navigationBar.isHidden = true

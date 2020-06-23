@@ -208,7 +208,7 @@ class IngredientsTableViewController: UITableViewController {
             return
         }
         
-        self.present(recipePageViewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(recipePageViewController, animated: true)
     }
 
 }

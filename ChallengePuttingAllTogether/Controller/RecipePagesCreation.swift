@@ -152,8 +152,6 @@ extension RecipePageViewController {
         
         let finalizeButton = UIButton()
         
-        //let normalBackImage = UIImage()
-        
         finalizeButton.setTitle("Finalizar Receita", for: .normal)
         finalizeButton.backgroundColor = .orangeColor
         
@@ -173,8 +171,11 @@ extension RecipePageViewController {
     
     @objc
     func goToCongats(){
-        let pont = Pontuation()
-        pont.showCongratScreen(recipeView: self, points: 100)
+        let congrat = CongratsScreenViewController()
+        
+        self.present(congrat, animated: true, completion: nil )
+        self.navigationController?.popViewController(animated: true)
     }
+    
     
 }
