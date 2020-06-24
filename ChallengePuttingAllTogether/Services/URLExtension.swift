@@ -26,4 +26,7 @@ extension URL {
     static func tecnicasByModuloId(withID id: Int) -> URL{
               URL(string: "https://justcook-api.herokuapp.com/modulos/\(id)/tecnicas")!
           }
+    static func receitasByModuloId(withID id: Int) -> URL{
+             URL(string: "https://justcook-api.herokuapp.com/modulos/\(id)/receitas")!
+    }
 }

@@ -10,24 +10,26 @@ import UIKit
 
 class IngredientsTableViewController: UITableViewController {
 
-    let recipe = Recipe(title: "Arroz Simple", images: "", description: "Muita coisa vai ser escrita aqui", time: "40 min", ingredients: [
-        
-        Ingredient(name: "Ovo", amount: 4, unity: "qntd"),
-        Ingredient(name: "Mortadela", amount: 10, unity: "qntd"),
-        Ingredient(name: "Pao", amount: 2, unity: "qntd"),
-        Ingredient(name: "Manteiga", amount: 5, unity: "gr"),
-        Ingredient(name: "Ketchup", amount: 20, unity: "L"),
-        Ingredient(name: "Queijo", amount: 5, unity: "kl"),
-        Ingredient(name: "Requeijao", amount: 1, unity: "L"),
-        Ingredient(name: "Creme de Cebola", amount: 600, unity: "gr"),
-    ], porcoes: 20)
+//    let recipe = Receita(title: "Arroz Simple", images: "", description: "Muita coisa vai ser escrita aqui", time: "40 min", ingredients: [
+//
+//        Ingredient(name: "Ovo", amount: 4, unity: "qntd"),
+//        Ingredient(name: "Mortadela", amount: 10, unity: "qntd"),
+//        Ingredient(name: "Pao", amount: 2, unity: "qntd"),
+//        Ingredient(name: "Manteiga", amount: 5, unity: "gr"),
+//        Ingredient(name: "Ketchup", amount: 20, unity: "L"),
+//        Ingredient(name: "Queijo", amount: 5, unity: "kl"),
+//        Ingredient(name: "Requeijao", amount: 1, unity: "L"),
+//        Ingredient(name: "Creme de Cebola", amount: 600, unity: "gr"),
+//    ], porcoes: 20)
     
     var porcoes: Int?
     var topCellHeight: Float?
     
+    var moduloId: Int? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.porcoes = recipe.porcoes
+      //  self.porcoes = recipe.porcoes
         
         let rightButton = UIBarButtonItem(title: "Iniciar", style: .plain, target: self, action: #selector(goToRecipe))
         rightButton.tintColor = .orange
@@ -45,7 +47,8 @@ class IngredientsTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         
         if(section==2){
-            return recipe.ingredients.count
+          //  return recipe.ingredients.count
+            return 2
         }
         
         return 1
@@ -59,7 +62,7 @@ class IngredientsTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ImageDescriptionCell", for: indexPath) as! ImageDescriptionCell
             cell.separatorInset = UIEdgeInsets(top: 0, left: 10000, bottom: 0, right: 0)
             cell.RecipeImageView.layer.cornerRadius = 8
-            cell.DescriptionRecipe.text = recipe.description
+        //    cell.DescriptionRecipe.text = recipe.description
             
             if(self.topCellHeight == nil){
                 self.topCellHeight = Float(cell.adjustHeightOfDescription())
@@ -71,18 +74,18 @@ class IngredientsTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PorcoesCell", for: indexPath) as! PorcaoCell
             createPorcaoChangeButtons(in: cell)
             cell.PorcaoLabel.text = "Porcoes"
-            cell.TimeLabel.text = recipe.time
+        //    cell.TimeLabel.text = recipe.time
             return cell
         }
     
         let cell = tableView.dequeueReusableCell(withIdentifier: "IngredientCell", for: indexPath) as! IngredientCell
         
-        let ingredient = recipe.ingredients[indexPath.item]
-        cell.IngredientNameLabel.text = ingredient.name
+    //    let ingredient = recipe.ingredients[indexPath.item]
+    //    cell.IngredientNameLabel.text = ingredient.name
         
-        let porcaoAmount = Double(self.porcoes!)/Double(recipe.porcoes) * ingredient.amount
+     //   let porcaoAmount = Double(self.porcoes!)/Double(recipe.porcoes) * ingredient.amount
         
-        cell.IngredientAmountLabel.text = "\(porcaoAmount) \(ingredient.unity)"
+      //  cell.IngredientAmountLabel.text = "\(porcaoAmount) \(ingredient.unity)"
             
         return cell
     }
@@ -135,7 +138,7 @@ class IngredientsTableViewController: UITableViewController {
         whiteView.backgroundColor = .white
 
         let porcaoText = UILabel()
-        porcaoText.text = String(self.porcoes!)
+//        porcaoText.text = String(self.porcoes!)
         porcaoText.textAlignment = .center
 
 

@@ -10,6 +10,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
+
 class VerTodosCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collectionView: UICollectionView!
@@ -21,6 +22,7 @@ class VerTodosCollectionViewController: UIViewController, UICollectionViewDelega
             }
         }
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +56,7 @@ class VerTodosCollectionViewController: UIViewController, UICollectionViewDelega
                     fatalError("Wrong identifier")
                }
         cell.configureCard(backgroundImageName: modulos[indexPath.row].imageName, titulo: modulos[indexPath.row].titulo, subtitulo: modulos[indexPath.row].subtitulo, nivel: modulos[indexPath.row].nivel)
+     
         return cell
 
 
@@ -66,5 +69,15 @@ class VerTodosCollectionViewController: UIViewController, UICollectionViewDelega
 
          return CGSize(width: cellWidth, height: cellHeigth)
      }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let currentItem = modulos[indexPath.row]
+        
+        let telaModulo = UIStoryboard(name: "Modulo", bundle: nil).instantiateViewController(withIdentifier: "moduloView") as? ModuloViewController
+        telaModulo?.moduloId = currentItem.id
+           
+      self.navigationController?.pushViewController(telaModulo!, animated: true)
+    }
 
 }

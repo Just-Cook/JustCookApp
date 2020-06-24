@@ -8,26 +8,18 @@
 
 import Foundation
 
-public class Recipe{
+struct Receita: Decodable{
     
-    let id, porcoes: Int
-    let title, images, description, time  : String
-    let ingredients: [Ingredient]
+    let id: Int
+    let titulo: String
+    let descricao: String
+    let imageName: String
+    let rendimento: Int
+    let tempo: Int
+    let moduloId: Int
     
-    init(title: String, images: String, description: String, time: String, ingredients:[Ingredient], porcoes: Int) {
-        self.id = 1
-        self.description = description
-        self.images = images
-        self.time = time
-        self.title = title
-        self.ingredients = ingredients
-        self.porcoes = porcoes
+    private enum CodingKeys: String, CodingKey{
+         case id, titulo, descricao, imageName = "image_name", rendimento, tempo, moduloId = "modulo_id"
     }
-    
-    
-    
-    //ingredients
-    
-    //content(Pages)
-    
+
 }

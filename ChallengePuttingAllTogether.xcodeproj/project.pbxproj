@@ -18,6 +18,7 @@
 		190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E52495302200A46E63 /* CardMenorCollectionViewCell.swift */; };
 		190804E82495317900A46E63 /* CardMaiorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E72495317900A46E63 /* CardMaiorCollectionViewCell.swift */; };
 		190804EA249531AF00A46E63 /* CardMaiorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E9249531AF00A46E63 /* CardMaiorTableViewCell.swift */; };
+		1933FA6224A3C69500089303 /* ReceitaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1933FA6124A3C69500089303 /* ReceitaRepository.swift */; };
 		194F77D624944C4D003980CE /* JornadaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F77D524944C4D003980CE /* JornadaTableViewController.swift */; };
 		194F77D824944DC3003980CE /* AlertaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F77D724944DC3003980CE /* AlertaTableViewCell.swift */; };
 		194F77DA24944E7A003980CE /* AlertaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 194F77D924944E7A003980CE /* AlertaTableViewCell.xib */; };
@@ -105,6 +106,7 @@
 		190804E52495302200A46E63 /* CardMenorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenorCollectionViewCell.swift; sourceTree = "<group>"; };
 		190804E72495317900A46E63 /* CardMaiorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMaiorCollectionViewCell.swift; sourceTree = "<group>"; };
 		190804E9249531AF00A46E63 /* CardMaiorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMaiorTableViewCell.swift; sourceTree = "<group>"; };
+		1933FA6124A3C69500089303 /* ReceitaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaRepository.swift; sourceTree = "<group>"; };
 		194F77D524944C4D003980CE /* JornadaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JornadaTableViewController.swift; sourceTree = "<group>"; };
 		194F77D724944DC3003980CE /* AlertaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertaTableViewCell.swift; sourceTree = "<group>"; };
 		194F77D924944E7A003980CE /* AlertaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertaTableViewCell.xib; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				19035F7324A22D8C000043FA /* TecnicaRepository.swift */,
 				19035F7724A26D4B000043FA /* ItemRepository.swift */,
 				19035F7B24A28190000043FA /* ModuloRepository.swift */,
+				1933FA6124A3C69500089303 /* ReceitaRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -645,6 +648,7 @@
 				272C7FD32497ADEC009313B2 /* ImageDescriptionCell.swift in Sources */,
 				190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */,
 				196D851C24A0E58F00C2AA99 /* Item.swift in Sources */,
+				1933FA6224A3C69500089303 /* ReceitaRepository.swift in Sources */,
 				19035F7124A22D56000043FA /* HTTP.swift in Sources */,
 				D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */,
 				27DC0C2324A24D100007223F /* CongratsScreenViewController.swift in Sources */,

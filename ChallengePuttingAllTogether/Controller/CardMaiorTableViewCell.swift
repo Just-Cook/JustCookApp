@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol CardMaiorDelegate:class {
+protocol CardMaiorTableViewCellDelegate:class {
     func didSelectItem(id:Int)
 }
 
@@ -27,7 +27,8 @@ class CardMaiorTableViewCell: UITableViewCell {
     }
     
     static let identifier = "CardMaiorTableViewCell"
-    weak var delegate:CardMaiorDelegate?
+    
+    weak var delegate:CardMaiorTableViewCellDelegate?
         
         override func awakeFromNib() {
             super.awakeFromNib()
