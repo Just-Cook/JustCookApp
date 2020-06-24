@@ -76,10 +76,10 @@ extension CardMaiorTableViewCell: UICollectionViewDelegate, UICollectionViewData
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             
-        var cellWidth = self.collectionView.frame.width
+        var cellWidth = self.collectionView.frame.width - 32
         
         if modulos.count>1{
-            cellWidth = cellWidth - 40
+            cellWidth = cellWidth - 64
         }
             
           return CGSize(width: cellWidth, height: 220)
