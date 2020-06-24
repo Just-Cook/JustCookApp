@@ -47,7 +47,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="pencil.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2aM-kc-gFG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="icon-porcoes" translatesAutoresizingMaskIntoConstraints="NO" id="2aM-kc-gFG">
                                 <rect key="frame" x="265" y="40.5" width="10" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -92,7 +92,7 @@
     </objects>
     <resources>
         <image name="NaoConcluido" width="25" height="25"/>
-        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+        <image name="icon-porcoes" width="9.5" height="10"/>
         <image name="timer" catalog="system" width="128" height="121"/>
     </resources>
 </document>
