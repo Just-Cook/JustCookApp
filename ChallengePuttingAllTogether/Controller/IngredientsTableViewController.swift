@@ -128,7 +128,7 @@ class IngredientsTableViewController: UITableViewController {
         
         let orangeView = UIView()
         orangeView.frame = CGRect()
-        orangeView.backgroundColor = .orange
+        orangeView.backgroundColor = .orangeColor
         orangeView.layer.cornerRadius = 8
         
         let whiteView = UIView()
@@ -208,7 +208,8 @@ class IngredientsTableViewController: UITableViewController {
             return
         }
         
-        self.present(recipePageViewController, animated: true, completion: nil)
+        recipePageViewController.hidesBottomBarWhenPushed  = true
+        self.navigationController?.pushViewController(recipePageViewController, animated: true)
     }
 
 }

@@ -27,12 +27,12 @@ extension RecipePageViewController {
             
             if let bigImage = page.bigImage{
                 lastView = addBigImageToPage(pageViewController: viewController, image: bigImage)
-                lastView.topAnchor.constraint(equalTo: viewController.view.layoutMarginsGuide.topAnchor, constant: 96).isActive = true
+                lastView.topAnchor.constraint(equalTo: viewController.view.layoutMarginsGuide.topAnchor, constant: 74).isActive = true
             }
             
             if let smallImage = page.smallImage{
                 lastView = addSmallImageToPage(pageViewController: viewController, image: smallImage)
-                lastView.topAnchor.constraint(equalTo: viewController.view.layoutMarginsGuide.topAnchor, constant: 96).isActive = true
+                lastView.topAnchor.constraint(equalTo: viewController.view.layoutMarginsGuide.topAnchor, constant: 74).isActive = true
             }
             
             let text = page.text
@@ -153,7 +153,8 @@ extension RecipePageViewController {
         let finalizeButton = UIButton()
         
         finalizeButton.setTitle("Finalizar Receita", for: .normal)
-        finalizeButton.backgroundColor = .orange
+        finalizeButton.backgroundColor = .orangeColor
+        
         finalizeButton.layer.cornerRadius = 8
         
         pageViewController.view.addSubview(finalizeButton)
@@ -170,8 +171,11 @@ extension RecipePageViewController {
     
     @objc
     func goToCongats(){
-        let pont = Pontuation()
-        pont.showCongratScreen(recipeView: self, points: 100)
+        let congrat = CongratsScreenViewController()
+        
+        self.present(congrat, animated: true, completion: nil )
+        self.navigationController?.popViewController(animated: true)
     }
+    
     
 }

@@ -83,7 +83,7 @@ class PageNumberCell: UICollectionViewCell {
     }
     
     func selectCell(){
-        self.backgroundView?.backgroundColor = UIColor(red: 248/255, green: 162/255, blue: 52/255, alpha: 1)
+        self.backgroundView?.backgroundColor = .orangeColor
         self.numberText.textColor = .white
     }
     
