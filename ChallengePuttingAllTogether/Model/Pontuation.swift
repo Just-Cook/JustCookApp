@@ -89,4 +89,7 @@ class Pontuation {
         defauls.set(currentPontuation, forKey: "totalPontuation")
     }
     
+    func zeraPontuation(){
+        defauls.set(0, forKey: "totalPontuation")
+    }
 }

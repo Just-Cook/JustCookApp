@@ -41,15 +41,18 @@ class ConquistasViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         let pontuation = Pontuation()
         nivelLabelNumber.text = String(pontuation.levelPontuation())
         nivelLabel.text = pontuation.nivelString()
         nextLevelPontLabel.text = "/" + String(pontuation.getTotalNextLevel())
         nomeLabel.text = pontuation.levelNivelUserString()
         barraProgresso.progress = Float(pontuation.levelPontuation()) / Float(pontuation.getTotalNextLevel())
-       
+        
     }
-    
     
 }
     
