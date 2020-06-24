@@ -21,7 +21,7 @@
                     <color key="backgroundColor" white="0.0" alpha="0.44873715753424659" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doK-Qj-8xn">
-                    <rect key="frame" x="8" y="35" width="84" height="14"/>
+                    <rect key="frame" x="8" y="22" width="84" height="14"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -48,7 +48,7 @@
                 <constraint firstItem="ybZ-qZ-fLV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mnH-0e-GL9"/>
                 <constraint firstItem="ybZ-qZ-fLV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pBy-mg-tBU"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="AJD-zS-YOk" secondAttribute="bottom" id="xIg-Zd-sdy"/>
-                <constraint firstItem="doK-Qj-8xn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="35" id="yfk-Uo-P8X"/>
+                <constraint firstItem="doK-Qj-8xn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="22" id="yfk-Uo-P8X"/>
                 <constraint firstItem="AJD-zS-YOk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zDI-Wl-3I1"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AJD-zS-YOk" secondAttribute="trailing" id="zMT-g2-EQN"/>
             </constraints>

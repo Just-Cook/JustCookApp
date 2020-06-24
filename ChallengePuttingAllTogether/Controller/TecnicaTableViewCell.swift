@@ -28,7 +28,7 @@ class TecnicaTableViewCell: UITableViewCell {
 
          if let titulo = titulo{
              let tituloView = addTitulo(viewPai: superView, titulo: titulo) as! UILabel
-             tituloView.topAnchor.constraint(equalTo: lastView.topAnchor, constant:25).isActive = true
+             tituloView.topAnchor.constraint(equalTo: lastView.topAnchor, constant:0).isActive = true
                lastView = tituloView
         }
 
@@ -57,7 +57,7 @@ class TecnicaTableViewCell: UITableViewCell {
         tituloView.text = titulo
         tituloView.textAlignment = NSTextAlignment.left
         tituloView.font = UIFont.boldSystemFont(ofSize: 22)
-        
+        tituloView.numberOfLines = 0
         
         viewPai.addSubview(tituloView)
         
@@ -66,7 +66,7 @@ class TecnicaTableViewCell: UITableViewCell {
         
         tituloView.leadingAnchor.constraint(equalTo:viewPai.leadingAnchor, constant:16).isActive = true
         
-        viewPai.rightAnchor.constraint(equalTo: tituloView.rightAnchor, constant: -16).isActive = true
+        tituloView.trailingAnchor.constraint(equalTo: viewPai.trailingAnchor, constant: 16).isActive = true
         
 
         return tituloView

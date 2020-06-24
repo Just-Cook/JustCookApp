@@ -129,6 +129,6 @@ extension ModuloViewController : SectionPreparacaoTableViewCellDelegate {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destiny = segue.destination as? TecnicaTableViewController
-        destiny?.tecnica_id = (sender as! Int)
+        destiny?.tecnicaId = (sender as! Int)
     }
 }

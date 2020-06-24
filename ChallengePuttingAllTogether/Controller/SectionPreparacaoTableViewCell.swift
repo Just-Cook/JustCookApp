@@ -19,18 +19,26 @@ class SectionPreparacaoTableViewCell: UITableViewCell {
     static let xibName = "SectionPreparacaoCell" // Setando o nome da xib
     static let identifier = "SectionCell" // Setando o identificador da cell
    
-    let tecnicas = Tecnica.mockTecnica()
+    var tecnicas : [Tecnica] = []{
+        didSet{
+            DispatchQueue.main.async {
+                self.collectionPreparacao.reloadData()
+            }
+        }
+    }
     
     weak var delegate: SectionPreparacaoTableViewCellDelegate?
    
-    
-    
+   
     override func awakeFromNib() {
         super.awakeFromNib()
         configCollection()
         subtitlePrep.font = .systemFont(ofSize: 15, weight: .regular)
 //        subtitlePrep.lineBreakMode = .byWordWrapping
 //        subtitlePrep.numberOfLines = .max
+        
+        TecnicaRepository().listar{[weak self] (tecnicas) in self?.tecnicas = tecnicas
+        }
 
     }
     private func configCollection(){
@@ -61,8 +69,7 @@ extension SectionPreparacaoTableViewCell: UICollectionViewDelegate, UICollection
         let currentItem = tecnicas[indexPath.row]
         
         delegate?.didSelectItem(id: currentItem.id)
-        
-        print("id:  \(currentItem.id)")
+      
         
         
     }

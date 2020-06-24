@@ -8,29 +8,13 @@
 
 import Foundation
 
-struct Tecnica{
+struct Tecnica: Decodable{
     let id: Int
     let titulo:String
     let imageName: String
-}
-
-
-extension Tecnica{
-    static func mockTecnica()-> [Tecnica]{
-        var tecnicas=[Tecnica]()
-        
-        tecnicas.append(Tecnica(id: 1, titulo: "Como utilzar o forno?",  imageName: "maminha1"))
-        
-        tecnicas.append(Tecnica(id: 2, titulo: "Dicas e curiosidades", imageName: "maminha1"))
-        
-        tecnicas.append(Tecnica(id: 3, titulo: "O que é maminha?", imageName: "forno"))
-        
-        tecnicas.append(Tecnica(id: 4, titulo: "Panelas",  imageName: "forno"))
-        
-        
-        return tecnicas
+    
+    private enum CodingKeys: String, CodingKey{
+        case id, titulo, imageName = "image_name"
     }
-  
-    
-    
 }
+

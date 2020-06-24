@@ -10,9 +10,17 @@ import UIKit
 
 class TecnicaTableViewController: UITableViewController {
 
-    var items = Item.mockItems()
+   // var items = Item.mockItems()
     
-    var tecnica_id:Int? = nil
+    var items : [Item] = []{
+          didSet{
+              DispatchQueue.main.async {
+                  self.tableView.reloadData()
+              }
+          }
+      }
+    
+    var tecnicaId:Int? = nil
     
     
     override func viewDidLoad() {
@@ -21,10 +29,9 @@ class TecnicaTableViewController: UITableViewController {
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
         tableView.allowsSelection = false
-        
-        let itemsFilter = items.filter({$0.tecnica_id == tecnica_id!})
-        items = itemsFilter
-    
+     
+        ItemRepository().listar(tecnicaId: tecnicaId!){[weak self] (items) in self?.items = items
+            }
         
     }
 

@@ -85,7 +85,6 @@ class JornadaTableViewController: UITableViewController {
 
 extension JornadaTableViewController : JornadaDelegate {
     func willTransition(to module: Modulo) {
-        print(module.titulo)
         
         let telaModulo = UIStoryboard(name: "Modulo", bundle: nil).instantiateViewController(withIdentifier: "moduloView") as? ModuloViewController
         telaModulo?.title = module.titulo
