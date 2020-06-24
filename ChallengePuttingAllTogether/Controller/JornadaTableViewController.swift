@@ -8,9 +8,6 @@
 
 import UIKit
 
-protocol JornadaDelegate : class{
-    func willTransition(to module: Modulo)
-}
 
 class JornadaTableViewController: UITableViewController {
 
@@ -83,14 +80,21 @@ class JornadaTableViewController: UITableViewController {
 
 }
 
-extension JornadaTableViewController : JornadaDelegate {
-    func willTransition(to module: Modulo) {
+extension JornadaTableViewController : CardMenorDelegate, CardMaiorDelegate {
+    func didSelectItem(id: Int){
         
         let telaModulo = UIStoryboard(name: "Modulo", bundle: nil).instantiateViewController(withIdentifier: "moduloView") as? ModuloViewController
-        telaModulo?.title = module.titulo
-        telaModulo?.moduleId = module.id
+     
+        
+        telaModulo?.moduloId = id
         self.navigationController?.pushViewController(telaModulo!, animated: true)
+        
+        
         
     
     }
+    
+  
+
 }
+

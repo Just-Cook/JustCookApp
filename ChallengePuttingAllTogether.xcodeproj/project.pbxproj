@@ -12,6 +12,7 @@
 		19035F7424A22D8C000043FA /* TecnicaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19035F7324A22D8C000043FA /* TecnicaRepository.swift */; };
 		19035F7824A26D4B000043FA /* ItemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19035F7724A26D4B000043FA /* ItemRepository.swift */; };
 		19035F7A24A276C7000043FA /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19035F7924A276C7000043FA /* URLExtension.swift */; };
+		19035F7C24A28190000043FA /* ModuloRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19035F7B24A28190000043FA /* ModuloRepository.swift */; };
 		190804E224950D6400A46E63 /* NiveisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E124950D6400A46E63 /* NiveisTableViewCell.swift */; };
 		190804E4249510C900A46E63 /* CardMenorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E3249510C900A46E63 /* CardMenorTableViewCell.swift */; };
 		190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E52495302200A46E63 /* CardMenorCollectionViewCell.swift */; };
@@ -97,6 +98,7 @@
 		19035F7324A22D8C000043FA /* TecnicaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecnicaRepository.swift; sourceTree = "<group>"; };
 		19035F7724A26D4B000043FA /* ItemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRepository.swift; sourceTree = "<group>"; };
 		19035F7924A276C7000043FA /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		19035F7B24A28190000043FA /* ModuloRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuloRepository.swift; sourceTree = "<group>"; };
 		190804E124950D6400A46E63 /* NiveisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiveisTableViewCell.swift; sourceTree = "<group>"; };
 		190804E3249510C900A46E63 /* CardMenorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenorTableViewCell.swift; sourceTree = "<group>"; };
 		190804E52495302200A46E63 /* CardMenorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenorCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 			children = (
 				19035F7324A22D8C000043FA /* TecnicaRepository.swift */,
 				19035F7724A26D4B000043FA /* ItemRepository.swift */,
+				19035F7B24A28190000043FA /* ModuloRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -647,6 +650,7 @@
 				19B5DA70249160EA006CF0FE /* ConquistasCollectionViewCell.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
 				27C227E92491104700657E10 /* Recipe.swift in Sources */,
+				19035F7C24A28190000043FA /* ModuloRepository.swift in Sources */,
 				D757BDFF2499089900E85FCC /* SectionReceitaTableViewCell.swift in Sources */,
 				27C227F524926E2400657E10 /* RecipePageExtension.swift in Sources */,
 				27C227EB2491132000657E10 /* Page.swift in Sources */,
