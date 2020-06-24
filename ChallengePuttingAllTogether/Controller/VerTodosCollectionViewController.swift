@@ -14,6 +14,13 @@ class VerTodosCollectionViewController: UIViewController, UICollectionViewDelega
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var modulos: [Modulo] = []{
+        didSet{
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +30,10 @@ class VerTodosCollectionViewController: UIViewController, UICollectionViewDelega
         collectionView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 0, right: 0)
         
        collectionView.register(CardMenorCollectionViewCell.xibForCollection(), forCellWithReuseIdentifier: CardMenorCollectionViewCell.identifier)
+        
+        ModuloRepository().listar(){
+            [weak self] (modulos) in self?.modulos = modulos
+        }
     }
 
 
@@ -34,7 +45,7 @@ class VerTodosCollectionViewController: UIViewController, UICollectionViewDelega
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 7
+        return modulos.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -42,7 +53,7 @@ class VerTodosCollectionViewController: UIViewController, UICollectionViewDelega
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardMenorCollectionViewCell.identifier, for: indexPath) as? CardMenorCollectionViewCell else{
                     fatalError("Wrong identifier")
                }
-
+        cell.configureCard(backgroundImageName: modulos[indexPath.row].imageName, titulo: modulos[indexPath.row].titulo, subtitulo: modulos[indexPath.row].subtitulo, nivel: modulos[indexPath.row].nivel)
         return cell
 
 

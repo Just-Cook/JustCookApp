@@ -18,10 +18,28 @@ class ModuloViewController: UIViewController{
     @IBOutlet weak var ModuloTableView: UITableView!
     let nameSections = ["", "Preparação", "Receita"]
     let tamanho = [100, 109, 108]
-    var moduleId = 0
+    var moduloId :Int? = nil
+    
+    
+    var modulo : Modulo?{
+        didSet{
+            DispatchQueue.main.async {
+            self.ModuloTableView.reloadData()
+            }
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configTable()
+        
+        ModuloRepository().moduloId(moduloId: moduloId!){[weak self] (modulo) in self?.modulo = modulo
+            
+        }
+        
+   
+        self.title = modulo?.titulo
         
     }
    private func configTable(){
@@ -68,10 +86,12 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
         let title = UILabel()
+        
         title.frame = CGRect(x: 16, y: 3, width: 375, height: 30)
         view.addSubview(title)
         title.font = sfRounded(size: 22, weight: .bold)
         title.text = nameSections[section]
+      
         
         return view
     }
@@ -85,12 +105,17 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
 //          seta que a label expanda até o maximo
             cell.textLabel?.numberOfLines = .max
             cell.textLabel?.font = .systemFont(ofSize: 17, weight: .medium)
-            cell.textLabel?.text = "Nesse módulos você aprenderá a fazer alguns bolos classicos da culinária."
+            cell.textLabel?.text = modulo?.descricao
+            
+          
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SectionCell", for: indexPath) as! SectionPreparacaoTableViewCell
-           cell.delegate = self
-            
+          
+            cell.tecnicaModuloId(moduloId: moduloId!)
+            cell.delegate = self
+        
+              
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SectionReceitaCell", for: indexPath) as! SectionReceitaTableViewCell
@@ -102,7 +127,8 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
         }
        
     }
-    
+   
+ 
     
 }
 extension ModuloViewController : ModuloDelegate {
@@ -122,7 +148,6 @@ extension ModuloViewController : ModuloDelegate {
 extension ModuloViewController : SectionPreparacaoTableViewCellDelegate {
     func didSelectItem(id: Int) {
         self.performSegue(withIdentifier: "segueTecnica", sender: id)
-       
 
     }
 
@@ -130,5 +155,6 @@ extension ModuloViewController : SectionPreparacaoTableViewCellDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destiny = segue.destination as? TecnicaTableViewController
         destiny?.tecnicaId = (sender as! Int)
+
     }
 }

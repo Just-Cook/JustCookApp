@@ -6,25 +6,28 @@
 //  Copyright © 2020 Lidiane Gomes Barbosa. All rights reserved.
 //
 
-struct Modulo {
+struct Modulo: Decodable{
     let id : Int
     let titulo : String
+    let subtitulo: String
     let descricao : String
+    let imageName: String
+    let nivel: Int
     
     
-    //Mock
-    
-    
-//    static func createModulo() -> Modulo {
-//        return Modulo(titulo: "Que gostinho doce", descricao: "Culinária literária")
-//    }
-//
-//    static func createModuloCollection() -> [Modulo] {
-//        var modulos = [Modulo]()
-//        for _ in 0...4 {
-//            modulos.append(Modulo(titulo: "Orgulho da mamãe", descricao: "Almoço de domingo"))
-//        }
-//        return modulos
-//    }
-    
+    private enum CodingKeys: String, CodingKey{
+              case id, titulo, subtitulo, descricao, imageName = "image_name", nivel
+          }
+}
+
+
+extension Modulo{
+    static func mock() -> [Modulo]{
+        var modulos = [Modulo]()
+        
+        modulos.append(Modulo(id: 1, titulo: "modulo 1", subtitulo: "modulo 1", descricao: "descricao qualqer", imageName: "forma", nivel: 2))
+         modulos.append(Modulo(id: 1, titulo: "modulo 2", subtitulo: "modulo 1", descricao: "descricao qualqer", imageName: "forma", nivel: 2))
+        
+        return modulos
+    }
 }

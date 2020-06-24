@@ -27,6 +27,8 @@ class SectionPreparacaoTableViewCell: UITableViewCell {
         }
     }
     
+    var moduloId:Int? = nil
+  
     weak var delegate: SectionPreparacaoTableViewCellDelegate?
    
    
@@ -36,24 +38,27 @@ class SectionPreparacaoTableViewCell: UITableViewCell {
         subtitlePrep.font = .systemFont(ofSize: 15, weight: .regular)
 //        subtitlePrep.lineBreakMode = .byWordWrapping
 //        subtitlePrep.numberOfLines = .max
-        
-        TecnicaRepository().listar{[weak self] (tecnicas) in self?.tecnicas = tecnicas
-        }
+    
 
-    }
+        }
+    
     private func configCollection(){
             collectionPreparacao.delegate = self
             collectionPreparacao.dataSource = self
             collectionPreparacao.register(UINib.init(nibName: "Preparacao", bundle: nil), forCellWithReuseIdentifier: "PreparacaoCell")
+
     }
     
-  
+    func tecnicaModuloId(moduloId: Int){
+          TecnicaRepository().tecnicasModuloId(moduloId: moduloId){[weak self] (tecnicas) in self?.tecnicas = tecnicas}
+        
+    }
   
 }
 extension SectionPreparacaoTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return tecnicas.count
-        
+       
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -67,7 +72,6 @@ extension SectionPreparacaoTableViewCell: UICollectionViewDelegate, UICollection
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let currentItem = tecnicas[indexPath.row]
-        
         delegate?.didSelectItem(id: currentItem.id)
       
         
@@ -75,3 +79,7 @@ extension SectionPreparacaoTableViewCell: UICollectionViewDelegate, UICollection
     }
     
 }
+
+    
+
+

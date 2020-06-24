@@ -12,7 +12,18 @@ extension URL {
         URL(string:  "https://justcook-api.herokuapp.com/tecnicas")!
     }
     
-    static func items(withID id: Int) -> URL{
+    static func itemsByTecnicaId(withID id: Int) -> URL{
         URL(string: "https://justcook-api.herokuapp.com/tecnicas/\(id)/items")!
     }
+    
+    static var modulos: URL{
+         URL(string:  "https://justcook-api.herokuapp.com/modulos")!
+    }
+    static func moduloId(withID id: Int) -> URL{
+           URL(string: "https://justcook-api.herokuapp.com/modulos/\(id)")!
+       }
+    
+    static func tecnicasByModuloId(withID id: Int) -> URL{
+              URL(string: "https://justcook-api.herokuapp.com/modulos/\(id)/tecnicas")!
+          }
 }

@@ -38,6 +38,36 @@ class TecnicaRepository{
                   }
                   
         }
+    
+    
+    func tecnicasModuloId(moduloId:Int, completion: @escaping ([Tecnica]) -> Void){
+        HTTP.get.request(url: .tecnicasByModuloId(withID: moduloId)){
+               data, response, error in
+               
+               if let error = error {
+                             print(error)
+                             completion([])
+                             return
+                         }
+                         
+                         guard let data = data, let response = response else {
+                             completion([])
+                             return
+                         }
+                         
+                         switch response.statusCode {
+                         case 200:
+                             let tecnicas: [Tecnica] = (try? JSONDecoder().decode(Array<Tecnica>.self, from: data)) ?? []
+                             completion(tecnicas)
+                               return
+                         default:
+                             completion([])
+                             return
+                         }
+                         
+                     }
+                     
+           }
 }
     
     

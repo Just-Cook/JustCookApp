@@ -64,4 +64,25 @@ class CardMenorCollectionViewCell: UICollectionViewCell {
       }
       
     
+    func configureCard(backgroundImageName:String, titulo:String, subtitulo:String, nivel:Int){
+        self.backGroundImage.image = UIImage(named: backgroundImageName)
+        self.titulo.text = titulo
+        self.subtitulo.text = subtitulo
+        
+        var nivelImage:String
+        
+        switch nivel {
+        case 1:
+            nivelImage = "muitofacil"
+        case 2:
+            nivelImage = "facil"
+        case 3:
+            nivelImage = "intermediario"
+        default:
+            nivelImage = "nenhum"
+        }
+        
+        self.nivelImage.image = UIImage(named: nivelImage)
+    }
+    
 }
