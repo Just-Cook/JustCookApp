@@ -11,7 +11,7 @@ import UIKit
 extension RecipePageViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
+        print("pages extension",pages.count)
         return pages.count
     }
     
@@ -32,7 +32,7 @@ extension RecipePageViewController: UICollectionViewDelegateFlowLayout, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+       
         if self.currentPage != indexPath.item {
             
             if self.currentPage > indexPath.item {

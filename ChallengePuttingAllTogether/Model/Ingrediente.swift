@@ -8,12 +8,16 @@
 
 import Foundation
 
-class Ingrediente: Decodable{
+struct Ingrediente: Decodable{
     
     let id: Int
     let nome: String
-    let quantidade: Double
-    let unidade: String
+    let quantidade: Int?
+    let unidade: String?
+    let receitaId: Int
     
+    private enum CodingKeys: String, CodingKey{
+          case id, nome, quantidade, unidade, receitaId = "receita_id"
+      }
    
 }

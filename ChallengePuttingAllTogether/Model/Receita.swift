@@ -14,8 +14,8 @@ struct Receita: Decodable{
     let titulo: String
     let descricao: String
     let imageName: String
-    let rendimento: Int
-    let tempo: Int
+    var rendimento: Int
+    var tempo: Int
 
     
     private enum CodingKeys: String, CodingKey{

@@ -14,6 +14,7 @@ class ModuloViewController: UIViewController{
     @IBOutlet weak var ModuloTableView: UITableView!
     let nameSections = ["", "Preparação", "Receita"]
     let tamanho = [100, 109, 108]
+    
     var moduloId :Int? = nil
     
     
@@ -133,7 +134,7 @@ extension ModuloViewController : SectionReceitaTableViewCellDelegate {
        
         let telaIngredient = UIStoryboard(name: "IngredientsRecipeScreen", bundle: nil).instantiateViewController(withIdentifier: "ingredientRecipe") as? IngredientsTableViewController
         
-        telaIngredient?.moduloId = id
+        telaIngredient?.receitaId = id
         
         self.navigationController?.pushViewController(telaIngredient!, animated: true)
     }

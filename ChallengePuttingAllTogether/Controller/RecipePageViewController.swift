@@ -10,7 +10,15 @@ import UIKit
 
 class RecipePageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
-    
+//    
+//    let pages:[Page] = [
+//        Page(id: 1, descricao: "Texto da Pagina 1", imageName: "Tem", cronometro: 1200),
+//       Page(id: 2, descricao: "Texto da Pagina 1", imageName: "Tem", cronometro: 1200),
+//     Page(id: 3, descricao: "Texto da Pagina 1", imageName: "Tem", cronometro: 1200),
+//      Page(id: 4, descricao: "Texto da Pagina 1", imageName: "Tem", cronometro: 1200),
+//       Page(id: 5, descricao: "Texto da Pagina 1", imageName: "Tem", cronometro: 1200)
+//      ]
+
     var pageViewControllers:[UIViewController] = []
     var chronometerView: ChronometerView?
     var paginationCV: UICollectionView?
@@ -19,18 +27,17 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
     
     //selectedPageViewController : UIPageViewController?
     
-    let pages:[Page] = [
-        Page(text: "Texto da Pagina 1", chronometer: 1200, links: nil, smallImage: "Tem", bigImage: nil, video: nil),
-        Page(text: "Texto da Pagina 2", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
-        Page(text: "Texto da Pagina 3", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
-        Page(text: "Texto da Pagina 4", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
-        Page(text: "Texto da Pagina 5", chronometer: 5, links: nil, smallImage: "Tem", bigImage: nil, video: nil),
-        Page(text: "Texto da Pagina 6", chronometer: 6400, links: nil, smallImage: "Tem", bigImage: nil, video: nil),
-        Page(text: "Texto da Pagina 7", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
-        Page(text: "Texto da Pagina 8", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil),
-        Page(text: "Texto da Pagina 9", chronometer: nil, links: nil, smallImage: nil, bigImage: "tem sim", video: nil)
-        
-    ]
+    var receitaId: Int?
+    var pages:[Page] = []{
+        didSet{
+              DispatchQueue.main.async {
+                self.paginationCV?.reloadData()
+                self.paginationCollection?.reloadData()
+            
+
+            }
+        }
+    }
     
 
     override func viewDidLoad() {
@@ -39,8 +46,20 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         self.dataSource = self
         self.delegate = self
         
-        createViewControllers()
+          if let id = receitaId{
+               print("receita id", id)
         
+              PassosRepository().passosByReceitaId(receitaId: id){
+               [weak self](pages) in self?.pages = pages
+
+                print("pages", self!.pages.count)
+                print("pageid", self!.pages[0].id)
+                print("pageDesc", self!.pages[0].descricao)
+               }
+        }
+        
+        createViewControllers()
+     
         let rightButton = UIBarButtonItem(title: "Fechar", style: .plain, target: self, action: #selector(closeRecipePages))
         rightButton.tintColor = .orangeColor
         
@@ -54,7 +73,9 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
             setViewControllers([firstPageViewController], direction: .forward, animated: false, completion: nil)
         }
         
+      
         configurePagination()
+       
     }
     
     @objc

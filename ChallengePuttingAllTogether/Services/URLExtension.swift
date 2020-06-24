@@ -29,4 +29,14 @@ extension URL {
     static func receitasByModuloId(withID id: Int) -> URL{
              URL(string: "https://justcook-api.herokuapp.com/modulos/\(id)/receitas")!
     }
+    static func receitaId(withID id: Int) -> URL{
+                URL(string: "https://justcook-api.herokuapp.com/receitas/\(id)")!
+       }
+    static func ingredientesByReceitaId(withID id: Int) -> URL{
+             URL(string: "https://justcook-api.herokuapp.com/receitas/\(id)/ingredientes")!
+    }
+    
+    static func passosByReceitaId(withID id: Int) -> URL{
+                URL(string: "https://justcook-api.herokuapp.com/receitas/\(id)/passos")!
+       }
 }
