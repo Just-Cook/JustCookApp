@@ -16,10 +16,10 @@ struct Receita: Decodable{
     let imageName: String
     let rendimento: Int
     let tempo: Int
-    let moduloId: Int
+
     
     private enum CodingKeys: String, CodingKey{
-         case id, titulo, descricao, imageName = "image_name", rendimento, tempo, moduloId = "modulo_id"
+         case id, titulo, descricao, imageName = "image_name", rendimento, tempo
     }
 
 }
