@@ -50,12 +50,7 @@ class CardMenorCollectionViewCell: UICollectionViewCell {
         gradienteView.layer.masksToBounds = true
         gradienteView.layer.cornerRadius = 10
               
-        let secondColor = CGColor.init(srgbRed: 0, green: 0, blue: 0, alpha: 0.5)
-                    
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = gradienteView.bounds
-        gradientLayer.colors = [UIColor.clear.cgColor, secondColor]
-        gradienteView.layer.insertSublayer(gradientLayer, at: 0)
+        //gradienteView.layer.in
         
         
     }
@@ -83,6 +78,19 @@ class CardMenorCollectionViewCell: UICollectionViewCell {
         }
         
         self.nivelImage.image = UIImage(named: nivelImage)
+    }
+    
+    public func configuraGradient(size: CGSize){
+        let secondColor = CGColor.init(srgbRed: 0, green: 0, blue: 0, alpha: 0.5)
+                    
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [UIColor.clear.cgColor, secondColor]
+        gradientLayer.locations = [0.0, 1.0]
+        
+        gradientLayer.frame = CGRect(origin: .zero, size: size)
+        
+        gradienteView.layer.insertSublayer(gradientLayer, at: 0)
+        
     }
     
 }

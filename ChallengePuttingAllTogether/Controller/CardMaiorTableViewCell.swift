@@ -71,18 +71,18 @@ extension CardMaiorTableViewCell: UICollectionViewDelegate, UICollectionViewData
         
          cell.configureCard(backgroundImageName: modulos[indexPath.row].imageName, titulo: modulos[indexPath.row].titulo, subtitulo: modulos[indexPath.row].subtitulo, nivel: modulos[indexPath.row].nivel)
 
+        
+        let (cellWidth, cellHeight) = cellSize()
+        cell.configuraGradient(size: CGSize(width: cellWidth, height: cellHeight))
+        
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             
-        var cellWidth = self.collectionView.frame.width - 32
-        
-        if modulos.count>1{
-            cellWidth = cellWidth - 64
-        }
+        let (cellWidth, cellHeight) = cellSize()
             
-          return CGSize(width: cellWidth, height: 220)
+          return CGSize(width: cellWidth, height: cellHeight)
       }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -90,6 +90,16 @@ extension CardMaiorTableViewCell: UICollectionViewDelegate, UICollectionViewData
         
         delegate?.didSelectItem(id: currentItem.id)
         
+    }
+    
+    func cellSize() -> (CGFloat, CGFloat) {
+        var cellWidth = self.collectionView.frame.width - 32
+        
+        if modulos.count>1{
+            cellWidth = cellWidth - 64
+        }
+            
+        return (cellWidth, CGFloat(220))
     }
       
 }

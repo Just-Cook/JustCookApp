@@ -44,22 +44,6 @@ class CardMaiorCollectionViewCell: UICollectionViewCell {
         //gradienteView.layer.cornerRadius = 10
         
         
-              
-          let secondColor = CGColor.init(srgbRed: 0, green: 0, blue: 0, alpha: 0.5)
-
-          let gradientLayer = CAGradientLayer()
-          gradientLayer.frame = wrapperView.bounds
-//        gradienteView.backgroundColor = .red
-            
-        print(gradienteView.bounds)
-        print(backGroundImage.frame)
-        print(wrapperView.frame)
-        
-        
-        
-          gradientLayer.colors = [UIColor.clear.cgColor, secondColor]
-          gradienteView.layer.insertSublayer(gradientLayer, at: 0)
-//
     }
     
     
@@ -87,5 +71,18 @@ class CardMaiorCollectionViewCell: UICollectionViewCell {
            
            self.nivelImage.image = UIImage(named: nivelImage)
        }
+    
+    public func configuraGradient(size: CGSize){
+        let secondColor = CGColor.init(srgbRed: 0, green: 0, blue: 0, alpha: 0.5)
+                    
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [UIColor.clear.cgColor, secondColor]
+        gradientLayer.locations = [0.0, 1.0]
+        
+        gradientLayer.frame = CGRect(origin: .zero, size: size)
+        
+        gradienteView.layer.insertSublayer(gradientLayer, at: 0)
+        
+    }
     
 }
