@@ -18,7 +18,6 @@ extension RecipePageViewController {
         var lastView: UIView = self.view
         
         var pageCount = 1
-        print("pages fora",pages.count)
         
         for page in pages {
             
@@ -57,11 +56,11 @@ extension RecipePageViewController {
 //
 //            }
             
-            //if let tip = page.tip {
-                let tipView = addTip(pageViewController: viewController, tipText: "Sua dica vai ser muito bem escrita aqui. Inclusive textos muito grandes se você preferir. E para textos ainda maiores, sera q funciona????")
+            if let tip = page.tip {
+                let tipView = addTip(pageViewController: viewController, tipText: tip)
                 tipView.topAnchor.constraint(equalTo: lastView.bottomAnchor, constant: 12).isActive = true
                 lastView = tipView
-            //}
+            }
             
             if (pageCount == pages.count){
                 
@@ -199,8 +198,6 @@ extension RecipePageViewController {
         tipLabel.leadingAnchor.constraint(equalTo: fastTipLabel.leadingAnchor, constant: 0).isActive = true
         tipLabel.trailingAnchor.constraint(equalTo: tipView.trailingAnchor, constant: -8).isActive = true
         tipLabel.topAnchor.constraint(equalTo: fastTipLabel.bottomAnchor, constant: 4).isActive = true
-        
-        print(tipLabel.frame.height)
         
         pageViewController.view.addSubview(tipView)
         tipView.translatesAutoresizingMaskIntoConstraints = false
