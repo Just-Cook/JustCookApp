@@ -59,6 +59,7 @@
 		27EA9F1C2493B7B1001CF006 /* Chronometer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27EA9F1B2493B7B1001CF006 /* Chronometer.xib */; };
 		27EA9F1E2493BC9A001CF006 /* ChronometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA9F1D2493BC9A001CF006 /* ChronometerView.swift */; };
 		27EA9F202493BF06001CF006 /* RecipePagesCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA9F1F2493BF06001CF006 /* RecipePagesCreation.swift */; };
+		4BDE1F2F24A49D3F006F1B5A /* ModuleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE1F2E24A49D3F006F1B5A /* ModuleUITests.swift */; };
 		60AAC8B141A6C4AED0A46116 /* Pods_ChallengePuttingAllTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F658801114B6DB80AA15F7 /* Pods_ChallengePuttingAllTogether.framework */; };
 		7C127E190A3B652C479EE9A2 /* Pods_ChallengePuttingAllTogether_ChallengePuttingAllTogetherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAC4B5BBBC2271D27B350FC /* Pods_ChallengePuttingAllTogether_ChallengePuttingAllTogetherUITests.framework */; };
 		D757BDE72491101300E85FCC /* Modulo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D757BDE62491101300E85FCC /* Modulo.storyboard */; };
@@ -152,6 +153,7 @@
 		27EA9F1B2493B7B1001CF006 /* Chronometer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Chronometer.xib; sourceTree = "<group>"; };
 		27EA9F1D2493BC9A001CF006 /* ChronometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronometerView.swift; sourceTree = "<group>"; };
 		27EA9F1F2493BF06001CF006 /* RecipePagesCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePagesCreation.swift; sourceTree = "<group>"; };
+		4BDE1F2E24A49D3F006F1B5A /* ModuleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleUITests.swift; sourceTree = "<group>"; };
 		740CBBD00C27CD407530F6C9 /* Pods-ChallengePuttingAllTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengePuttingAllTogether.debug.xcconfig"; path = "Target Support Files/Pods-ChallengePuttingAllTogether/Pods-ChallengePuttingAllTogether.debug.xcconfig"; sourceTree = "<group>"; };
 		92DC473F9DED1CF7102800A9 /* Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests/Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1F658801114B6DB80AA15F7 /* Pods_ChallengePuttingAllTogether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengePuttingAllTogether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -276,6 +278,7 @@
 			children = (
 				198A6832248EC017006B5FCB /* ChallengePuttingAllTogetherUITests.swift */,
 				198A6834248EC017006B5FCB /* Info.plist */,
+				4BDE1F2E24A49D3F006F1B5A /* ModuleUITests.swift */,
 			);
 			path = ChallengePuttingAllTogetherUITests;
 			sourceTree = "<group>";
@@ -697,6 +700,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				198A6833248EC017006B5FCB /* ChallengePuttingAllTogetherUITests.swift in Sources */,
+				4BDE1F2F24A49D3F006F1B5A /* ModuleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
