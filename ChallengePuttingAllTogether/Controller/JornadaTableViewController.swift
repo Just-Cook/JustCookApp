@@ -14,7 +14,7 @@ class JornadaTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+      
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
         tableView.allowsSelection = false
@@ -23,6 +23,8 @@ class JornadaTableViewController: UITableViewController {
         
         tableView.register(NiveisTableViewCell.xibForTable(), forCellReuseIdentifier: NiveisTableViewCell.identifier)
         
+        self.tabBarController?.tabBar.tintColor = UIColor.orangeColor
+        self.navigationController?.navigationBar.tintColor = UIColor.orangeColor
     
     }
 
@@ -80,7 +82,7 @@ class JornadaTableViewController: UITableViewController {
 
 }
 
-extension JornadaTableViewController : CardMenorDelegate, CardMaiorDelegate {
+extension JornadaTableViewController : CardMenorTableViewCellDelegate, CardMaiorTableViewCellDelegate {
     func didSelectItem(id: Int){
         
         let telaModulo = UIStoryboard(name: "Modulo", bundle: nil).instantiateViewController(withIdentifier: "moduloView") as? ModuloViewController

@@ -59,9 +59,9 @@ class ModuloRepository{
                          
                          switch response.statusCode {
                          case 200:
-                             let modulos: Modulo = (try? JSONDecoder().decode(Modulo.self, from: data))!
+                             let modulo: Modulo = (try? JSONDecoder().decode(Modulo.self, from: data))!
                              
-                              completion(modulos)
+                              completion(modulo)
                              return
                          default:
                            //  completion([])

@@ -18,6 +18,9 @@
 		190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E52495302200A46E63 /* CardMenorCollectionViewCell.swift */; };
 		190804E82495317900A46E63 /* CardMaiorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E72495317900A46E63 /* CardMaiorCollectionViewCell.swift */; };
 		190804EA249531AF00A46E63 /* CardMaiorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190804E9249531AF00A46E63 /* CardMaiorTableViewCell.swift */; };
+		1933FA6224A3C69500089303 /* ReceitaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1933FA6124A3C69500089303 /* ReceitaRepository.swift */; };
+		1933FA6424A3D72C00089303 /* IngredienteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1933FA6324A3D72C00089303 /* IngredienteRepository.swift */; };
+		1933FA6624A40B1E00089303 /* PassoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1933FA6524A40B1E00089303 /* PassoRepository.swift */; };
 		194F77D624944C4D003980CE /* JornadaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F77D524944C4D003980CE /* JornadaTableViewController.swift */; };
 		194F77D824944DC3003980CE /* AlertaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F77D724944DC3003980CE /* AlertaTableViewCell.swift */; };
 		194F77DA24944E7A003980CE /* AlertaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 194F77D924944E7A003980CE /* AlertaTableViewCell.xib */; };
@@ -49,8 +52,8 @@
 		272C7FD12497A92C009313B2 /* IngredientsRecipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C7FD02497A92C009313B2 /* IngredientsRecipeController.swift */; };
 		272C7FD32497ADEC009313B2 /* ImageDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C7FD22497ADEC009313B2 /* ImageDescriptionCell.swift */; };
 		27B981852497B3CB003073B4 /* IngredientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B981842497B3CB003073B4 /* IngredientsTableViewController.swift */; };
-		27BB99F02497BCC300907B43 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB99EF2497BCC300907B43 /* Ingredient.swift */; };
-		27C227E92491104700657E10 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C227E82491104700657E10 /* Recipe.swift */; };
+		27BB99F02497BCC300907B43 /* Ingrediente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB99EF2497BCC300907B43 /* Ingrediente.swift */; };
+		27C227E92491104700657E10 /* Receita.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C227E82491104700657E10 /* Receita.swift */; };
 		27C227EB2491132000657E10 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C227EA2491132000657E10 /* Page.swift */; };
 		27C227ED2491168E00657E10 /* RecipeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C227EC2491168E00657E10 /* RecipeScreen.storyboard */; };
 		27C227F524926E2400657E10 /* RecipePageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C227F424926E2400657E10 /* RecipePageExtension.swift */; };
@@ -59,6 +62,7 @@
 		27EA9F1C2493B7B1001CF006 /* Chronometer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27EA9F1B2493B7B1001CF006 /* Chronometer.xib */; };
 		27EA9F1E2493BC9A001CF006 /* ChronometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA9F1D2493BC9A001CF006 /* ChronometerView.swift */; };
 		27EA9F202493BF06001CF006 /* RecipePagesCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA9F1F2493BF06001CF006 /* RecipePagesCreation.swift */; };
+		4BDE1F2F24A49D3F006F1B5A /* ModuleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE1F2E24A49D3F006F1B5A /* ModuleUITests.swift */; };
 		60AAC8B141A6C4AED0A46116 /* Pods_ChallengePuttingAllTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F658801114B6DB80AA15F7 /* Pods_ChallengePuttingAllTogether.framework */; };
 		7C127E190A3B652C479EE9A2 /* Pods_ChallengePuttingAllTogether_ChallengePuttingAllTogetherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAC4B5BBBC2271D27B350FC /* Pods_ChallengePuttingAllTogether_ChallengePuttingAllTogetherUITests.framework */; };
 		D757BDE72491101300E85FCC /* Modulo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D757BDE62491101300E85FCC /* Modulo.storyboard */; };
@@ -105,6 +109,9 @@
 		190804E52495302200A46E63 /* CardMenorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenorCollectionViewCell.swift; sourceTree = "<group>"; };
 		190804E72495317900A46E63 /* CardMaiorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMaiorCollectionViewCell.swift; sourceTree = "<group>"; };
 		190804E9249531AF00A46E63 /* CardMaiorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMaiorTableViewCell.swift; sourceTree = "<group>"; };
+		1933FA6124A3C69500089303 /* ReceitaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaRepository.swift; sourceTree = "<group>"; };
+		1933FA6324A3D72C00089303 /* IngredienteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredienteRepository.swift; sourceTree = "<group>"; };
+		1933FA6524A40B1E00089303 /* PassoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassoRepository.swift; sourceTree = "<group>"; };
 		194F77D524944C4D003980CE /* JornadaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JornadaTableViewController.swift; sourceTree = "<group>"; };
 		194F77D724944DC3003980CE /* AlertaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertaTableViewCell.swift; sourceTree = "<group>"; };
 		194F77D924944E7A003980CE /* AlertaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertaTableViewCell.xib; sourceTree = "<group>"; };
@@ -142,8 +149,8 @@
 		272C7FD02497A92C009313B2 /* IngredientsRecipeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsRecipeController.swift; sourceTree = "<group>"; };
 		272C7FD22497ADEC009313B2 /* ImageDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDescriptionCell.swift; sourceTree = "<group>"; };
 		27B981842497B3CB003073B4 /* IngredientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewController.swift; sourceTree = "<group>"; };
-		27BB99EF2497BCC300907B43 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
-		27C227E82491104700657E10 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		27BB99EF2497BCC300907B43 /* Ingrediente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingrediente.swift; sourceTree = "<group>"; };
+		27C227E82491104700657E10 /* Receita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receita.swift; sourceTree = "<group>"; };
 		27C227EA2491132000657E10 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		27C227EC2491168E00657E10 /* RecipeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipeScreen.storyboard; sourceTree = "<group>"; };
 		27C227F424926E2400657E10 /* RecipePageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePageExtension.swift; sourceTree = "<group>"; };
@@ -152,6 +159,7 @@
 		27EA9F1B2493B7B1001CF006 /* Chronometer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Chronometer.xib; sourceTree = "<group>"; };
 		27EA9F1D2493BC9A001CF006 /* ChronometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronometerView.swift; sourceTree = "<group>"; };
 		27EA9F1F2493BF06001CF006 /* RecipePagesCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePagesCreation.swift; sourceTree = "<group>"; };
+		4BDE1F2E24A49D3F006F1B5A /* ModuleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleUITests.swift; sourceTree = "<group>"; };
 		740CBBD00C27CD407530F6C9 /* Pods-ChallengePuttingAllTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengePuttingAllTogether.debug.xcconfig"; path = "Target Support Files/Pods-ChallengePuttingAllTogether/Pods-ChallengePuttingAllTogether.debug.xcconfig"; sourceTree = "<group>"; };
 		92DC473F9DED1CF7102800A9 /* Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests/Pods-ChallengePuttingAllTogether-ChallengePuttingAllTogetherUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1F658801114B6DB80AA15F7 /* Pods_ChallengePuttingAllTogether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengePuttingAllTogether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,7 +218,6 @@
 			children = (
 				19035F7924A276C7000043FA /* URLExtension.swift */,
 				19035F7024A22D56000043FA /* HTTP.swift */,
-				19035F7224A22D6D000043FA /* Repository */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -221,6 +228,9 @@
 				19035F7324A22D8C000043FA /* TecnicaRepository.swift */,
 				19035F7724A26D4B000043FA /* ItemRepository.swift */,
 				19035F7B24A28190000043FA /* ModuloRepository.swift */,
+				1933FA6124A3C69500089303 /* ReceitaRepository.swift */,
+				1933FA6324A3D72C00089303 /* IngredienteRepository.swift */,
+				1933FA6524A40B1E00089303 /* PassoRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -253,6 +263,7 @@
 				27DC0C0E249D1D8F0007223F /* Bolo Path.json */,
 				198A6810248EC010006B5FCB /* AppDelegate.swift */,
 				198A6812248EC010006B5FCB /* SceneDelegate.swift */,
+				19035F7224A22D6D000043FA /* Repository */,
 				19035F6B24A22D09000043FA /* Services */,
 				198A6841248EC054006B5FCB /* Model */,
 				198A6840248EC047006B5FCB /* View */,
@@ -276,6 +287,7 @@
 			children = (
 				198A6832248EC017006B5FCB /* ChallengePuttingAllTogetherUITests.swift */,
 				198A6834248EC017006B5FCB /* Info.plist */,
+				4BDE1F2E24A49D3F006F1B5A /* ModuleUITests.swift */,
 			);
 			path = ChallengePuttingAllTogetherUITests;
 			sourceTree = "<group>";
@@ -309,12 +321,12 @@
 		198A6841248EC054006B5FCB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				27C227E82491104700657E10 /* Recipe.swift */,
+				27C227E82491104700657E10 /* Receita.swift */,
 				27C227EA2491132000657E10 /* Page.swift */,
 				19B5DA6824912037006CF0FE /* ConquistasModel.swift */,
 				D757BDEA2491174A00E85FCC /* Modulo.swift */,
 				D757BDF024917A1A00E85FCC /* PrepCard.swift */,
-				27BB99EF2497BCC300907B43 /* Ingredient.swift */,
+				27BB99EF2497BCC300907B43 /* Ingrediente.swift */,
 				2722DE2D249A86CA00E8E173 /* Pontuation.swift */,
 				D757BE02249A532B00E85FCC /* Colors.swift */,
 				19A600A8249CE90500713A36 /* Tecnica.swift */,
@@ -645,6 +657,7 @@
 				272C7FD32497ADEC009313B2 /* ImageDescriptionCell.swift in Sources */,
 				190804E62495302200A46E63 /* CardMenorCollectionViewCell.swift in Sources */,
 				196D851C24A0E58F00C2AA99 /* Item.swift in Sources */,
+				1933FA6224A3C69500089303 /* ReceitaRepository.swift in Sources */,
 				19035F7124A22D56000043FA /* HTTP.swift in Sources */,
 				D757BDF52493C2FE00E85FCC /* ReceitaModuloTableViewCell.swift in Sources */,
 				27DC0C2324A24D100007223F /* CongratsScreenViewController.swift in Sources */,
@@ -653,10 +666,11 @@
 				198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */,
 				19B5DA70249160EA006CF0FE /* ConquistasCollectionViewCell.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
-				27C227E92491104700657E10 /* Recipe.swift in Sources */,
+				27C227E92491104700657E10 /* Receita.swift in Sources */,
 				19035F7C24A28190000043FA /* ModuloRepository.swift in Sources */,
 				D757BDFF2499089900E85FCC /* SectionReceitaTableViewCell.swift in Sources */,
 				27C227F524926E2400657E10 /* RecipePageExtension.swift in Sources */,
+				1933FA6624A40B1E00089303 /* PassoRepository.swift in Sources */,
 				27C227EB2491132000657E10 /* Page.swift in Sources */,
 				19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */,
 				272C7FD12497A92C009313B2 /* IngredientsRecipeController.swift in Sources */,
@@ -664,7 +678,7 @@
 				D757BDEB2491174A00E85FCC /* Modulo.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
 				19035F7424A22D8C000043FA /* TecnicaRepository.swift in Sources */,
-				27BB99F02497BCC300907B43 /* Ingredient.swift in Sources */,
+				27BB99F02497BCC300907B43 /* Ingrediente.swift in Sources */,
 				19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */,
 				190804E4249510C900A46E63 /* CardMenorTableViewCell.swift in Sources */,
 				2722DE2C24997DD500E8E173 /* RecipePageViewController.swift in Sources */,
@@ -681,6 +695,7 @@
 				19CB3D3724979F3B00F8FB77 /* VerTodosCollectionViewController.swift in Sources */,
 				19A600A7249CE8C500713A36 /* TecnicaTableViewController.swift in Sources */,
 				190804E224950D6400A46E63 /* NiveisTableViewCell.swift in Sources */,
+				1933FA6424A3D72C00089303 /* IngredienteRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,6 +712,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				198A6833248EC017006B5FCB /* ChallengePuttingAllTogetherUITests.swift in Sources */,
+				4BDE1F2F24A49D3F006F1B5A /* ModuleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -150,12 +150,13 @@
         <scene sceneID="e6T-aR-UyQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fzf-De-A6m" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Jornada" id="xhx-Jf-l9n"/>
+                    <tabBarItem key="tabBarItem" title="Jornada" image="Jornada" id="xhx-Jf-l9n"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="VPd-3h-9SA">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -167,4 +168,7 @@
             <point key="canvasLocation" x="869.56521739130437" y="180.80357142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Jornada" width="25" height="25"/>
+    </resources>
 </document>

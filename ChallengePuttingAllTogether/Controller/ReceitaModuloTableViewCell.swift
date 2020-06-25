@@ -32,11 +32,16 @@ class ReceitaModuloTableViewCell: UITableViewCell {
         super.awakeFromNib()
     
     }
-//
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
+    
+    func configure(backImage:String, titulo:String, rendimento:Int, tempo:Int){
+        
+        self.backgReceita.image = UIImage(named: backImage)
+        self.receitaLabel.text = titulo
+        self.porcoesLabel.text = "\(rendimento)"
+        self.tempoLabel.text = "\(tempo)"
+        
+        
+        
+    }
 
 }

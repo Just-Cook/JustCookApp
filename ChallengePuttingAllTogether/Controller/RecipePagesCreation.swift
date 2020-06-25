@@ -18,24 +18,25 @@ extension RecipePageViewController {
         var lastView: UIView = self.view
         
         var pageCount = 1
+        print("pages fora",pages.count)
         
         for page in pages {
             
             let viewController = UIViewController()
             viewController.view.backgroundColor = .white
             
-            
-            if let bigImage = page.bigImage{
-                lastView = addBigImageToPage(pageViewController: viewController, image: bigImage)
+//
+//            if let bigImage = page.bigImage{
+//                lastView = addBigImageToPage(pageViewController: viewController, image: bigImage)
+//                lastView.topAnchor.constraint(equalTo: viewController.view.layoutMarginsGuide.topAnchor, constant: 74).isActive = true
+//            }
+           
+           
+            lastView = addSmallImageToPage(pageViewController: viewController, image: page.imageName)
                 lastView.topAnchor.constraint(equalTo: viewController.view.layoutMarginsGuide.topAnchor, constant: 74).isActive = true
-            }
             
-            if let smallImage = page.smallImage{
-                lastView = addSmallImageToPage(pageViewController: viewController, image: smallImage)
-                lastView.topAnchor.constraint(equalTo: viewController.view.layoutMarginsGuide.topAnchor, constant: 74).isActive = true
-            }
             
-            let text = page.text
+            let text = page.descricao
             let textView = addTextToPage(pageViewController: viewController, text: text)
             textView.topAnchor.constraint(equalTo:  lastView.bottomAnchor, constant: 12).isActive = true
             lastView = textView
@@ -45,7 +46,7 @@ extension RecipePageViewController {
 //
 //            }
             
-            if let chronometer = page.chronometer {
+            if let chronometer = page.cronometro {
                 let chronometerView = addChronometerToPage(pageViewController: viewController, seconds: chronometer)!
                 chronometerView.topAnchor.constraint(equalTo: lastView.bottomAnchor, constant: 12).isActive = true
                 lastView = chronometerView
@@ -73,7 +74,7 @@ extension RecipePageViewController {
         
         let imageView = UIImageView()
         //imageView.backgroundColor =  .red
-        imageView.image = #imageLiteral(resourceName: "woman-chef")
+        imageView.image = UIImage(named: image)
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 8
         pageViewController.view.addSubview(imageView)

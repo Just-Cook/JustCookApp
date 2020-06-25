@@ -10,32 +10,51 @@ import UIKit
 
 class IngredientsTableViewController: UITableViewController {
 
-    let recipe = Recipe(title: "Arroz Simple", images: "", description: "Muita coisa vai ser escrita aqui", time: "40 min", ingredients: [
-        
-        Ingredient(name: "Ovo", amount: 4, unity: "qntd"),
-        Ingredient(name: "Mortadela", amount: 10, unity: "qntd"),
-        Ingredient(name: "Pao", amount: 2, unity: "qntd"),
-        Ingredient(name: "Manteiga", amount: 5, unity: "gr"),
-        Ingredient(name: "Ketchup", amount: 20, unity: "L"),
-        Ingredient(name: "Queijo", amount: 5, unity: "kl"),
-        Ingredient(name: "Requeijao", amount: 1, unity: "L"),
-        Ingredient(name: "Creme de Cebola", amount: 600, unity: "gr"),
-    ], porcoes: 20)
-    
-    var porcoes: Int?
     var topCellHeight: Float?
+    
+    var receitaId: Int? = nil
+    
+    var receita : Receita = Receita(id: 0, titulo: "none", descricao: "none", imageName: "none", rendimento: 0, tempo: 0)
+    {
+           didSet{
+               DispatchQueue.main.async {
+               self.tableView.reloadData()
+               }
+           }
+
+       }
+  
+    var ingredientes : [Ingrediente] = []{
+
+        didSet{
+            DispatchQueue.main.async {
+            self.tableView.reloadData()
+            }
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.porcoes = recipe.porcoes
         
         let rightButton = UIBarButtonItem(title: "Iniciar", style: .plain, target: self, action: #selector(goToRecipe))
-        rightButton.tintColor = .orange
-        
-        self.navigationItem.rightBarButtonItem = rightButton
-    }
-    
 
+
+        rightButton.tintColor = UIColor.orangeColor
+        
+
+        self.navigationItem.rightBarButtonItem = rightButton
+        
+        if let id = receitaId{
+            print(id)
+            ReceitaRepository().receitaId(id: id){[weak self] (receita) in self?.receita = receita
+               
+            }
+            IngredienteRepository().ingredientesByReceitaId(receitaId: id){
+                [weak self](ingredientes) in self?.ingredientes = ingredientes
+            }
+        }
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 3
@@ -45,7 +64,8 @@ class IngredientsTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         
         if(section==2){
-            return recipe.ingredients.count
+            return ingredientes.count
+          
         }
         
         return 1
@@ -59,7 +79,7 @@ class IngredientsTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ImageDescriptionCell", for: indexPath) as! ImageDescriptionCell
             cell.separatorInset = UIEdgeInsets(top: 0, left: 10000, bottom: 0, right: 0)
             cell.RecipeImageView.layer.cornerRadius = 8
-            cell.DescriptionRecipe.text = recipe.description
+            cell.configure(imageName: receita.imageName, descricao: receita.descricao)
             
             if(self.topCellHeight == nil){
                 self.topCellHeight = Float(cell.adjustHeightOfDescription())
@@ -70,23 +90,20 @@ class IngredientsTableViewController: UITableViewController {
         } else if (indexPath.section == 1){
             let cell = tableView.dequeueReusableCell(withIdentifier: "PorcoesCell", for: indexPath) as! PorcaoCell
             createPorcaoChangeButtons(in: cell)
-            cell.PorcaoLabel.text = "Porcoes"
-            cell.TimeLabel.text = recipe.time
+            cell.configure(tempo: receita.tempo)
+        
             return cell
         }
     
         let cell = tableView.dequeueReusableCell(withIdentifier: "IngredientCell", for: indexPath) as! IngredientCell
-        
-        let ingredient = recipe.ingredients[indexPath.item]
-        cell.IngredientNameLabel.text = ingredient.name
-        
-        let porcaoAmount = Double(self.porcoes!)/Double(recipe.porcoes) * ingredient.amount
-        
-        cell.IngredientAmountLabel.text = "\(porcaoAmount) \(ingredient.unity)"
+     
+         let ingrediente = ingredientes[indexPath.item]
+           cell.configure(nome: ingrediente.nome, quantidade: ingrediente.quantidade, unidade: ingrediente.unidade)
             
         return cell
+       
     }
-    
+
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if(indexPath.section == 0){
@@ -135,7 +152,7 @@ class IngredientsTableViewController: UITableViewController {
         whiteView.backgroundColor = .white
 
         let porcaoText = UILabel()
-        porcaoText.text = String(self.porcoes!)
+        porcaoText.text = String(receita.rendimento)
         porcaoText.textAlignment = .center
 
 
@@ -188,14 +205,14 @@ class IngredientsTableViewController: UITableViewController {
     
     @objc
     func plusPorcao(){
-        self.porcoes = self.porcoes! + 1
+        receita.rendimento = receita.rendimento + 1
         self.tableView!.reloadData()
     }
     
     @objc
     func minusPorcao(){
-        if self.porcoes!>0{
-            self.porcoes = self.porcoes! - 1
+        if receita.rendimento > 0{
+            receita.rendimento  = receita.rendimento  - 1
             self.tableView!.reloadData()
         }
     }
@@ -207,7 +224,7 @@ class IngredientsTableViewController: UITableViewController {
         guard let recipePageViewController = recipePageViewStoryboard.instantiateViewController(identifier: "RecipeScreenStoryboard") as? RecipePageViewController else{
             return
         }
-        
+        recipePageViewController.receitaId = receitaId
         recipePageViewController.hidesBottomBarWhenPushed  = true
         self.navigationController?.pushViewController(recipePageViewController, animated: true)
     }

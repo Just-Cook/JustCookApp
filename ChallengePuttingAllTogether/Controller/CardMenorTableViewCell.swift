@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol CardMenorDelegate:class {
+protocol CardMenorTableViewCellDelegate:class {
     func didSelectItem(id:Int)
 }
 class CardMenorTableViewCell: UITableViewCell {
@@ -25,7 +25,7 @@ class CardMenorTableViewCell: UITableViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var verTodosButton: UIButton!
     
-    weak var delegate:CardMenorDelegate?
+    weak var delegate:CardMenorTableViewCellDelegate?
     
   
     

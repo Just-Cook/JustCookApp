@@ -8,13 +8,28 @@
 
 import UIKit
 
+protocol SectionReceitaTableViewCellDelegate{
+    func didSelectReceita(id:Int)
+    
+}
+
 class SectionReceitaTableViewCell: UITableViewCell {
 
     @IBOutlet weak var tableHeight: NSLayoutConstraint!
     @IBOutlet weak var tableReceita: UITableView!
     static let xibName = "SectionReceita" // Setando o nome da xib
     static let identifier = "SectionReceitaCell" // Setando o identificador da cell
-     weak var delegate : ModuloDelegate? = nil
+    var delegate : SectionReceitaTableViewCellDelegate?
+    
+    
+    var receitas : [Receita] = []{
+          didSet{
+              DispatchQueue.main.async {
+                  self.tableReceita.reloadData()
+              }
+          }
+      }
+     var moduloId:Int? = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,21 +43,27 @@ class SectionReceitaTableViewCell: UITableViewCell {
         tableHeight.constant = 4 * 130
         
     }
+    
+    func receitasByModuloId(moduloId: Int){
+             ReceitaRepository().receitasModuloId(moduloId: moduloId){[weak self] (receitas) in self?.receitas = receitas}
+           
+       }
 }
 extension SectionReceitaTableViewCell: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return 4
+        return receitas.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ReceitaModuloTableViewCell.identifier, for: indexPath) as! ReceitaModuloTableViewCell
-            
+        
+        cell.configure(backImage: receitas[indexPath.row].imageName, titulo: receitas[indexPath.row].titulo, rendimento: receitas[indexPath.row].rendimento, tempo: receitas[indexPath.row].tempo)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let receitaSelec = Recipe(title: "Bolo fofo", images: "", description: "Hmm chega a manteiga derrete", time: "20", ingredients:[], porcoes: 6)
-        delegate?.willTransition(to: receitaSelec)
+        let currentItem = receitas[indexPath.row]
+        delegate?.didSelectReceita(id: currentItem.id)
     }
    
     
