@@ -19,18 +19,11 @@ extension ConquistasModel{
    static func MockConquistas() -> [ConquistasModel]{
          var conquistas = [ConquistasModel]()
         
-        conquistas.append(ConquistasModel(image: "", titulo: "Minha primeira conquista"))
-        conquistas.append(ConquistasModel(image: "", titulo: "conquista 2"))
-        conquistas.append(ConquistasModel(image: "", titulo: "mais uma"))
-        conquistas.append(ConquistasModel(image: "", titulo: "outra conquista"))
-        conquistas.append(ConquistasModel(image: "", titulo: "Outra"))
-        conquistas.append(ConquistasModel(image: "", titulo: "Minha ultima conquista"))
-        conquistas.append(ConquistasModel(image: "", titulo: "Minha primeira conquista"))
-        conquistas.append(ConquistasModel(image: "", titulo: "conquista 2"))
-        conquistas.append(ConquistasModel(image: "", titulo: "mais uma"))
-        conquistas.append(ConquistasModel(image: "", titulo: "outra conquista"))
-        conquistas.append(ConquistasModel(image: "", titulo: "Outra"))
-        conquistas.append(ConquistasModel(image: "", titulo: "Minha ultima conquista"))
+        conquistas.append(ConquistasModel(image: "primeira", titulo: "Primeira receita"))
+        conquistas.append(ConquistasModel(image: "basico", titulo: "Basiquinho"))
+        conquistas.append(ConquistasModel(image: "saudavel", titulo: "Saudável e barato"))
+        conquistas.append(ConquistasModel(image: "domingo", titulo: "Almoço de domingo"))
+        conquistas.append(ConquistasModel(image: "literaria", titulo: "Culinária literária"))
 
         
         

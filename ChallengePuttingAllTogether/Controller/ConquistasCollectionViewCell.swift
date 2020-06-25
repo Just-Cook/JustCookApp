@@ -14,13 +14,10 @@ class ConquistasCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titulo: UILabel!
     
      static let identifier = "PerfilCollectionViewCell"
-    
-    
+  
     func configureCell(imageName:String, titulo:String){
         
-        if(imageName != ""){
-            self.image.image = UIImage(named: imageName)
-        }
+        self.image.image = UIImage(named: imageName)
         
         self.titulo.text = titulo
         
@@ -29,5 +26,6 @@ class ConquistasCollectionViewCell: UICollectionViewCell {
         
         
     }
-   
+    
+ 
 }
