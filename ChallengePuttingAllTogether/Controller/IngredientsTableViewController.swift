@@ -38,7 +38,11 @@ class IngredientsTableViewController: UITableViewController {
         super.viewDidLoad()
         
         let rightButton = UIBarButtonItem(title: "Iniciar", style: .plain, target: self, action: #selector(goToRecipe))
-        rightButton.tintColor = .orange
+
+
+        rightButton.tintColor = UIColor.orangeColor
+        
+
         self.navigationItem.rightBarButtonItem = rightButton
         
         if let id = receitaId{
