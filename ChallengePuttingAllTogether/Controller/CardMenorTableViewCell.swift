@@ -62,15 +62,19 @@ extension CardMenorTableViewCell: UICollectionViewDelegate, UICollectionViewData
              fatalError("Wrong identifier")
         }
         cell.configureCard(backgroundImageName: modulos[indexPath.row].imageName, titulo: modulos[indexPath.row].titulo, subtitulo: modulos[indexPath.row].subtitulo, nivel: modulos[indexPath.row].nivel)
+        
+        let (cellWidth, cellHeigth ) =  self.cellSize()
+        
+        cell.configuraGradient(size: CGSize(width: cellWidth, height: cellHeigth))
+        
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let cellWidth =  self.collectionView.frame.width / 2 - 5
-        let cellHeigth = self.collectionView.frame.height / 2 - 10
+        let (cellWidth, cellHeigth) =  self.cellSize()
         
-          return CGSize(width: cellWidth, height: cellHeigth)
+        return CGSize(width: cellWidth, height: cellHeigth)
       }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -78,7 +82,13 @@ extension CardMenorTableViewCell: UICollectionViewDelegate, UICollectionViewData
         delegate?.didSelectItem(id: currentItem.id)
     }
    
-       
+    func cellSize() -> (CGFloat, CGFloat){
+        
+        let cellWidth =  self.collectionView.frame.width / 2 - 5
+        let cellHeigth = self.collectionView.frame.height / 2 - 10
+        
+        return (cellWidth, cellHeigth)
+    }
     
        
 }

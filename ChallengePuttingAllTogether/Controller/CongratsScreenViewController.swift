@@ -14,17 +14,19 @@ class CongratsScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.modalPresentationStyle = .fullScreen
-        showCongratScreen(points: 100)
-        // Do any additional setup after loading the view.
+        showCongratScreen(points: 75)
     }
     
+    var centerAnchor1: NSLayoutConstraint?
+    var centerAnchor2: NSLayoutConstraint?
+    
+    var progressBar: UIProgressView?
     
     func showCongratScreen(points: Int ){
-            
-            //let viewController = UIViewController()
-            let centeredView = UIView() //viewController.view!
+        
+            let pont = Pontuation()
+            let centeredView = UIView()
             self.view.backgroundColor = .white
-            //recipeView.present(self, animated: true, completion: nil)
             
             
             self.view.addSubview(centeredView)
@@ -35,29 +37,15 @@ class CongratsScreenViewController: UIViewController {
             centeredView.centerYAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerYAnchor, constant: 0).isActive = true
             centeredView.heightAnchor.constraint(equalToConstant: 480).isActive = true
             
-            //Pontuation.nav!.present(viewController, animated: true, completion: nil)
-            
-    //        let closeButton = UIButton()
-    //        closeButton.backgroundColor = .orange
-    //        viewController.view.addSubview(closeButton)
-    //
-    //        closeButton.translatesAutoresizingMaskIntoConstraints = false
-    //        closeButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
-    //        closeButton.topAnchor.constraint(equalToSystemSpacingBelow: viewController.view.safeAreaLayoutGuide.topAnchor, multiplier: 8).isActive = true
-    //        closeButton.heightAnchor.constraint(equalToConstant: 36).isActive = true
-    //        closeButton.widthAnchor.constraint(equalToConstant: 36).isActive = true
-            
-            
             let congratTitleLabel = UILabel()
             congratTitleLabel.text = "Parabéns"
             congratTitleLabel.textAlignment = .center
-            congratTitleLabel.font = UIFont.boldSystemFont(ofSize: 20)//congratTitleLabel.font.withSize(24)
+            congratTitleLabel.font = UIFont.boldSystemFont(ofSize: 20)
 
             self.view.addSubview(congratTitleLabel)
 
             congratTitleLabel.translatesAutoresizingMaskIntoConstraints = false
             congratTitleLabel.centerXAnchor.constraint(equalTo: centeredView.centerXAnchor).isActive = true
-            //congratTitleLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -140).isActive = true
             congratTitleLabel.topAnchor.constraint(equalTo: centeredView.topAnchor, constant: 0).isActive = true
             congratTitleLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
             
@@ -79,9 +67,9 @@ class CongratsScreenViewController: UIViewController {
             animationView.animation = Animation.named("Bolo Path")
             animationView.contentMode = .scaleAspectFit
             animationView.loopMode = .playOnce
-            animationView.play()
-            
-            //animationView.backgroundColor = .red
+            animationView.play{(finished) in
+                self.playAnimation()
+            }
             
             centeredView.addSubview(animationView)
             
@@ -104,7 +92,25 @@ class CongratsScreenViewController: UIViewController {
             morePointsLabel.leadingAnchor.constraint(equalTo: centeredView.leadingAnchor, constant: 16).isActive = true
             morePointsLabel.topAnchor.constraint(equalTo: animationView.bottomAnchor, constant: 16).isActive = true
             
+                
+            let animatedProgressBar = UIProgressView()
+            animatedProgressBar.progress = Float(pont.levelPontuation())/Float(pont.getTotalNextLevel())
+            animatedProgressBar.layer.masksToBounds = true
+            animatedProgressBar.layer.cornerRadius = 5
+            animatedProgressBar.progressTintColor = UIColor.init(red: 43/255, green: 159/255, blue: 247/255, alpha: 1)
             
+            pont.increasePontuation(in: points)
+            
+            self.progressBar = animatedProgressBar
+        
+            centeredView.addSubview(animatedProgressBar)
+            animatedProgressBar.translatesAutoresizingMaskIntoConstraints = false
+            animatedProgressBar.topAnchor.constraint(equalTo: morePointsLabel.bottomAnchor, constant: 12).isActive = true
+            animatedProgressBar.centerXAnchor.constraint(equalTo: centeredView.centerXAnchor, constant: 0).isActive = true
+            animatedProgressBar.widthAnchor.constraint(equalToConstant: 230).isActive = true
+            animatedProgressBar.heightAnchor.constraint(equalToConstant: 14).isActive = true
+            
+        
             let continueButton = UIButton()
             continueButton.setTitle("Continuar", for: .normal)
             continueButton.backgroundColor = .orangeColor
@@ -113,7 +119,7 @@ class CongratsScreenViewController: UIViewController {
             
             centeredView.addSubview(continueButton)
             continueButton.translatesAutoresizingMaskIntoConstraints = false
-            continueButton.topAnchor.constraint(equalTo: morePointsLabel.bottomAnchor, constant: 24).isActive = true
+            continueButton.topAnchor.constraint(equalTo: animatedProgressBar.bottomAnchor, constant: 24).isActive = true
             continueButton.centerXAnchor.constraint(equalTo: centeredView.centerXAnchor, constant: 0).isActive = true
             continueButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
             continueButton.heightAnchor.constraint(equalToConstant: 45).isActive = true
@@ -123,18 +129,15 @@ class CongratsScreenViewController: UIViewController {
         @objc
         func continueButtonAction(){
             self.dismiss(animated: true, completion: {self.dismiss(animated: true, completion: nil)})
-        }
+       }
     
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func playAnimation(){
+        let pont = Pontuation()
+        let progress = Float(pont.levelPontuation())/Float(pont.getTotalNextLevel())
+        
+        UIView.animate(withDuration: 0.5, animations: {
+            self.progressBar?.setProgress(progress, animated: true)
+        })
     }
-    */
-
 }
