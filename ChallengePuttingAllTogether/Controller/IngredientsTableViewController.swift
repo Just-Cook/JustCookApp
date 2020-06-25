@@ -81,9 +81,7 @@ class IngredientsTableViewController: UITableViewController {
             cell.RecipeImageView.layer.cornerRadius = 8
             cell.configure(imageName: receita.imageName, descricao: receita.descricao)
             
-            if(self.topCellHeight == nil){
-                self.topCellHeight = Float(cell.adjustHeightOfDescription())
-            }
+            self.topCellHeight = Float(cell.adjustHeightOfDescription())
             
             return cell
         
