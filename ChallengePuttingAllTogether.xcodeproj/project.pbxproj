@@ -48,6 +48,7 @@
 		19CB3D3724979F3B00F8FB77 /* VerTodosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CB3D3624979F3B00F8FB77 /* VerTodosCollectionViewController.swift */; };
 		19D4865A24A4E14E00B2AB2E /* ConquistasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4865924A4E14E00B2AB2E /* ConquistasTableViewController.swift */; };
 		19D4865C24A4E3EF00B2AB2E /* SectionOneConquistasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4865B24A4E3EF00B2AB2E /* SectionOneConquistasTableViewCell.swift */; };
+		19D4865E24A5173700B2AB2E /* SectionTwoConquistasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4865D24A5173700B2AB2E /* SectionTwoConquistasTableViewCell.swift */; };
 		2722DE2C24997DD500E8E173 /* RecipePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2722DE2B24997DD400E8E173 /* RecipePageViewController.swift */; };
 		2722DE2E249A86CA00E8E173 /* Pontuation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2722DE2D249A86CA00E8E173 /* Pontuation.swift */; };
 		272C7FCF2497A524009313B2 /* IngredientsRecipeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272C7FCE2497A524009313B2 /* IngredientsRecipeScreen.storyboard */; };
@@ -147,6 +148,7 @@
 		19CB3D3624979F3B00F8FB77 /* VerTodosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerTodosCollectionViewController.swift; sourceTree = "<group>"; };
 		19D4865924A4E14E00B2AB2E /* ConquistasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasTableViewController.swift; sourceTree = "<group>"; };
 		19D4865B24A4E3EF00B2AB2E /* SectionOneConquistasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionOneConquistasTableViewCell.swift; sourceTree = "<group>"; };
+		19D4865D24A5173700B2AB2E /* SectionTwoConquistasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTwoConquistasTableViewCell.swift; sourceTree = "<group>"; };
 		2722DE2B24997DD400E8E173 /* RecipePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipePageViewController.swift; sourceTree = "<group>"; };
 		2722DE2D249A86CA00E8E173 /* Pontuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pontuation.swift; sourceTree = "<group>"; };
 		272C7FCE2497A524009313B2 /* IngredientsRecipeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IngredientsRecipeScreen.storyboard; sourceTree = "<group>"; };
@@ -364,12 +366,13 @@
 				27C227F424926E2400657E10 /* RecipePageExtension.swift */,
 				27EA9F1F2493BF06001CF006 /* RecipePagesCreation.swift */,
 				2722DE2B24997DD400E8E173 /* RecipePageViewController.swift */,
+				19D4865B24A4E3EF00B2AB2E /* SectionOneConquistasTableViewCell.swift */,
 				D757BDF62497A16300E85FCC /* SectionPreparacaoTableViewCell.swift */,
 				D757BDFE2499089900E85FCC /* SectionReceitaTableViewCell.swift */,
+				19D4865D24A5173700B2AB2E /* SectionTwoConquistasTableViewCell.swift */,
 				19A600AA249CEE3C00713A36 /* TecnicaTableViewCell.swift */,
 				19A600A6249CE8C500713A36 /* TecnicaTableViewController.swift */,
 				19CB3D3624979F3B00F8FB77 /* VerTodosCollectionViewController.swift */,
-				19D4865B24A4E3EF00B2AB2E /* SectionOneConquistasTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -686,6 +689,7 @@
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
 				19035F7424A22D8C000043FA /* TecnicaRepository.swift in Sources */,
 				27BB99F02497BCC300907B43 /* Ingrediente.swift in Sources */,
+				19D4865E24A5173700B2AB2E /* SectionTwoConquistasTableViewCell.swift in Sources */,
 				19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */,
 				190804E4249510C900A46E63 /* CardMenorTableViewCell.swift in Sources */,
 				2722DE2C24997DD500E8E173 /* RecipePageViewController.swift in Sources */,

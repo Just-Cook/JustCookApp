@@ -22,30 +22,29 @@ class ConquistasTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 2
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 2
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        switch indexPath.section {
+        switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: SectionOneConquistasTableViewCell.identifier) as! SectionOneConquistasTableViewCell
             cell.configure()
             return cell
         case 1:
-            return UITableViewCell()
+            let cell = tableView.dequeueReusableCell(withIdentifier: SectionTwoConquistasTableViewCell.identifier) as! SectionTwoConquistasTableViewCell
+          
+            return cell
         default:
             return UITableViewCell()
         }
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-//
-//        // Configure the cell...
         
     }
     
