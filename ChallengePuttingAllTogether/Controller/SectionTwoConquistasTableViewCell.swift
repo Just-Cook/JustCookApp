@@ -9,7 +9,9 @@
 import UIKit
 
 class SectionTwoConquistasTableViewCell: UITableViewCell {
-
+    
+    
+    @IBOutlet weak var titulo: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
       let conquistasMock = ConquistasModel.MockConquistas()
@@ -18,8 +20,17 @@ class SectionTwoConquistasTableViewCell: UITableViewCell {
         super.awakeFromNib()
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.backgroundColor = .red
+    
         collectionView.layer.masksToBounds = true
+        
+        collectionView.layer.masksToBounds = true
+        collectionView.allowsSelection = false
+        collectionView.isScrollEnabled = false
+        
+        titulo.text = "Selos"
+        
+        
+       
     }
     
     static let identifier = "ConquistasTableViewCellTwo"
@@ -33,26 +44,28 @@ class SectionTwoConquistasTableViewCell: UITableViewCell {
 
 }
 
-extension SectionTwoConquistasTableViewCell:UICollectionViewDelegate, UICollectionViewDataSource{
+extension SectionTwoConquistasTableViewCell:UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     
      func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+
            return conquistasMock.count
+       
        }
        
        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
            
            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ConquistasCollectionViewCell.identifier, for: indexPath) as! ConquistasCollectionViewCell
-          
+        
            cell.image.layer.backgroundColor = CGColor(srgbRed: 196/255, green: 196/255, blue: 196/255, alpha: 1)
         
            cell.configureCell(imageName: conquistasMock[indexPath.row].image, titulo: conquistasMock[indexPath.row].titulo)
-    
+     
            return cell
        }
        
        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-           return CGSize(width: 80, height: 140)
+           return CGSize(width: 90, height: 140)
        }
     
     

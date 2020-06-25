@@ -21,7 +21,7 @@ class SectionOneConquistasTableViewCell: UITableViewCell {
     @IBOutlet weak var nextLevelPontLabel: UILabel!
     
     let defauls = UserDefaults.standard
-    var pontuation = 0
+ 
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -40,10 +40,7 @@ class SectionOneConquistasTableViewCell: UITableViewCell {
         imagemView.layer.cornerRadius = imagemView.frame.height / 2
         imagemView.layer.backgroundColor = CGColor(srgbRed: 196/255, green: 196/255, blue: 196/255, alpha: 1)
         imagemView.image = UIImage(named: " ")
-        
-        nomeLabel.text = "Profissional do miojo"
-        nivelLabel.text = "Nivel 1"
-        
+  
         barraProgresso.layer.masksToBounds = true
         
         barraProgresso.layer.cornerRadius = 5

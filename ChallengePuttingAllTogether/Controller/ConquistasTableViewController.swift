@@ -16,21 +16,17 @@ class ConquistasTableViewController: UITableViewController {
         tableView.tableFooterView = UIView()
         tableView.allowsSelection = false
         tableView.separatorStyle = .none
+        
+        tableView.showsVerticalScrollIndicator = false
     }
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 2
     }
 
-    
+  //  var height:Int
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         switch indexPath.row {
@@ -40,7 +36,6 @@ class ConquistasTableViewController: UITableViewController {
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: SectionTwoConquistasTableViewCell.identifier) as! SectionTwoConquistasTableViewCell
-          
             return cell
         default:
             return UITableViewCell()
@@ -48,6 +43,11 @@ class ConquistasTableViewController: UITableViewController {
         
     }
     
-
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0{
+            return 130
+        }
+        return 500
+    }
 
 }

@@ -24,7 +24,6 @@
 		194F77D624944C4D003980CE /* JornadaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F77D524944C4D003980CE /* JornadaTableViewController.swift */; };
 		194F77D824944DC3003980CE /* AlertaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F77D724944DC3003980CE /* AlertaTableViewCell.swift */; };
 		194F77DA24944E7A003980CE /* AlertaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 194F77D924944E7A003980CE /* AlertaTableViewCell.xib */; };
-		195D797624925ECE00B585DC /* ConquistasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D797524925ECE00B585DC /* ConquistasViewController.swift */; };
 		196D851C24A0E58F00C2AA99 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196D851B24A0E58F00C2AA99 /* Item.swift */; };
 		198A6811248EC010006B5FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A6810248EC010006B5FCB /* AppDelegate.swift */; };
 		198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A6812248EC010006B5FCB /* SceneDelegate.swift */; };
@@ -118,7 +117,6 @@
 		194F77D524944C4D003980CE /* JornadaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JornadaTableViewController.swift; sourceTree = "<group>"; };
 		194F77D724944DC3003980CE /* AlertaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertaTableViewCell.swift; sourceTree = "<group>"; };
 		194F77D924944E7A003980CE /* AlertaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertaTableViewCell.xib; sourceTree = "<group>"; };
-		195D797524925ECE00B585DC /* ConquistasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquistasViewController.swift; sourceTree = "<group>"; };
 		196D851B24A0E58F00C2AA99 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		198A680D248EC010006B5FCB /* ChallengePuttingAllTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengePuttingAllTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		198A6810248EC010006B5FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -354,7 +352,6 @@
 				27DC0C2224A24D100007223F /* CongratsScreenViewController.swift */,
 				19B5DA6F249160EA006CF0FE /* ConquistasCollectionViewCell.swift */,
 				19D4865924A4E14E00B2AB2E /* ConquistasTableViewController.swift */,
-				195D797524925ECE00B585DC /* ConquistasViewController.swift */,
 				272C7FD22497ADEC009313B2 /* ImageDescriptionCell.swift */,
 				272C7FD02497A92C009313B2 /* IngredientsRecipeController.swift */,
 				27B981842497B3CB003073B4 /* IngredientsTableViewController.swift */,
@@ -684,7 +681,6 @@
 				27C227EB2491132000657E10 /* Page.swift in Sources */,
 				19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */,
 				272C7FD12497A92C009313B2 /* IngredientsRecipeController.swift in Sources */,
-				195D797624925ECE00B585DC /* ConquistasViewController.swift in Sources */,
 				D757BDEB2491174A00E85FCC /* Modulo.swift in Sources */,
 				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
 				19035F7424A22D8C000043FA /* TecnicaRepository.swift in Sources */,
