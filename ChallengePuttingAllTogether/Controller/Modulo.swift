@@ -19,15 +19,3 @@ struct Modulo: Decodable{
               case id, titulo, subtitulo, descricao, imageName = "image_name", nivel
           }
 }
-
-
-extension Modulo{
-    static func mock() -> [Modulo]{
-        var modulos = [Modulo]()
-        
-        modulos.append(Modulo(id: 1, titulo: "modulo 1", subtitulo: "modulo 1", descricao: "descricao qualqer", imageName: "forma", nivel: 2))
-         modulos.append(Modulo(id: 1, titulo: "modulo 2", subtitulo: "modulo 1", descricao: "descricao qualqer", imageName: "forma", nivel: 2))
-        
-        return modulos
-    }
-}

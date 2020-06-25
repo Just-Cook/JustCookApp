@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Scf-3p-3UB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Scf-3p-3UB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -29,12 +29,12 @@
                                                 <constraint firstAttribute="height" constant="132" id="fjt-dB-Q8q"/>
                                             </constraints>
                                         </imageView>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="km4-Hp-DmP">
-                                            <rect key="frame" x="16" y="148" width="382" height="96"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="km4-Hp-DmP">
+                                            <rect key="frame" x="16" y="148" width="382" height="121"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                     </subviews>
@@ -42,9 +42,10 @@
                                         <constraint firstItem="Fpv-y9-RVU" firstAttribute="leading" secondItem="Jdi-gU-bWm" secondAttribute="leading" constant="16" id="0iT-Qp-N9y"/>
                                         <constraint firstAttribute="trailing" secondItem="km4-Hp-DmP" secondAttribute="trailing" constant="16" id="4cm-ZJ-dib"/>
                                         <constraint firstItem="km4-Hp-DmP" firstAttribute="leading" secondItem="Jdi-gU-bWm" secondAttribute="leading" constant="16" id="IXb-TZ-oxU"/>
+                                        <constraint firstItem="km4-Hp-DmP" firstAttribute="centerX" secondItem="Jdi-gU-bWm" secondAttribute="centerX" id="JAo-du-zn4"/>
                                         <constraint firstAttribute="trailing" secondItem="Fpv-y9-RVU" secondAttribute="trailing" constant="16" id="pdV-eZ-3uA"/>
-                                        <constraint firstItem="km4-Hp-DmP" firstAttribute="top" secondItem="Fpv-y9-RVU" secondAttribute="bottom" constant="8" id="pjR-wc-zat"/>
                                         <constraint firstItem="Fpv-y9-RVU" firstAttribute="top" secondItem="Jdi-gU-bWm" secondAttribute="top" constant="8" id="rBX-O9-5jP"/>
+                                        <constraint firstItem="km4-Hp-DmP" firstAttribute="top" secondItem="Fpv-y9-RVU" secondAttribute="bottom" constant="8" id="tS9-NC-Jr4"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

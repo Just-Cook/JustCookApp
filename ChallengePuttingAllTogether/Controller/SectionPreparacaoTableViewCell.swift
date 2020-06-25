@@ -49,7 +49,7 @@ class SectionPreparacaoTableViewCell: UITableViewCell {
 
     }
     
-    func tecnicaModuloId(moduloId: Int){
+    func tecnicasByModuloId(moduloId: Int){
           TecnicaRepository().tecnicasModuloId(moduloId: moduloId){[weak self] (tecnicas) in self?.tecnicas = tecnicas}
         
     }

@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class CardMenorCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var wrapperView: UIView!
     
@@ -26,6 +27,7 @@ class CardMenorCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var subtitulo: UILabel!
     
     
+   
     
     static let nibName = "CardMenorCollectionViewCell"
     static let identifier = "CardMenorCollectionViewCell"
@@ -84,5 +86,7 @@ class CardMenorCollectionViewCell: UICollectionViewCell {
         
         self.nivelImage.image = UIImage(named: nivelImage)
     }
+    
+    
     
 }

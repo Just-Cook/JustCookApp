@@ -8,16 +8,13 @@
 
 import UIKit
 
-protocol ModuloDelegate : class {
-    func willTransition(to ingredient : Recipe )
-}
-
 class ModuloViewController: UIViewController{
     
 
     @IBOutlet weak var ModuloTableView: UITableView!
     let nameSections = ["", "Preparação", "Receita"]
     let tamanho = [100, 109, 108]
+    
     var moduloId :Int? = nil
     
     
@@ -112,13 +109,14 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SectionCell", for: indexPath) as! SectionPreparacaoTableViewCell
           
-            cell.tecnicaModuloId(moduloId: moduloId!)
+           cell.tecnicasByModuloId(moduloId: moduloId!)
             cell.delegate = self
         
               
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SectionReceitaCell", for: indexPath) as! SectionReceitaTableViewCell
+            cell.receitasByModuloId(moduloId: moduloId!)
             cell.delegate = self
             return cell
 
@@ -131,13 +129,12 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
  
     
 }
-extension ModuloViewController : ModuloDelegate {
-    func willTransition(to ingredient: Recipe) {
-        print(ingredient.id)
-        
+extension ModuloViewController : SectionReceitaTableViewCellDelegate {
+    func didSelectReceita(id: Int) {
+       
         let telaIngredient = UIStoryboard(name: "IngredientsRecipeScreen", bundle: nil).instantiateViewController(withIdentifier: "ingredientRecipe") as? IngredientsTableViewController
         
-        telaIngredient?.title = ingredient.title
+        telaIngredient?.receitaId = id
         
         self.navigationController?.pushViewController(telaIngredient!, animated: true)
     }

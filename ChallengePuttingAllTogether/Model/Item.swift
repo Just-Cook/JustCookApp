@@ -13,10 +13,9 @@ struct Item : Decodable{
     let titulo:String
     let descricao:String
     let imageName: String?
-    let tecnicaId:Int
     
     private enum CodingKeys: String, CodingKey{
-           case id, titulo, descricao, imageName = "image_name", tecnicaId = "tecnica_id"
+           case id, titulo, descricao, imageName = "image_name"
        }
 }
 
