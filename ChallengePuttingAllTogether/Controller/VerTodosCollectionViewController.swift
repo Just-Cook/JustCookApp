@@ -57,6 +57,10 @@ class VerTodosCollectionViewController: UIViewController, UICollectionViewDelega
                }
         cell.configureCard(backgroundImageName: modulos[indexPath.row].imageName, titulo: modulos[indexPath.row].titulo, subtitulo: modulos[indexPath.row].subtitulo, nivel: modulos[indexPath.row].nivel)
      
+        let (cellWidth, cellHeigth) = cellSize()
+        
+        cell.configuraGradient(size: CGSize(width: cellWidth, height: cellHeigth))
+        
         return cell
 
 
@@ -64,11 +68,11 @@ class VerTodosCollectionViewController: UIViewController, UICollectionViewDelega
 
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-         let cellWidth =  self.collectionView.frame.width / 2 - 5
-        let cellHeigth = self.view.safeAreaLayoutGuide.layoutFrame.height / 3 + 50
-
-         return CGSize(width: cellWidth, height: cellHeigth)
-     }
+  
+        let (cellWidth, cellHeigth) = cellSize()
+        return CGSize(width: cellWidth, height: cellHeigth)
+     
+    }
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -77,7 +81,15 @@ class VerTodosCollectionViewController: UIViewController, UICollectionViewDelega
         let telaModulo = UIStoryboard(name: "Modulo", bundle: nil).instantiateViewController(withIdentifier: "moduloView") as? ModuloViewController
         telaModulo?.moduloId = currentItem.id
            
-      self.navigationController?.pushViewController(telaModulo!, animated: true)
+        self.navigationController?.pushViewController(telaModulo!, animated: true)
+    }
+    
+    func cellSize() -> (CGFloat, CGFloat){
+        
+        let cellWidth =  self.collectionView.frame.width / 2 - 5
+        let cellHeigth = self.collectionView.frame.height / 2 - 10
+        
+        return (cellWidth, cellHeigth)
     }
 
 }

@@ -41,8 +41,7 @@ class IngredientsTableViewController: UITableViewController {
 
 
         rightButton.tintColor = UIColor.orangeColor
-        
-
+    
         self.navigationItem.rightBarButtonItem = rightButton
         
         if let id = receitaId{
@@ -75,15 +74,15 @@ class IngredientsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        
+        
         if(indexPath.section == 0){
             let cell = tableView.dequeueReusableCell(withIdentifier: "ImageDescriptionCell", for: indexPath) as! ImageDescriptionCell
             cell.separatorInset = UIEdgeInsets(top: 0, left: 10000, bottom: 0, right: 0)
             cell.RecipeImageView.layer.cornerRadius = 8
             cell.configure(imageName: receita.imageName, descricao: receita.descricao)
             
-            if(self.topCellHeight == nil){
-                self.topCellHeight = Float(cell.adjustHeightOfDescription())
-            }
+            self.topCellHeight = Float(cell.adjustHeightOfDescription())
             
             return cell
         
@@ -96,7 +95,7 @@ class IngredientsTableViewController: UITableViewController {
         }
     
         let cell = tableView.dequeueReusableCell(withIdentifier: "IngredientCell", for: indexPath) as! IngredientCell
-     
+        
          let ingrediente = ingredientes[indexPath.item]
            cell.configure(nome: ingrediente.nome, quantidade: ingrediente.quantidade, unidade: ingrediente.unidade)
             
