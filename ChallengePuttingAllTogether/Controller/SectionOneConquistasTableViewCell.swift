@@ -10,15 +10,53 @@ import UIKit
 
 class SectionOneConquistasTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imagemView: UIImageView!
+   
+    @IBOutlet weak var nomeLabel: UILabel!
+    @IBOutlet weak var nivelLabel: UILabel!
+    @IBOutlet weak var barraProgresso: UIProgressView!
+    
+    @IBOutlet weak var nivelLabelNumber: UILabel!
+    
+    @IBOutlet weak var nextLevelPontLabel: UILabel!
+    
+    let defauls = UserDefaults.standard
+    var pontuation = 0
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    static let identifier:String = "conquistasTableViewCellOne"
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
+    
+    func configure(){
+        imagemView.layer.masksToBounds = true
+        imagemView.contentMode = UIView.ContentMode.scaleAspectFill
+        imagemView.layer.cornerRadius = imagemView.frame.height / 2
+        imagemView.layer.backgroundColor = CGColor(srgbRed: 196/255, green: 196/255, blue: 196/255, alpha: 1)
+        imagemView.image = UIImage(named: " ")
+        
+        nomeLabel.text = "Profissional do miojo"
+        nivelLabel.text = "Nivel 1"
+        
+        barraProgresso.layer.masksToBounds = true
+        
+        barraProgresso.layer.cornerRadius = 5
+        barraProgresso.progressTintColor = UIColor.init(red: 43/255, green: 159/255, blue: 247/255, alpha: 1)
+    
+
+          let pontuation = Pontuation()
+          nivelLabelNumber.text = String(pontuation.levelPontuation())
+          nivelLabel.text = pontuation.nivelString()
+          nextLevelPontLabel.text = "/  " + String(pontuation.getTotalNextLevel())
+          nomeLabel.text = pontuation.levelNivelUserString()
+          barraProgresso.progress = Float(pontuation.levelPontuation()) / Float(pontuation.getTotalNextLevel())
+          
+      }
 
 }
