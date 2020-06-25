@@ -51,6 +51,9 @@ class CardMenorCollectionViewCell: UICollectionViewCell {
               
         gradienteView.layer.masksToBounds = true
         gradienteView.layer.cornerRadius = 10
+        
+        titulo.numberOfLines = 0
+        subtitulo.numberOfLines = 0
               
         //gradienteView.layer.in
         
