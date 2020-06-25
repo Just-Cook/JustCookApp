@@ -23,7 +23,7 @@ public class Recipe{
         self.ingredients = ingredients
         self.porcoes = porcoes
     }
-    
+   
     
     
     //ingredients
@@ -31,3 +31,4 @@ public class Recipe{
     //content(Pages)
     
 }
+

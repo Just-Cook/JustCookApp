@@ -17,7 +17,6 @@ class ModuloViewController: UIViewController{
 
     @IBOutlet weak var ModuloTableView: UITableView!
     let nameSections = ["", "Preparação", "Receita"]
-    let tamanho = [100, 109, 108]
     var moduloId :Int? = nil
     
     
@@ -35,13 +34,17 @@ class ModuloViewController: UIViewController{
         configTable()
         
         ModuloRepository().moduloId(moduloId: moduloId!){[weak self] (modulo) in self?.modulo = modulo
+//            self?.title = modulo.titulo
             
         }
-        
-   
-        self.title = modulo?.titulo
+       
+
         
     }
+    
+//    func titleMod(moduloT: String){
+//        self.title = moduloT
+//    }
    private func configTable(){
         ModuloTableView.delegate = self
         ModuloTableView.dataSource = self
@@ -69,30 +72,21 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
         }
         return 30
     }
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        //        tableView.estimatedRowHeight = 200
-//        //        tableView.rowHeight = UITableView.automaticDimension
-//        //        return tableView.estimatedRowHeight
-//        //    }
-//        
-//        let height = tamanho[indexPath.row + 1]
-//        return CGFloat(height)
-//    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+
         let view = UIView()
         let title = UILabel()
-        
+
         title.frame = CGRect(x: 16, y: 3, width: 375, height: 30)
         view.addSubview(title)
         title.font = sfRounded(size: 22, weight: .bold)
         title.text = nameSections[section]
-      
-        
+
+
         return view
     }
    
@@ -107,14 +101,12 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
             cell.textLabel?.font = .systemFont(ofSize: 17, weight: .medium)
             cell.textLabel?.text = modulo?.descricao
             
-          
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SectionCell", for: indexPath) as! SectionPreparacaoTableViewCell
           
             cell.tecnicaModuloId(moduloId: moduloId!)
             cell.delegate = self
-        
               
             return cell
         case 2:
