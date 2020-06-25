@@ -33,7 +33,9 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
               DispatchQueue.main.async {
                 self.paginationCV?.reloadData()
                 self.createViewControllers()
-            
+                if let firstPageViewController = self.pageViewControllers.first{
+                    self.setViewControllers([firstPageViewController], direction: .forward, animated: false, completion: nil)
+                }
             }
         }
     }

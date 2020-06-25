@@ -14,8 +14,9 @@ struct Page:Decodable{
     let descricao: String
     let imageName: String
     let cronometro: Int?
-   
+    let tip: String?
+    
   private enum CodingKeys: String, CodingKey{
-            case id, descricao, imageName = "image_name", cronometro
+            case id, descricao, imageName = "image_name", cronometro, tip
         }
 }

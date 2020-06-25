@@ -57,6 +57,12 @@ extension RecipePageViewController {
 //
 //            }
             
+            //if let tip = page.tip {
+                let tipView = addTip(pageViewController: viewController, tipText: "Sua dica vai ser muito bem escrita aqui. Inclusive textos muito grandes se você preferir. E para textos ainda maiores, sera q funciona????")
+                tipView.topAnchor.constraint(equalTo: lastView.bottomAnchor, constant: 12).isActive = true
+                lastView = tipView
+            //}
+            
             if (pageCount == pages.count){
                 
                 let finalizeButton = addFinalizeButton(pageViewController: viewController)
@@ -168,6 +174,42 @@ extension RecipePageViewController {
         finalizeButton.addTarget(self, action: #selector(goToCongats), for: .touchUpInside)
         
         return finalizeButton
+    }
+    
+    func addTip(pageViewController: UIViewController, tipText: String) -> UIView {
+        
+        let tipView = UIView()
+        tipView.backgroundColor = .weakBlueColor
+        tipView.layer.cornerRadius = 8
+        
+        let fastTipLabel = UILabel()
+        fastTipLabel.text = "Dica Rapida"
+        fastTipLabel.font = UIFont.systemFont(ofSize: 12)
+        tipView.addSubview(fastTipLabel)
+        fastTipLabel.translatesAutoresizingMaskIntoConstraints = false
+        fastTipLabel.leadingAnchor.constraint(equalTo: tipView.leadingAnchor, constant: 8).isActive = true
+        fastTipLabel.topAnchor.constraint(equalTo: tipView.topAnchor, constant: 8).isActive = true
+        
+        let tipLabel = UILabel()
+        tipLabel.text = tipText
+        tipLabel.font = UIFont.systemFont(ofSize: 15)
+        tipLabel.numberOfLines = 0
+        tipView.addSubview(tipLabel)
+        tipLabel.translatesAutoresizingMaskIntoConstraints = false
+        tipLabel.leadingAnchor.constraint(equalTo: fastTipLabel.leadingAnchor, constant: 0).isActive = true
+        tipLabel.trailingAnchor.constraint(equalTo: tipView.trailingAnchor, constant: -8).isActive = true
+        tipLabel.topAnchor.constraint(equalTo: fastTipLabel.bottomAnchor, constant: 4).isActive = true
+        
+        print(tipLabel.frame.height)
+        
+        pageViewController.view.addSubview(tipView)
+        tipView.translatesAutoresizingMaskIntoConstraints = false
+        tipView.leadingAnchor.constraint(equalTo: pageViewController.view.leadingAnchor, constant: 16).isActive = true
+        tipView.trailingAnchor.constraint(equalTo: pageViewController.view.trailingAnchor, constant: -16).isActive = true
+        tipView.bottomAnchor.constraint(equalTo: tipLabel.bottomAnchor, constant: 8).isActive = true
+        
+        return tipView
+        
     }
     
     @objc
