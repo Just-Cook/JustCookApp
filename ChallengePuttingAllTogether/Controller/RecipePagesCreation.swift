@@ -74,7 +74,7 @@ extension RecipePageViewController {
         
         let imageView = UIImageView()
         //imageView.backgroundColor =  .red
-        imageView.image = #imageLiteral(resourceName: "woman-chef")
+        imageView.image = UIImage(named: image)
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 8
         pageViewController.view.addSubview(imageView)

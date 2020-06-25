@@ -23,7 +23,7 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
     var chronometerView: ChronometerView?
     var paginationCV: UICollectionView?
     var currentPage = 0
-    var paginationCollection: UICollectionView?
+  
     
     //selectedPageViewController : UIPageViewController?
     
@@ -32,9 +32,8 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         didSet{
               DispatchQueue.main.async {
                 self.paginationCV?.reloadData()
-                self.paginationCollection?.reloadData()
+                self.createViewControllers()
             
-
             }
         }
     }
@@ -45,20 +44,21 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         
         self.dataSource = self
         self.delegate = self
-        
+        self.view.backgroundColor = .white
+          
           if let id = receitaId{
                print("receita id", id)
         
               PassosRepository().passosByReceitaId(receitaId: id){
                [weak self](pages) in self?.pages = pages
-
-                print("pages", self!.pages.count)
-                print("pageid", self!.pages[0].id)
-                print("pageDesc", self!.pages[0].descricao)
+                
                }
+            
+            self.configurePagination()
+              
         }
         
-        createViewControllers()
+     
      
         let rightButton = UIBarButtonItem(title: "Fechar", style: .plain, target: self, action: #selector(closeRecipePages))
         rightButton.tintColor = .orangeColor
@@ -74,7 +74,7 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         }
         
       
-        configurePagination()
+     
        
     }
     
