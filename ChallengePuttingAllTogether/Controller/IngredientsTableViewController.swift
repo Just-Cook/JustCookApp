@@ -30,7 +30,7 @@ class IngredientsTableViewController: UITableViewController {
         self.porcoes = recipe.porcoes
         
         let rightButton = UIBarButtonItem(title: "Iniciar", style: .plain, target: self, action: #selector(goToRecipe))
-        rightButton.tintColor = .orange
+        rightButton.tintColor = UIColor.orangeColor
         
         self.navigationItem.rightBarButtonItem = rightButton
     }

@@ -176,7 +176,7 @@
         <scene sceneID="yxE-53-PMi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JTW-Ga-J2V" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Conquistas" id="ntx-JM-bM5"/>
+                    <tabBarItem key="tabBarItem" title="Conquistas" image="Conquistas" id="ntx-JM-bM5"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="b6n-PG-HeG">
@@ -194,4 +194,7 @@
         </scene>
     </scenes>
     <color key="tintColor" red="1" green="0.62352941179999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+    <resources>
+        <image name="Conquistas" width="26" height="25"/>
+    </resources>
 </document>
