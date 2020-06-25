@@ -48,8 +48,7 @@ class ModuloViewController: UIViewController{
         ModuloTableView.register(UINib.init(nibName: "SectionReceita", bundle: nil), forCellReuseIdentifier: "SectionReceitaCell")
         ModuloTableView.register((UINib.init(nibName: "receitaModuloCell", bundle: nil)), forCellReuseIdentifier: "receitaCell")
         
-        
-//        self.ModuloTableView.register(SectionDescriptionTableViewCell.self, forCellReuseIdentifier: "descripCell")
+
     }
 
 
@@ -66,15 +65,7 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
         }
         return 30
     }
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        //        tableView.estimatedRowHeight = 200
-//        //        tableView.rowHeight = UITableView.automaticDimension
-//        //        return tableView.estimatedRowHeight
-//        //    }
-//        
-//        let height = tamanho[indexPath.row + 1]
-//        return CGFloat(height)
-//    }
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1

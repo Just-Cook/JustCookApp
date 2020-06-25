@@ -39,9 +39,7 @@ class CardMaiorCollectionViewCell: UICollectionViewCell {
         nivelImage.clipsToBounds = true
         nivelImage.layer.cornerRadius = 5
         nivelImage.contentMode = UIView.ContentMode.left
-        
-        //gradienteView.layer.masksToBounds = true
-        //gradienteView.layer.cornerRadius = 10
+     
         
         
     }
