@@ -40,7 +40,8 @@ class SectionReceitaTableViewCell: UITableViewCell {
         tableReceita.delegate = self
         tableReceita.dataSource = self
         tableReceita.register((UINib.init(nibName: "receitaModuloCell", bundle: nil)), forCellReuseIdentifier: "receitaCell")
-        tableHeight.constant = 4 * 130
+        tableHeight.constant = 4 * 95
+        
         
     }
     
@@ -58,6 +59,7 @@ extension SectionReceitaTableViewCell: UITableViewDelegate, UITableViewDataSourc
         let cell = tableView.dequeueReusableCell(withIdentifier: ReceitaModuloTableViewCell.identifier, for: indexPath) as! ReceitaModuloTableViewCell
         
         cell.configure(backImage: receitas[indexPath.row].imageName, titulo: receitas[indexPath.row].titulo, rendimento: receitas[indexPath.row].rendimento, tempo: receitas[indexPath.row].tempo)
+
         return cell
     }
     

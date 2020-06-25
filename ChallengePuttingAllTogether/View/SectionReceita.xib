@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -8,19 +8,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="GH5-5Z-s9P" customClass="SectionReceitaTableViewCell" customModule="ChallengePuttingAllTogether" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="362" height="247"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="186" id="GH5-5Z-s9P" customClass="SectionReceitaTableViewCell" customModule="ChallengePuttingAllTogether" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="186"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GH5-5Z-s9P" id="frW-2z-EPE">
-                <rect key="frame" x="0.0" y="0.0" width="362" height="247"/>
+                <rect key="frame" x="0.0" y="0.0" width="370" height="186"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d9K-je-mlC">
-                        <rect key="frame" x="0.0" y="0.0" width="359" height="247"/>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d9K-je-mlC">
+                        <rect key="frame" x="2" y="10" width="365" height="176"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="cif-VV-5qD"/>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="imh-XF-YIx"/>
                         </constraints>
                         <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -28,9 +27,9 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="d9K-je-mlC" secondAttribute="bottom" id="8GE-0f-8zE"/>
-                    <constraint firstItem="d9K-je-mlC" firstAttribute="leading" secondItem="frW-2z-EPE" secondAttribute="leading" id="941-g9-Lbv"/>
-                    <constraint firstAttribute="trailing" secondItem="d9K-je-mlC" secondAttribute="trailing" id="g8T-Xb-zH6"/>
-                    <constraint firstItem="d9K-je-mlC" firstAttribute="top" secondItem="frW-2z-EPE" secondAttribute="top" id="mmS-Fq-tTl"/>
+                    <constraint firstItem="d9K-je-mlC" firstAttribute="leading" secondItem="frW-2z-EPE" secondAttribute="leading" constant="2" id="941-g9-Lbv"/>
+                    <constraint firstAttribute="trailing" secondItem="d9K-je-mlC" secondAttribute="trailing" constant="3" id="g8T-Xb-zH6"/>
+                    <constraint firstItem="d9K-je-mlC" firstAttribute="top" secondItem="frW-2z-EPE" secondAttribute="top" constant="10" id="mmS-Fq-tTl"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -38,7 +37,7 @@
                 <outlet property="tableHeight" destination="cif-VV-5qD" id="9GS-aa-O5Q"/>
                 <outlet property="tableReceita" destination="d9K-je-mlC" id="4r8-L9-qpC"/>
             </connections>
-            <point key="canvasLocation" x="281.15942028985512" y="18.342391304347828"/>
+            <point key="canvasLocation" x="268.1159420289855" y="-25.271739130434785"/>
         </tableViewCell>
     </objects>
 </document>
