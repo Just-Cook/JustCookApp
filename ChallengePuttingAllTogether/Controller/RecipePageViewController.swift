@@ -10,14 +10,6 @@ import UIKit
 
 class RecipePageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
-//    
-//    let pages:[Page] = [
-//        Page(id: 1, descricao: "Texto da Pagina 1", imageName: "Tem", cronometro: 1200),
-//       Page(id: 2, descricao: "Texto da Pagina 1", imageName: "Tem", cronometro: 1200),
-//     Page(id: 3, descricao: "Texto da Pagina 1", imageName: "Tem", cronometro: 1200),
-//      Page(id: 4, descricao: "Texto da Pagina 1", imageName: "Tem", cronometro: 1200),
-//       Page(id: 5, descricao: "Texto da Pagina 1", imageName: "Tem", cronometro: 1200)
-//      ]
 
     var pageViewControllers:[UIViewController] = []
     var chronometerView: ChronometerView?
@@ -25,7 +17,7 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
     var currentPage = 0
   
     
-    //selectedPageViewController : UIPageViewController?
+   
     
     var receitaId: Int?
     var pages:[Page] = []{
@@ -49,8 +41,7 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         self.view.backgroundColor = .white
           
           if let id = receitaId{
-               print("receita id", id)
-        
+            
               PassosRepository().passosByReceitaId(receitaId: id){
                [weak self](pages) in self?.pages = pages
                 

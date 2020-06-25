@@ -23,12 +23,6 @@ extension RecipePageViewController {
             
             let viewController = UIViewController()
             viewController.view.backgroundColor = .white
-            
-//
-//            if let bigImage = page.bigImage{
-//                lastView = addBigImageToPage(pageViewController: viewController, image: bigImage)
-//                lastView.topAnchor.constraint(equalTo: viewController.view.layoutMarginsGuide.topAnchor, constant: 74).isActive = true
-//            }
            
            
             lastView = addSmallImageToPage(pageViewController: viewController, image: page.imageName)
@@ -39,22 +33,14 @@ extension RecipePageViewController {
             let textView = addTextToPage(pageViewController: viewController, text: text)
             textView.topAnchor.constraint(equalTo:  lastView.bottomAnchor, constant: 12).isActive = true
             lastView = textView
-            
-//            if let links = page.links{
-//
-//
-//            }
+ 
             
             if let chronometer = page.cronometro {
                 let chronometerView = addChronometerToPage(pageViewController: viewController, seconds: chronometer)!
                 chronometerView.topAnchor.constraint(equalTo: lastView.bottomAnchor, constant: 12).isActive = true
                 lastView = chronometerView
             }
-            
-//            if let video = page.video {
-//
-//
-//            }
+ 
             
             if let tip = page.tip {
                 let tipView = addTip(pageViewController: viewController, tipText: tip)
@@ -78,7 +64,7 @@ extension RecipePageViewController {
     func addSmallImageToPage(pageViewController: UIViewController, image:String) -> UIView {
         
         let imageView = UIImageView()
-        //imageView.backgroundColor =  .red
+  
         imageView.image = UIImage(named: image)
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 8
@@ -95,7 +81,7 @@ extension RecipePageViewController {
     func addBigImageToPage(pageViewController: UIViewController, image:String) -> UIView {
         
         let imageView = UIImageView()
-        //imageView.backgroundColor =  .red
+     
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 8
         imageView.image = #imageLiteral(resourceName: "woman-chef")

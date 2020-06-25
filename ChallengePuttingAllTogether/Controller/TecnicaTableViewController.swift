@@ -10,7 +10,6 @@ import UIKit
 
 class TecnicaTableViewController: UITableViewController {
 
-   // var items = Item.mockItems()
     
     var items : [Item] = []{
           didSet{

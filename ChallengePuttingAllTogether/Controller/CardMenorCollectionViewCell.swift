@@ -54,9 +54,7 @@ class CardMenorCollectionViewCell: UICollectionViewCell {
         
         titulo.numberOfLines = 0
         subtitulo.numberOfLines = 0
-              
-        //gradienteView.layer.in
-        
+                 
         
     }
     static func xibForCollection() -> UINib{

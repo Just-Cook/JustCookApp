@@ -36,9 +36,7 @@ class SectionPreparacaoTableViewCell: UITableViewCell {
         super.awakeFromNib()
         configCollection()
         subtitlePrep.font = .systemFont(ofSize: 15, weight: .regular)
-//        subtitlePrep.lineBreakMode = .byWordWrapping
-//        subtitlePrep.numberOfLines = .max
-    
+
 
         }
     
