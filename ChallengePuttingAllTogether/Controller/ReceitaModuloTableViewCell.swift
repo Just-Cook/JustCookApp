@@ -51,10 +51,18 @@ class ReceitaModuloTableViewCell: UITableViewCell {
     }
     func configure(backImage:String, titulo:String, rendimento:Int, tempo:Int){
         
+        let convertTempo = tempo/60
         self.backgReceita.image = UIImage(named: backImage)
         self.receitaLabel.text = titulo
-        self.porcoesLabel.text = "\(rendimento)"
-        self.tempoLabel.text = "\(tempo)"
+        var porcoes = ""
+        if rendimento == 1{
+            porcoes = " porção"
+        }else{
+            porcoes = " porções"
+            
+        }
+        self.porcoesLabel.text = "\(rendimento)" + porcoes
+        self.tempoLabel.text = "\(convertTempo)" + " min"
         
         
         
