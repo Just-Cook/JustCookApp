@@ -73,6 +73,19 @@ class Pontuation {
         }
     }
     
+    func userLevelNumber() -> Int {
+        let totalPontuation = defauls.integer(forKey: "totalPontuation")
+        
+        switch totalPontuation {
+        case 0..<100:
+            return 1
+        case 100..<200:
+            return 2
+        default:
+            return 3
+        }
+    }
+    
     func increasePontuation(in num: Int){
         
         var currentPontuation = defauls.integer(forKey: "totalPontuation")
