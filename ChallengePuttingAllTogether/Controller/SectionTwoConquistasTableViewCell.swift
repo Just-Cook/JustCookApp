@@ -28,8 +28,6 @@ class SectionTwoConquistasTableViewCell: UITableViewCell {
         collectionView.isScrollEnabled = false
         
         titulo.text = "Selos"
-        
-        
        
     }
     
@@ -39,6 +37,10 @@ class SectionTwoConquistasTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func updateCollection(){
+        collectionView.reloadData()
     }
 
 
@@ -59,7 +61,8 @@ extension SectionTwoConquistasTableViewCell:UICollectionViewDelegate, UICollecti
         
            cell.image.layer.backgroundColor = CGColor(srgbRed: 196/255, green: 196/255, blue: 196/255, alpha: 1)
         
-           cell.configureCell(imageName: conquistasMock[indexPath.row].image, titulo: conquistasMock[indexPath.row].titulo)
+        cell.configureCell(id:conquistasMock[indexPath.row].id, imageName: conquistasMock[indexPath.row].image, titulo: conquistasMock[indexPath.row].titulo)
+        
      
            return cell
        }

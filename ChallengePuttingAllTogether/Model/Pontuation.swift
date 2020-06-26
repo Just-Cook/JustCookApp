@@ -92,4 +92,32 @@ class Pontuation {
     func zeraPontuation(){
         defauls.set(0, forKey: "totalPontuation")
     }
+    
+    func completConquer(id:Int){
+        if let currentConquers = defauls.array(forKey: "conquersId") as? [Int]{
+            var totalIds = currentConquers
+            totalIds.append(id)
+            defauls.set(totalIds, forKey: "conquersId")
+        }
+    }
+    
+    func setInicialConquers(){
+        
+        guard let _ = defauls.array(forKey: "conquersId") as? [Int] else{
+            defauls.set([], forKey: "conquersId")
+            return
+        }
+        return
+    }
+    
+    func verifyId(id: Int) -> Bool{
+        if let currentConquers = defauls.array(forKey: "conquersId") as? [Int]{
+            
+            return currentConquers.contains(id)
+            
+        }
+        
+        return false
+    }
+    
 }
