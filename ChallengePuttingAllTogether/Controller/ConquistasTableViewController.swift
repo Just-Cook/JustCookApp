@@ -33,7 +33,6 @@ class ConquistasTableViewController: UITableViewController {
 
   //  var height:Int
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("AQUIIII")
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: SectionOneConquistasTableViewCell.identifier) as! SectionOneConquistasTableViewCell
