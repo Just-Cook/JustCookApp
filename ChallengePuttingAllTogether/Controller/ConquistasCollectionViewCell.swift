@@ -13,17 +13,22 @@ class ConquistasCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var titulo: UILabel!
     
+    var id:Int?
+    
      static let identifier = "PerfilCollectionViewCell"
   
-    func configureCell(imageName:String, titulo:String){
+    func configureCell(id:Int, imageName:String, titulo:String){
         
-        self.image.image = UIImage(named: imageName)
-        
+        self.id = id
         self.titulo.text = titulo
-        
         self.image.layer.cornerRadius = 5
         
-        
+        let pont = Pontuation()
+        if pont.verifyId(id: id){
+            self.image.image = UIImage(named: imageName)
+        }else{
+            self.image.backgroundColor = .emptyConquer
+        }
         
     }
     

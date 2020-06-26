@@ -19,6 +19,11 @@ class ConquistasTableViewController: UITableViewController {
         
         tableView.showsVerticalScrollIndicator = false
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tableView.reloadData()
+    }
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,7 +33,7 @@ class ConquistasTableViewController: UITableViewController {
 
   //  var height:Int
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        print("AQUIIII")
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: SectionOneConquistasTableViewCell.identifier) as! SectionOneConquistasTableViewCell
@@ -36,6 +41,7 @@ class ConquistasTableViewController: UITableViewController {
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: SectionTwoConquistasTableViewCell.identifier) as! SectionTwoConquistasTableViewCell
+            cell.updateCollection()
             return cell
         default:
             return UITableViewCell()
