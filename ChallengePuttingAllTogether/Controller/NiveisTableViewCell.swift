@@ -23,10 +23,28 @@ class NiveisTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        let pont = Pontuation()
+        
         wrapperView.layer.masksToBounds = true
         wrapperView.layer.cornerRadius = 10
-        wrapperView.layer.backgroundColor = CGColor.init(srgbRed: 36/255, green: 153/255, blue: 242/255, alpha: 1)
         
+        self.titulo.text = pont.nivelString() + " - " + pont.levelNivelUserString()
+        
+        switch pont.userLevelNumber() {
+        case 1:
+            wrapperView.backgroundColor = .blueColor
+            self.descricao.text = "Olá jovem cozinheiro! Neste nível você provavelmente só sabe fazer miojo, mas sua jornada na cozinha já começou!"
+        case 2:
+            wrapperView.backgroundColor = .greenColor
+            self.descricao.text = "Olá jovem cozinheiro! Neste nível você já consegue fazer algumas receitas fáceis, e olha so! Sua mãe está orgulhosa."
+            
+        case 3:
+            wrapperView.backgroundColor = .redColor
+            self.descricao.text = "Olá jovem cozinheiro! Neste nível você consegue fazer receitas mais elaboradas e já pode chamar os amigos para um jantar na sua casa."
+            
+        default:
+            wrapperView.backgroundColor = .blueColor
+        }
         
         imagem.contentMode = UIView.ContentMode.scaleAspectFill
         imagem.layer.masksToBounds = true
