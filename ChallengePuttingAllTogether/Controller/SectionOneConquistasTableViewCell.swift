@@ -37,8 +37,8 @@ class SectionOneConquistasTableViewCell: UITableViewCell {
     func configure(){
         imagemView.layer.masksToBounds = true
         imagemView.contentMode = .scaleAspectFit
-        imagemView.layer.cornerRadius = imagemView.frame.height / 2
-        imagemView.layer.backgroundColor = CGColor(srgbRed: 196/255, green: 196/255, blue: 196/255, alpha: 1)
+        //imagemView.layer.cornerRadius = imagemView.frame.height / 2
+        //imagemView.layer.backgroundColor = CGColor(srgbRed: 196/255, green: 196/255, blue: 196/255, alpha: 1)
         
         let imageName = getConquerLevelImage()
         imagemView.image = UIImage(named: imageName)
