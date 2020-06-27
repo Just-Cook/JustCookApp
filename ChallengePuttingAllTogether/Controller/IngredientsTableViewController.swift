@@ -105,7 +105,7 @@ class IngredientsTableViewController: UITableViewController {
         } else if (indexPath.section == 1){
             let cell = tableView.dequeueReusableCell(withIdentifier: "PorcoesCell", for: indexPath) as! PorcaoCell
             createPorcaoChangeButtons(in: cell)
-            cell.configure(tempo: receita.tempo)
+            cell.configure(tempo: Int(receita.tempo/60))
         
             return cell
         }

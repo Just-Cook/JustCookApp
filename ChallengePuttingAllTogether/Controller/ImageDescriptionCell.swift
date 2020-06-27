@@ -37,7 +37,7 @@ class PorcaoCell: UITableViewCell{
     
      func configure(tempo:Int?){
            self.PorcaoLabel.text = "porções"
-        self.TimeLabel.text = "\(tempo ?? 0)"
+        self.TimeLabel.text = "\(tempo ?? 0) min"
        }
     
 }
