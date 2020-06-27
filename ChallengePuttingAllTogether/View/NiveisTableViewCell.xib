@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -16,21 +16,21 @@
                     <rect key="frame" x="10" y="10" width="344" height="117"/>
                     <subviews>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nivel 1 - Profissional do Miojo" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrw-b5-6Uo">
-                            <rect key="frame" x="60" y="10" width="242.5" height="21.5"/>
+                            <rect key="frame" x="46" y="10" width="242.5" height="21.5"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.slash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BMN-SX-OXH">
-                            <rect key="frame" x="10" y="39" width="40" height="40"/>
+                            <rect key="frame" x="10" y="39" width="26" height="40"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="44.5" id="Bbb-Kl-018"/>
-                                <constraint firstAttribute="width" constant="40" id="lSz-pG-dUT"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44.5" id="Bbb-Kl-018"/>
+                                <constraint firstAttribute="width" constant="26" id="lSz-pG-dUT"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8Y-Pn-ZSF">
-                            <rect key="frame" x="60" y="41.5" width="264" height="57.5"/>
+                            <rect key="frame" x="46" y="41.5" width="279.5" height="43"/>
                             <string key="text">Olá jovem cozinheiro! Neste nível você consegue fazer receitas mais elaboradas e já pode chamar os amigos para um jantar na sua casa.</string>
                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -60,8 +60,10 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="descricao" destination="W8Y-Pn-ZSF" id="fm4-iL-TMG"/>
+                <outlet property="heightNivel" destination="Bbb-Kl-018" id="g4P-FQ-bb8"/>
                 <outlet property="imagem" destination="BMN-SX-OXH" id="Z67-dx-C7a"/>
                 <outlet property="titulo" destination="Mrw-b5-6Uo" id="AMz-tw-0Xj"/>
+                <outlet property="widthNivel" destination="lSz-pG-dUT" id="Gyp-Ww-vzE"/>
                 <outlet property="wrapperView" destination="otf-Gx-nKx" id="TSH-sb-aha"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="101.45089285714285"/>

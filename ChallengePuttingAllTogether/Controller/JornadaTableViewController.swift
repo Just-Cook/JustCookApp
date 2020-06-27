@@ -113,11 +113,11 @@ class JornadaTableViewController: UITableViewController {
 }
 
 extension JornadaTableViewController : CardMenorTableViewCellDelegate, CardMaiorTableViewCellDelegate {
-    func didSelectItem(id: Int){
+    func didSelectItem(id: Int, title: String){
         
         let telaModulo = UIStoryboard(name: "Modulo", bundle: nil).instantiateViewController(withIdentifier: "moduloView") as? ModuloViewController
      
-        
+        telaModulo?.setTitle(titulo: title)
         telaModulo?.moduloId = id
         self.navigationController?.pushViewController(telaModulo!, animated: true)
         

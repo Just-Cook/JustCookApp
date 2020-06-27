@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CardMenorTableViewCellDelegate:class {
-    func didSelectItem(id:Int)
+    func didSelectItem(id:Int, title: String)
 }
 class CardMenorTableViewCell: UITableViewCell {
     @IBOutlet weak var titulo: UILabel!
@@ -80,7 +80,7 @@ extension CardMenorTableViewCell: UICollectionViewDelegate, UICollectionViewData
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let currentItem = modulos[indexPath.row]
-        delegate?.didSelectItem(id: currentItem.id)
+        delegate?.didSelectItem(id: currentItem.id, title: currentItem.titulo)
     }
    
     func cellSize() -> (CGFloat, CGFloat){

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CardMaiorTableViewCellDelegate:class {
-    func didSelectItem(id:Int)
+    func didSelectItem(id:Int, title: String)
 }
 
 class CardMaiorTableViewCell: UITableViewCell {
@@ -88,7 +88,7 @@ extension CardMaiorTableViewCell: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let currentItem = modulos[indexPath.row]
         
-        delegate?.didSelectItem(id: currentItem.id)
+        delegate?.didSelectItem(id: currentItem.id, title: currentItem.titulo)
         
     }
     
