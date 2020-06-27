@@ -247,6 +247,8 @@ class IngredientsTableViewController: UITableViewController {
         }
         recipePageViewController.receitaId = receitaId
         recipePageViewController.hidesBottomBarWhenPushed  = true
+        recipePageViewController.setPageTitle(title: receita.titulo)
+        
         self.navigationController?.pushViewController(recipePageViewController, animated: true)
     }
 

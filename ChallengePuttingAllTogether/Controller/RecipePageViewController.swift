@@ -16,9 +16,7 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
     var paginationCV: UICollectionView?
     var currentPage = 0
   
-    
    
-    
     var receitaId: Int?
     var pages:[Page] = []{
         didSet{
@@ -58,7 +56,6 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
         
         self.navigationItem.rightBarButtonItem = rightButton
         self.navigationController?.navigationBar.prefersLargeTitles = false
-        self.title = "Titulo"
         self.navigationItem.setHidesBackButton(true, animated: true)
         
         
@@ -66,10 +63,15 @@ class RecipePageViewController: UIPageViewController, UIPageViewControllerDelega
             setViewControllers([firstPageViewController], direction: .forward, animated: false, completion: nil)
         }
         
-      
-     
-       
     }
+    
+    
+    func setPageTitle(title:String){
+        
+        self.title = title
+        
+    }
+    
     
     @objc
     func closeRecipePages(){
