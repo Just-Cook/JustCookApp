@@ -12,6 +12,19 @@ import UIKit
 class JornadaTableViewController: UITableViewController {
 
     
+    var modulos : [Modulo] = []{
+        didSet{
+             DispatchQueue.main.async {
+                if(self.modulos.count == 0){
+                    self.getModulosData()
+                }else{
+                    self.tableView.reloadData()
+                }
+            }
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -27,9 +40,15 @@ class JornadaTableViewController: UITableViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.orangeColor
         
         let pont = Pontuation()
-        pont.setInicialConquers()
-        pont.completConquer(id: 10)
+        pont.setInicialDefaults()
+        
+        getModulosData()
+        
+    }
     
+    func getModulosData() {
+        ModuloRepository().listar(){[weak self] (modulos) in self?.modulos = modulos
+        }
     }
 
 
@@ -51,13 +70,20 @@ class JornadaTableViewController: UITableViewController {
             return cell
             
         case 2:
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: CardMaiorTableViewCell.identifier, for: indexPath) as? CardMaiorTableViewCell else{ fatalError("Wrong identifier") }
-        cell.delegate = self
-        return cell
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: CardMaiorTableViewCell.identifier, for: indexPath) as? CardMaiorTableViewCell else{ fatalError("Wrong identifier") }
+            cell.delegate = self
+            cell.modulos = self.modulos
+            cell.update()
+            
+            return cell
             
         case 3:
                guard let cell = tableView.dequeueReusableCell(withIdentifier: CardMenorTableViewCell.identifier, for: indexPath) as? CardMenorTableViewCell else{ fatalError("Wrong identifier") }
+               
                cell.delegate = self
+               cell.modulos = self.modulos
+               cell.update()
+               
                return cell
             
         default:

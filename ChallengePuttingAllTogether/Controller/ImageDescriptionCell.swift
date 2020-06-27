@@ -37,24 +37,21 @@ class PorcaoCell: UITableViewCell{
     
      func configure(tempo:Int?){
            self.PorcaoLabel.text = "porções"
-        self.TimeLabel.text = "\(tempo ?? 0)"
+        self.TimeLabel.text = "\(tempo ?? 0) min"
        }
     
 }
 
 class IngredientCell: UITableViewCell {
 
+    
+    
     @IBOutlet weak var IngredientNameLabel: UILabel!
     @IBOutlet weak var IngredientAmountLabel: UILabel!
     
     
-    func configure(nome:String, quantidade:Int?, unidade:String?){
+    func configure(nome:String, quantidade:Float, unidade:String?){
         self.IngredientNameLabel.text = nome
-        if let quantidade = quantidade{
-            self.IngredientAmountLabel.text = "\(quantidade) \(unidade ?? " ")"
-        }else{
-            self.IngredientAmountLabel.text = "\(unidade ?? " ")"
-        }
-       
+        self.IngredientAmountLabel.text = "\(String(format: "%.01f", quantidade)) \(unidade ?? " ")"
     }
 }

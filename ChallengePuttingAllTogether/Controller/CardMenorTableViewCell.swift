@@ -14,13 +14,15 @@ protocol CardMenorTableViewCellDelegate:class {
 class CardMenorTableViewCell: UITableViewCell {
     @IBOutlet weak var titulo: UILabel!
     
-    var modulos:[Modulo] = []{
-        didSet{
-            DispatchQueue.main.async {
-                self.collectionView.reloadData()
-            }
-        }
-    }
+//    var modulos:[Modulo] = []{
+//        didSet{
+//            DispatchQueue.main.async {
+//                self.collectionView.reloadData()
+//            }
+//        }
+//    }
+    
+    var modulos:[Modulo] = []
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var verTodosButton: UIButton!
@@ -39,8 +41,12 @@ class CardMenorTableViewCell: UITableViewCell {
            
        collectionView.register(CardMenorCollectionViewCell.xibForCollection(), forCellWithReuseIdentifier: CardMenorCollectionViewCell.identifier)
         
-        ModuloRepository().listar(){[weak self] (modulos) in self?.modulos = modulos
-        }
+//        ModuloRepository().listar(){[weak self] (modulos) in self?.modulos = modulos
+//        }
+    }
+    
+    func update(){
+        self.collectionView.reloadData()
     }
 
 

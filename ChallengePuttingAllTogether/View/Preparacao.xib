@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -21,18 +21,11 @@
                     <color key="backgroundColor" white="0.0" alpha="0.44873715753424659" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doK-Qj-8xn">
-                    <rect key="frame" x="8" y="22" width="84" height="14"/>
+                    <rect key="frame" x="8" y="58" width="84" height="14"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="NaoConcluido" translatesAutoresizingMaskIntoConstraints="NO" id="LLt-Tc-YtE">
-                    <rect key="frame" x="82" y="8" width="10" height="10"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="10" id="Czq-LQ-Fe6"/>
-                        <constraint firstAttribute="width" constant="10" id="oJ9-ra-35G"/>
-                    </constraints>
-                </imageView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
@@ -41,14 +34,12 @@
                 <constraint firstItem="AJD-zS-YOk" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Dxq-qc-Mgv"/>
                 <constraint firstItem="ybZ-qZ-fLV" firstAttribute="trailing" secondItem="doK-Qj-8xn" secondAttribute="trailing" constant="8" id="IT2-x0-hDb"/>
                 <constraint firstItem="doK-Qj-8xn" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="ybZ-qZ-fLV" secondAttribute="bottom" constant="-5" id="PVS-Ws-ydX"/>
-                <constraint firstItem="AJD-zS-YOk" firstAttribute="trailing" secondItem="LLt-Tc-YtE" secondAttribute="trailing" constant="8" id="Pbr-iT-E8G"/>
-                <constraint firstItem="LLt-Tc-YtE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="SN1-SN-U30"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="doK-Qj-8xn" secondAttribute="bottom" constant="8" id="WdD-mQ-pKW"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ybZ-qZ-fLV" secondAttribute="trailing" id="jGe-0u-dVj"/>
                 <constraint firstItem="ybZ-qZ-fLV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="kar-JB-hvC"/>
                 <constraint firstItem="ybZ-qZ-fLV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mnH-0e-GL9"/>
                 <constraint firstItem="ybZ-qZ-fLV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pBy-mg-tBU"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="AJD-zS-YOk" secondAttribute="bottom" id="xIg-Zd-sdy"/>
-                <constraint firstItem="doK-Qj-8xn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="22" id="yfk-Uo-P8X"/>
                 <constraint firstItem="AJD-zS-YOk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zDI-Wl-3I1"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AJD-zS-YOk" secondAttribute="trailing" id="zMT-g2-EQN"/>
             </constraints>
@@ -58,7 +49,6 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="backgPreparacao" destination="ybZ-qZ-fLV" id="uFk-dw-TSY"/>
-                <outlet property="checkPreparacao" destination="LLt-Tc-YtE" id="LaZ-PH-6Dt"/>
                 <outlet property="gradienteView" destination="AJD-zS-YOk" id="4OQ-32-sH1"/>
                 <outlet property="labelPreparacao" destination="doK-Qj-8xn" id="uey-C8-KIS"/>
             </connections>
@@ -66,7 +56,6 @@
         </view>
     </objects>
     <resources>
-        <image name="NaoConcluido" width="25" height="25"/>
         <image name="forma" width="88" height="75"/>
     </resources>
 </document>

@@ -38,6 +38,11 @@ class ModuloViewController: UIViewController{
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.ModuloTableView.reloadData()
+    }
+    
 //    func titleMod(moduloT: String){
 //        self.title = moduloT
 //    }
@@ -121,11 +126,12 @@ extension ModuloViewController: UITableViewDelegate, UITableViewDataSource{
     
 }
 extension ModuloViewController : SectionReceitaTableViewCellDelegate {
-    func didSelectReceita(id: Int) {
+    func didSelectReceita(id: Int, title: String) {
        
         let telaIngredient = UIStoryboard(name: "IngredientsRecipeScreen", bundle: nil).instantiateViewController(withIdentifier: "ingredientRecipe") as? IngredientsTableViewController
         
         telaIngredient?.receitaId = id
+        telaIngredient?.configureTitle(title: title)
         
         self.navigationController?.pushViewController(telaIngredient!, animated: true)
     }

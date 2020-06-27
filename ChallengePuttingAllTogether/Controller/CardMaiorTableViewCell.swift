@@ -18,13 +18,15 @@ class CardMaiorTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var modulos : [Modulo] = []{
-        didSet{
-             DispatchQueue.main.async {
-                 self.collectionView.reloadData()
-             }
-        }
-    }
+//    var modulos : [Modulo] = []{
+//        didSet{
+//             DispatchQueue.main.async {
+//                self.collectionView.reloadData()
+//             }
+//        }
+//    }
+    var modulos : [Modulo] = []
+    
     
     static let identifier = "CardMaiorTableViewCell"
     
@@ -42,9 +44,13 @@ class CardMaiorTableViewCell: UITableViewCell {
            collectionView.register(CardMaiorCollectionViewCell.xibForCollection(), forCellWithReuseIdentifier: CardMaiorCollectionViewCell.identifier)
             
             
-            ModuloRepository().listar(){[weak self] (modulos) in self?.modulos = modulos
-                       }
+//            ModuloRepository().listar(){[weak self] (modulos) in self?.modulos = modulos
+//                       }
         }
+    
+    func update(){
+        self.collectionView.reloadData()
+    }
 
 
 }

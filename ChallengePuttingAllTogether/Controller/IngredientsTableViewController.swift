@@ -14,11 +14,18 @@ class IngredientsTableViewController: UITableViewController {
     
     var receitaId: Int? = nil
     
+    var inicialAmount: Int?
+    
     var receita : Receita = Receita(id: 0, titulo: "none", descricao: "none", imageName: "none", rendimento: 0, tempo: 0)
     {
            didSet{
                DispatchQueue.main.async {
                self.tableView.reloadData()
+                
+                if self.inicialAmount == nil{
+                    self.inicialAmount = self.receita.rendimento
+                    }
+                
                }
            }
 
@@ -45,6 +52,7 @@ class IngredientsTableViewController: UITableViewController {
         self.navigationItem.rightBarButtonItem = rightButton
         
         if let id = receitaId{
+            
             ReceitaRepository().receitaId(id: id){[weak self] (receita) in self?.receita = receita
                
             }
@@ -53,6 +61,15 @@ class IngredientsTableViewController: UITableViewController {
             }
         }
     }
+    
+    
+    func configureTitle(title: String){
+        
+        self.title = title
+        
+    }
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 3
@@ -88,16 +105,23 @@ class IngredientsTableViewController: UITableViewController {
         } else if (indexPath.section == 1){
             let cell = tableView.dequeueReusableCell(withIdentifier: "PorcoesCell", for: indexPath) as! PorcaoCell
             createPorcaoChangeButtons(in: cell)
-            cell.configure(tempo: receita.tempo)
+            cell.configure(tempo: Int(receita.tempo/60))
         
             return cell
         }
     
         let cell = tableView.dequeueReusableCell(withIdentifier: "IngredientCell", for: indexPath) as! IngredientCell
         
-         let ingrediente = ingredientes[indexPath.item]
-           cell.configure(nome: ingrediente.nome, quantidade: ingrediente.quantidade, unidade: ingrediente.unidade)
+        let ingrediente = ingredientes[indexPath.item]
+           
+        if let inicial = self.inicialAmount {
             
+            if ingrediente.quantidade != nil{
+                let amount = Float(receita.rendimento)/Float(inicial) * Float(ingrediente.quantidade!)
+                cell.configure(nome: ingrediente.nome, quantidade: amount, unidade: ingrediente.unidade)
+            }
+        }
+        
         return cell
        
     }
@@ -224,6 +248,8 @@ class IngredientsTableViewController: UITableViewController {
         }
         recipePageViewController.receitaId = receitaId
         recipePageViewController.hidesBottomBarWhenPushed  = true
+        recipePageViewController.setPageTitle(title: receita.titulo)
+        
         self.navigationController?.pushViewController(recipePageViewController, animated: true)
     }
 

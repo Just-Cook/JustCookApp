@@ -36,10 +36,12 @@ class SectionOneConquistasTableViewCell: UITableViewCell {
     
     func configure(){
         imagemView.layer.masksToBounds = true
-        imagemView.contentMode = UIView.ContentMode.scaleAspectFill
-        imagemView.layer.cornerRadius = imagemView.frame.height / 2
-        imagemView.layer.backgroundColor = CGColor(srgbRed: 196/255, green: 196/255, blue: 196/255, alpha: 1)
-        imagemView.image = UIImage(named: " ")
+        imagemView.contentMode = .scaleAspectFit
+        //imagemView.layer.cornerRadius = imagemView.frame.height / 2
+        //imagemView.layer.backgroundColor = CGColor(srgbRed: 196/255, green: 196/255, blue: 196/255, alpha: 1)
+        
+        let imageName = getConquerLevelImage()
+        imagemView.image = UIImage(named: imageName)
   
         barraProgresso.layer.masksToBounds = true
         
@@ -55,5 +57,23 @@ class SectionOneConquistasTableViewCell: UITableViewCell {
           barraProgresso.progress = Float(pontuation.levelPontuation()) / Float(pontuation.getTotalNextLevel())
           
       }
+    
+    func getConquerLevelImage()->String{
+        
+        let pont = Pontuation()
+        let level = pont.userLevelNumber()
+        
+        switch level {
+        case 1:
+            return "nivel1"
+        case 2:
+            return "nivel2"
+        case 3:
+            return "nivel3"
+        default:
+            return " "
+        }
+    
+    }
 
 }

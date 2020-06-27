@@ -11,10 +11,22 @@ import Lottie
 
 class CongratsScreenViewController: UIViewController {
 
+    
+    var oldPontuation: Int?
+    var newPontuation: Int?
+    var points: Int?
+    
+    func configure(oldPontuation: Int, newPontuation: Int){
+        self.oldPontuation = oldPontuation
+        self.newPontuation = newPontuation
+        self.points = newPontuation - oldPontuation
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.modalPresentationStyle = .fullScreen
-        showCongratScreen(points: 75)
+        showCongratScreen()
     }
     
     var centerAnchor1: NSLayoutConstraint?
@@ -22,7 +34,7 @@ class CongratsScreenViewController: UIViewController {
     
     var progressBar: UIProgressView?
     
-    func showCongratScreen(points: Int ){
+    func showCongratScreen(){
         
             let pont = Pontuation()
             let centeredView = UIView()
@@ -81,7 +93,7 @@ class CongratsScreenViewController: UIViewController {
             
             
             let morePointsLabel = UILabel()
-            morePointsLabel.text = "+ \(String(points)) pontos"
+            morePointsLabel.text = "+ \(String(points!)) pontos"
             morePointsLabel.textAlignment = .center
             
             centeredView.addSubview(morePointsLabel)
@@ -94,13 +106,13 @@ class CongratsScreenViewController: UIViewController {
             
                 
             let animatedProgressBar = UIProgressView()
-            animatedProgressBar.progress = Float(pont.levelPontuation())/Float(pont.getTotalNextLevel())
+            animatedProgressBar.progress = Float(pont.levelPontuation(points: self.oldPontuation!))/Float(pont.getTotalNextLevel())
             animatedProgressBar.layer.masksToBounds = true
             animatedProgressBar.layer.cornerRadius = 5
             animatedProgressBar.progressTintColor = UIColor.init(red: 43/255, green: 159/255, blue: 247/255, alpha: 1)
             
-            pont.increasePontuation(in: points)
-            pont.completConquer(id: 1)
+//            pont.increasePontuation(in: points)
+//            pont.completConquer(id: 1)
         
             self.progressBar = animatedProgressBar
         
@@ -135,7 +147,12 @@ class CongratsScreenViewController: UIViewController {
     
     func playAnimation(){
         let pont = Pontuation()
-        let progress = Float(pont.levelPontuation())/Float(pont.getTotalNextLevel())
+        var progress = Float(pont.levelPontuation(points: self.newPontuation!))/Float(pont.getTotalNextLevel())
+        
+        if(pont.userLevelNumber(points: oldPontuation!) != pont.userLevelNumber(points: newPontuation!)){
+          progress = 1
+          print("Parabens, voce subiu de Nivel")
+        }
         
         UIView.animate(withDuration: 0.5, animations: {
             self.progressBar?.setProgress(progress, animated: true)

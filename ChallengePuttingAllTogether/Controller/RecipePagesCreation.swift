@@ -121,6 +121,7 @@ extension RecipePageViewController {
         
         let textView = UITextView()
         textView.isEditable = false
+        textView.font = .systemFont(ofSize: 17)
         textView.text = text
         
         pageViewController.view.addSubview(textView)
@@ -197,7 +198,17 @@ extension RecipePageViewController {
     
     @objc
     func goToCongats(){
+        
+        let pont = Pontuation()
+        
+        let oldPontuation = pont.getTotalPoints()
+        let newPontuation = pont.increasePontuation(in: 75)
+        //pont.completConquer(id: 1)
+        pont.saveCompletedRecipe(id: self.receitaId!)
+        
         let congrat = CongratsScreenViewController()
+        
+        congrat.configure(oldPontuation: oldPontuation, newPontuation: newPontuation)
         
         self.present(congrat, animated: true, completion: nil )
         self.navigationController?.popViewController(animated: true)

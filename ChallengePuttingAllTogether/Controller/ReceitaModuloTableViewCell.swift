@@ -49,7 +49,7 @@ class ReceitaModuloTableViewCell: UITableViewCell {
         
     
     }
-    func configure(backImage:String, titulo:String, rendimento:Int, tempo:Int){
+    func configure(id:Int, backImage:String, titulo:String, rendimento:Int, tempo:Int){
         
         let convertTempo = tempo/60
         self.backgReceita.image = UIImage(named: backImage)
@@ -64,7 +64,12 @@ class ReceitaModuloTableViewCell: UITableViewCell {
         self.porcoesLabel.text = "\(rendimento)" + porcoes
         self.tempoLabel.text = "\(convertTempo)" + " min"
         
-        
+        let pont = Pontuation()
+        if pont.seIfRecipeIsComplete(id: id){
+            checkBox.image = UIImage(named: "Concluido")
+        }else{
+            checkBox.image = UIImage(named: "NaoConcluido")
+        }
         
     }
 
