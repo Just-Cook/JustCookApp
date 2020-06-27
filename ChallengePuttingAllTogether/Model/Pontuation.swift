@@ -51,6 +51,20 @@ class Pontuation {
         }
     }
     
+    func levelPontuation(points: Int) -> Int {
+        
+        let totalPontuation = points
+        
+        switch totalPontuation {
+        case 0..<100:
+            return totalPontuation
+        case 100..<200:
+            return totalPontuation - 100
+        default:
+            return totalPontuation - 200
+        }
+    }
+    
     func nivelString() -> String {
         
         let totalPontuation = defauls.integer(forKey: "totalPontuation")
@@ -82,6 +96,19 @@ class Pontuation {
     
     func userLevelNumber() -> Int {
         let totalPontuation = defauls.integer(forKey: "totalPontuation")
+        
+        switch totalPontuation {
+        case 0..<100:
+            return 1
+        case 100..<200:
+            return 2
+        default:
+            return 3
+        }
+    }
+    
+    func userLevelNumber(points: Int) -> Int {
+        let totalPontuation = points
         
         switch totalPontuation {
         case 0..<100:
@@ -125,17 +152,17 @@ class Pontuation {
     
     func setInicialDefaults(){
         
-        guard let _ = defauls.array(forKey: "conquersId") as? [Int] else{
+        if let _ = defauls.array(forKey: "conquersId") as? [Int] {
+            
+        }else{
             defauls.set([], forKey: "conquersId")
-            return
         }
         
-        guard let _ = defauls.array(forKey: "completeRecipesId") as? [Int] else{
+        if let _ = defauls.array(forKey: "completeRecipesId") as? [Int]{
+            
+        }else{
             defauls.set([], forKey: "completeRecipesId")
-            return
         }
-        
-        return
     }
     
     func verifyId(id: Int) -> Bool{

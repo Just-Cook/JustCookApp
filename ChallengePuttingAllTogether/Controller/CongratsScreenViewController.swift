@@ -106,7 +106,7 @@ class CongratsScreenViewController: UIViewController {
             
                 
             let animatedProgressBar = UIProgressView()
-            animatedProgressBar.progress = Float(pont.levelPontuation())/Float(pont.getTotalNextLevel())
+            animatedProgressBar.progress = Float(pont.levelPontuation(points: self.oldPontuation!))/Float(pont.getTotalNextLevel())
             animatedProgressBar.layer.masksToBounds = true
             animatedProgressBar.layer.cornerRadius = 5
             animatedProgressBar.progressTintColor = UIColor.init(red: 43/255, green: 159/255, blue: 247/255, alpha: 1)
@@ -147,7 +147,12 @@ class CongratsScreenViewController: UIViewController {
     
     func playAnimation(){
         let pont = Pontuation()
-        let progress = Float(pont.levelPontuation())/Float(pont.getTotalNextLevel())
+        var progress = Float(pont.levelPontuation(points: self.newPontuation!))/Float(pont.getTotalNextLevel())
+        
+        if(pont.userLevelNumber(points: oldPontuation!) != pont.userLevelNumber(points: newPontuation!)){
+          progress = 1
+          print("Parabens, voce subiu de Nivel")
+        }
         
         UIView.animate(withDuration: 0.5, animations: {
             self.progressBar?.setProgress(progress, animated: true)

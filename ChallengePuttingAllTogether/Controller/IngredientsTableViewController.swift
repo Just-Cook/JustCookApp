@@ -53,8 +53,6 @@ class IngredientsTableViewController: UITableViewController {
         
         if let id = receitaId{
             
-            print(id)
-            
             ReceitaRepository().receitaId(id: id){[weak self] (receita) in self?.receita = receita
                
             }

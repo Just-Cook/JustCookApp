@@ -202,7 +202,7 @@ extension RecipePageViewController {
         let pont = Pontuation()
         
         let oldPontuation = pont.getTotalPoints()
-        let newPontuation = pont.increasePontuation(in: 10)
+        let newPontuation = pont.increasePontuation(in: 75)
         //pont.completConquer(id: 1)
         pont.saveCompletedRecipe(id: self.receitaId!)
         
