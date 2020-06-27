@@ -33,11 +33,12 @@ class ModuloViewController: UIViewController{
 //            self?.title = modulo.titulo
             
         }
+        self.navigationItem.largeTitleDisplayMode = .always
        
-
-        
     }
-    
+    func setTitle (titulo: String){
+        self.title = titulo
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.ModuloTableView.reloadData()
