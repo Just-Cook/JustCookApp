@@ -13,7 +13,6 @@ class PreparacaoCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var gradienteView: UIView!
     @IBOutlet weak var backgPreparacao: UIImageView!
     @IBOutlet weak var labelPreparacao: UILabel!
-    @IBOutlet weak var checkPreparacao: UIImageView!
    
       
     static let xibName = "Preparacao" // Setando o nome da xib
