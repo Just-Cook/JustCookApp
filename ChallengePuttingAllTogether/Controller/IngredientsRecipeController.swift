@@ -17,5 +17,10 @@ class IngredientsRecipeController: UINavigationController {
         self.navigationBar.prefersLargeTitles = true
         
     }
+    
+    func configureTitle(title: String){
+        
+        self.title = title
+    }
 
 }

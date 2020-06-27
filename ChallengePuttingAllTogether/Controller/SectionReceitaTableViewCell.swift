@@ -9,7 +9,7 @@
 import UIKit
 
 protocol SectionReceitaTableViewCellDelegate{
-    func didSelectReceita(id:Int)
+    func didSelectReceita(id:Int, title: String)
     
 }
 
@@ -65,7 +65,7 @@ extension SectionReceitaTableViewCell: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let currentItem = receitas[indexPath.row]
-        delegate?.didSelectReceita(id: currentItem.id)
+        delegate?.didSelectReceita(id: currentItem.id, title: currentItem.titulo)
     }
    
     

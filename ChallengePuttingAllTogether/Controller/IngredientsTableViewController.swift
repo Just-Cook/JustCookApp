@@ -60,6 +60,15 @@ class IngredientsTableViewController: UITableViewController {
             }
         }
     }
+    
+    
+    func configureTitle(title: String){
+        
+        self.title = title
+        
+    }
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 3
