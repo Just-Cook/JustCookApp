@@ -58,7 +58,7 @@ extension SectionReceitaTableViewCell: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ReceitaModuloTableViewCell.identifier, for: indexPath) as! ReceitaModuloTableViewCell
         
-        cell.configure(backImage: receitas[indexPath.row].imageName, titulo: receitas[indexPath.row].titulo, rendimento: receitas[indexPath.row].rendimento, tempo: receitas[indexPath.row].tempo)
+        cell.configure( id: receitas[indexPath.row].id  ,backImage: receitas[indexPath.row].imageName, titulo: receitas[indexPath.row].titulo, rendimento: receitas[indexPath.row].rendimento, tempo: receitas[indexPath.row].tempo)
 
         return cell
     }

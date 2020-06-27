@@ -38,6 +38,11 @@ class ModuloViewController: UIViewController{
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.ModuloTableView.reloadData()
+    }
+    
 //    func titleMod(moduloT: String){
 //        self.title = moduloT
 //    }

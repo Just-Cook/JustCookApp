@@ -15,6 +15,13 @@ class Pontuation {
     let defauls = UserDefaults.standard
     static var nav: UINavigationController?
     
+    func getTotalPoints()->Int{
+        let totalPontuation = defauls.integer(forKey: "totalPontuation")
+        return totalPontuation
+    }
+    
+    
+    
     func getTotalNextLevel() -> Int{
         
         let totalPontuation = defauls.integer(forKey: "totalPontuation")
@@ -86,12 +93,14 @@ class Pontuation {
         }
     }
     
-    func increasePontuation(in num: Int){
+    func increasePontuation(in num: Int) -> Int{
         
         var currentPontuation = defauls.integer(forKey: "totalPontuation")
         currentPontuation = currentPontuation + num
        
         defauls.set(currentPontuation, forKey: "totalPontuation")
+    
+        return currentPontuation
     }
 
     func decreasePontuation(in num: Int){
@@ -114,12 +123,18 @@ class Pontuation {
         }
     }
     
-    func setInicialConquers(){
+    func setInicialDefaults(){
         
         guard let _ = defauls.array(forKey: "conquersId") as? [Int] else{
             defauls.set([], forKey: "conquersId")
             return
         }
+        
+        guard let _ = defauls.array(forKey: "completeRecipesId") as? [Int] else{
+            defauls.set([], forKey: "completeRecipesId")
+            return
+        }
+        
         return
     }
     
@@ -132,5 +147,26 @@ class Pontuation {
         
         return false
     }
+    
+    
+    func saveCompletedRecipe(id: Int){
+        if let currentConquers = defauls.array(forKey: "completeRecipesId") as? [Int]{
+            var totalIds = currentConquers
+            totalIds.append(id)
+            defauls.set(totalIds, forKey: "completeRecipesId")
+        }
+    }
+    
+    
+    func seIfRecipeIsComplete(id:Int)->Bool{
+        if let currentConquers = defauls.array(forKey: "completeRecipesId") as? [Int]{
+        
+            return currentConquers.contains(id)
+        
+        }
+        return false
+    }
+    
+    
     
 }

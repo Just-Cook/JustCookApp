@@ -27,8 +27,7 @@ class JornadaTableViewController: UITableViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.orangeColor
         
         let pont = Pontuation()
-        pont.setInicialConquers()
-        pont.completConquer(id: 10)
+        pont.setInicialDefaults()
     
     }
 

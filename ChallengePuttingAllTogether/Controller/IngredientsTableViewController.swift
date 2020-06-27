@@ -52,6 +52,9 @@ class IngredientsTableViewController: UITableViewController {
         self.navigationItem.rightBarButtonItem = rightButton
         
         if let id = receitaId{
+            
+            print(id)
+            
             ReceitaRepository().receitaId(id: id){[weak self] (receita) in self?.receita = receita
                
             }
