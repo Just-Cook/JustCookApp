@@ -36,13 +36,13 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Que gostinho doce" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Y1-67-Nmx">
-                                    <rect key="frame" x="16" y="137" width="332" height="21.5"/>
+                                    <rect key="frame" x="16" y="151.5" width="332" height="21.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Culinária Literária" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-pE-ppY">
-                                    <rect key="frame" x="16" y="163.5" width="332" height="18"/>
+                                    <rect key="frame" x="16" y="178" width="332" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -50,8 +50,8 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="4Y1-67-Nmx" firstAttribute="top" secondItem="MZQ-u1-ZDB" secondAttribute="bottom" constant="100" id="7uE-Z2-yiT"/>
                                 <constraint firstAttribute="trailing" secondItem="4Y1-67-Nmx" secondAttribute="trailing" constant="16" id="H01-sS-ZUE"/>
+                                <constraint firstAttribute="bottom" secondItem="yBd-pE-ppY" secondAttribute="bottom" constant="24" id="Kch-cH-Z8c"/>
                                 <constraint firstItem="yBd-pE-ppY" firstAttribute="trailing" secondItem="9vT-0g-n3f" secondAttribute="trailing" constant="-16" id="Oog-EO-h2F"/>
                                 <constraint firstItem="eK6-Ac-i9J" firstAttribute="trailing" secondItem="9vT-0g-n3f" secondAttribute="trailing" constant="-10" id="PGg-V4-NOe"/>
                                 <constraint firstItem="MZQ-u1-ZDB" firstAttribute="top" secondItem="9vT-0g-n3f" secondAttribute="top" constant="16" id="Y9U-3f-xuz"/>
