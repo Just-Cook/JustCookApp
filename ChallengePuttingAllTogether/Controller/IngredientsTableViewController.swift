@@ -14,11 +14,18 @@ class IngredientsTableViewController: UITableViewController {
     
     var receitaId: Int? = nil
     
+    var inicialAmount: Int?
+    
     var receita : Receita = Receita(id: 0, titulo: "none", descricao: "none", imageName: "none", rendimento: 0, tempo: 0)
     {
            didSet{
                DispatchQueue.main.async {
                self.tableView.reloadData()
+                
+                if self.inicialAmount == nil{
+                    self.inicialAmount = self.receita.rendimento
+                    }
+                
                }
            }
 
@@ -95,9 +102,16 @@ class IngredientsTableViewController: UITableViewController {
     
         let cell = tableView.dequeueReusableCell(withIdentifier: "IngredientCell", for: indexPath) as! IngredientCell
         
-         let ingrediente = ingredientes[indexPath.item]
-           cell.configure(nome: ingrediente.nome, quantidade: ingrediente.quantidade, unidade: ingrediente.unidade)
+        let ingrediente = ingredientes[indexPath.item]
+           
+        if let inicial = self.inicialAmount {
             
+            if ingrediente.quantidade != nil{
+                let amount = Float(receita.rendimento)/Float(inicial) * Float(ingrediente.quantidade!)
+                cell.configure(nome: ingrediente.nome, quantidade: amount, unidade: ingrediente.unidade)
+            }
+        }
+        
         return cell
        
     }
