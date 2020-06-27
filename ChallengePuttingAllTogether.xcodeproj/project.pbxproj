@@ -526,7 +526,6 @@
 				198A681A248EC017006B5FCB /* Assets.xcassets in Resources */,
 				27C227ED2491168E00657E10 /* RecipeScreen.storyboard in Resources */,
 				198A6848248EC45A006B5FCB /* Conquistas.storyboard in Resources */,
-				198A6848248EC45A006B5FCB /* Conquistas.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,11 +681,9 @@
 				19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */,
 				272C7FD12497A92C009313B2 /* IngredientsRecipeController.swift in Sources */,
 				D757BDEB2491174A00E85FCC /* Modulo.swift in Sources */,
-				198A6813248EC010006B5FCB /* SceneDelegate.swift in Sources */,
 				19035F7424A22D8C000043FA /* TecnicaRepository.swift in Sources */,
 				27BB99F02497BCC300907B43 /* Ingrediente.swift in Sources */,
 				19D4865E24A5173700B2AB2E /* SectionTwoConquistasTableViewCell.swift in Sources */,
-				19B5DA6924912037006CF0FE /* ConquistasModel.swift in Sources */,
 				190804E4249510C900A46E63 /* CardMenorTableViewCell.swift in Sources */,
 				2722DE2C24997DD500E8E173 /* RecipePageViewController.swift in Sources */,
 				D757BDF124917A1A00E85FCC /* PrepCard.swift in Sources */,
