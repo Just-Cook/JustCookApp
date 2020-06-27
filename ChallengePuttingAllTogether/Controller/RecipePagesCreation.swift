@@ -121,6 +121,7 @@ extension RecipePageViewController {
         
         let textView = UITextView()
         textView.isEditable = false
+        textView.font = .systemFont(ofSize: 17)
         textView.text = text
         
         pageViewController.view.addSubview(textView)
