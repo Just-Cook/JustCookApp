@@ -119,6 +119,8 @@ class IngredientsTableViewController: UITableViewController {
             if ingrediente.quantidade != nil{
                 let amount = Float(receita.rendimento)/Float(inicial) * Float(ingrediente.quantidade!)
                 cell.configure(nome: ingrediente.nome, quantidade: amount, unidade: ingrediente.unidade)
+            }else{
+                cell.configure(nome: ingrediente.nome, quantidade: ingrediente.quantidade, unidade: ingrediente.unidade)
             }
         }
         

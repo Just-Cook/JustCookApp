@@ -12,7 +12,7 @@ struct Ingrediente: Decodable{
     
     let id: Int
     let nome: String
-    let quantidade: Int?
+    let quantidade: Float?
     let unidade: String?
     let receitaId: Int
     

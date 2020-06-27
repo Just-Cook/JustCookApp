@@ -50,8 +50,12 @@ class IngredientCell: UITableViewCell {
     @IBOutlet weak var IngredientAmountLabel: UILabel!
     
     
-    func configure(nome:String, quantidade:Float, unidade:String?){
+    func configure(nome:String, quantidade:Float?, unidade:String?){
         self.IngredientNameLabel.text = nome
-        self.IngredientAmountLabel.text = "\(String(format: "%.01f", quantidade)) \(unidade ?? " ")"
+        if let quantidade = quantidade{
+            self.IngredientAmountLabel.text = "\(String(format: "%.01f", quantidade)) \(unidade ?? " ")"
+        }else{
+            self.IngredientAmountLabel.text = "\(unidade ?? " ")"
+        }
     }
 }
