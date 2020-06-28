@@ -24,6 +24,7 @@ class JornadaTableViewController: UITableViewController {
         }
     }
     
+    var pont = Pontuation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,9 +48,8 @@ class JornadaTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        self.tableView.reloadData()
+       super.viewWillAppear(animated)
+       self.tableView.reloadData()
     }
     
     func getModulosData() {
@@ -59,6 +59,7 @@ class JornadaTableViewController: UITableViewController {
 
 
 
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 4
@@ -73,6 +74,7 @@ class JornadaTableViewController: UITableViewController {
              return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: NiveisTableViewCell.identifier, for: indexPath) as? NiveisTableViewCell else{ fatalError("Wrong identifier") }
+            cell.configure()
             return cell
             
         case 2:

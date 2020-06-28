@@ -20,7 +20,7 @@ class SectionOneConquistasTableViewCell: UITableViewCell {
     
     @IBOutlet weak var nextLevelPontLabel: UILabel!
     
-    let defauls = UserDefaults.standard
+ //   let defauls = UserDefaults.standard
  
     
     override func awakeFromNib() {
