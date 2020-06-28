@@ -11,6 +11,7 @@ import UIKit
 class NiveisTableViewCell: UITableViewCell {
     
     @IBOutlet weak var wrapperView: UIView!
+    
     @IBOutlet weak var imagem: UIImageView!
     
     @IBOutlet weak var titulo: UILabel!
@@ -25,47 +26,108 @@ class NiveisTableViewCell: UITableViewCell {
     static let nibName = "NiveisTableViewCell"
     static let identifier = "NiveisTableViewCell"
     
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        let pont = Pontuation()
-        
+      
+      
         wrapperView.layer.masksToBounds = true
         wrapperView.layer.cornerRadius = 10
+     
+    
+    }
+    
+    func configure(){
+        let pont = Pontuation()
+        let level = pont.userLevelNumber()
+      //  pont.zeraPontuation()
         
-        self.titulo.text = pont.nivelString() + " - " + pont.levelNivelUserString()
+         self.titulo.text = pont.nivelString() + " - " + pont.levelNivelUserString()
+           
+          wrapperView.backgroundColor = getBackgroundColor(level)
+          imagem.image = UIImage(named: getImageIcon(level))
+          heightNivel.constant = CGFloat(getHeightConstraint(level))
+          widthNivel.constant = CGFloat(getWidhtConstraint(level))
+          self.descricao.text = getDescricao(level)
         
-        switch pont.userLevelNumber() {
+    }
+    
+    private func getImageIcon(_ level:Int)->String{
+        switch level {
         case 1:
-            wrapperView.backgroundColor = .blueColor
-            imagem.image = UIImage(named: "icone-nivel1")
-            heightNivel.constant = 45
-            widthNivel.constant = 26
-            self.descricao.text = "Olá jovem cozinheiro! Neste nível você provavelmente só sabe fazer miojo, mas sua jornada na cozinha já começou!"
+            return "icone-nivel1"
         case 2:
-            wrapperView.backgroundColor = .greenColor
-            imagem.image = UIImage(named: "icone-nivel2")
-            heightNivel.constant = 39
-            widthNivel.constant = 29
-            self.descricao.text = "Olá jovem cozinheiro! Neste nível você já consegue fazer algumas receitas fáceis, e olha so! Sua mãe está orgulhosa."
-            
+            return "icone-nivel2"
         case 3:
-            wrapperView.backgroundColor = .redColor
-            imagem.image = UIImage(named: "icone-nivel3")
-            heightNivel.constant = 35
-            widthNivel.constant = 35
-            self.descricao.text = "Olá jovem cozinheiro! Neste nível você consegue fazer receitas mais elaboradas e já pode chamar os amigos para um jantar na sua casa."
-            
+            return "icone-nivel3"
         default:
-            wrapperView.backgroundColor = .blueColor
+            return " "
+        }
+            
+    }
+
+    private func getBackgroundColor(_ level:Int)->UIColor{
+      
+        switch level {
+        case 1:
+            return .blueColor
+        case 2:
+            return .greenColor
+        case 3:
+            return .redColor
+        default:
+            return .blueColor
+            
         }
         
-//        imagem.contentMode = UIView.ContentMode.scaleAspectFill
-//        imagem.layer.masksToBounds = true
-//        imagem.layer.cornerRadius = 8
+    }
+    
+    private func getHeightConstraint(_ level:Int)->Int{
+      
+        switch level {
+        case 1:
+            return 45
+        case 2:
+            return 39
+        case 3:
+            return 35
+        default:
+            return 45
+            
+        }
+    }
+
+    private func getWidhtConstraint(_ level:Int)->Int{
+
+        switch level {
+        case 1:
+            return 26
+        case 2:
+            return 29
+        case 3:
+            return 35
+        default:
+            return 26
+            
+        }
     }
     
     
+    private func getDescricao(_ level:Int)->String{
+     
+        switch level {
+        case 1:
+            return "Olá jovem cozinheiro! Neste nível você provavelmente só sabe fazer miojo, mas sua jornada na cozinha já começou!"
+        case 2:
+            return "Olá jovem cozinheiro! Neste nível você já consegue fazer algumas receitas fáceis, e olha so! Sua mãe está orgulhosa."
+        case 3:
+            return "Olá jovem cozinheiro! Neste nível você consegue fazer receitas mais elaboradas e já pode chamar os amigos para um jantar na sua casa."
+        default:
+            return "Olá jovem cozinheiro! Neste nível você provavelmente só sabe fazer miojo, mas sua jornada na cozinha já começou!"
+            
+        }
+    }
     static func xibForTable() -> UINib{
         return UINib(nibName: nibName, bundle: nil)
     }
