@@ -18,7 +18,6 @@ class JornadaTableViewController: UITableViewController {
                 if(self.modulos.count == 0){
                     self.getModulosData()
                 }else{
-                    print(self.modulos)
                     self.tableView.reloadData()
                 }
             }

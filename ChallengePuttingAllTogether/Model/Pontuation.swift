@@ -152,31 +152,27 @@ class Pontuation {
     
     func setInicialDefaults(){
         
-        if let conquistas = defauls.array(forKey: "conquersId") as? [Int] {
-            print(conquistas)
+        if let _ = defauls.array(forKey: "conquersId") as? [Int] {
+            
         }else{
-            print("Setei Conquistas para Vazio")
             defauls.set([], forKey: "conquersId")
         }
         
-        if let receitas = defauls.array(forKey: "completeRecipesId") as? [Int]{
-            print(receitas)
+        if let _ = defauls.array(forKey: "completeRecipesId") as? [Int]{
+            
         }else{
-            print("Setei pra Vazio as receitas")
             defauls.set([], forKey: "completeRecipesId")
         }
         
-        if let modules = defauls.array(forKey: "completeModulesId") as? [Int]{
-            print(modules)
+        if let _ = defauls.array(forKey: "completeModulesId") as? [Int]{
+            
         }else{
-            print("Setei Modulos para Vazio")
             defauls.set([], forKey: "completeModulesId")
         }
     }
     
     func verifyConquerId(id: Int) -> Bool{
         if let currentConquers = defauls.array(forKey: "conquersId") as? [Int]{
-            
             return currentConquers.contains(id)
             
         }
