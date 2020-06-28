@@ -39,7 +39,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launch" width="1137" height="1410"/>
+        <image name="launch" width="1137" height="1461"/>
         <namedColor name="Laranja">
             <color red="0.97254901960784312" green="0.63529411764705879" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
