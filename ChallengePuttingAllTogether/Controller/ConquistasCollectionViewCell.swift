@@ -29,7 +29,8 @@ class ConquistasCollectionViewCell: UICollectionViewCell {
             self.image.image = UIImage(named: imageName)
         }else{
             self.image.image = UIImage(named: "closedConquer")
-            self.image.backgroundColor = .emptyConquer
+            self.image.contentMode = .scaleToFill
+            self.image.backgroundColor = .systemBackground
         }
         
     }
