@@ -21,7 +21,7 @@ class CardMaiorCollectionViewCell: UICollectionViewCell {
     
     static let nibName = "CardMaiorCollectionViewCell"
     static let identifier = "CardMaiorCollectionViewCell"
-    
+    var addedGradient = false
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -80,16 +80,20 @@ class CardMaiorCollectionViewCell: UICollectionViewCell {
        }
     
     public func configuraGradient(size: CGSize){
-        let secondColor = CGColor.init(srgbRed: 0, green: 0, blue: 0, alpha: 0.5)
-                    
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [UIColor.clear.cgColor, secondColor]
-        gradientLayer.locations = [0.0, 1.0]
         
-        gradientLayer.frame = CGRect(origin: .zero, size: size)
+        if !self.addedGradient {
         
-        gradienteView.layer.insertSublayer(gradientLayer, at: 0)
-        
+            let secondColor = CGColor.init(srgbRed: 0, green: 0, blue: 0, alpha: 0.5)
+                        
+            let gradientLayer = CAGradientLayer()
+            gradientLayer.colors = [UIColor.clear.cgColor, secondColor]
+            gradientLayer.locations = [0.0, 1.0]
+            
+            gradientLayer.frame = CGRect(origin: .zero, size: size)
+            
+            gradienteView.layer.insertSublayer(gradientLayer, at: 0)
+            self.addedGradient = true
+        }
     }
     
 }

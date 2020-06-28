@@ -46,6 +46,12 @@ class JornadaTableViewController: UITableViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.tableView.reloadData()
+    }
+    
     func getModulosData() {
         ModuloRepository().listar(){[weak self] (modulos) in self?.modulos = modulos
         }
