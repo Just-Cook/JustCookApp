@@ -68,6 +68,7 @@ extension RecipePageViewController {
         imageView.image = UIImage(named: image)
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 8
+        imageView.contentMode = .scaleAspectFill
         pageViewController.view.addSubview(imageView)
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -85,6 +86,7 @@ extension RecipePageViewController {
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 8
         imageView.image = #imageLiteral(resourceName: "woman-chef")
+        imageView.contentMode = .scaleAspectFill
         
         pageViewController.view.addSubview(imageView)
         
