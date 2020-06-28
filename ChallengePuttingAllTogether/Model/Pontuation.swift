@@ -142,6 +142,16 @@ class Pontuation {
     func zeraPontuation(){
         defauls.set(0, forKey: "totalPontuation")
     }
+    func zeraModulo(){
+           defauls.set([], forKey: "completeModulesId")
+       }
+    func zeraReceita(){
+           defauls.set([], forKey: "completeRecipesId")
+       }
+    func zeraConquistas(){
+        defauls.set([], forKey: "conquersId")
+    }
+    
     
     func completConquer(id:Int){
         if let currentConquers = defauls.array(forKey: "conquersId") as? [Int]{
