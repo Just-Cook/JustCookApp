@@ -43,6 +43,11 @@ class JornadaTableViewController: UITableViewController {
         let pont = Pontuation()
         pont.setInicialDefaults()
         
+//        pont.zeraPontuation()
+//        pont.zeraReceita()
+//        pont.zeraModulo()
+//        pont.zeraConquistas()
+        
         getModulosData()
         
     }
