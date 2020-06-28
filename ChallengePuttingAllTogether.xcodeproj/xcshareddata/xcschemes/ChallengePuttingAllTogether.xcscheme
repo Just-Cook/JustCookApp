@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "198A680C248EC010006B5FCB"
-               BuildableName = "ChallengePuttingAllTogether.app"
+               BuildableName = "Just Cook.app"
                BlueprintName = "ChallengePuttingAllTogether"
                ReferencedContainer = "container:ChallengePuttingAllTogether.xcodeproj">
             </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "198A680C248EC010006B5FCB"
-            BuildableName = "ChallengePuttingAllTogether.app"
+            BuildableName = "Just Cook.app"
             BlueprintName = "ChallengePuttingAllTogether"
             ReferencedContainer = "container:ChallengePuttingAllTogether.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "198A680C248EC010006B5FCB"
-            BuildableName = "ChallengePuttingAllTogether.app"
+            BuildableName = "Just Cook.app"
             BlueprintName = "ChallengePuttingAllTogether"
             ReferencedContainer = "container:ChallengePuttingAllTogether.xcodeproj">
          </BuildableReference>
