@@ -152,20 +152,29 @@ class Pontuation {
     
     func setInicialDefaults(){
         
-        if let _ = defauls.array(forKey: "conquersId") as? [Int] {
-            
+        if let conquistas = defauls.array(forKey: "conquersId") as? [Int] {
+            print(conquistas)
         }else{
+            print("Setei Conquistas para Vazio")
             defauls.set([], forKey: "conquersId")
         }
         
-        if let _ = defauls.array(forKey: "completeRecipesId") as? [Int]{
-            
+        if let receitas = defauls.array(forKey: "completeRecipesId") as? [Int]{
+            print(receitas)
         }else{
+            print("Setei pra Vazio as receitas")
             defauls.set([], forKey: "completeRecipesId")
+        }
+        
+        if let modules = defauls.array(forKey: "completeModulesId") as? [Int]{
+            print(modules)
+        }else{
+            print("Setei Modulos para Vazio")
+            defauls.set([], forKey: "completeModulesId")
         }
     }
     
-    func verifyId(id: Int) -> Bool{
+    func verifyConquerId(id: Int) -> Bool{
         if let currentConquers = defauls.array(forKey: "conquersId") as? [Int]{
             
             return currentConquers.contains(id)
@@ -192,6 +201,107 @@ class Pontuation {
         
         }
         return false
+    }
+    
+    
+    func setConquers(recipeId: Int){
+        
+        let recipeModule = recipeModuleId(recipeId: recipeId)
+        
+        if let currentRecipesId = defauls.array(forKey: "completeRecipesId") as? [Int]{
+            //Primeira Receita
+            if(currentRecipesId.count == 1){
+                completConquer(id:1)
+            }
+            
+            let isModuleCompleted = seeIfModuleIsCompleted(moduleId: recipeModule)
+            
+            if isModuleCompleted {
+                
+                switch recipeModule {
+                case 1:
+                    completConquer(id: 2)
+                case 11:
+                    completConquer(id: 5)
+                case 21:
+                    completConquer(id: 3)
+                case 31:
+                    completConquer(id: 4)
+                default:
+                    break
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+    func setCompletedModule(moduleId: Int){
+        if let completeModules = defauls.array(forKey: "completeModulesId") as? [Int]{
+            var totalIds = completeModules
+            totalIds.append(moduleId)
+            defauls.set(totalIds, forKey: "completeModulesId")
+        }
+    }
+    
+    
+    func recipeModuleId(recipeId: Int) -> Int{
+        
+        switch recipeId {
+        case 1, 11, 21:
+            return 31
+        case 31, 41:
+            return 1
+        case 51, 61:
+            return 11
+        case 71, 81, 91, 101:
+            return 21
+        default:
+            return 0
+        }
+    }
+    
+    func seeIfModuleIsCompleted(moduleId: Int) -> Bool {
+        
+        if let currentRecipes = defauls.array(forKey: "completeRecipesId") as? [Int]{
+            
+            switch moduleId {
+            case 1:
+                return (currentRecipes.contains(31) && currentRecipes.contains(41))
+            
+            case 11:
+                return (currentRecipes.contains(51) && currentRecipes.contains(61))
+            
+            case 21:
+                return (currentRecipes.contains(71) && currentRecipes.contains(81) && currentRecipes.contains(91) && currentRecipes.contains(101))
+            
+            case 31:
+                return (currentRecipes.contains(1) && currentRecipes.contains(11) && currentRecipes.contains(21))
+                
+            default:
+                return false
+            }
+            
+        }
+        
+        return false
+        
+    }
+    
+    func finalizeRecipe(recipeId:Int){
+        
+        saveCompletedRecipe(id: recipeId)
+        
+        let recipeModule = recipeModuleId(recipeId: recipeId)
+        let isModuleCompleted = seeIfModuleIsCompleted(moduleId: recipeModule)
+        
+        if isModuleCompleted{
+            setCompletedModule(moduleId: recipeModule)
+        }
+        
+        setConquers(recipeId: recipeId)
+        
     }
     
     

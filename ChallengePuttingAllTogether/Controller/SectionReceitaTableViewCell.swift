@@ -26,6 +26,7 @@ class SectionReceitaTableViewCell: UITableViewCell {
           didSet{
               DispatchQueue.main.async {
                   self.tableReceita.reloadData()
+                print(self.receitas)
               }
           }
       }

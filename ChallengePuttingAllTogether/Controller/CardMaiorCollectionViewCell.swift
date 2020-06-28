@@ -49,7 +49,7 @@ class CardMaiorCollectionViewCell: UICollectionViewCell {
           return UINib(nibName: nibName, bundle: nil)
       }
     
-    func configureCard(backgroundImageName:String, titulo:String, subtitulo:String, nivel:Int){
+    func configureCard(id: Int, backgroundImageName:String, titulo:String, subtitulo:String, nivel:Int){
            self.backGroundImage.image = UIImage(named: backgroundImageName)
            self.titulo.text = titulo
            self.subtitulo.text = subtitulo
@@ -68,6 +68,15 @@ class CardMaiorCollectionViewCell: UICollectionViewCell {
            }
            
            self.nivelImage.image = UIImage(named: nivelImage)
+        
+            let pont = Pontuation()
+        
+            if pont.seeIfModuleIsCompleted(moduleId: id){
+                self.checkBoxImage.image = UIImage(named: "Concluido")
+            }else{
+                self.checkBoxImage.image = UIImage(named: "NaoConcluido")
+            }
+            
        }
     
     public func configuraGradient(size: CGSize){

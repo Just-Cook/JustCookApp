@@ -203,9 +203,9 @@ extension RecipePageViewController {
         
         let oldPontuation = pont.getTotalPoints()
         let newPontuation = pont.increasePontuation(in: 75)
-        //pont.completConquer(id: 1)
-        pont.saveCompletedRecipe(id: self.receitaId!)
-        
+        //pont.saveCompletedRecipe(id: self.receitaId!)
+        pont.finalizeRecipe(recipeId: self.receitaId!)
+     
         let congrat = CongratsScreenViewController()
         
         congrat.configure(oldPontuation: oldPontuation, newPontuation: newPontuation)
