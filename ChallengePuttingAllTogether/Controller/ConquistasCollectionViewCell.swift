@@ -24,9 +24,11 @@ class ConquistasCollectionViewCell: UICollectionViewCell {
         self.image.layer.cornerRadius = 5
         
         let pont = Pontuation()
-        if pont.verifyId(id: id){
+        
+        if pont.verifyConquerId(id: id){
             self.image.image = UIImage(named: imageName)
         }else{
+            self.image.image = UIImage(named: "closedConquer")
             self.image.backgroundColor = .emptyConquer
         }
         

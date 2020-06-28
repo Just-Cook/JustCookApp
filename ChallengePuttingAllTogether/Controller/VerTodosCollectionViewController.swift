@@ -55,7 +55,7 @@ class VerTodosCollectionViewController: UIViewController, UICollectionViewDelega
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardMenorCollectionViewCell.identifier, for: indexPath) as? CardMenorCollectionViewCell else{
                     fatalError("Wrong identifier")
                }
-        cell.configureCard(backgroundImageName: modulos[indexPath.row].imageName, titulo: modulos[indexPath.row].titulo, subtitulo: modulos[indexPath.row].subtitulo, nivel: modulos[indexPath.row].nivel)
+        cell.configureCard(id: modulos[indexPath.row].id, backgroundImageName: modulos[indexPath.row].imageName, titulo: modulos[indexPath.row].titulo, subtitulo: modulos[indexPath.row].subtitulo, nivel: modulos[indexPath.row].nivel)
      
         let (cellWidth, cellHeigth) = cellSize()
         

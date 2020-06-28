@@ -111,9 +111,6 @@ class CongratsScreenViewController: UIViewController {
             animatedProgressBar.layer.cornerRadius = 5
             animatedProgressBar.progressTintColor = UIColor.init(red: 43/255, green: 159/255, blue: 247/255, alpha: 1)
             
-//            pont.increasePontuation(in: points)
-//            pont.completConquer(id: 1)
-        
             self.progressBar = animatedProgressBar
         
             centeredView.addSubview(animatedProgressBar)

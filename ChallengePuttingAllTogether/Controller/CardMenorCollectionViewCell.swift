@@ -31,7 +31,7 @@ class CardMenorCollectionViewCell: UICollectionViewCell {
     
     static let nibName = "CardMenorCollectionViewCell"
     static let identifier = "CardMenorCollectionViewCell"
-    
+    var addedGradient = false
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -62,7 +62,7 @@ class CardMenorCollectionViewCell: UICollectionViewCell {
       }
       
     
-    func configureCard(backgroundImageName:String, titulo:String, subtitulo:String, nivel:Int){
+    func configureCard(id: Int, backgroundImageName:String, titulo:String, subtitulo:String, nivel:Int){
         self.backGroundImage.image = UIImage(named: backgroundImageName)
         self.titulo.text = titulo
         self.subtitulo.text = subtitulo
@@ -81,18 +81,31 @@ class CardMenorCollectionViewCell: UICollectionViewCell {
         }
         
         self.nivelImage.image = UIImage(named: nivelImage)
+        
+        let pont = Pontuation()
+        
+        if pont.seeIfModuleIsCompleted(moduleId: id){
+            self.checkBoxImage.image = UIImage(named: "Concluido")
+        }else{
+            self.checkBoxImage.image = UIImage(named: "NaoConcluido")
+        }
     }
     
     public func configuraGradient(size: CGSize){
-        let secondColor = CGColor.init(srgbRed: 0, green: 0, blue: 0, alpha: 0.5)
-                    
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [UIColor.clear.cgColor, secondColor]
-        gradientLayer.locations = [0.0, 1.0]
         
-        gradientLayer.frame = CGRect(origin: .zero, size: size)
-        
-        gradienteView.layer.insertSublayer(gradientLayer, at: 0)
+        if !self.addedGradient {
+                
+            let secondColor = CGColor.init(srgbRed: 0, green: 0, blue: 0, alpha: 0.5)
+                        
+            let gradientLayer = CAGradientLayer()
+            gradientLayer.colors = [UIColor.clear.cgColor, secondColor]
+            gradientLayer.locations = [0.0, 1.0]
+            
+            gradientLayer.frame = CGRect(origin: .zero, size: size)
+            
+            gradienteView.layer.insertSublayer(gradientLayer, at: 0)
+            self.addedGradient = true
+        }
         
     }
     
