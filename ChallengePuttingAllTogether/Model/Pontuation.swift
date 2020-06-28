@@ -105,6 +105,7 @@ class Pontuation {
         default:
             return 3
         }
+        
     }
     
     func userLevelNumber(points: Int) -> Int {

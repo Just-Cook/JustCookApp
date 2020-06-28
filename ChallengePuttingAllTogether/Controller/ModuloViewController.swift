@@ -82,7 +82,7 @@ extension ModuloViewController {
             for ssview in sview.subviews {
                 guard let label = ssview as? UILabel else { break }
                 if label.text == self.title {
-//                    label.numberOfLines = 0
+ //                   label.numberOfLines = 0
 //                    label.lineBreakMode = .byWordWrapping
 //                    label.sizeToFit()
                     UIView.animate(withDuration: 0.3, animations: {
